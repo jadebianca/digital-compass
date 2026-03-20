@@ -56,20 +56,20 @@ footer {
     overflow: hidden;
 }
 
-.footer-brand {
+.footer-contacts {
     float: left;
     width: 25%; 
     text-align: left;
 }
 
-.footer-brand img {
+.footer-contacts img {
     height: 45px;
     display: inline-block;    
     vertical-align: middle;   
     margin-right: 10px;       
 }
 
-.footer-brand p {
+.footer-contacts p {
     font-size: 11px;
     line-height: 1.5;
     margin: 15px 0 5px 0;    
@@ -84,7 +84,7 @@ footer {
     text-decoration: none;
 }
 
-.footer-columns-container {
+.footer-columns {
     float: right;
     width: 68%; 
     text-align: left;
