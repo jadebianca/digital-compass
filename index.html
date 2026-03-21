@@ -82,7 +82,7 @@
             display: inline-block;
             width: 30%;
             vertical-align: middle;
-            margin-right: 30px;
+            margin-right: 50px;
         }
 
         .about-img img {
@@ -100,7 +100,7 @@
         }
 
         .about h3 {
-            color: #4A2166;
+            color: #212866;
             font-size: 18px;
             text-transform: uppercase;
             font-weight: 550;
@@ -111,13 +111,13 @@
         .about h1 {
             font-family: 'Playfair Display', serif;
             font-size: 45px;
-            color: #371F76;
+            color: #0F0F32;
             margin: 0 0 20px 0;
         }
 
         .about p {
             font-size: 18px;
-            color: #6C3A8A;
+            color: #212866;
             text-align: justify;
             line-height: 1.8;
             margin-bottom: 30px;
@@ -126,16 +126,17 @@
         .about-btn {
             display: inline-block;
             padding: 12px 35px;
-            background-color: #371F76;
+            background-color: #0F0F32;
             color: #ffffff;
             text-decoration: none;
             border-radius: 25px;
-            border: 2px solid #371F76;
+            border: 2px solid #0F0F32;
+            text-transform: uppercase;
         }
 
         .about-btn:hover {
             background-color: #ffffff;
-            color: #371F76;
+            color: #0F0F32;
         }
 
         .explore-more {
@@ -148,7 +149,7 @@
         }
 
         .explore-more h3 {
-            color: #4A2166;
+            color: #212866;
             font-size: 18px;
             text-transform: uppercase;
             font-weight: 550;
@@ -159,13 +160,13 @@
         .explore-more h1 {
             font-family: 'Playfair Display', serif;
             font-size: 45px;
-            color: #371F76;
+            color: #0F0F32;
             margin: 0 0 20px 0;
         }
 
         .explore-more p {
             font-size: 18px;
-            color: #6C3A8A;
+            color: #212866;
             margin-bottom: 40px;
         }
         .topics {
@@ -175,22 +176,23 @@
         }
 
         .box {
-            background: #4b3082;
+            background: #212866;
             width: 280px;
             border-radius: 20px;
             text-align: center;
-            border: 1px solid #f0f0f0;
+            border: 1px solid rgba(255,255,255,0.2);
             overflow: hidden;
-            padding: 60px 20px;
+            padding: 100px 20px;
+            transition: 0.3s;
         }
 
         .box:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
         .icon {
             background-color: #ffffff;
-            color: #4b3082;
+            color: #212866;
             width: 70px;
             height: 70px;
             line-height: 70px;
@@ -220,7 +222,7 @@
         }
 
         .contacts h3 {
-            color: #4A2166;
+            color: #212866;
             font-size: 18px;
             font-weight: 400;
             text-transform: uppercase;
@@ -231,21 +233,21 @@
         .contacts h1 {
             font-family: 'Playfair Display', serif;
             font-size: 50px;
-            color: #371F76;
+            color: #0F0F32;
             margin-top: 0;
             margin-bottom: 20px;
         }
 
         .contacts p {
             font-size: 18px;
-            color: #6C3A8A;
+            color: #212866;
             margin-bottom: 40px;
         }
 
         .contacts-btn {
             display: inline-block;
             padding: 12px 30px;
-            background-color: #371F76;
+            background-color: #0F0F32;
             color: #ffffff;
             text-decoration: none;
             font-weight: 500;
@@ -253,87 +255,15 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             border-radius: 30px;
-            border: 2px solid #371F76;
+            border: 2px solid #0F0F32;
             margin-bottom: 20px;
         }
 
         .contacts-btn:hover {
             background-color: #FFFFFF;
-            color: #371F76;
+            color: #0F0F32;
         }
 
-        footer {
-            background-color: #0F0F32;
-            color: #DDE7F2;
-            padding: 60px 60px 40px 60px;
-            overflow: hidden;
-        }
-
-        .footer-contacts {
-            float: left;
-            width: 25%;
-        }
-
-        .footer-contacts img {
-            height: 45px;
-            vertical-align: middle;
-            margin-right: 10px;
-            display: inline-block;
-        }
-
-        .footer-contacts .logo-text {
-            font-size: 20px;
-            color: #FFFFFF;
-            font-weight: 700;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .footer-contacts p {
-            font-size: 11px;
-            margin: 15px 0;
-        }
-
-        .social-icons a {
-            color: #FFFFFF;
-            font-size: 24px;
-            margin-right: 20px;
-            text-decoration: none;
-        }
-
-        .footer-columns {
-            float: right;
-            width: 70%;
-        }
-
-        .column {
-            display: inline-block;
-            vertical-align: top;
-            width: 13.5%;
-            margin-bottom: 20px;
-        }
-
-        .column h4 {
-            font-size: 14px;
-            text-decoration: underline;
-            color: #FFFFFF;
-            margin-bottom: 15px;
-        }
-
-        .column a {
-            display: block;
-            color: #DDE7F2;
-            text-decoration: none;
-            font-size: 12px;
-            margin-bottom: 8px;
-        }
-
-        hr {
-            clear: both;
-            border: 0;
-            border-top: 1px solid #DDE7F2;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
@@ -344,13 +274,13 @@
             <span class="logo-text" id="top">Digital Compass</span>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Cybercrime</a></li>
-            <li><a href="#">Cybersecurity</a></li>
-            <li><a href="#">Digital Privacy</a></li>
-            <li><a href="#">Emerging Threats</a></li>
-            <li><a href="#">Prevention & Awareness</a></li>
-            <li><a href="#">Resources</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cc.html">Cybercrime</a></li>
+            <li><a href="cs.html">Cybersecurity</a></li>
+            <li><a href="dp.html">Digital Privacy</a></li>
+            <li><a href="et.html">Emerging Threats</a></li>
+            <li><a href="pa.html">Prevention & Awareness</a></li>
+            <li><a href="rs.html">Resources</a></li>
         </ul>
     </nav>
 
@@ -380,19 +310,19 @@
         <h1>Knowledge is Protection</h1>
         <p>Discover key areas that will help you understand digital risks and protect yourself online.</p>
         
-        <a href="blog.html" class="topics">
+        <a href="cc.html" class="topics">
             <div class="box">
                 <div class="icon"><i class="fa-solid fa-shield-virus"></i></div>
                 <h2>Cybercrime</h2>
-                <p>Understanding types of online attacks</p>
+                <p>Learn about different types of cybercrimes, how they happen, and their impact on individuals.</p>
             </div>
         </a>
 
-        <a href="blog.html" class="topics">
+        <a href="cs.html" class="topics">
             <div class="box">
                 <div class="icon"><i class="fa-solid fa-lock"></i></div>
                 <h2>Cybersecurity</h2>
-                <p>Proactive ways to secure your life</p>
+                <p>Understand how to protect your devices, accounts, and personal data from online threats.</p>
             </div>
         </a>
 
@@ -474,4 +404,4 @@
         <hr>
     </footer>
 </body>
-</html>```
+</html>
