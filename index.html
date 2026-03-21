@@ -5,24 +5,16 @@
     <meta http-equiv="refresh" content="1800">
     <title>Digital Compass</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/navigations.css">
     <style type="text/css">
         body {
             background-color: #FFFFFF;
-            font-family: 'Inter', sans-serif;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
             margin: 0px;
             padding: 0px;
-        }
-        /* Content Styles */
-        .main {
-            background-color: #FFFFFF;
-            padding: 30px 0;
-            width: 90%;
-            max-width: 1000px;
-            margin: 0 auto;
         }
 
         .hero {
@@ -35,7 +27,6 @@
         }
 
         .hero h3 {
-            font-family: 'Poppins', sans-serif;
             font-size: 20px;
             font-weight: 500;
             text-transform: uppercase;
@@ -44,13 +35,14 @@
         }
 
         .hero h1 {
+            font-family: 'Playfair Display', serif;
             font-size: 60px;
             margin: 10px 0;
         }
 
         .hero p {
-            font-family: 'Poppins', sans-serif;
             font-size: 18px;
+            font-weight: 500;
             max-width: 600px;
             margin: 0 auto;
             line-height: 1.6;
@@ -60,21 +52,11 @@
             margin-top: 5px;
         }
 
-        hr {
-            width: 80%;
-            border: 0;
-            max-width: 50%;
-            height: 1px;
-            background-color: #4A2166;
-            margin: 0 auto;
-        }
-
-        .about-me {
+        .about-link {
             display: inline-block;
             padding: 12px 30px;
             text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 14px;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -85,41 +67,40 @@
             color: #4A2166;
         }
 
-        .about-me:hover {
+        .about-link:hover {
             background-color: transparent;
             color: #FFFFFF;
         }
 
-        .me {
+        .about {
             padding: 80px 200px;
             text-align: center;
             background-color: #FFFFFF;
         }
 
-        .vid {
+        .about-img {
             display: inline-block;
             width: 30%;
             vertical-align: middle;
             margin-right: 30px;
         }
 
-        .vid video {
+        .about-img img {
             width: 100%;
             height: auto;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
 
-        .me-text {
+        .about-text {
             display: inline-block;
-            width: 40%;
+            width: 45%;
             vertical-align: middle;
             text-align: left;
         }
 
-        .me h3 {
+        .about h3 {
             color: #4A2166;
-            font-family: 'Poppins', sans-serif;
             font-size: 18px;
             text-transform: uppercase;
             font-weight: 550;
@@ -127,14 +108,14 @@
             margin-bottom: 10px;
         }
 
-        .me h1 {
+        .about h1 {
+            font-family: 'Playfair Display', serif;
             font-size: 45px;
             color: #371F76;
             margin: 0 0 20px 0;
         }
 
-        .me p {
-            font-family: 'Poppins', sans-serif;
+        .about p {
             font-size: 18px;
             color: #6C3A8A;
             text-align: justify;
@@ -142,23 +123,23 @@
             margin-bottom: 30px;
         }
 
-        .me-btn {
+        .about-btn {
             display: inline-block;
             padding: 12px 35px;
             background-color: #371F76;
             color: #ffffff;
             text-decoration: none;
-            font-family: 'Poppins', sans-serif;
             border-radius: 25px;
             border: 2px solid #371F76;
         }
 
-        .me-btn:hover {
+        .about-btn:hover {
             background-color: #ffffff;
             color: #371F76;
         }
 
-        .life {
+        .explore-more {
+            background-color: #F8FAFC;
             padding: 80px;
             text-align: center;
             width: 100%;
@@ -166,9 +147,8 @@
             box-sizing: border-box;
         }
 
-        .life h3 {
+        .explore-more h3 {
             color: #4A2166;
-            font-family: 'Poppins', sans-serif;
             font-size: 18px;
             text-transform: uppercase;
             font-weight: 550;
@@ -176,13 +156,19 @@
             margin-bottom: 10px;
         }
 
-        .life h1 {
+        .explore-more h1 {
+            font-family: 'Playfair Display', serif;
             font-size: 45px;
             color: #371F76;
-            margin: 0 0 50px 0;
+            margin: 0 0 20px 0;
         }
 
-        .life-link {
+        .explore-more p {
+            font-size: 18px;
+            color: #6C3A8A;
+            margin-bottom: 40px;
+        }
+        .topics {
             text-decoration: none;
             display: inline-block;
             margin: 15px;
@@ -195,11 +181,11 @@
             text-align: center;
             border: 1px solid #f0f0f0;
             overflow: hidden;
-            padding: 100px 20px;
+            padding: 60px 20px;
         }
 
         .box:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
         .icon {
@@ -221,7 +207,6 @@
         }
 
         .box p {
-            font-family: 'Poppins', sans-serif;
             font-size: 14px;
             color: #ffffff;
             line-height: 1.5;
@@ -236,7 +221,6 @@
 
         .contacts h3 {
             color: #4A2166;
-            font-family: 'Poppins', sans-serif;
             font-size: 18px;
             font-weight: 400;
             text-transform: uppercase;
@@ -245,6 +229,7 @@
         }
 
         .contacts h1 {
+            font-family: 'Playfair Display', serif;
             font-size: 50px;
             color: #371F76;
             margin-top: 0;
@@ -252,19 +237,17 @@
         }
 
         .contacts p {
-            font-family: 'Poppins', sans-serif;
             font-size: 18px;
             color: #6C3A8A;
             margin-bottom: 40px;
         }
 
-        .email-btn {
+        .contacts-btn {
             display: inline-block;
             padding: 12px 30px;
             background-color: #371F76;
             color: #ffffff;
             text-decoration: none;
-            font-family: 'Poppins', sans-serif;
             font-weight: 500;
             font-size: 14px;
             letter-spacing: 1px;
@@ -274,9 +257,82 @@
             margin-bottom: 20px;
         }
 
-        .email-btn:hover {
+        .contacts-btn:hover {
             background-color: #FFFFFF;
             color: #371F76;
+        }
+
+        footer {
+            background-color: #0F0F32;
+            color: #DDE7F2;
+            padding: 60px 60px 40px 60px;
+            overflow: hidden;
+        }
+
+        .footer-contacts {
+            float: left;
+            width: 25%;
+        }
+
+        .footer-contacts img {
+            height: 45px;
+            vertical-align: middle;
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        .footer-contacts .logo-text {
+            font-size: 20px;
+            color: #FFFFFF;
+            font-weight: 700;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .footer-contacts p {
+            font-size: 11px;
+            margin: 15px 0;
+        }
+
+        .social-icons a {
+            color: #FFFFFF;
+            font-size: 24px;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .footer-columns {
+            float: right;
+            width: 70%;
+        }
+
+        .column {
+            display: inline-block;
+            vertical-align: top;
+            width: 13.5%;
+            margin-bottom: 20px;
+        }
+
+        .column h4 {
+            font-size: 14px;
+            text-decoration: underline;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+        }
+
+        .column a {
+            display: block;
+            color: #DDE7F2;
+            text-decoration: none;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        hr {
+            clear: both;
+            border: 0;
+            border-top: 1px solid #DDE7F2;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -298,79 +354,76 @@
         </ul>
     </nav>
 
-    <div class="main">
-        <div class="hero">
-        <h3>Welcome to my blog</h3>
-        <h1>Hi, I'm Jade Bianca!</h1>
-        <p>This is my personal space where I share my thoughts, stories, and the experiences I cherish along the way.</p>
+    <div class="hero">
+        <h3>Navigate The Digital World With Confidence</h3>
+        <h1>Welcome to Digital Compass!</h1>
+        <p>Digital Compass is your guide to understanding cybercrimes and staying safe online. Learn how to protect yourself, recognize threats, and build smart digital habits in today’s connected world.</p>
         <div class="hero-btn">
-            <a href="#me" class="about-me">About Me</a>
+            <a href="#explore-more" class="about-link">Start Learning Now</a>
         </div>
     </div>
 
-    <div class="me" id="me">
-        <div class="vid">
-            <video controls preload="auto" muted="muted" poster="MEDIAS/me.jpg">
-                <source src="MEDIAS/reel.mp4" type="video/mp4">
-            </video>
+    <div class="about">
+        <div class="about-img">
+            <img src="media/images/digital compass.png" alt="Digital Compass Logo">
         </div>
-        <div class="me-text">
-            <h3>Get To Know</h3>
-            <h1>Jade Bianca</h1>
-            <p>I am a BSIT student who has always been curious, creative, and eager to learn new things. My experiences from childhood up to college have shaped me into a motivated learner who continues to grow and improve.</p>
-            <a href="about.html" class="me-btn">Read Biography</a>
+        <div class="about-text">
+            <h3>ABOUT US</h3>
+            <h1>What is Digital Compass?</h1>
+            <p>Digital Compass is an educational platform designed to help students and internet users understand cybercrimes and online risks. Through simple explanations, guides, and practical tips, we aim to build awareness and promote safe and responsible internet use.</p>
+            <a href="hm/about.html" class="about-btn">More About Us</a>
         </div>
     </div>
-    <hr>
-    <div class="life">
-        <h3>More About Me</h3>
-        <h1>Life & Perspectives</h1>
+
+    <div class="explore-more" id="explore-more">
+        <h3>EXPLORE TOPICS</h3>
+        <h1>Knowledge is Protection</h1>
+        <p>Discover key areas that will help you understand digital risks and protect yourself online.</p>
         
-        <a href="blog.html" class="life-link">
+        <a href="blog.html" class="topics">
             <div class="box">
-                <div class="icon"><i class="fa-solid fa-pen"></i></div>
-                <h2>My Blogs</h2>
-                <p>Personal narratives & reflections</p>
+                <div class="icon"><i class="fa-solid fa-shield-virus"></i></div>
+                <h2>Cybercrime</h2>
+                <p>Understanding types of online attacks</p>
             </div>
         </a>
 
-        <a href="gallery.html" class="life-link">
+        <a href="blog.html" class="topics">
             <div class="box">
-                <div class="icon"><i class="fa-solid fa-camera-retro"></i></div>
-                <h2>My Photos</h2>
-                <p>Captured moments & memories</p>
+                <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                <h2>Cybersecurity</h2>
+                <p>Proactive ways to secure your life</p>
             </div>
         </a>
 
-        <a href="favorites.html" class="life-link">
+        <a href="blog.html" class="topics">
             <div class="box">
-                <div class="icon"><i class="fa-solid fa-heart"></i></div>
-                <h2>My Favorites</h2>
-                <p>Favorite tunes, movies & shows</p>
+                <div class="icon"><i class="fa-solid fa-user-secret"></i></div>
+                <h2>Digital Privacy</h2>
+                <p>Managing your data and footprint</p>
             </div>
         </a>
 
-        <a href="goals.html" class="life-link">
+        <a href="blog.html" class="topics">
             <div class="box">
-                <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
-                <h2>My Goals</h2>
-                <p>Dream places & bucket list</p>
+                <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h2>Prevention</h2>
+                <p>Awareness and safety guides</p>
             </div>
         </a>
     </div>
-    <hr>
+
     <div class="contacts">
         <h3>Stay Connected</h3>
         <h1>Email Me</h1>
         <p>Have a question or just want to say hi? I'd love to hear from you!</p>
-        <a href="mailto:jadebiancaportillo@email.com" class="email-btn">Send an Email</a>
-    </div>
+        <a href="mailto:jadebiancaportillo@email.com" class="contacts-btn">Send an Email</a>
     </div>
 
     <footer>
         <div class="footer-contacts">
             <img src="media/images/logo.png" alt="Logo">
-            <span class="logo-text" id="top">Digital Compass</span>
+            <span class="logo-text">Digital Compass</span>
             <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -389,7 +442,6 @@
                 <a href="#">Concepts</a>
                 <a href="#">Account Security</a>
                 <a href="#">Internet Safety</a>
-                <a href="#">Safe Online Habits</a>
             </div>
             <div class="column">
                 <h4>Digital Privacy</h4>
@@ -400,13 +452,12 @@
             <div class="column">
                 <h4>Emerging Threats</h4>
                 <a href="#">Threats from New Technology</a>
-                <a href="#">Cyberattack Methods & Evolution</a>
+                <a href="#">Cyberattack Methods</a>
             </div>
             <div class="column">
                 <h4>Prevention</h4>
                 <a href="#">Cybercrime Prevention</a>
                 <a href="#">Online Safety Tips</a>
-                <a href="#">Digital Wellness</a>
             </div>
             <div class="column">
                 <h4>Resources</h4>
@@ -420,9 +471,7 @@
                 <a href="#">Contacts</a>
             </div>
         </div>
-
         <hr>
     </footer>
 </body>
-</html>
-
+</html>```
