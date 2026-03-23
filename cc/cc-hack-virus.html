@@ -1,1 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <title>Digital Compass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        /* Content Styles */
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
+        .title {
+            color: #212866;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #212866;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px; 
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 40px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
+
+        .top-btn {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            background-color: #0F0F32;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 15px 50px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cybercrime</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">Digital Privacy</a></li>
+            <li><a href="#">Emerging Threats</a></li>
+            <li><a href="#">Prevention & Awareness</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="title">Hidden Threats: Understanding Computer Viruses</h1>
+        <p class="author"><b>By: MORALES, JOHN MIGUEL B. &bull; March 2026</b></p>
+        
+        <p class="nav-bio">
+            <!-- Insert Subheading Title Below -->
+            <a href="#intro">Introduction</a> &bull;
+            <a href="#body-one">What is a Computer Virus?</a> &bull;
+            <a href="#body-two">How Computer Viruses Spread</a> &bull;
+            <a href="#body-three">Types of Computer Viruses</a> &bull;
+            <a href="#body-four">Effects of Computer Viruses</a> &bull;
+            <a href="#body-five">Signs of Infection</a> &bull;
+            <a href="#body-six">Prevention Methods</a> &bull;
+            <a href="#body-seven">Common Virus Threats Today</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+        
+        <hr width="100%" size="5" color="#212866">
+
+        <article>     
+            <figure>
+                <a href="">
+                    <img src="../media/images/computervirus.jpg" alt="Computer Virus Picture" class="photos">
+                </a>
+                <figcaption>Photo from: PC MAG</figcaption>
+            </figure>
+            
+            <h2 id="intro">Introduction</h2>
+            <p class="paragraph">
+                Computer viruses are harmful programs designed to attach themselves to legitimate files and spread across devices. Once activated, they can replicate and perform malicious actions such as damaging files, stealing data, or disrupting system operations. Because they often disguise themselves as legitimate software, understanding how they work is essential for staying safe online.
+            </p>
+            
+            <h2 id="body-one">What is a Computer Virus?</h2>
+            <p class="paragraph">
+                A computer virus is a type of malicious software (malware) that attaches itself to a file or program and is designed to spread across devices. It can replicate itself and infect other files or systems once activated. When an infected file is opened, the virus executes and may perform harmful actions such as deleting data or stealing information. Although the terms are often confused, a virus is only one type of malware. What makes viruses unique is their ability to self-replicate and spread to other systems. They usually infect devices when users click malicious links or download compromised files. Once inside a system, they continue to copy themselves and infect more files, similar to how biological viruses spread.
+            </p>
+
+            <h2 id="body-two">How Computer Viruses Spread</h2>
+            <p class="paragraph">
+                Computer viruses spread when users unknowingly interact with infected files, programs, or links. They often enter a device through email attachments, downloaded software, or malicious links shared online. A virus first attaches itself to a file or program and remains inactive until the user opens or runs it. Once executed, the virus code is activated and begins infecting the system. It then replicates itself and may spread to other files, devices, or networks. As it spreads, it can cause damage such as stealing data, corrupting files, or disrupting system operations.
+            </p>
+
+            <h2 id="body-three">Types of Computer Viruses</h2>
+            <p class="paragraph">
+            Computer viruses come in various types, each with different methods of infection, behavior, and level of threat. Some viruses target system files, while others focus on applications, web browsers, or documents. They may spread through infected files, email attachments, malicious websites, or external devices. Certain types remain hidden in a system’s memory, while others activate only when a specific file is opened. Advanced viruses can even change their code to avoid detection by security software. Because of these differences, understanding the various types of computer viruses is important in recognizing threats and applying the right protection methods.
+            </p>
+
+            <h2 id="body-four">Effects of Computer Viruses</h2>
+            <p class="paragraph">
+            A computer virus can have a wide range of harmful effects on a system, depending on its type and severity. It can prevent a computer from booting properly, slow down performance, corrupt or delete important files, and even block internet access. Some viruses encrypt files, making them inaccessible until decrypted, while others cause visual glitches, frozen cursors, or unusual programs running without the user’s knowledge. In severe cases, a virus can trigger system crashes, including the blue screen of death, or cause random freezes that force manual restarts. Certain viruses also run automatically on startup, gradually slowing down the computer over time. Overall, these effects can make the system unstable, frustrating to use, and potentially result in permanent data loss if not addressed promptly.
+            </p>
+
+            <h2 id="body-five">Signs of Infection</h2>
+            <p class="paragraph">
+            Signs of a computer virus or malware are the observable symptoms that indicate a device may be infected. These can include slow performance, frequent freezing or crashing, unexpected program closures, modified or deleted files, and the appearance of new programs, icons, or browser toolbars without the user’s consent. Infected systems may also send emails or social media messages automatically, display pop-up advertisements, redirect browser links to incorrect pages, or have their default search engine changed. Recognizing these signs early helps users take action to remove the infection and protect their data from further harm.            </p>
+
+            <h2 id="body-six">Prevention Methods</h2>
+            <p class="paragraph">
+            Preventing computer viruses and malware involves combining reliable security software with safe online habits. Users should install reputable antivirus programs with real-time protection, keep their operating systems and applications up to date, and ensure firewalls are always enabled. Safe browsing practices, such as avoiding suspicious links, pop-ups, and untrusted websites, are essential. Emails and messages from unknown or unexpected sources should be handled cautiously, and files or software should only be downloaded from legitimate sources. Removable devices like USB drives should be scanned before use, and users must remain aware of social engineering tactics that attempt to trick them into installing malware. By following these practices consistently, users can significantly reduce the risk of infection and protect their systems and personal information.            </p>
+
+            <h2 id="body-seven">Common Virus Threats Today</h2>
+            <p class="paragraph">
+            Today, computer viruses and malware have evolved into a wide range of attacks that can disrupt systems, steal data, or compromise security. Some of the most common threats include DoS and DDoS attacks, which overwhelm systems and networks to make them unavailable to users; Man-in-the-Middle (MITM) attacks, where attackers intercept communication between users; and phishing attacks, which trick victims into revealing sensitive information. Variations like whale-phishing and spear-phishing target high-profile individuals or specific victims with personalized messages. Ransomware holds systems hostage until a ransom is paid, while Trojan horses hide malicious code inside seemingly legitimate programs. Drive-by attacks infect devices through unsafe websites, and XSS attacks exploit vulnerabilities in web applications to execute malicious scripts. Other notable threats include password attacks, which steal or guess login credentials, and malware attacks, which install harmful software to disrupt or spy on systems. Being aware of these common threats helps users recognize risks and take preventive measures to secure their devices and data.            </p>
+            
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+            Computer viruses are persistent and evolving threats that can disrupt systems, steal sensitive information, and compromise digital security. By understanding how viruses spread, recognizing the different types, noticing signs of infection, and following preventive methods, users can significantly reduce the risk of being affected. Staying informed about common virus threats and practicing safe computing habits ensures that personal data, devices, and networks remain protected in an increasingly digital world.            </p>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-contact">
+            <img src="media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto@digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="cc.html#concepts">Concepts</a>
+                <a href="cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="cs.html#concepts">Concepts</a>
+                <a href="cc.html#security">Account Security</a>
+                <a href="cc.html#internet">Internet Safety</a>
+                <a href="cc.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="dp.html#concepts">Concepts</a>
+                <a href="dp.html#socmed">Social Media Privacy</a>
+                <a href="dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="et.html#threats">Threats from New Technology</a>
+                <a href="et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="pa.html#prevention">Cybercrime Prevention</a>
+                <a href="pa.html#online">Online Safety Tips</a>
+                <a href="pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="rs/faqs.html">FAQs</a>
+                <a href="rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="index.html">Home</a>
+                <a href="hm/about.html">About</a>
+                <a href="hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+
+        <hr>
+    </footer>
+</body>
+</html>
