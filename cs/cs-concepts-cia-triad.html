@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <title>CIA Triad: Cybersecurity's Three Key Pillars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .title {
+            color: #212866;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #212866;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav-bio a:hover {
+            text-decoration: 2px solid underline;
+        }
+        .photos {
+            width: 100%;
+            max-width: 1000px; 
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 40px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
+        .top-btn {
+            position: fixed;
+            bottom: 50px;
+            right: 60px;
+            background-color: #FFFFFF;
+            border: 2px solid #0F0F32;
+            color: #0F0F32;
+            text-decoration: none;
+            padding: 15px 50px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+        .top-btn:hover {
+            background: #0F0F32;
+            color: #FFFFFF;
+        }
+        iframe {
+            display: block;
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cybercrime</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">Digital Privacy</a></li>
+            <li><a href="#">Emerging Threats</a></li>
+            <li><a href="#">Prevention & Awareness</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main">
+        <h1 class="title">CIA Triad: Cybersecurity's Three Key Pillars</h1>
+        <p class="author"><b>By: Maneclang, Vince Wilram T. &bull; March 22, 2026</b></p>
+        
+        <p class="nav-bio">
+            <a href="#intro">Intro</a> &bull;
+            <a href="#confidentiality">Confidentiality</a> &bull;
+            <a href="#integrity">Integrity</a> &bull;
+            <a href="#availability">Availability</a> &bull;
+            <a href="#threats">Threats</a> &bull;
+            <a href="#daily">Building CIA in Daily Life</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+
+        <hr width="100%" size="5" color="#212866">
+
+        <article>
+            <figure>
+                <a href="">
+                    <img src="../media/images/cia triad.webp" alt="CIA Triad" class="photos">
+                </a>
+                <figcaption>Photo from: IDStrong</figcaption>
+            </figure>
+            
+            <h2 id="intro">Introduction</h2>
+            <p class="paragraph">
+                The CIA Triad is the basis of cybersecurity worldwide. CIA stands for Confidentiality, Integrity, and Availability. These three concepts function together as one. Students using homework documents or social media sites rely on these concepts for the security of their data from being hacked. Ignoring any one of them can lead to total failure. This article explains all three parts of the CIA Triad and why they work best when combined.
+            </p>
+
+            <iframe width="1406" height="791" src="https://www.youtube.com/embed/kPPFNrlN3zo" title="What is the CIA Triad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h2 id="confidentiality">Confidentiality Keeps Secrets Safe</h2>
+            <p class="paragraph">
+                Confidentiality ensures only authorized people access sensitive data like passwords or grades. Hackers can't peek at your private messages or bank info without breaking through encryption walls. Tools like passwords and two-factor codes block outsiders cold. Schools use login portals to hide student records from strangers. Leaks happen when public Wi-Fi or weak locks fail. This pillar stops identity theft before it starts. Protect it first, or everything crumbles.
+            </p>
+
+            <h2 id="integrity">Integrity Guards Data Truth</h2>
+            <p class="paragraph">
+                Integrity means information stays accurate and unchanged by bad actors or errors. No one alters your test scores or swaps photo details secretly. Checksums and version controls verify files match originals exactly. Malware tries to tweak bank balances or exam answers undetected. Digital signatures prove who last touched the data. Backups catch changes fast for rollback. Trustworthy info powers decisions without doubt.
+            </p>
+
+            <h2 id="availability">Availability Ensures Constant Access</h2>
+            <p class="paragraph">
+                Availability keeps systems running so users reach data anytime needed. DDoS floods or crashes can't block your homework login or game servers. Redundant servers and strong bandwidth hold up under attack. Power backups save laptops during outages too. Ransomware locks files to deny access for cash. Fast recovery plans minimize downtime shocks. Reliable access fuels schoolwork and fun without frustration.
+            </p>
+
+            <h2 id="threats">Threats Targeting Each Pillar</h2>
+            <p class="paragraph">
+                Phishing steals login info to breach confidentiality instantly. Viruses corrupt files, smashing integrity goals hard. Flood attacks halt websites, killing availability dead. Ransomware hits all three by encrypting, altering, and blocking data. Social engineering cons trust to bypass controls slyly. Real breaches like Equifax exposed millions by ignoring the triad. Balance all pillars or face chain reactions.
+            </p>
+
+            <h2 id="daily">Building CIA in Daily Life</h2>
+            <p class="paragraph">
+                Use strong unique passwords for confidentiality everywhere. Enable file hashing apps to check integrity on downloads. Pick services with uptime guarantees for availability. Run antivirus covering all three bases daily. Train friends on triad basics for group safety. Test backups monthly to prove they work. Simple habits lock in the full triad power.
+            </p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                Confidentiality, Integrity, and Availability form the CIA Triad, which is the basis of any good security plan. Without any of these, data can be compromised or changed, or systems can crash. Good daily habits and tools can help ensure all three are met. Use good passwords, verify files, and ensure systems are always available. Educating kids about the CIA Triad can create a secure future. Discover the CIA Triad today! Secure systems begin with you.
+            </p>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="#">Concepts</a>
+                <a href="#">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="#">Concepts</a>
+                <a href="#">Account Security</a>
+                <a href="#">Internet Safety</a>
+                <a href="#">Safe Online Habits</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="#">Concepts</a>
+                <a href="#">Online Privacy</a>
+                <a href="#">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="#">Threats from New Technology</a>
+                <a href="#">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="#">Cybercrime Prevention</a>
+                <a href="#">Online Safety Tips</a>
+                <a href="#">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="#">FAQs</a>
+                <a href="#">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contacts</a>
+            </div>
+        </div>
+
+        <hr>
+    </footer>
+</body>
+</html>
