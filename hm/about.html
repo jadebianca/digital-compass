@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <title>Digital Compass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .hero {
+            background-image: url('../media/images/hero.png');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 100px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero h3 {
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            margin: 10px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            font-weight: 500;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .hero-btn {
+            margin-top: 5px;
+        }
+
+        .nav-hero {
+            color: #ffffff;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 1em;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-hero a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .about-link {
+            display: inline-block;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid #FFFFFF;
+            border-radius: 25px;
+            margin: 10px;
+            background-color: #FFFFFF;
+            color: #4A2166;
+        }
+
+        .about-link:hover {
+            background-color: transparent;
+            color: #FFFFFF;
+        }
+
+        .about {
+            padding: 80px 200px;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+
+        .about-img {
+            display: inline-block;
+            width: 30%;
+            vertical-align: middle;
+            margin-right: 50px;
+        }
+
+        .about-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .about-text {
+            display: inline-block;
+            width: 45%;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .about h3 {
+            color: #212866;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 550;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .about h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            color: #211F76;
+            margin: 0 0 20px 0;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #212866;
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .about-btn {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: #0F0F32;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 25px;
+            border: 2px solid #0F0F32;
+            text-transform: uppercase;
+        }
+
+        .about-btn:hover {
+            background-color: #ffffff;
+            color: #0F0F32;
+        }
+
+        .explore-more {
+            background-color: #F8FAFC;
+            padding: 80px;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .explore-more h3 {
+            color: #212866;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 550;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .explore-more h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            color: #211F76;
+            margin: 0 0 20px 0;
+        }
+
+        .explore-more p {
+            font-size: 18px;
+            color: #212866;
+            margin-bottom: 40px;
+        }
+        .topics {
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .box {
+            background: #0F0F32;
+            width: 280px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            overflow: hidden;
+            padding: 100px 20px;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .icon {
+            background-color: #ffffff;
+            color: #0F0F32;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 15px;
+            font-size: 30px;
+            margin: 0 auto 25px auto;
+            display: block;
+        }
+
+        .box h2 {
+            font-size: 22px;
+            color: #ffffff;
+            margin: 10px 0;
+        }
+
+        .box p {
+            font-size: 14px;
+            color: #ffffff;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .contacts {
+            padding: 80px 0;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+
+        .contacts h3 {
+            color: #212866;
+            font-size: 18px;
+            font-weight: 550;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .contacts h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            color: #211F76;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .contacts p {
+            font-size: 18px;
+            color: #212866;
+            margin-bottom: 40px;
+        }
+
+        .contacts-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #0F0F32;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 30px;
+            border: 2px solid #0F0F32;
+            margin-bottom: 20px;
+        }
+
+        .contacts-btn:hover {
+            background-color: #FFFFFF;
+            color: #0F0F32;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cc.html">Cybercrime</a></li>
+            <li><a href="cs.html">Cybersecurity</a></li>
+            <li><a href="dp.html">Digital Privacy</a></li>
+            <li><a href="et.html">Emerging Threats</a></li>
+            <li><a href="pa.html">Prevention & Awareness</a></li>
+            <li><a href="rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h3>Learn MoreAbout</h3>
+        <h1>Digital Compass</h1>
+        <p class="nav-hero">
+            <a href="#about">About</a> &bull;
+            <a href="#teenage">Mission</a> &bull;
+            <a href="#college">Vision</a> &bull;
+            <a href="#family">Meet the Team</a> 
+        </p>
+    </div>
+
+    <div class="about">
+        <div class="about-img">
+            <img src="media/images/digital compass.png" alt="Digital Compass Logo">
+        </div>
+        <div class="about-text">
+            <h3>What is</h3>
+            <h1>What is Digital Compass?</h1>
+            <p>Digital Compass is an educational website dedicated to helping students and internet users understand cybercrimes and stay safe in the digital world.
+            It provides well-researched articles, practical guides, and useful resources that explain different online threats such as phishing, hacking, identity theft, scams, and cyberbullying.
+            The website aims to raise awareness about cybersecurity by teaching users how cybercrimes happen, how to recognize warning signs, and what preventive actions they can take to protect themselves online.
+            </p>
+        </div>
+    </div>
+
+    <div class="explore-more" id="explore-more">
+        <h3>EXPLORE TOPICS</h3>
+        <h1>Knowledge is Protection</h1>
+        <p>Discover key areas that will help you understand digital risks and protect yourself online.</p>
+        
+        <a href="cc.html" class="topics">
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-virus"></i></div>
+                <h2>Cybercrime</h2>
+                <p>Learn about different types of cybercrimes, how they happen, and their impact on individuals.</p>
+            </div>
+        </a>
+
+        <a href="cs.html" class="topics">
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                <h2>Cybersecurity</h2>
+                <p>Understand how to protect your devices, accounts, and personal data from online threats.</p>
+            </div>
+        </a>
+
+        <a href="dp.html" class="topics">
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-user-secret"></i></div>
+                <h2>Digital Privacy</h2>
+                <p>Discover how your data is collected and learn ways to keep your personal information safe.</p>
+            </div>
+        </a>
+
+        <a href="et.html" class="topics">
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <h2>Emerging Threats</h2>
+                <p>Stay updated on the latest cyber threats, trends, and evolving risks in the digital world.</p>
+            </div>
+        </a>
+        <a href="pa.html" class="topics">
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-shield"></i></div>
+                <h2>Prevention & Awareness</h2>
+                <p>Learn practical tips and strategies to avoid cyber risks and stay safe online every day.</p>
+            </div>
+        </a>
+
+        <a href="rs.html" class="topics">
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <h2>Resources</h2>
+                <p>Access FAQs and reliable references for further research and deeper understanding of digital safety topics.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="contacts">
+        <h3>Stay Connected</h3>
+        <h1>Contact Us</h1>
+        <p>Have questions, suggestions, or need help? We’re here to guide you. Reach out to us and be part of building a safer digital community.</p>
+        <a href="hm/contacts.html" class="contacts-btn">Connect With Us</a>
+    </div>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cc.html#security">Account Security</a>
+                <a href="../cc.html#internet">Internet Safety</a>
+                <a href="../cc.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
+</body>
+</html>
