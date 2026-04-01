@@ -1,1 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <title>Digital Compass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        /* Content Styles */
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
+        .title {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px; 
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 40px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
+
+        .top-btn {
+            position: fixed;
+            bottom: 50px;
+            right: 60px;
+            background-color: #FFFFFF;
+            border: 2px solid #0F0F32;
+            color: #0F0F32;
+            text-decoration: none;
+            padding: 15px 50px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .top-btn:hover {
+            background: #0F0F32;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+
+    <nav>
+        <div class="logo-container">
+            <img src="media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cybercrime</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">Digital Privacy</a></li>
+            <li><a href="#">Emerging Threats</a></li>
+            <li><a href="#">Prevention & Awareness</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="title">The Sneaky Malware: What You Need to Know About Worms</h1>
+        <p class="author"><b>By: Morales, John Miguel  &bull; March 2026</b></p>
+        
+        <p class="nav-bio">
+            <!-- Insert Subheading Title Below -->
+            <a href="#intro">Intro</a> &bull;
+            <a href="#body-one"> What Exactly is a Computer Worm?</a> &bull;
+            <a href="#body-two">How Do Computer Worms Spread? </a> &bull;
+            <a href="#body-three">Worms vs Viruses: What is the Difference?</a> &bull;
+            <a href="#body-four">The Hidden Dangers of Computer Worms</a> &bull;
+            <a href="#body-five">Famous Computer Worms in History</a> &bull;
+            <a href="#body-six">How to Spot a Worm on Your Device</a> &bull;
+            <a href="#body-seven">Best Practices to Protect Your Devices</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+        
+        <hr width="100%" size="5" color="#212866">
+
+        <article>     
+            <figure>
+                <a href="">
+                    <img src="../media/images/computerworm.jpg" alt="Computer Worm Picture" class="photos">
+                </a>
+                <figcaption>Photo from: Adobe Stock</figcaption>
+            </figure>
+    
+            <p id="intro" class="paragraph">
+                A computer worm is a type of malware that can automatically spread or copy itself without any human action. It travels through networks such as the internet or local area networks (LAN), infecting multiple computers quickly. Unlike other malware, worms do not need to attach themselves to a file or program to work. Because of this, they can cause serious problems like slowing down systems, using up bandwidth, and spreading harmful content. Understanding how worms operate is important to help prevent and protect systems from these threats.
+
+            </p>
+
+            <h2 id="body-one">What Exactly is a Computer Worm?</h2>
+            <p class="paragraph">
+                
+                In computing, the term "worm" has a different meaning from what most people associate with candy, animals, or innocent things. Malicious software that can replicate itself and spread from one computer to another without human assistance is known as a computer worm. It can swiftly infect numerous systems by moving through networks like the internet or a local area network. Worms can operate without attaching themselves to a file or application, in contrast to malware. To access devices, they rely on deceiving people or taking advantage of system flaws. Worms can sometimes pose as trustworthy files or programs to trick users into opening them. They can seriously harm computers and networks due to their quick spread.
+            </p>
+
+            <h2 id="body-two">How Do Computer Worms Spread?</h2>
+            <p class="paragraph">
+                By establishing themselves on a device and replicating themselves to infect additional systems, computer worms propagate. They are frequently distributed via popular channels like unprotected networks, malicious URLs, and email attachments. After entering a device, worms start to multiply and look find holes in networks and systems to spread further. Additionally, they can proliferate via infected software downloaded from dubious sources, USB devices, and instant messaging. Users find it more difficult to manage or eradicate the infection as worms proliferate. Worms can harm systems during this phase by erasing files, decreasing performance, or using network bandwidth. Additionally, some worms contain hidden spyware that allows criminals to remotely access machines or steal data.
+            </p>
+
+            <h2 id="body-three">Worms vs. Viruses: What is the Difference?</h2>
+            <p class="paragraph">
+                Although it's not necessarily accurate, many people refer to every computer infection as a virus. Any malicious software intended to harm or gain access to a computer system is referred to as malware. Although both viruses and worms are classified as malware, they infect machines in distinct ways. Before spreading, a virus typically requires user action, such as opening an infected file. On the other hand, once a worm enters a system, it can propagate on its own without human intervention. Because they may swiftly infect numerous machines at once, worms are more harmful in networks. Knowing the distinction between viruses and worms enables users to identify dangers and take appropriate action.
+            </p>
+
+            <h2 id="body-four">The Hidden Dangers of Computer Worms</h2>
+            <p class="paragraph">
+                When computer worms initially emerged, their primary goal was to propagate as widely as possible across systems. They were frequently created by early developers out of curiosity, to test their abilities, or to expose operating system flaws. These early worms caused issues as they propagated via networks even though they had no malicious intent. Certain worms consumed excessive amounts of system power, causing infected systems to lag or even crash. Others used a lot of network bandwidth, which resulted in erratic or unreliable internet connections. Cybercriminals eventually discovered that worms might contain other malicious programs, or payloads. These payloads have the ability to install ransomware, open backdoors, steal personal information, or transform compromised computers into bots that can be used in more extensive cyberattacks.
+            </p>
+
+            <h2 id="body-five">Famous Computer Worms in History</h2>
+            <p class="paragraph">
+                The Morris worm, created in 1988 by a student by the name of Robert Morris, is among the oldest and most well-known computer worms. It was developed to investigate network functionality and identify flaws in early computer systems. But the worm propagated rapidly due to a coding error, infecting numerous machines at once. Performance decreased and some machines crashed entirely as numerous copies ran on compromised systems. The worm had a long-lasting effect on cybersecurity awareness even if it is no longer a danger. It demonstrated how easily malware could proliferate and how susceptible systems were in the absence of adequate security. Organizations started enhancing security procedures, including the usage of firewalls, passwords, and stronger system defenses, as a result of this incident.
+            </p>
+
+            <h2 id="body-six">How to Spot a Worm on Your Device</h2>
+            <p class="paragraph">
+                Because computer worms frequently target secret areas of the operating system, detecting them can be challenging. Nonetheless, there are a number of warning indicators that could point to an infection on your device. A abrupt drop in computer speed or performance without apparent cause is one common indicator. Additionally, your device may frequently freeze or crash. The removal, alteration, or emergence of unknown files and icons is another indication. Programs that open or close on their own are examples of strange system behavior that may indicate infection. A worm may also be indicated by unexpected antivirus warnings or emails that are sent from your account without your knowledge.
+            </p>
+
+            <h2 id="body-seven">Best Practices to Protect Your Devices</h2>
+            <p class="paragraph">
+                Using a trustworthy antivirus program is the first step in protecting your device against computer worms. In order to identify dangers as they arise and stop them from spreading, a good antivirus program should have real-time scanning. In order to make sure emails are secure, it should also check them before you read them, paying particular attention to attachments and links. Because it prevents worms from propagating throughout your network, having an integrated firewall is crucial. In order for the antivirus to identify new and changing threats, regular and automatic updates are also required. Behavior-based detection is used by some sophisticated antivirus products to spot questionable activity, like applications replicating themselves without authorization. You can keep your system safe and lower the danger of worm infections by combining these features.
+            </p>
+            
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                Computer worms are a hazardous type of malware that may quickly propagate throughout systems without the need for human input. Worms may quickly infect numerous devices and networks because they function independently, unlike viruses. Worms have developed over time from straightforward programs to instruments that can carry dangerous payloads like ransomware and data theft. Cases from the past, such as the Morris worm, increased awareness of cybersecurity and demonstrated how destructive these attacks can be. Worms frequently operate in silence, so it's critical to identify warning indicators like sluggish performance or odd behavior. Firewalls, robust antivirus software, and frequent updates can all help lower risks and prevent infestations. Users can better safeguard their devices and sensitive data by remaining aware and adopting safe practices.
+            </p>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-contact">
+            <img src="media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto@digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="cc.html#concepts">Concepts</a>
+                <a href="cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="cs.html#concepts">Concepts</a>
+                <a href="cc.html#security">Account Security</a>
+                <a href="cc.html#internet">Internet Safety</a>
+                <a href="cc.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="dp.html#concepts">Concepts</a>
+                <a href="dp.html#socmed">Social Media Privacy</a>
+                <a href="dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="et.html#threats">Threats from New Technology</a>
+                <a href="et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="pa.html#prevention">Cybercrime Prevention</a>
+                <a href="pa.html#online">Online Safety Tips</a>
+                <a href="pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="rs/faqs.html">FAQs</a>
+                <a href="rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="index.html">Home</a>
+                <a href="hm/about.html">About</a>
+                <a href="hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+
+        <hr>
+    </footer>
+</body>
+</html>
