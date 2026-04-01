@@ -52,9 +52,8 @@
         .social-links {
             color: #ffffff;
             font-family: Poppins, Arial, sans-serif;
-            font-size: 1.5em;
+            font-size: 2em;
             text-align: center;
-            letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 20px;
         }
@@ -62,15 +61,29 @@
         .social-links a {
             color: #ffffff;
             text-decoration: none;
+            margin-right: 20px;
             font-weight: 400;
         }
 
-        .content {
+        .contact {
             padding: 80px 250px;
             text-align: center;
             background-color: #FFFFFF;
         }
-
+        .contact h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            color: #211F76;
+            margin: 0 0 20px 0;
+        }
+        .contact h3 {
+            color: #211F76;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 550;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
         .contact-form {
             width: 100%;
             border-collapse: collapse;
@@ -101,7 +114,7 @@
             font-family: Inter, sans-serif;
         }
 
-        .contact-form tr:last-child td {
+        .buttons td {
             border-bottom: none;
             text-align: right;
             padding-top: 30px;
@@ -169,7 +182,9 @@
         </div>
     </div>
 
-    <div class="content">
+    <div class="contact">
+        <h3>Send US A Message</h3>
+        <h1>Contact Form</h1>
         <form action="https://formspree.io/f/mwvwqkjp" method="POST">
             <table class="contact-form">
                 <tr>
@@ -190,7 +205,7 @@
                         <textarea name="message" id="message" rows="5" required></textarea>
                     </td>
                 </tr>
-                <tr>
+                <tr class="buttons">
                     <td>
                         <button type="reset" class="btn-reset">RESET</button>
                         <button type="submit" class="btn-submit">SUBMIT</button>

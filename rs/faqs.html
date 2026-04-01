@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <title>Digital Compass | FAQs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .hero {
+            background-image: url('../media/images/hero.png');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 100px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero h3 {
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            margin: 10px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            font-weight: 500;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .faqs {
+            width: 85%;
+            margin: 50px auto;
+            overflow: hidden; 
+        }
+
+        .sidebar {
+            width: 25%;
+            float: left;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            border-top: 1px solid #0F0F32;
+        }
+
+        .sidebar li {
+            border-bottom: 1px solid #0F0F32;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 15px 0;
+            text-decoration: none;
+            color: #212866;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .content {
+            width: 75%;
+            float: left;
+            padding-left: 40px;
+            box-sizing: border-box;
+            border-left: 1px solid #0F0F32;
+        }
+
+        .item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #0F0F32;
+            padding-bottom: 20px;
+        }
+
+        .question {
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+            font-weight: 600;
+            color: #211F76;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .answer {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #212866;
+            padding-right: 20px;
+            text-align: justify;
+        }
+        .related-articles h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+            font-weight: 600;
+            color: #211F76;
+            margin-bottom: 15px;
+            position: relative;
+            text-align: center;
+        }
+        
+        .top-btn {
+            position: fixed;
+            bottom: 50px;
+            right: 60px;
+            background: #0F0F32;
+            border: 2px solid #0F0F32;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 15px 50px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .top-btn:hover {
+            background: #FFFFFF;
+            color: #0F0F32;
+        }
+        
+        .link {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .box {
+            background: #FFFFFF;
+            width: 275px;
+            border-radius: 15px;
+            text-align: left;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        .box:hover{
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .box img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover;
+        }
+
+        .article { 
+            padding: 20px 25px; 
+        }
+
+        .category {
+            font-size: 13px;
+            font-weight: 600;
+            color: #211F76;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .article h2{
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: #211F76;
+            margin: 0 0 5px 0;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #212866;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-weight: 500;
+            text-align: justify;
+        }
+
+        .read-more {
+            color: #211F76;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!--PORTILLO, JADE BIANCA I.-->
+    <!--CIP-1101 ITAD | GROUP 2-->
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h3>Stay Smart & Stay Safe Online</h3>
+        <h1>Frequently Asked Questions</h1>
+        <p>Answers to common questions about cybercrime, digital privacy, online safety, and more.</p>
+    </div>
+
+    <div class="faqs">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#item-1">What is cybercrime and why should students learn about it?</a></li>
+                <li><a href="#item-2">How does cybersecurity protect personal accounts and devices?</a></li>
+                <li><a href="#item-3">Why is digital privacy important in social media use?</a></li>
+                <li><a href="#item-4">What are the most common online scams people should watch out for?</a></li>
+                <li><a href="#item-5">How do cybercrimes affect individuals and organizations?</a></li>
+                <li><a href="#item-6">What are emerging cyber threats from new technologies?</a></li>
+                <li><a href="#item-7">How can students practice safe online habits every day?</a></li>
+                <li><a href="#item-8">What should someone do after experiencing cybercrime?</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="item" id="item-1">
+                <h1 class="question">1. What is cybercrime and why should students learn about it?</h1>
+                <p class="answer">
+                    Cybercrime is any illegal activity that uses computers, mobile devices, or the internet to steal data, scam users, or damage systems. It includes threats such as phishing, hacking, ransomware, and cyberbullying that often target students and everyday users. Learning about cybercrime helps students recognize suspicious behavior online and protect their personal data before becoming victims. Awareness also encourages responsible digital habits and safer internet use in school and daily life.
+                </p>
+                <div class="related-articles">
+                    <h2>Related Articles</h2>
+                    <a href="../cc/cc-concept-what-is-cybercrime.html" class="link">
+                        <div class="box">
+                            <img src="media/images/faqs.png" alt="FAQs">
+                            <div class="article">
+                                <p class="category">CYBERCRIME</p>
+                                <h2 class="title">What Is Cyber Crime? Understanding the Digital Threat</h2>
+                                <p class="description">Explore what cybercrime is, the problems it causes, and how it affects everyday people.</p>
+                                <p class="read-more"><b>Read More &rarr;</b></p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="../cc/cc-concept-why-it-happens.html" class="link">
+                        <div class="box">
+                            <img src="media/images/faqs.png" alt="FAQs">
+                            <div class="article">
+                                <p class="category">CYBERCRIME</p>
+                                <h2 class="title">Why Does Cyber Crime Happen? The Causes Behind Digital Crime</h2>
+                                <p class="description">Discover why cyber crime happens and why understanding these reasons can help prevent it.</p>
+                                <p class="read-more"><b>Read More &rarr;</b></p>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+
+            <div class="item" id="item-2">
+                <h1 class="question">2. How does cybersecurity protect personal accounts and devices?</h1>
+                <p class="answer">
+                    Cybersecurity protects accounts and devices through practices that prevent unauthorized access, malware infections, and data theft. Common protections include strong passwords, software updates, and two-factor authentication. These measures lower the risk of hacked social media, stolen school files, and compromised personal accounts. Good cybersecurity also helps users recover faster when suspicious activity happens.
+                </p>
+            </div>
+
+            <div class="item" id="item-3">
+                <h1 class="question">3. Why is digital privacy important in social media use?</h1>
+                <p class="answer">
+                    Digital privacy is important because social media platforms collect and display personal information that can be misused if not managed properly. Poor privacy settings may expose photos, location, school details, and contact information to strangers or fake accounts. Protecting privacy reduces risks such as identity theft, stalking, and social engineering scams. It also helps users build a safer and more positive digital footprint over time.
+                </p>
+            </div>
+
+            <div class="item" id="item-4">
+                <h1 class="question">4. What are the most common online scams people should watch out for?</h1>
+                <p class="answer">
+                    The most common scams include phishing emails, fake shopping websites, prize scams, and fraudulent job offers. These scams usually create urgency to trick users into sending money or revealing passwords and personal data. Recognizing suspicious links, poor grammar, and unrealistic offers can help pr
+                </p>
+            </div>
+
+            <div class="item" id="item-5">
+                <h1 class="question">5. How do cybercrimes affect individuals and organizations?</h1>
+                <p class="answer">
+                    Cybercrimes can cause financial loss, emotional stress, identity theft, and damaged reputations for individuals. Organizations may face data breaches, service disruption, legal issues, and loss of customer trust. These effects can also create long-term economic damage and reduced confidence in digital systems. Understanding the impact helps users and businesses prioritize prevention strategies.
+                </p>
+            </div>
+
+            <div class="item" id="item-6">
+                <h1 class="question">6. What are emerging cyber threats from new technologies?</h1>
+                <p class="answer">
+                    Emerging threats include AI-powered scams, deepfakes, IoT vulnerabilities, cloud attacks, and ransomware-as-a-service. These threats evolve quickly because attackers use new technologies to improve deception and scale attacks. As digital tools become smarter, users must become more aware of advanced manipulation techniques. Continuous learning is essential to stay protected against future cyber risks.
+                </p>
+            </div>
+
+            <div class="item" id="item-7">
+                <h1 class="question">7. How can students practice safe online habits every day?</h1>
+                <p class="answer">
+                    Students can practice safe habits by checking website links, avoiding suspicious downloads, and verifying sources before sharing information. Using strong passwords, limiting oversharing, and balancing screen time also improve online safety. These habits reduce exposure to scams, misinformation, and harmful interactions. Safe daily routines build long-term digital discipline and responsible internet behavior.
+                </p>
+            </div>
+
+            <div class="item" id="item-8">
+                <h1 class="question">8. What should someone do after experiencing cybercrime?</h1>
+                <p class="answer">
+                    A victim should immediately change passwords, secure devices, and collect screenshots or proof of the incident. Reporting the case to the platform, school authority, or official cybercrime reporting channels is also important. Quick action can help reduce further loss and support investigations. Learning from the incident also strengthens future online safety habits.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cc.html#security">Account Security</a>
+                <a href="../cc.html#internet">Internet Safety</a>
+                <a href="../cc.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="faqs.html">FAQs</a>
+                <a href="references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
+</body>
+</html>
