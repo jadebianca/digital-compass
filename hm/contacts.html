@@ -87,7 +87,7 @@
             font-weight: bold;
             font-size: 11px;
             letter-spacing: 1px;
-            color: #211F76;;
+            color: #211F76;
         }
 
         input, textarea {
@@ -108,19 +108,35 @@
         }
 
         button {
-            background-color: #0F0F32;
-            color: #ffffff;
             padding: 15px 45px;
-            border: none;
             font-weight: bold;
             cursor: pointer;
             font-size: 12px;
+            font-family: Inter, sans-serif;
+            margin-left: 10px;
         }
 
-        button:hover {
-            background-color: #ffffff;
+        .btn-submit {
+            background-color: #0F0F32;
+            color: #ffffff;
             border: 2px solid #0F0F32;
-            color: #0F0F32;;
+        }
+
+        .btn-submit:hover {
+            background-color: #ffffff;
+            color: #0F0F32;
+        }
+
+        .btn-reset {
+            background-color: #ffffff;
+            color: #0F0F32;
+            border: 2px solid #0F0F32;
+        }
+
+        .btn-reset:hover {
+            background-color: #0F0F32;
+            color: #ffffff;
+            border: 2px solid #0F0F32;
         }
     </style>
 </head>
@@ -174,8 +190,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="submit">
-                        <button type="submit">SUBMIT</button>
+                    <td>
+                        <button type="reset" class="btn-reset">RESET</button>
+                        <button type="submit" class="btn-submit">SUBMIT</button>
                     </td>
                 </tr>
             </table>
