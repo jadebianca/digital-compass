@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <title>Digital Compass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--SURNAME, FIRSTNAME MI.-->
+    <!--CIP-1101 ITAD | GROUP 2-->
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <script src="js/bootstrap.bundle.js"></script>
+    <nav>
+        <div class="logo-container">
+            <img src="media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cybercrime</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">Digital Privacy</a></li>
+            <li><a href="#">Emerging Threats</a></li>
+            <li><a href="#">Prevention & Awareness</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="cc.html#concepts">Concepts</a>
+                <a href="cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="cs.html#concepts">Concepts</a>
+                <a href="cc.html#security">Account Security</a>
+                <a href="cc.html#internet">Internet Safety</a>
+                <a href="cc.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="dp.html#concepts">Concepts</a>
+                <a href="dp.html#socmed">Social Media Privacy</a>
+                <a href="dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="et.html#threats">Threats from New Technology</a>
+                <a href="et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="pa.html#prevention">Cybercrime Prevention</a>
+                <a href="pa.html#online">Online Safety Tips</a>
+                <a href="pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="rs/faqs.html">FAQs</a>
+                <a href="rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="index.html">Home</a>
+                <a href="hm/about.html">About</a>
+                <a href="hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
+</body>
+</html>
