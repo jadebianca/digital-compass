@@ -8,6 +8,7 @@
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <style type="text/css">
         body {
             background-color: #FFFFFF;
@@ -22,8 +23,6 @@
             background-size: cover;
             background-position: center;
             padding: 100px 100px;
-            text-align: center;
-            color: #FFFFFF;
         }
 
         .hero h3 {
@@ -44,9 +43,12 @@
             font-size: 18px;
             font-weight: 500;
             max-width: 600px;
-            margin: 0 auto 20px;
-            text-align: center;
+            margin: 0 auto;
             line-height: 1.6;
+        }
+
+        .hero-btn {
+            margin-top: 5px;
         }
 
         .social-links {
@@ -67,7 +69,6 @@
 
         .contact {
             padding: 80px 250px;
-            text-align: center;
             background-color: #FFFFFF;
         }
         .contact h1 {
@@ -156,6 +157,7 @@
 <body>
     <!--PORTILLO, JADE BIANCA I.-->
     <!--CIP-1101 ITAD | GROUP 2-->
+    <script src="../js/bootstrap.bundle.js"></script>
     <nav>
         <div class="logo-container">
             <img src="../media/images/logo.png" alt="Logo">
@@ -173,9 +175,9 @@
     </nav>
 
     <div class="hero">
-        <h3>Have questions, suggestions, or concerns?</h3>
-        <h1>Connect With Us</h1>
-        <p>Reach our team through our Facebook page, email, or by filling out the contact form provided below this section.</p>
+        <h3 class="text-light text-center">Have questions, suggestions, or concerns?</h3>
+        <h1 class="text-light text-center">Connect With Us</h1>
+        <p class="text-light text-center mb-3">Reach our team through our Facebook page, email, or by filling out the contact form provided below this section.</p>
         <div class="social-links">
             <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
             <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
@@ -183,8 +185,8 @@
     </div>
 
     <div class="contact">
-        <h3>Send US A Message</h3>
-        <h1>Contact Form</h1>
+        <h3 class="text-center">Send US A Message</h3>
+        <h1 class="text-center">Contact Form</h1>
         <form action="https://formspree.io/f/mwvwqkjp" method="POST">
             <table class="contact-form">
                 <tr>
