@@ -129,9 +129,9 @@ hr {
     position: fixed;
     bottom: 50px;
     right: 60px;
-    background: #0F0F32;
-    border: 2px solid #0F0F32;
-    color: #FFFFFF;
+    background: #0F0F32 !important;
+    border: 2px solid #0F0F32 !important;
+    color: #FFFFFF !important;
     text-decoration: none;
     padding: 15px 50px;
     border-radius: 50px;
@@ -139,10 +139,10 @@ hr {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
 }
 
 .top-btn:hover {
-    background: #FFFFFF;
-    color: #0F0F32;
+    background: #FFFFFF !important;
+    color: #0F0F32 !important;
 }
