@@ -139,16 +139,16 @@
             color: #0F0F32;
         }
 
-        .explore-more {
-            background-color: #F8FAFC;
-            padding: 80px;
+        .topics {
+            padding: 80px 0;
             text-align: center;
-            width: 100%;
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 1300px;
             margin: 0 auto;
-            box-sizing: border-box;
         }
 
-        .explore-more h3 {
+        .topics h3 {
             color: #212866;
             font-size: 18px;
             text-transform: uppercase;
@@ -157,60 +157,81 @@
             margin-bottom: 10px;
         }
 
-        .explore-more h1 {
+        .topics h1 {
             font-family: 'Playfair Display', serif;
             font-size: 45px;
             color: #211F76;
             margin: 0 0 20px 0;
         }
 
-        .explore-more p {
+        .explore-topics {
             font-size: 18px;
             color: #212866;
             margin-bottom: 40px;
         }
-        .topics {
+
+        .link {
             text-decoration: none;
+            color: inherit;
             display: inline-block;
             margin: 15px;
         }
 
         .box {
-            background: #0F0F32;
-            width: 280px;
-            border-radius: 20px;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.2);
-            overflow: hidden;
-            padding: 100px 20px;
-        }
-
-        .box:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .icon {
-            background-color: #ffffff;
-            color: #0F0F32;
-            width: 70px;
-            height: 70px;
-            line-height: 70px;
+            background: #FFFFFF;
+            width: 380px;
             border-radius: 15px;
-            font-size: 30px;
-            margin: 0 auto 25px auto;
-            display: block;
+            text-align: left;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            padding-bottom: 20px;
         }
 
-        .box h2 {
+        .box:hover{
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .box img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover;
+        }
+
+        .content { 
+            padding: 20px 25px; 
+        }
+
+        .category {
+            font-size: 13px;
+            font-weight: 600;
+            color: #211F76;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .content h2 {
+            font-family: 'Playfair Display', serif;
             font-size: 22px;
-            color: #ffffff;
-            margin: 10px 0;
+            color: #211F76;
+            margin: 0 0 5px 0;
+            vertical-align: middle;
+
         }
 
-        .box p {
-            font-size: 14px;
-            color: #ffffff;
+        .description {
+            font-size: 15px;
+            color: #212866;
             line-height: 1.5;
+            margin-bottom: 15px;
+            font-weight: 500;
+            text-align: justify;
+        }
+
+        .read-more {
+            color: #211F76;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
             margin: 0;
         }
 
@@ -263,6 +284,15 @@
             color: #0F0F32;
         }
 
+        .line {
+            width: 80%;
+            border: 0;
+            max-width: 50%;
+            height: 1px;
+            background-color: #0F0F32;
+            margin: 0 auto;
+        }
+
     </style>
 </head>
 <body>
@@ -288,7 +318,7 @@
         <h1>Welcome to Digital Compass!</h1>
         <p>Digital Compass is your guide to understanding cybercrimes and staying safe online. Learn how to protect yourself, recognize threats, and build smart digital habits in today’s connected world.</p>
         <div class="hero-btn">
-            <a href="#explore-more" class="about-link">Start Learning Now</a>
+            <a href="#topics" class="about-link">Start Learning Now</a>
         </div>
     </div>
 
@@ -304,58 +334,87 @@
         </div>
     </div>
 
-    <div class="explore-more" id="explore-more">
+    <hr class="line">
+
+    <div class="topics" id="topics">
         <h3>Knowledge is Protection</h3>
         <h1>Explore Our Topics</h1>
-        <p>Discover key areas that will help you understand digital risks and protect yourself online.</p>
-        
-        <a href="cc.html" class="topics">
+        <p class="explore-topics">Discover key areas that will help you understand digital risks and protect yourself online.</p>
+
+        <a href="cc.html" class="link">
             <div class="box">
-                <div class="icon"><i class="fa-solid fa-virus"></i></div>
-                <h2>Cybercrime</h2>
-                <p>Learn about different types of cybercrimes, how they happen, and their impact on individuals.</p>
+                <img src="media/images/cc.png" alt="Cybercrime">
+                <div class="content">
+                    <p class="category">EXPLORE</p>
+                    <h2>Cybercrime</h2>
+                    <p class="description">Learn about different types of cybercrimes, how they happen, and their impact on individuals.</p>
+                    <p class="read-more"><b>Explore Cyber Threats &rarr;</b></p>
+                </div>
             </div>
         </a>
 
-        <a href="cs.html" class="topics">
+        <a href="cs.html" class="link">
             <div class="box">
-                <div class="icon"><i class="fa-solid fa-lock"></i></div>
-                <h2>Cybersecurity</h2>
-                <p>Understand how to protect your devices, accounts, and personal data from online threats.</p>
+                <img src="media/images/cs.png" alt="Cybersecurity">
+                <div class="content">
+                    <p class="category">EXPLORE</p>
+                    <h2>Cybersecurity</h2>
+                    <p class="description">Understand how to protect your devices, accounts, and personal data from online threats.</p>
+                    <p class="read-more"><b>Learn How to Stay Safe &rarr;</b></p>
+                </div>
             </div>
         </a>
 
-        <a href="dp.html" class="topics">
+        <a href="dp.html" class="link">
             <div class="box">
-                <div class="icon"><i class="fa-solid fa-user-secret"></i></div>
-                <h2>Digital Privacy</h2>
-                <p>Discover how your data is collected and learn ways to keep your personal information safe.</p>
+                <img src="media/images/dp.png" alt="Digital Privacy">
+                <div class="content">
+                    <p class="category">EXPLORE</p>
+                    <h2>Digital Privacy</h2>
+                    <p class="description">Discover how your data is collected and learn ways to keep your personal information safe and secured.</p>
+                    <p class="read-more"><b>Guard Your Digital Life &rarr;</b></p>
+                </div>
             </div>
         </a>
 
-        <a href="et.html" class="topics">
+        <a href="et.html" class="link">
             <div class="box">
-                <div class="icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                <h2>Emerging Threats</h2>
-                <p>Stay updated on the latest cyber threats, trends, and evolving risks in the digital world.</p>
-            </div>
-        </a>
-        <a href="pa.html" class="topics">
-            <div class="box">
-                <div class="icon"><i class="fa-solid fa-shield"></i></div>
-                <h2>Prevention & Awareness</h2>
-                <p>Learn practical tips and strategies to avoid cyber risks and stay safe online every day.</p>
+                <img src="media/images/et.png" alt="Emerging Threats">
+                <div class="content">
+                    <p class="category">EXPLORE</p>
+                    <h2>Emerging Threats</h2>
+                    <p class="description">Stay aware and updated on the latest cyber threats, trends, and evolving risks in the digital world.</p>
+                    <p class="read-more"><b>Discover Latest Cyber Threats &rarr;</b></p>
+                </div>
             </div>
         </a>
 
-        <a href="rs.html" class="topics">
+        <a href="pa.html" class="link">
             <div class="box">
-                <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <h2>Resources</h2>
-                <p>Access FAQs and reliable references for further research and deeper understanding of digital safety topics.</p>
+                <img src="media/images/pa.png" alt="FAQs">
+                <div class="content">
+                    <p class="category">EXPLORE</p>
+                    <h2>Prevention and Awareness</h2>
+                    <p class="description">Learn practical tips about cybercrime prevention, online safety, and digital wellness to stay safe online.</p>
+                    <p class="read-more"><b>Practice Safer Digital Habits &rarr;</b></p>
+                </div>
+            </div>
+        </a>
+
+        <a href="rs.html" class="link">
+            <div class="box">
+                <img src="media/images/rs.png" alt="References">
+                <div class="content">
+                    <p class="category">EXPLORE</p>
+                    <h2>Resources</h2>
+                    <p class="description">Access FAQs and reliable references for further research and deeper understanding of digital safety topics.</p>
+                    <p class="read-more"><b>Learn With Trusted References &rarr;</b></p>
+                </div>
             </div>
         </a>
     </div>
+
+    <hr class="line">
 
     <div class="contacts">
         <h3>Have questions, suggestions, or need help?</h3>
