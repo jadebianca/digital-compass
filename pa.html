@@ -67,91 +67,104 @@
             font-weight: 400;
         }
 
-        .about {
-            padding: 80px 150px;
+        .pa {
+            padding: 0;
             text-align: center;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 1300px;
+            margin: 0 auto;
         }
 
-        .mission, .vision, .team {
-            padding: 80px 350px;
-            text-align: center;
-            background-color: #FFFFFF;
+        .topics{
+            padding: 80px 0;
         }
 
-        .team {
-            padding: 80px 250px;
-            text-align: center;
-            background-color: #FFFFFF;
+        .pa h3 {
+            color: #212866;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 550;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
         }
 
-        .about-img {
+        .pa h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            color: #211F76;
+            margin: 0 0 20px 0;
+        }
+
+        .pa-description {
+            font-size: 18px;
+            color: #212866;
+            margin-bottom: 40px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: inherit;
             display: inline-block;
-            width: 30%;
-            vertical-align: middle;
-            margin-right: 50px;
+            margin: 15px;
         }
 
-        .about-img img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        .about-text {
-            display: inline-block;
-            width: 45%;
-            vertical-align: middle;
+        .box {
+            background: #FFFFFF;
+            width: 380px;
+            border-radius: 15px;
             text-align: left;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            padding-bottom: 20px;
         }
 
-        .mission h3, .vision h3, .team h3 {
-            color: #212866;
-            font-size: 18px;
+        .box:hover{
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .box img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover;
+        }
+
+        .content { 
+            padding: 20px 25px; 
+        }
+
+        .category {
+            font-size: 13px;
+            font-weight: 600;
+            color: #211F76;
             text-transform: uppercase;
-            font-weight: 550;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
-        .mission h1, .vision h1, .team h1 {
+        .content h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 45px;
+            font-size: 25px;
             color: #211F76;
-            margin: 0 0 20px 0;
+            margin: 0 0 10px 0;
+            vertical-align: middle;
+
         }
 
-        .mission p, .vision p, .team p {
-            font-size: 18px;
+        .description {
+            font-size: 15px;
             color: #212866;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-weight: 500;
             text-align: justify;
-            line-height: 1.8;
-            margin-bottom: 30px;
         }
 
-        .about h3 {
+        .read-more {
             color: #211F76;
-            font-size: 18px;
+            font-weight: 700;
+            font-size: 13px;
             text-transform: uppercase;
-            font-weight: 550;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-
-        .about h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 45px;
-            color: #211F76;
-            margin: 0 0 20px 0;
-        }
-
-        .about p {
-            font-size: 18px;
-            color: #212866;
-            text-align: justify;
-            line-height: 1.8;
-            margin-bottom: 30px;
+            margin: 0;
         }
 
         .line {
@@ -161,24 +174,6 @@
             height: 1px;
             background-color: #0F0F32;
             margin: 0 auto;
-        }
-
-        .photos {
-            width: 100%;
-            max-width: 1000px; 
-            height: auto;
-            border-radius: 20px;
-            margin: 40px 0 40px 0;
-            display: block;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        figcaption {
-            color: #212866;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            margin-top: 10px;
         }
     </style>
 </head>
@@ -207,10 +202,142 @@
         <h3 class="text-light text-center">Practice Safer Digital Habits</h3>
         <h1 class="text-light text-center mb-3">Prevention & Awareness</h1>
         <p class="nav-hero">
-            <a href="#about">Cybercrime Prevention</a>&bull;
-            <a href="#mission">Online Safety</a> &bull;
-            <a href="#about">Digital Wellness</a>
+            <a href="#prevention">Cybercrime Prevention</a> &bull;
+            <a href="#online">Online Safety</a> &bull;
+            <a href="#digital">Digital Wellness</a>
         </p>
+    </div>
+
+    <div class="pa" id="pa">
+        <div id="prevention" class="topics">
+            <h3>Prevention & Awareness</h3>
+            <h1>Cybercrime Prevention</h1>
+            <p class="pa-description">Learning to recognize scams, report suspicious activities, and protect devices helps users maintain a safer digital environment.</p>
+
+            <a href="pa/pa-prevention-recognizingscams.html" class="link">
+                <div class="box">
+                    <img src="media/images/recogscam.webp" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Cybercrime Prevention</p>
+                        <h2>Recognizing Scams</h2>
+                        <p class="description">Educating yourself on how scams work and what red flags to watch for, you can avoid becoming a victim.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="pa/pa-prevention-reportingcybercrime.html" class="link">
+                <div class="box">
+                    <img src="media/images/report.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Cybercrime Prevention</p>
+                        <h2>Reporting Cybercrime</h2>
+                        <p class="description">Knowing where to report, what to say, and how to prepare makes reporting cybercrime less overwhelming and more effective.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="pa/pa-prevention-protectingdevices.html" class="link">
+                <div class="box">
+                    <img src="media/images/protect.png" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Cybercrime Prevention</p>
+                        <h2>Protecting Devices</h2>
+                        <p class="description">Protecting your devices is not a one-time task, but an ongoing commitment to safe digital habits.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <hr class="line">
+
+        <div id="online" class="topics">
+            <h3>Prevention & Awareness</h3>
+            <h1>Online Safety Tips</h1>
+            <p class="pa-description">Practicing online safety such as securing communication, spotting suspicious links, and managing your digital footprint keeps interactions safe and private.</p>
+
+            <a href="pa/pa-online-protectingdigitalfootprint.html" class="link">
+                <div class="box">
+                    <img src="media/images/digitalfootprint.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Safety Tips</p>
+                        <h2>Protecting Digital Footprint</h2>
+                        <p class="description">Understanding what your digital footprint is, and how to manage it is an essential part of staying safe in the digital world.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="pa/pa-online-protectingdigitalfootprint.html" class="link">
+                <div class="box">
+                    <img src="media/images/securecomms.webp" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Safety Tips</p>
+                        <h2>Secure Communication</h2>
+                        <p class="description">Learning how to communicate securely is not just helpful, but essential for protecting your personal information and staying safe online.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="pa/pa-online-spottingsuspiciouslinks.html" class="link">
+                <div class="box">
+                    <img src="media/images/links.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Safety Tips</p>
+                        <h2>Spotting Suspicious Links</h2>
+                        <p class="description">Learning how to spot a suspicious link before clicking it is one of the powerful skills you can develop for your online safety.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <hr class="line">
+
+        <div id="digital" class="topics">
+            <h3>Prevention & Awareness</h3>
+            <h1>Digital Wellness</h1>
+            <p class="pa-description">Balancing screen time, understanding responsible sharing, and being mindful of digital habits helps prevent burnout and promotes a positive online experience.</p>
+
+            <a href="pa/pa-digital-screentimebalance.html" class="link">
+                <div class="box">
+                    <img src="media/images/screentime.webp" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Digital Wellness</p>
+                        <h2>Screen Time Balance</h2>
+                        <p class="description">Achieving screen time balance means using it in a way that supports your well-being rather than detracting from it.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="pa/pa-digital-avoidingdigitalburnout.html" class="link">
+                <div class="box">
+                    <img src="media/images/burnout.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Digital Wellness</p>
+                        <h2>Avoiding Digital Burnout</h2>
+                        <p class="description">Understanding the causes of digital burnout and taking time for offline rest helps maintain a healthier relationship with technology.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="pa/pa-digital-reponsiblesharing.html" class="link">
+                <div class="box">
+                    <img src="media/images/responsible.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Digital Wellness</p>
+                        <h2>Responsible Sharing</h2>
+                        <p class="description">Always share with intention, respect, and care to promote a safer online environment for everyone.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 
     <footer>
