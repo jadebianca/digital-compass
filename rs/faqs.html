@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="1800">
-    <title>Digital Compass | FAQs</title>
+    <title>FAQS - Digital Compass</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -53,6 +53,11 @@
             overflow: hidden; 
         }
 
+        #categories{
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #211F76;
+        }
         .sidebar {
             width: 25%;
             float: left;
@@ -95,22 +100,40 @@
         }
 
         .item {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             border-bottom: 1px solid #0F0F32;
             padding-bottom: 20px;
         }
 
-        .question {
-            font-family: 'Playfair Display', serif;
-            font-size: 35px;
-            font-weight: 600;
-            color: #211F76;
-            margin-bottom: 15px;
-            position: relative;
-            text-align: justify;
+        .item ol{
+            list-style-position: inside;
         }
 
-        .answer {
+        #category  {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            color: #211F76;
+        }
+
+        #about  {
+            color: #211F76;
+            font-size: 18px;
+        }
+
+        .item li {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 35px;
+            padding-left: 20px;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-left: 5px solid #0F0F32;
+            vertical-align: middle;
+        }
+
+        #answer {
             font-size: 20px;
             line-height: 1.8;
             color: #212866;
@@ -118,97 +141,14 @@
             text-align: justify;
         }
 
-        .related-articles h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 30px;
-            font-weight: 600;
-            color: #211F76;
-            margin-bottom: 15px;
-            position: relative;
-            text-align: center;
+        .links{
+            text-decoration: underline;
+            font-size: 20px;
+            line-height: 1.8;
+            color: #212866;
         }
-        
-        .top-btn {
-            position: fixed;
-            bottom: 50px;
-            right: 60px;
-            background: #0F0F32;
-            border: 2px solid #0F0F32;
-            color: #FFFFFF;
-            text-decoration: none;
-            padding: 15px 50px;
-            border-radius: 50px;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .top-btn:hover {
-            background: #FFFFFF;
-            color: #0F0F32;
-        }
-        
-        .link {
-            text-decoration: none;
-            color: inherit;
-            display: inline-block;
-            margin: 10px;
-            vertical-align: top;
-        }
-
-        .box {
-            background: #FFFFFF;
-            width: 250px;
-            border-radius: 15px;
-            text-align: left;
-            border: 1px solid #f0f0f0;
-            overflow: hidden;
-            padding-bottom: 20px;
-        }
-
-        .box:hover{
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .box img { 
-            width: 100%; 
-            height: 150px; 
-            object-fit: cover;
-        }
-
-        .article { 
-            padding: 15px; 
-        }
-
-        .category {
-            font-size: 15px;
-            font-weight: 600;
-            color: #211F76;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        
-        .article h2{
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            color: #211F76;
-            margin: 0 0 15px 0;
-            text-align: left;
-            line-height: 1.2;
-        }
-
-        .read-more {
-            color: #211F76;
-            font-weight: 500;
-            font-size: 13px;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
         em{
-            font-weight: 600;
+            font-weight: 550;
         }
 
     </style>
@@ -237,135 +177,145 @@
     <div class="hero">
         <h3 class="text-light text-center mb-3">Stay Smart & Stay Safe Online</h3>
         <h1 class="text-light text-center mb-3">Frequently Asked Questions</h1>
-        <p class="text-light text-center mb-3">Answers to common questions about cybercrime, digital privacy, online safety, and more.</p>
+        <p class="text-light text-center lh-1 mb-3">Answers to common questions about cybercrime, digital privacy, online safety, and more.</p>
     </div>
 
     <div class="faqs">
         <div class="sidebar">
+            <h3 id="categories" class="text-left text-uppercase fw-bold mb-3">Categories</h3>
             <ul>
-                <li><a href="#item-1">What is cybercrime and why should students learn about it?</a></li>
-                <li><a href="#item-2">How does cybersecurity protect personal accounts and devices?</a></li>
-                <li><a href="#item-3">Why is digital privacy important in social media use?</a></li>
-                <li><a href="#item-4">What are the most common online scams people should watch out for?</a></li>
-                <li><a href="#item-5">How do cybercrimes affect individuals and organizations?</a></li>
-                <li><a href="#item-6">What are emerging cyber threats from new technologies?</a></li>
-                <li><a href="#item-7">How can students practice safe online habits every day?</a></li>
-                <li><a href="#item-8">What should someone do after experiencing cybercrime?</a></li>
+                <li><a href="#category-1">Digital Compass</a></li>
+                <li><a href="#category-2">Cybercrime Basics</a></li>
+                <li><a href="#category-3">Cybersecurity and Internet Safety</a></li>
+                <li><a href="#category-4">Digital Privacy & Emerging Threats</a></li>
+                <li><a href="#category-5">Prevention & Awareness</a></li>
             </ul>
         </div>
 
         <div class="content">
-            <div class="item" id="item-1">
-                <h1 class="question">1. What is cybercrime and why should students learn about it?</h1>
-                <p class="answer">
-                    Cybercrime is any <em>illegal activity that uses computers, mobile devices, or the internet to steal data, scam users, or damage systems</em>. It includes threats such as phishing, hacking, ransomware, and cyberbullying that often target students and everyday users. Learning about cybercrime helps students recognize suspicious behavior online and protect their personal data before becoming victims. Awareness also encourages responsible digital habits and safer internet use in school and daily life.
-                </p>
-                <div class="related-articles">
-                    <h2>Related Articles</h2>
-                    <div align="center"><a href="../cc/cc-concept-what-is-cybercrime.html" class="link">
-                        <div class="box">
-                            <img src="media/images/faqs.png" alt="FAQs">
-                            <div class="article">
-                                <p class="category">CYBERCRIME</p>
-                                <h2 class="title">What Is Cyber Crime? Understanding the Digital Threat</h2>
-                                <p class="read-more"><b>Read Article &rarr;</b></p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="../cc/cc-concept-why-it-happens.html" class="link">
-                        <div class="box">
-                            <img src="media/images/faqs.png" alt="FAQs">
-                                <div class="article">
-                                    <p class="category">CYBERCRIME</p>
-                                    <h2 class="title">Why Does Cyber Crime Happen? The Causes Behind Digital Crime</h2>
-                                    <p class="read-more"><b>Read Article &rarr;</b></p>
-                                </div>
-                        </div>
-                    </a>
-
-                    <a href="../cc/cc-concept-history.html" class="link">
-                        <div class="box">
-                            <img src="media/images/faqs.png" alt="FAQs">
-                            <div class="article">
-                                <p class="category">CYBERCRIME</p>
-                                <h2 class="title">From Phone Tricks to Ransomware: A History of Cyber Crime</h2>
-                                <p class="read-more"><b>Read Article &rarr;</b></p>
-                            </div>
-                        </div>
-                    </a></div>
-                    
-                </div> 
+            <div class="item" id="category-1">
+                <h3 id="about" class="text-center text-uppercase fw-bold mb-3">Questions About</h3>
+                <h1 id="category" class="text-center fw-bolder mb-4">Digital Compass</h1>
+                <ol>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        What is Digital Compass?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        Digital Compass is an educational platform designed to help students and internet users <em>understand cybercrimes and online risks</em>. Through simple explanations, guides, and practical tips, it promotes awareness and responsible internet use. Its goal is to help users become safer and smarter online.
+                    </p>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        Is the content on Digital Compass reliable?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        Yes, the content is carefully researched using trusted references and educational materials. Users can visit the <a class="links" href="../rs/references.html">References page</a> to check the sources used in the articles and guides. This helps ensure that the information is accurate, updated, and useful for learning.
+                    </p>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        How can I contact Digital Compass?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        You can contact the team through the <a class="links" href="../hm/contacts.html">Contacts Page</a> by filling out the form provided below the page. You may also reach out through their <a class="links" href="https://www.facebook.com/profile.php?id=61583037875134">Facebook page</a> or <a class="links" href="mailto:digitalcompass.itad@gmail.com">email</a> for questions, suggestions, or feedback. Digital Compass welcomes messages from users who want help or want to learn more.
+                    </p>
+                </ol>
+            </div>
+            
+            <div class="item" id="category-2">
+                <h3 id="about" class="text-center text-uppercase fw-bold mb-3">Questions About</h3>
+                <h1 id="category" class="text-center fw-bolder mb-4">Cybercrime Basics</h1>
+                <ol>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        What is cybercrime?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        Cybercrime refers to <em>crimes committed using computers, devices, or the internet</em>. This includes phishing, hacking, identity theft, scams, malware, and cyberbullying. These attacks can harm both individuals and organizations.
+                    </p>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        Why does cybercrime happen?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        Cybercrime happens because of <em>money, anonymity, weak security, personal motives, and social factors</em>. Many criminals are attracted by easy financial gain, while others act out of revenge, curiosity, or the desire for power. Weak passwords, outdated systems, and poor awareness also make attacks easier.
+                    </p>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        Why cybercrime cases are still increasing today?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        Cybercrime continues to grow because more <em>people and businesses now depend on the internet</em>. Attackers keep finding new ways to exploit weak systems and uninformed users. The ability to hide identity online also makes digital crime more attractive.
+                    </p>
+                </ol>
             </div>
 
-            <div class="item" id="item-2">
-                <h1 class="question">2. How does cybersecurity protect personal accounts and devices?</h1>
-                <p class="answer">
-                    Cybersecurity protects accounts and devices through practices that prevent unauthorized access, malware infections, and data theft. Common protections include <em>strong passwords, software updates, and two-factor authentication</em>. These measures lower the risk of hacked social media, stolen school files, and compromised personal accounts. Good cybersecurity also helps users recover faster when suspicious activity happens.
-                </p>
-                <div class="related-articles">
-                    <h2>Related Articles</h2>
-                </div>
+            <div class="item" id="category-3">
+                <h3 id="about" class="text-center text-uppercase fw-bold mb-3">Questions About</h3>
+                <h1 id="category" class="text-center fw-bolder mb-4">Cybersecurity and Internet Safety</h1>
+                <ol>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        Why is cybersecurity important?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        Cybersecurity <em>protects your accounts, devices, and personal data</em> from hackers and online threats. It helps prevent identity theft, financial loss, malware infections, and privacy breaches. Strong cybersecurity habits create a safer and more responsible digital environment.
+                    </p>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        How can I keep my accounts safe?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        <em>Use strong and unique passwords for every account and enable two-factor authentication</em> whenever possible. Avoid sharing login details, and always log out from shared or public devices. Regularly checking account activity also helps detect suspicious logins early.
+                    </p>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        Is public Wi-Fi safe to use?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        Public Wi-Fi can be risky because <em>hackers may monitor traffic on unsecured networks</em>. Avoid logging into banking apps, school portals, or sensitive accounts while using free public internet. It’s safest to use your own mobile data or a trusted network instead of relying on public Wi-Fi.
+                    </p>
+                </ol>
             </div>
 
-            <div class="item" id="item-3">
-                <h1 class="question">3. Why is digital privacy important in social media use?</h1>
-                <p class="answer">
-                    Digital privacy is important because <em>social media platforms collect and display personal information</em> that can be misused if not managed properly. Poor privacy settings may expose photos, location, school details, and contact information to strangers or fake accounts. Protecting privacy reduces risks such as identity theft, stalking, and social engineering scams. It also helps users build a safer and more positive digital footprint over time.
-                </p>
-                <div class="related-articles">
-                    <h2>Related Articles</h2>
-                </div> 
+            <div class="item" id="category-4">
+                <h3 id="about" class="text-center text-uppercase fw-bold mb-3">Questions About</h3>
+                <h1 id="category" class="text-center fw-bolder mb-4">Digital Privacy & Emerging Threats</h1>
+                <ol>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        What is digital privacy?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        Digital privacy means <em>protecting your personal data, online identity, and activities from unauthorized access</em>. This includes your passwords, social media posts, photos, location, and browsing history. Good privacy habits help reduce risks like identity theft and misuse of personal information.
+                    </p>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        What is a digital footprint?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        A digital footprint is the <em>record of everything you do online</em>, such as posts, comments, likes, searches, and uploads. Even deleted content may still remain saved or shared by others. Managing your digital footprint helps protect your reputation and privacy.
+                    </p>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        What are the current cyber threats?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        The current cyber threats include <em>AI-generated scams, deepfakes, ransomware, IoT attacks, and cloud vulnerabilities</em>. These threats are becoming more advanced and harder to detect. Staying updated and learning safe online practices are the best ways to reduce risks.
+                    </p>
+                </ol>
             </div>
 
-            <div class="item" id="item-4">
-                <h1 class="question">4. What are the most common online scams people should watch out for?</h1>
-                <p class="answer">
-                    The most common scams include <em>phishing emails, fake shopping websites, prize scams, and fraudulent job offers</em>. These scams usually create urgency to trick users into sending money or revealing passwords and personal data. Recognizing suspicious links, poor grammar, and unrealistic offers can help pr
-                </p>
-                <div class="related-articles">
-                    <h2>Related Articles</h2>
-                </div>
-            </div>
-
-            <div class="item" id="item-5">
-                <h1 class="question">5. How do cybercrimes affect individuals and organizations?</h1>
-                <p class="answer">
-                    Cybercrimes can cause <em>financial loss, emotional stress, identity theft, and damaged reputations for individuals</em>. Organizations may face <em>data breaches, service disruption, legal issues, and loss of customer trust</em>. These effects can also create long-term economic damage and reduced confidence in digital systems. Understanding the impact helps users and businesses prioritize prevention strategies.
-                </p>
-                <div class="related-articles">
-                    <h2>Related Articles</h2>
-                </div> 
-            </div>
-
-            <div class="item" id="item-6">
-                <h1 class="question">6. What are emerging cyber threats from new technologies?</h1>
-                <p class="answer">
-                    Emerging threats include <em>AI-powered scams, deepfakes, IoT vulnerabilities, cloud attacks, and ransomware-as-a-service</em>. These threats evolve quickly because attackers use new technologies to improve deception and scale attacks. As digital tools become smarter, users must become more aware of advanced manipulation techniques. Continuous learning is essential to stay protected against future cyber risks.
-                </p>
-                <div class="related-articles">
-                    <h2>Related Articles</h2>
-                </div> 
-            </div>
-
-            <div class="item" id="item-7">
-                <h1 class="question">7. How can students practice safe online habits every day?</h1>
-                <p class="answer">
-                    Students can practice safe habits by <em>checking website links, avoiding suspicious downloads, and verifying sources before sharing information</em>. <em>Using strong passwords, limiting oversharing, and balancing screen time</em> also improve online safety. These habits reduce exposure to scams, misinformation, and harmful interactions. Safe daily routines build long-term digital discipline and responsible internet behavior.
-                </p>
-                <div class="related-articles">
-                    <h2>Related Articles</h2>
-                </div> 
-            </div>
-
-            <div class="item" id="item-8">
-                <h1 class="question">8. What should someone do after experiencing cybercrime?</h1>
-                <p class="answer">
-                    A victim should immediately <em>change passwords, secure devices, and collect screenshots or proof</em> of the incident. Reporting the case to the <em>platform, school authority, or official cybercrime reporting channels</em> is also important. Quick action can help reduce further loss and support investigations. Learning from the incident also strengthens future online safety habits.
-                </p>
-                <div class="related-articles">
-                    <h2>Related Articles</h2>
-                </div>
+            <div class="item" id="category-5">
+                <h3 id="about" class="text-center text-uppercase fw-bold mb-3">Questions About</h3>
+                <h1 id="category" class="text-center fw-bolder mb-4">Prevention & Awareness</h1>
+                <ol>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        How can I prevent cybercrime?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        You can prevent cybercrime by <em>using strong passwords, updating devices, and avoiding suspicious downloads or link</em>s. Always be careful when sharing personal information on social media, emails, and chat apps. Awareness and smart online habits are the first step of digital protection.
+                    </p>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                        Where can I report cybercrime in the Philippines?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        Cybercrime incidents in the Philippines can be reported to the <a class="links" href="acg.pnp.gov.ph">PNP Anti-Cybercrime Group (PNP-ACG)</a> or the <a class="links" href="https://cicc.gov.ph/report/?ref=cybersecurity.ph">Cybercrime Investigation and Coordinating Center (CICC)</a>. Reports can be filed online through their official portals or in person at their offices. It's important to have screenshots, chat logs, transaction receipts, and account details ready as evidence.
+                    </p>
+                    <li id="question" class="text-justify fw-bold mb-3 p-3">
+                         Why is awareness important in digital safety?
+                    </li>
+                    <p id="answer" class="text-justify mb-4">
+                        Awareness helps users <em>recognize scams, fake accounts, suspicious links, and unsafe online behavior</em> before damage happens. It reduces the chances of becoming a victim of cybercrimes. Learning about cybercrimes  empowers users to stay safe and protect others as well.
+                    </p>
+                </ol>
             </div>
         </div>
     </div>

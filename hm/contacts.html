@@ -121,36 +121,35 @@
             padding-top: 30px;
         }
 
-        button {
+        .form-btn {
+            width: auto !important; 
             padding: 15px 45px;
             font-weight: bold;
-            cursor: pointer;
             font-size: 12px;
             font-family: Inter, sans-serif;
             margin-left: 10px;
+            border: 2px solid #0F0F32;
+            display: inline-block;
         }
 
-        .btn-submit {
+        input[type="submit"]{
             background-color: #0F0F32;
             color: #ffffff;
-            border: 2px solid #0F0F32;
         }
 
-        .btn-submit:hover {
+        input[type="submit"]:hover {
             background-color: #ffffff;
             color: #0F0F32;
         }
 
-        .btn-reset {
+        input[type="reset"] {
             background-color: #ffffff;
             color: #0F0F32;
-            border: 2px solid #0F0F32;
         }
 
-        .btn-reset:hover {
+        input[type="reset"]:hover {
             background-color: #0F0F32;
             color: #ffffff;
-            border: 2px solid #0F0F32;
         }
     </style>
 </head>
@@ -209,8 +208,8 @@
                 </tr>
                 <tr class="buttons">
                     <td>
-                        <button type="reset" class="btn-reset">RESET</button>
-                        <button type="submit" class="btn-submit">SUBMIT</button>
+                        <input type="reset" value="RESET" class="form-btn">
+                        <input type="submit" value="SUBMIT" class="form-btn">
                     </td>
                 </tr>
             </table>
