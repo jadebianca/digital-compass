@@ -214,7 +214,7 @@ hr {
         text-decoration: underline;
     }
 }
-@media(max-width:926px){
+@media(max-width:1080px){
     nav {
         background-color: #0F0F32;
         padding: 20px 30px;
