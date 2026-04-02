@@ -178,7 +178,7 @@ hr {
     .logo-container img {
         height: 38px;
         vertical-align: middle;
-        margin-right: 5px;
+        margin-right: 3px;
     }
 
     .logo-text {
@@ -208,7 +208,7 @@ hr {
         color: #0F0F32;
         font-size: 12px;
         font-weight: 700;
-        padding: 12px 8px;
+        padding: 12px 7px;
         display: block;
     }
 
