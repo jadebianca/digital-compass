@@ -73,13 +73,6 @@
             background-color: #FFFFFF;
         }
 
-        .mission, .vision, .team {
-            padding: 80px 300px;
-            margin: 0 auto;
-            text-align: center;
-            background-color: #FFFFFF;
-        }
-
         .about-img {
             display: inline-block;
             width: 30%;
@@ -101,7 +94,28 @@
             text-align: left;
         }
 
-        .mission h3, .vision h3, .team h3 {
+        #mission-vision {
+            text-align: center;
+            padding: 80px 50px;
+            background-color: #FFFFFF;
+        }
+
+        .mission, .vision {
+            display: inline-block;
+            width: 40%;
+            vertical-align: top;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .team {
+            padding: 80px 150px;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+
+        .mission h3, .vision h3, .team h3, .about h3 {
             color: #212866;
             font-size: 18px;
             text-transform: uppercase;
@@ -110,38 +124,14 @@
             margin-bottom: 10px;
         }
 
-        .mission h1, .vision h1, .team h1 {
+        .mission h1, .vision h1, .team h1, .about h1 {
             font-family: 'Playfair Display', serif;
             font-size: 45px;
             color: #211F76;
             margin: 0 0 20px 0;
         }
 
-        .mission p, .vision p, .team p {
-            font-size: 18px;
-            color: #212866;
-            text-align: justify;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        .about h3 {
-            color: #211F76;
-            font-size: 18px;
-            text-transform: uppercase;
-            font-weight: 550;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-
-        .about h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 45px;
-            color: #211F76;
-            margin: 0 0 20px 0;
-        }
-
-        .about p {
+        .mission p, .vision p, .team p, .about p {
             font-size: 18px;
             color: #212866;
             text-align: justify;
@@ -160,13 +150,20 @@
 
         .photos {
             width: 100%;
-            max-width: 1000px; 
+            max-width: 800px; 
             height: auto;
             border-radius: 20px;
-            margin: 40px 0 40px 0;
             display: block;
+            margin: 40px auto; 
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
+
+        figure {
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+        }
+
         figcaption {
             color: #212866;
             font-family: 'Inter', sans-serif;
@@ -174,10 +171,6 @@
             font-weight: 500;
             text-align: center;
             margin-top: 10px;
-        }
-
-        figure{
-            margin: 0 auto;
         }
 
     </style>
@@ -208,8 +201,7 @@
         <h1 class="text-light text-center mb-3">Digital Compass</h1>
         <p class="nav-hero">
             <a href="#about">About</a> &bull;
-            <a href="#mission">Mission</a> &bull;
-            <a href="#vision">Vision</a> &bull;
+            <a href="#mission-vision">Mission & Vision</a> &bull;
             <a href="#team">Meet the Team</a> 
         </p>
     </div>
@@ -223,27 +215,29 @@
             <h1>Digital Compass?</h1>
             <p>Digital Compass is an educational website dedicated to helping students and internet users understand cybercrimes and stay safe in the digital world.
             It provides well-researched articles, practical guides, and useful resources that explain different online threats such as phishing, hacking, identity theft, scams, and cyberbullying.
-            The website aims to raise awareness about cybersecurity by teaching users how cybercrimes happen, how to recognize signs of risks, and what preventive actions they can take to protect themselves online.
             </p>
         </div>
     </div>
+
     <hr class="line">
-    <div class="mission" id="mission">
-        <h3>Our</h3>
-        <h1>Mission</h1>
-        <p>Digital Compass aims to educate and empower students and internet users by providing reliable information, practical guides, and awareness about cybercrimes and online safety.
-        </p>
-    </div>
-    <hr class="line">
-    <div class="vision" id="vision">
-        <h3>Our</h3>
-        <h1>Vision</h1>
-        <p>Digital Compass envisions becoming a trusted educational platform that promotes cybersecurity awareness and digital responsibility for everyone.
-        </p>
-        
+
+    <div id="mission-vision" >
+        <div class="mission" id="mission">
+            <h3>Our</h3>
+            <h1>Mission</h1>
+            <p>Digital Compass aims to educate and empower students and internet users by providing reliable information, practical guides, and awareness about cybercrimes and online safety.
+            </p>
+        </div>
+        <div class="vision" id="vision">
+            <h3>Our</h3>
+            <h1>Vision</h1>
+            <p>Digital Compass envisions becoming a trusted educational platform that promotes cybersecurity awareness and digital responsibility for everyone.
+            </p>
+        </div>
     </div>
 
     <hr class="line">
+
     <div class="team" id="team">
         <h3>People Behind Digital Compass</h3>
         <h1>Meet the Team</h1>
@@ -252,7 +246,7 @@
                 <img src="../media/images/team.png" alt="Digital Compass Team Members" class="photos" title="Digital Compass Team Members">
             </a>
         </figure>
-        <p>With the goal of creating a reliable and educational platform on cybercrime and online safety, Digital Compass is composed of <em>10 BSIT students</em> from the <strong>University of the East-Manila</strong>. They work together to develop a user-friendly platform that helps students and the wider community stay safe online. The team is committed to providing a secure and informative learning experience for all users.
+        <p>With the goal of creating a reliable and educational platform on cybercrime and online safety, Digital Compass is composed of <em>10 BSIT students</em> from the <strong>University of the East-Manila</strong>. They work together to develop a user-friendly platform that helps students and the wider community stay safe online.
         </p>
     </div>
     
