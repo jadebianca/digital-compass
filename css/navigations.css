@@ -162,58 +162,8 @@ hr {
         width: 70%; 
         text-align: left;
     }
-
-    nav {
-        background-color: #0F0F32;
-        padding: 20px 60px;
-        overflow: hidden;
-    }
-
-    .logo-container {
-        float: left;
-    }
-
-    .logo-container img {
-        height: 40px;
-        vertical-align: middle;
-        margin-right: 10px;
-    }
-
-    .logo-text {
-        font-size: 18px;
-        font-family: 'Playfair Display', serif;
-        color: #FFFFFF;
-        font-weight: 700;
-        vertical-align: middle;
-        display: inline-block;
-    }
-
-    .nav-links {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        float: right;
-        background-color: #FFFFFF;
-        border-radius: 8px;
-    }
-
-    .nav-links li {
-        display: inline-block;
-    }
-
-    .nav-links li a {
-        text-decoration: none;
-        color: #0F0F32;
-        font-size: 12px;
-        font-weight: 700;
-        padding: 12px 10px;
-        display: block;
-    }
-
-    .nav-links li a:hover {
-        text-decoration: underline;
-    }
 }
+
 @media(max-width:1080px){
     nav {
         background-color: #0F0F32;
