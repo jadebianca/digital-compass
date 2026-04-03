@@ -8,118 +8,258 @@
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
-    <style>
-        body { background-color: #FFFFFF; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        .main { background-color: #FFFFFF; padding: 30px 0; width: 90%; max-width: 1000px; margin: 0 auto; }
-        .title { color: #212866; font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 10px; }
-        h2 { color: #212866; font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; line-height: 1.3; text-align: left; border-left: 5px solid #0F0F32; padding-left: 20px; margin-top: 40px; margin-bottom: 25px; width: 100%; box-sizing: border-box; }
-        .author { color: #212866; font-family: 'Inter', sans-serif; font-size: 18px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-top: 0; }
-        .nav-bio { color: #212866; font-family: 'Inter', sans-serif; font-size: 16px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
-        .nav-bio a { color: #212866; text-decoration: none; font-weight: 600; }
-        .nav-bio a:hover { text-decoration: underline; }
-        .paragraph { color: #212866; margin: 0 0 50px 0; font-family: 'Inter', sans-serif; font-size: 19px; font-weight: 500; line-height: 1.8; text-align: justify; text-indent: 50px; width: 100%; }
-        .top-btn { position: fixed; bottom: 50px; right: 50px; background-color: #0F0F32; color: #FFFFFF; text-decoration: none; padding: 15px 50px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        nav { background-color: #0F0F32; padding: 20px 60px; overflow: hidden; }
-        .logo-container { float: left; }
-        .logo-container img { height: 40px; vertical-align: middle; margin-right: 10px; }
-        .logo-text { font-size: 20px; font-family: 'Playfair Display', serif; color: #FFFFFF; font-weight: 700; vertical-align: middle; display: inline-block; }
-        .nav-links { list-style: none; padding: 0; margin: 0; float: right; background-color: #FFFFFF; border-radius: 8px; }
-        .nav-links li { display: inline-block; }
-        .nav-links li a { text-decoration: none; color: #0F0F32; font-size: 13px; font-weight: 700; padding: 12px 15px; display: block; }
-        .nav-links li a:hover { text-decoration: underline; }
-        footer { background-color: #0F0F32; color: #DDE7F2; padding: 60px 60px 40px 60px; overflow: hidden; }
-        .footer-contact { float: left; width: 25%; text-align: left; }
-        .footer-contact img { height: 45px; display: inline-block; vertical-align: middle; margin-right: 10px; }
-        .footer-contact p { font-size: 11px; line-height: 1.5; margin: 15px 0 5px 0; color: #DDE7F2; }
-        .social-icons a { color: #FFFFFF; font-size: 24px; margin-right: 15px; text-decoration: none; }
-        .footer-columns { float: right; width: 68%; text-align: left; }
-        .column { display: inline-block; vertical-align: top; width: 13%; margin-bottom: 20px; }
-        .column h4 { font-size: 14px; text-decoration: underline; margin: 0 0 15px 0; color: #FFFFFF; font-weight: 600; }
-        .column a { display: block; color: #DDE7F2; text-decoration: none; font-size: 12px; margin-bottom: 8px; line-height: 1.4; }
-        .column a:hover { text-decoration: underline; }
-        hr { clear: both; border: 0; border-top: 1px solid #DDE7F2; margin-top: 30px; }
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-bio a:hover {
+            text-decoration: underline;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 10px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-<a href="#top" class="top-btn">Back to Top &uarr;</a>
-<nav>
-    <div class="logo-container">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text" id="top">Digital Compass</span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../cc.html">Cybercrime</a></li>
-        <li><a href="../cs.html">Cybersecurity</a></li>
-        <li><a href="../dp.html">Digital Privacy</a></li>
-        <li><a href="../et.html">Emerging Threats</a></li>
-        <li><a href="../pa.html">Prevention &amp; Awareness</a></li>
-        <li><a href="../rs.html">Resources</a></li>
-    </ul>
-</nav>
-<div class="main">
-    <h1 class="title">The Price of Crime Online: Economic Effects of Cybercrime</h1>
-    <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
-    <p class="nav-bio">
-        <a href="#intro">Introduction</a> &bull;
-        <a href="#body-one">Global Costs</a> &bull;
-        <a href="#body-two">Impact on Businesses</a> &bull;
-        <a href="#body-three">Cost of Recovery</a> &bull;
-        <a href="#body-four">Effect on the Philippine Economy</a> &bull;
-        <a href="#body-five">Cybersecurity Spending</a> &bull;
-        <a href="#conclusion">Conclusion</a>
-    </p>
-    <hr width="100%" size="5" color="#212866">
-    <article>
-        <p id="intro" class="paragraph">
-            Cyber crime is not just a threat to individuals and organizations. It has enormous effects on entire economies around the world. The financial damage caused by online crimes runs into the trillions of dollars globally every year, making it one of the most costly types of criminal activity in human history. From stolen funds and lost business to expensive recovery efforts and increased security spending, the economic effects of cyber crime are felt by governments, businesses, and ordinary citizens alike. Understanding the economic impact of cyber crime helps us see just how serious and far-reaching this problem truly is.
-        </p>
-        <h2 id="body-one">A Trillion-Dollar Global Problem</h2>
-        <p class="paragraph">
-            The scale of cyber crime's economic impact is almost hard to believe. Cyber crime is estimated to cost the world economy trillions of dollars every year, and that number keeps growing as more of our lives move online. This figure includes direct financial losses from fraud and theft, the cost of investigating and responding to attacks, lost productivity during system downtime, and long-term damage to businesses and investor confidence. Some experts have compared cyber crime to one of the world's largest illegal industries. The global nature of cyber crime makes it especially hard to fight, since attacks can cross borders easily while law enforcement efforts are limited by national boundaries. The huge scale of these losses shows why cyber crime must be treated as a major economic and national security issue, not just a technical problem.
-        </p>
-        <h2 id="body-two">How Cyber Crime Affects Businesses Large and Small</h2>
-        <p class="paragraph">
-            Businesses of all sizes carry a large part of cyber crime's economic burden. Large companies may lose millions in a single data breach, while small businesses often suffer more because they have fewer resources to absorb the financial shock. When a business is hacked, the direct costs include stolen funds, ransom payments, and system repairs. But the indirect costs, such as lost customers, damaged reputation, and reduced employee productivity, can be even greater. Online businesses are especially at risk because they handle large volumes of financial transactions and customer data that attract criminals. For startups and small businesses in the Philippines, a successful cyber attack can mean the difference between staying open and shutting down. The economic damage does not stop at the attacked company either. Suppliers, partners, and customers connected to that business can all be affected, creating a ripple effect throughout entire supply chains.
-        </p>
-        <h2 id="body-three">The High Cost of Recovery</h2>
-        <p class="paragraph">
-            One of the most significant but often overlooked economic effects of cyber crime is the enormous cost of recovery after an attack. Organizations must invest a lot of money in investigating the breach, repairing or replacing damaged systems, notifying affected customers, and strengthening security measures to prevent future attacks. Hiring specialized cybersecurity experts and legal advisers adds further expense, along with the ongoing public relations work needed to manage the damage to the organization's image. In cases of ransomware attacks, organizations face the difficult choice of either paying the ransom, which can cost millions of pesos, or spending even more to rebuild their systems from scratch. The recovery process can take months or years, during which the organization operates at reduced capacity. All of these costs represent money that could have been used for business growth, employee salaries, or public services, making cyber crime not just a direct financial drain but also a drag on overall development.
-        </p>
-        <h2 id="body-four">The Economic Impact in the Philippines</h2>
-        <p class="paragraph">
-            The Philippines is not immune to the economic consequences of cyber crime. As the country's digital economy has grown quickly in recent years, so too have the financial losses from online criminal activity. Online scams, e-commerce fraud, and social media-based investment schemes have caused Filipino consumers and businesses to lose billions of pesos every year. The rise of remote work and online businesses after the pandemic expanded the number of targets even further, giving cyber criminals more opportunities to cause harm. The Bangko Sentral ng Pilipinas (BSP) and the National Privacy Commission (NPC) have both warned about the growing threat of online financial fraud and data breaches affecting Philippine institutions. Beyond direct financial losses, cyber crime also discourages businesses from investing in the country's digital economy, since companies may hesitate to enter a market where cybersecurity risks are seen as high. Addressing cyber crime is therefore not just a matter of safety but an economic need for the Philippines' continued growth and development.
-        </p>
-        <h2 id="body-five">Rising Cybersecurity Spending as a Response</h2>
-        <p class="paragraph">
-            In response to the growing economic threat of cyber crime, organizations and governments worldwide have greatly increased their spending on cybersecurity. Companies now set aside large portions of their budgets for security software, hardware, training, and specialized staff to defend against attacks. While this spending is necessary, it also reflects the enormous economic burden that cyber crime places on the productive sector of the economy. Money spent on defense is money that cannot be spent on growth or social services. The cybersecurity industry itself has become one of the fastest-growing economic sectors in the world, creating demand for skilled professionals and new technologies. In the Philippines, both the government and private sector have been increasing their cybersecurity budgets in recognition of the growing threat. Despite this increased investment, cyber criminals continue to develop new methods, ensuring that the costly race between attackers and defenders remains ongoing.
-        </p>
-        <h2 id="conclusion">Conclusion</h2>
-        <p class="paragraph">
-            The economic effects of cyber crime are enormous, affecting individuals, businesses, governments, and entire economies. The trillions of dollars lost globally every year represent not just stolen funds but lost opportunities for growth, development, and public welfare. For the Philippines, addressing the economic impact of cyber crime requires a combined effort from government, the private sector, and individual citizens to strengthen security, enforce existing laws, and invest in digital literacy. Every peso lost to a cyber scam or attack is a peso taken away from families, businesses, and communities that need it. By understanding the full economic cost of cyber crime, we can better appreciate why preventing it is so important, not just for our personal security, but for the health and prosperity of our entire society.
-        </p>
-    </article>
-</div>
-<footer>
-    <div class="footer-contact">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text">Digital Compass</span>
-        <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
         </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="title">The Price of Crime Online: Economic Effects of Cybercrime</h1>
+        <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
+
+        <p class="nav-bio">
+            <a href="#intro">Introduction</a> &bull;
+            <a href="#body-one">Global Costs</a> &bull;
+            <a href="#body-two">Impact on Businesses</a> &bull;
+            <a href="#body-three">Cost of Recovery</a> &bull;
+            <a href="#body-four">Effect on the Philippine Economy</a> &bull;
+            <a href="#body-five">Cybersecurity Spending</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+
+        <hr width="100%" size="5" color="#0F0F32">
+
+        <article>
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/economic-effects-cybercrime-cover.jpg" alt="Economic Effects of Cybercrime" class="photos">
+                </a>
+                <figcaption>Photo from: </figcaption>
+            </figure>
+
+            <p id="intro" class="paragraph">
+                Cyber crime is not just a threat to individuals and organizations. It has enormous effects on entire economies around the world. The financial damage caused by online crimes runs into the trillions of dollars globally every year, making it one of the most costly types of criminal activity in human history. From stolen funds and lost business to expensive recovery efforts and increased security spending, the economic effects of cyber crime are felt by governments, businesses, and ordinary citizens alike. Understanding the economic impact of cyber crime helps us see just how serious and far-reaching this problem truly is.
+            </p>
+
+            <h2 id="body-one">A Trillion-Dollar Global Problem</h2>
+            <p class="paragraph">
+                The scale of cyber crime's economic impact is almost hard to believe. Cyber crime is estimated to cost the world economy trillions of dollars every year, and that number keeps growing as more of our lives move online. This figure includes direct financial losses from fraud and theft, the cost of investigating and responding to attacks, lost productivity during system downtime, and long-term damage to businesses and investor confidence. Some experts have compared cyber crime to one of the world's largest illegal industries. The global nature of cyber crime makes it especially hard to fight, since attacks can cross borders easily while law enforcement efforts are limited by national boundaries. The huge scale of these losses shows why cyber crime must be treated as a major economic and national security issue, not just a technical problem.
+            </p>
+
+            <h2 id="body-two">How Cyber Crime Affects Businesses Large and Small</h2>
+            <p class="paragraph">
+                Businesses of all sizes carry a large part of cyber crime's economic burden. Large companies may lose millions in a single data breach, while small businesses often suffer more because they have fewer resources to absorb the financial shock. When a business is hacked, the direct costs include stolen funds, ransom payments, and system repairs. But the indirect costs, such as lost customers, damaged reputation, and reduced employee productivity, can be even greater. Online businesses are especially at risk because they handle large volumes of financial transactions and customer data that attract criminals. For startups and small businesses in the Philippines, a successful cyber attack can mean the difference between staying open and shutting down. The economic damage does not stop at the attacked company either. Suppliers, partners, and customers connected to that business can all be affected, creating a ripple effect throughout entire supply chains.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/economic-effects-cybercrime-img2.jpg" alt="Cybercrime Impact on Businesses" class="photos">
+                </a>
+                <figcaption>Photo from: </figcaption>
+            </figure>
+
+            <h2 id="body-three">The High Cost of Recovery</h2>
+            <p class="paragraph">
+                One of the most significant but often overlooked economic effects of cyber crime is the enormous cost of recovery after an attack. Organizations must invest a lot of money in investigating the breach, repairing or replacing damaged systems, notifying affected customers, and strengthening security measures to prevent future attacks. Hiring specialized cybersecurity experts and legal advisers adds further expense, along with the ongoing public relations work needed to manage the damage to the organization's image. In cases of ransomware attacks, organizations face the difficult choice of either paying the ransom, which can cost millions of pesos, or spending even more to rebuild their systems from scratch. The recovery process can take months or years, during which the organization operates at reduced capacity. All of these costs represent money that could have been used for business growth, employee salaries, or public services, making cyber crime not just a direct financial drain but also a drag on overall development.
+            </p>
+
+            <h2 id="body-four">The Economic Impact in the Philippines</h2>
+            <p class="paragraph">
+                The Philippines is not immune to the economic consequences of cyber crime. As the country's digital economy has grown quickly in recent years, so too have the financial losses from online criminal activity. Online scams, e-commerce fraud, and social media-based investment schemes have caused Filipino consumers and businesses to lose billions of pesos every year. The rise of remote work and online businesses after the pandemic expanded the number of targets even further, giving cyber criminals more opportunities to cause harm. The Bangko Sentral ng Pilipinas (BSP) and the National Privacy Commission (NPC) have both warned about the growing threat of online financial fraud and data breaches affecting Philippine institutions. Beyond direct financial losses, cyber crime also discourages businesses from investing in the country's digital economy, since companies may hesitate to enter a market where cybersecurity risks are seen as high. Addressing cyber crime is therefore not just a matter of safety but an economic need for the Philippines' continued growth and development.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/economic-effects-cybercrime-img3.png" alt="Cybersecurity Spending and Defense" class="photos">
+                </a>
+                <figcaption>Photo from: </figcaption>
+            </figure>
+
+            <h2 id="body-five">Rising Cybersecurity Spending as a Response</h2>
+            <p class="paragraph">
+                In response to the growing economic threat of cyber crime, organizations and governments worldwide have greatly increased their spending on cybersecurity. Companies now set aside large portions of their budgets for security software, hardware, training, and specialized staff to defend against attacks. While this spending is necessary, it also reflects the enormous economic burden that cyber crime places on the productive sector of the economy. Money spent on defense is money that cannot be spent on growth or social services. The cybersecurity industry itself has become one of the fastest-growing economic sectors in the world, creating demand for skilled professionals and new technologies. In the Philippines, both the government and private sector have been increasing their cybersecurity budgets in recognition of the growing threat. Despite this increased investment, cyber criminals continue to develop new methods, ensuring that the costly race between attackers and defenders remains ongoing.
+            </p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                The economic effects of cyber crime are enormous, affecting individuals, businesses, governments, and entire economies. The trillions of dollars lost globally every year represent not just stolen funds but lost opportunities for growth, development, and public welfare. For the Philippines, addressing the economic impact of cyber crime requires a combined effort from government, the private sector, and individual citizens to strengthen security, enforce existing laws, and invest in digital literacy. Every peso lost to a cyber scam or attack is a peso taken away from families, businesses, and communities that need it. By understanding the full economic cost of cyber crime, we can better appreciate why preventing it is so important, not just for our personal security, but for the health and prosperity of our entire society.
+            </p>
+        </article>
     </div>
-    <div class="footer-columns">
-        <div class="column"><h4>Cybercrime</h4><a href="../cc.html">Concepts</a><a href="../cc.html">Types of Cybercrime</a></div>
-        <div class="column"><h4>Cybersecurity</h4><a href="../cs.html">Concepts</a><a href="../cs.html">Account Security</a><a href="../cs.html">Internet Safety</a><a href="../cs.html">Safe Online Habits</a></div>
-        <div class="column"><h4>Digital Privacy</h4><a href="../dp.html">Concepts</a><a href="../dp.html">Online Privacy</a><a href="../dp.html">Data Protection</a></div>
-        <div class="column"><h4>Emerging Threats</h4><a href="../et.html">New Technology</a><a href="../et.html">Cyberattack Methods</a></div>
-        <div class="column"><h4>Prevention</h4><a href="../pa.html">Cybercrime Prevention</a><a href="../pa.html">Online Safety Tips</a><a href="../pa.html">Digital Wellness</a></div>
-        <div class="column"><h4>Resources</h4><a href="../rs.html">FAQs</a><a href="../rs.html">References</a></div>
-        <div class="column"><h4>Quick Navs</h4><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contacts.html">Contacts</a></div>
-    </div>
-    <hr>
-</footer>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
 </body>
 </html>
