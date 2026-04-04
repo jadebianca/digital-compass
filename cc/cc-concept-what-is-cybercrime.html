@@ -8,118 +8,258 @@
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
-    <style>
-        body { background-color: #FFFFFF; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        .main { background-color: #FFFFFF; padding: 30px 0; width: 90%; max-width: 1000px; margin: 0 auto; }
-        .title { color: #211F76; font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 10px; }
-        h2 { color: #211F76; font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; line-height: 1.3; text-align: left; border-left: 5px solid #0F0F32; padding-left: 20px; margin-top: 40px; margin-bottom: 25px; width: 100%; box-sizing: border-box; }
-        .author { color: #211F76; font-family: 'Inter', sans-serif; font-size: 18px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-top: 0; }
-        .nav-bio { color: #211F76; font-family: 'Inter', sans-serif; font-size: 16px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
-        .nav-bio a { color: #211F76; text-decoration: none; font-weight: 600; }
-        .nav-bio a:hover { text-decoration: underline; }
-        .paragraph { color: #212866; margin: 0 0 50px 0; font-family: 'Inter', sans-serif; font-size: 19px; font-weight: 500; line-height: 1.8; text-align: justify; text-indent: 50px; width: 100%; }
-        .top-btn { position: fixed; bottom: 50px; right: 50px; background-color: #0F0F32; color: #FFFFFF; text-decoration: none; padding: 15px 50px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        nav { background-color: #0F0F32; padding: 20px 60px; overflow: hidden; }
-        .logo-container { float: left; }
-        .logo-container img { height: 40px; vertical-align: middle; margin-right: 10px; }
-        .logo-text { font-size: 20px; font-family: 'Playfair Display', serif; color: #FFFFFF; font-weight: 700; vertical-align: middle; display: inline-block; }
-        .nav-links { list-style: none; padding: 0; margin: 0; float: right; background-color: #FFFFFF; border-radius: 8px; }
-        .nav-links li { display: inline-block; }
-        .nav-links li a { text-decoration: none; color: #0F0F32; font-size: 13px; font-weight: 700; padding: 12px 15px; display: block; }
-        .nav-links li a:hover { text-decoration: underline; }
-        footer { background-color: #0F0F32; color: #DDE7F2; padding: 60px 60px 40px 60px; overflow: hidden; }
-        .footer-contact { float: left; width: 25%; text-align: left; }
-        .footer-contact img { height: 45px; display: inline-block; vertical-align: middle; margin-right: 10px; }
-        .footer-contact p { font-size: 11px; line-height: 1.5; margin: 15px 0 5px 0; color: #DDE7F2; }
-        .social-icons a { color: #FFFFFF; font-size: 24px; margin-right: 15px; text-decoration: none; }
-        .footer-columns { float: right; width: 68%; text-align: left; }
-        .column { display: inline-block; vertical-align: top; width: 13%; margin-bottom: 20px; }
-        .column h4 { font-size: 14px; text-decoration: underline; margin: 0 0 15px 0; color: #FFFFFF; font-weight: 600; }
-        .column a { display: block; color: #DDE7F2; text-decoration: none; font-size: 12px; margin-bottom: 8px; line-height: 1.4; }
-        .column a:hover { text-decoration: underline; }
-        hr { clear: both; border: 0; border-top: 1px solid #DDE7F2; margin-top: 30px; }
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-bio a:hover {
+            text-decoration: underline;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 10px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-<a href="#top" class="top-btn">Back to Top &uarr;</a>
-<nav>
-    <div class="logo-container">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text" id="top">Digital Compass</span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../cc.html">Cybercrime</a></li>
-        <li><a href="../cs.html">Cybersecurity</a></li>
-        <li><a href="../dp.html">Digital Privacy</a></li>
-        <li><a href="../et.html">Emerging Threats</a></li>
-        <li><a href="../pa.html">Prevention &amp; Awareness</a></li>
-        <li><a href="../rs.html">Resources</a></li>
-    </ul>
-</nav>
-<div class="main">
-    <h1 class="title">What Is Cyber Crime? Understanding the Digital Threat</h1>
-    <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
-    <p class="nav-bio">
-        <a href="#intro">Introduction</a> &bull;
-        <a href="#body-one">Definition</a> &bull;
-        <a href="#body-two">Types</a> &bull;
-        <a href="#body-three">Who Are the Criminals?</a> &bull;
-        <a href="#body-four">Why It Matters</a> &bull;
-        <a href="#body-five">Real-World Impact</a> &bull;
-        <a href="#conclusion">Conclusion</a>
-    </p>
-    <hr width="100%" size="5" color="#212866">
-    <article>
-        <p id="intro" class="paragraph">
-            Today, almost everything we do involves the internet. We use it to talk to friends, do schoolwork, and buy things online. But as more people go online, more criminals have also found ways to take advantage of it. Cyber crime is one of the fastest-growing problems in the world right now, and it affects millions of people every single day. It covers many types of illegal activities done through computers or the internet. Knowing what cyber crime is and how it works is the first step in keeping yourself safe online.
-        </p>
-        <h2 id="body-one">What Cyber Crime Means</h2>
-        <p class="paragraph">
-            Cyber crime is any criminal activity that uses a computer, a network, or the internet. In simple terms, it is when someone uses technology to do something illegal. This can be anything from stealing someone's personal information online to breaking into a company's computer system. Cyber crimes can be done by one person working alone or by large groups that operate in different countries. Unlike regular crimes, the criminal and the victim do not need to be in the same place. The internet makes it possible for criminals to attack people from very far away without ever leaving their homes. Because of this, cyber crime is considered a global problem that affects people of all ages and backgrounds.
-        </p>
-        <h2 id="body-two">The Different Types of Cyber Crime</h2>
-        <p class="paragraph">
-            Cyber crime is not just one thing. It comes in many different forms. One of the most common is hacking, which is when someone breaks into a computer or a system without permission. Another common type is phishing, where criminals send fake messages to trick people into giving away their passwords or personal details. There is also identity theft, where someone steals your personal information and pretends to be you, usually to steal money. Online scams, cyberbullying, harmful software, and digital piracy are also types of cyber crime. Some crimes target one person, like stalking or online harassment, while others target big organizations or even governments. No matter the type, all cyber crimes cause real harm to the people or systems they affect.
-        </p>
-        <h2 id="body-three">Who Commits Cyber Crimes?</h2>
-        <p class="paragraph">
-            Many people imagine cyber criminals as expert hackers sitting alone in dark rooms, but the truth is very different. Cyber criminals can be anyone. They can be teenagers looking for fun, angry workers seeking revenge on their companies, or large criminal groups motivated by money. Some are highly skilled and use complex tools, while others use simple tricks that do not need much technical knowledge. There are also hackers who are paid by governments to attack other countries. In the Philippines and many other places, even young people have been involved in cyber crimes, sometimes without fully understanding the legal consequences. Understanding who commits these crimes helps us see that cyber crime is a human problem, not just a technical one.
-        </p>
-        <h2 id="body-four">Why Cyber Crime Is a Serious Problem</h2>
-        <p class="paragraph">
-            Cyber crime is serious because its effects go far beyond just losing money or data. When someone becomes a victim, the emotional pain can be just as bad as the financial loss. Victims of identity theft may spend months trying to fix the damage done to their accounts or reputation. Businesses that are hacked may lose the trust of their customers and suffer big financial losses. On a larger scale, attacks on hospitals or power systems can put entire communities in danger. Cyber crime also costs the global economy a huge amount of money every year, making it one of the most expensive types of crime in the world today. This is exactly why awareness and strong security measures are so important for everyone.
-        </p>
-        <h2 id="body-five">Real-World Impact on Everyday People</h2>
-        <p class="paragraph">
-            It is easy to think that cyber crime only happens to big companies or rich people, but ordinary people are just as much at risk. Students can become victims of cyberbullying or online scams that offer fake scholarships or job opportunities. Parents may fall for fake online shops or social media scams that steal their credit card details. Elderly people are often targeted through calls or messages that pretend to be from banks or government agencies. In the Philippines, online scams and social media fraud have become very common, with thousands of cases reported to the NBI and PNP every year. These real examples show that cyber crime is not a distant threat. It can happen to anyone, at any time, if they are not careful online.
-        </p>
-        <h2 id="conclusion">Conclusion</h2>
-        <p class="paragraph">
-            Cyber crime is a serious and growing problem that affects people, businesses, and entire countries around the world. It covers many types of illegal activities done through computers and the internet, from simple scams to complex hacking operations. Anyone can become a victim, no matter their age or location. The good news is that awareness is the most powerful tool we have against cyber crime. By understanding what it is, how it works, and who is at risk, we can take smarter steps to protect ourselves and others online. As you keep reading through this site, you will learn more about the different types of cyber crimes, their effects, and how to stay safe in the digital world. Stay informed, stay careful, and always think before you click.
-        </p>
-    </article>
-</div>
-<footer>
-    <div class="footer-contact">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text">Digital Compass</span>
-        <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
         </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="title">What Is Cyber Crime? Understanding the Digital Threat</h1>
+        <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
+
+        <p class="nav-bio">
+            <a href="#intro">Introduction</a> &bull;
+            <a href="#body-one">Definition</a> &bull;
+            <a href="#body-two">Types</a> &bull;
+            <a href="#body-three">Who Are the Criminals?</a> &bull;
+            <a href="#body-four">Why It Matters</a> &bull;
+            <a href="#body-five">Real-World Impact</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+
+        <hr width="100%" size="5" color="#0F0F32">
+
+        <article>
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/what-is-cybercrime-cover.png" alt="What is Cyber Crime?" class="photos">
+                </a>
+                <figcaption>Photo from: Medium</figcaption>
+            </figure>
+
+            <p id="intro" class="paragraph">
+                Today, almost everything we do involves the internet. We use it to talk to friends, do schoolwork, and buy things online. But as more people go online, more criminals have also found ways to take advantage of it. Cyber crime is one of the fastest-growing problems in the world right now, and it affects millions of people every single day. It covers many types of illegal activities done through computers or the internet. Knowing what cyber crime is and how it works is the first step in keeping yourself safe online.
+            </p>
+
+            <h2 id="body-one">What Cyber Crime Means</h2>
+            <p class="paragraph">
+                Cyber crime is any criminal activity that uses a computer, a network, or the internet. In simple terms, it is when someone uses technology to do something illegal. This can be anything from stealing someone's personal information online to breaking into a company's computer system. Cyber crimes can be done by one person working alone or by large groups that operate in different countries. Unlike regular crimes, the criminal and the victim do not need to be in the same place. The internet makes it possible for criminals to attack people from very far away without ever leaving their homes. Because of this, cyber crime is considered a global problem that affects people of all ages and backgrounds.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/what-is-cybercrime-img2.png" alt="Types of Cyber Crime" class="photos">
+                </a>
+                <figcaption>Photo from: </figcaption>
+            </figure>
+
+            <h2 id="body-two">The Different Types of Cyber Crime</h2>
+            <p class="paragraph">
+                Cyber crime is not just one thing. It comes in many different forms. One of the most common is hacking, which is when someone breaks into a computer or a system without permission. Another common type is phishing, where criminals send fake messages to trick people into giving away their passwords or personal details. There is also identity theft, where someone steals your personal information and pretends to be you, usually to steal money. Online scams, cyberbullying, harmful software, and digital piracy are also types of cyber crime. Some crimes target one person, like stalking or online harassment, while others target big organizations or even governments. No matter the type, all cyber crimes cause real harm to the people or systems they affect.
+            </p>
+
+            <h2 id="body-three">Who Commits Cyber Crimes?</h2>
+            <p class="paragraph">
+                Many people imagine cyber criminals as expert hackers sitting alone in dark rooms, but the truth is very different. Cyber criminals can be anyone. They can be teenagers looking for fun, angry workers seeking revenge on their companies, or large criminal groups motivated by money. Some are highly skilled and use complex tools, while others use simple tricks that do not need much technical knowledge. There are also hackers who are paid by governments to attack other countries. In the Philippines and many other places, even young people have been involved in cyber crimes, sometimes without fully understanding the legal consequences. Understanding who commits these crimes helps us see that cyber crime is a human problem, not just a technical one.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/what-is-cybercrime-img3.jpg" alt="Real-World Impact of Cyber Crime" class="photos">
+                </a>
+                <figcaption>Photo from: AML Rightsource</figcaption>
+            </figure>
+
+            <h2 id="body-four">Why Cyber Crime Is a Serious Problem</h2>
+            <p class="paragraph">
+                Cyber crime is serious because its effects go far beyond just losing money or data. When someone becomes a victim, the emotional pain can be just as bad as the financial loss. Victims of identity theft may spend months trying to fix the damage done to their accounts or reputation. Businesses that are hacked may lose the trust of their customers and suffer big financial losses. On a larger scale, attacks on hospitals or power systems can put entire communities in danger. Cyber crime also costs the global economy a huge amount of money every year, making it one of the most expensive types of crime in the world today. This is exactly why awareness and strong security measures are so important for everyone.
+            </p>
+
+            <h2 id="body-five">Real-World Impact on Everyday People</h2>
+            <p class="paragraph">
+                It is easy to think that cyber crime only happens to big companies or rich people, but ordinary people are just as much at risk. Students can become victims of cyberbullying or online scams that offer fake scholarships or job opportunities. Parents may fall for fake online shops or social media scams that steal their credit card details. Elderly people are often targeted through calls or messages that pretend to be from banks or government agencies. In the Philippines, online scams and social media fraud have become very common, with thousands of cases reported to the NBI and PNP every year. These real examples show that cyber crime is not a distant threat. It can happen to anyone, at any time, if they are not careful online.
+            </p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                Cyber crime is a serious and growing problem that affects people, businesses, and entire countries around the world. It covers many types of illegal activities done through computers and the internet, from simple scams to complex hacking operations. Anyone can become a victim, no matter their age or location. The good news is that awareness is the most powerful tool we have against cyber crime. By understanding what it is, how it works, and who is at risk, we can take smarter steps to protect ourselves and others online. As you keep reading through this site, you will learn more about the different types of cyber crimes, their effects, and how to stay safe in the digital world. Stay informed, stay careful, and always think before you click.
+            </p>
+        </article>
     </div>
-    <div class="footer-columns">
-        <div class="column"><h4>Cybercrime</h4><a href="../cc.html">Concepts</a><a href="../cc.html">Types of Cybercrime</a></div>
-        <div class="column"><h4>Cybersecurity</h4><a href="../cs.html">Concepts</a><a href="../cs.html">Account Security</a><a href="../cs.html">Internet Safety</a><a href="../cs.html">Safe Online Habits</a></div>
-        <div class="column"><h4>Digital Privacy</h4><a href="../dp.html">Concepts</a><a href="../dp.html">Online Privacy</a><a href="../dp.html">Data Protection</a></div>
-        <div class="column"><h4>Emerging Threats</h4><a href="../et.html">New Technology</a><a href="../et.html">Cyberattack Methods</a></div>
-        <div class="column"><h4>Prevention</h4><a href="../pa.html">Cybercrime Prevention</a><a href="../pa.html">Online Safety Tips</a><a href="../pa.html">Digital Wellness</a></div>
-        <div class="column"><h4>Resources</h4><a href="../rs.html">FAQs</a><a href="../rs.html">References</a></div>
-        <div class="column"><h4>Quick Navs</h4><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contacts.html">Contacts</a></div>
-    </div>
-    <hr>
-</footer>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
 </body>
 </html>
