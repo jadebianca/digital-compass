@@ -8,113 +8,253 @@
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
-    <style>
-        body { background-color: #FFFFFF; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        .main { background-color: #FFFFFF; padding: 30px 0; width: 90%; max-width: 1000px; margin: 0 auto; }
-        .title { color: #212866; font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 10px; }
-        h2 { color: #212866; font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; line-height: 1.3; text-align: left; border-left: 5px solid #0F0F32; padding-left: 20px; margin-top: 40px; margin-bottom: 25px; width: 100%; box-sizing: border-box; }
-        .author { color: #212866; font-family: 'Inter', sans-serif; font-size: 18px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-top: 0; }
-        .nav-bio { color: #212866; font-family: 'Inter', sans-serif; font-size: 16px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
-        .nav-bio a { color: #212866; text-decoration: none; font-weight: 600; }
-        .nav-bio a:hover { text-decoration: underline; }
-        .paragraph { color: #212866; margin: 0 0 50px 0; font-family: 'Inter', sans-serif; font-size: 19px; font-weight: 500; line-height: 1.8; text-align: justify; text-indent: 50px; width: 100%; }
-        .top-btn { position: fixed; bottom: 50px; right: 50px; background-color: #0F0F32; color: #FFFFFF; text-decoration: none; padding: 15px 50px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        nav { background-color: #0F0F32; padding: 20px 60px; overflow: hidden; }
-        .logo-container { float: left; }
-        .logo-container img { height: 40px; vertical-align: middle; margin-right: 10px; }
-        .logo-text { font-size: 20px; font-family: 'Playfair Display', serif; color: #FFFFFF; font-weight: 700; vertical-align: middle; display: inline-block; }
-        .nav-links { list-style: none; padding: 0; margin: 0; float: right; background-color: #FFFFFF; border-radius: 8px; }
-        .nav-links li { display: inline-block; }
-        .nav-links li a { text-decoration: none; color: #0F0F32; font-size: 13px; font-weight: 700; padding: 12px 15px; display: block; }
-        .nav-links li a:hover { text-decoration: underline; }
-        footer { background-color: #0F0F32; color: #DDE7F2; padding: 60px 60px 40px 60px; overflow: hidden; }
-        .footer-contact { float: left; width: 25%; text-align: left; }
-        .footer-contact img { height: 45px; display: inline-block; vertical-align: middle; margin-right: 10px; }
-        .footer-contact p { font-size: 11px; line-height: 1.5; margin: 15px 0 5px 0; color: #DDE7F2; }
-        .social-icons a { color: #FFFFFF; font-size: 24px; margin-right: 15px; text-decoration: none; }
-        .footer-columns { float: right; width: 68%; text-align: left; }
-        .column { display: inline-block; vertical-align: top; width: 13%; margin-bottom: 20px; }
-        .column h4 { font-size: 14px; text-decoration: underline; margin: 0 0 15px 0; color: #FFFFFF; font-weight: 600; }
-        .column a { display: block; color: #DDE7F2; text-decoration: none; font-size: 12px; margin-bottom: 8px; line-height: 1.4; }
-        .column a:hover { text-decoration: underline; }
-        hr { clear: both; border: 0; border-top: 1px solid #DDE7F2; margin-top: 30px; }
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-bio a:hover {
+            text-decoration: underline;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 10px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-<a href="#top" class="top-btn">Back to Top &uarr;</a>
-<nav>
-    <div class="logo-container">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text" id="top">Digital Compass</span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../cc.html">Cybercrime</a></li>
-        <li><a href="../cs.html">Cybersecurity</a></li>
-        <li><a href="../dp.html">Digital Privacy</a></li>
-        <li><a href="../et.html">Emerging Threats</a></li>
-        <li><a href="../pa.html">Prevention &amp; Awareness</a></li>
-        <li><a href="../rs.html">Resources</a></li>
-    </ul>
-</nav>
-<div class="main">
-    <h1 class="title">When the Internet Made History: 3 Famous Cyber Crime Cases</h1>
-    <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
-    <p class="nav-bio">
-        <a href="#intro">Introduction</a> &bull;
-        <a href="#body-one">Case 1: ILOVEYOU Virus</a> &bull;
-        <a href="#body-two">Case 2: WannaCry Attack</a> &bull;
-        <a href="#body-three">Case 3: Bangladesh Bank Heist</a> &bull;
-        <a href="#body-four">Lessons Learned</a> &bull;
-        <a href="#conclusion">Conclusion</a>
-    </p>
-    <hr width="100%" size="5" color="#212866">
-    <article>
-        <p id="intro" class="paragraph">
-            History is full of cyber crimes that shocked the world, exposed major weaknesses in our digital systems, and changed the way governments, businesses, and individuals think about online security. Studying these famous cases helps us understand just how serious and far-reaching cyber crime can be and what the consequences look like when security fails on a massive scale. From a virus that started in the Philippines and spread around the world in just a few days, to a ransomware attack that crippled hospitals in multiple countries, these three cyber crime cases stand out as defining moments in the history of digital threats. Each one carries important lessons that are still useful today.
-        </p>
-        <h2 id="body-one">Case 1: The ILOVEYOU Virus (2000)</h2>
-        <p class="paragraph">
-            In May 2000, internet users around the world started receiving an email with the subject line "ILOVEYOU" and an attachment labeled "LOVE-LETTER-FOR-YOU.TXT.vbs." People who opened the attachment unknowingly activated a harmful program that overwrote their files, stole their passwords, and immediately sent itself to everyone in their email contact list. This caused the virus to spread at an unbelievably fast rate. Within just ten days of its release, the ILOVEYOU virus had infected over 50 million computers worldwide and caused an estimated 10 billion US dollars in damages, making it one of the most destructive computer viruses ever recorded. The virus was traced back to Reonel Ramones and Onel de Guzman, two Filipino computer science students from Manila. However, at the time, the Philippines had no specific laws against creating malware, so both suspects were released without charges. This case was a major wake-up call for the Philippine government, which later worked to create cybercrime legislation. It also showed the global community how urgently they needed international cooperation and legal frameworks to deal with cyber crime across borders.
-        </p>
-        <h2 id="body-two">Case 2: The WannaCry Ransomware Attack (2017)</h2>
-        <p class="paragraph">
-            In May 2017, the world witnessed one of the most widespread and damaging ransomware attacks in history, known as WannaCry. The harmful software exploited a weakness in Microsoft Windows operating systems that had been discovered and kept secret by the United States National Security Agency (NSA) before being leaked by a hacking group. Once released, WannaCry spread quickly across the internet without requiring users to click on anything. It simply found computers with the weakness and infected them automatically. Within just a few days, over 200,000 computers in more than 150 countries had been hit. This included hospitals in the United Kingdom that were forced to turn away patients, telecommunications companies in Spain, and government agencies in Russia and China. Victims were shown a message demanding payment in Bitcoin to unlock their encrypted files. The total estimated damage ran into hundreds of millions of dollars. WannaCry showed the world the devastating real-life consequences of cyber attacks on critical infrastructure and the serious risks of governments keeping software weaknesses secret instead of reporting them to developers to be fixed.
-        </p>
-        <h2 id="body-three">Case 3: The Bangladesh Bank Heist (2016)</h2>
-        <p class="paragraph">
-            In February 2016, hackers carried out what many consider one of the most daring bank robberies in history, and they never went near a physical bank. Cyber criminals gained unauthorized access to Bangladesh Bank's systems and used the SWIFT international banking network, which is the system banks use to transfer money to each other globally, to send fake transfer requests totaling nearly one billion US dollars to accounts in the Philippines and Sri Lanka. While most of the transfers were blocked or reversed, approximately 81 million dollars successfully reached accounts at a casino in Manila before it disappeared, making recovery nearly impossible. Investigators later connected the attack to the Lazarus Group, a sophisticated criminal organization believed to be linked to North Korea. The case exposed critical weaknesses in the global financial system and showed that even well-established banking networks could be attacked by determined criminals. It also highlighted the Philippines as a weak point in international financial crime prevention, leading to significant changes in the country's anti-money laundering laws.
-        </p>
-        <h2 id="body-four">Lessons We Can Learn From These Cases</h2>
-        <p class="paragraph">
-            Each of these famous cyber crime cases carries important lessons that are still relevant today. The ILOVEYOU virus showed that the consequences of cyber crime are global and that the absence of adequate laws creates dangerous gaps that criminals can exploit. WannaCry showed us that outdated software and unpatched weaknesses can have catastrophic consequences, and that even non-technical victims, like hospital patients who depended on computer systems for their care, can suffer serious harm from cyber attacks. The Bangladesh Bank Heist revealed that no financial system is too big or too established to be targeted, and that stolen money can quickly disappear into complex international networks that make recovery extremely difficult. Together, these cases reinforce the importance of strong cybercrime laws, regular software updates, international cooperation, and a general culture of alertness in the face of ever-changing digital threats.
-        </p>
-        <h2 id="conclusion">Conclusion</h2>
-        <p class="paragraph">
-            The stories of the ILOVEYOU virus, the WannaCry attack, and the Bangladesh Bank Heist are more than just dramatic tales of digital crime. They are lessons in how fragile our connected world can be when security is not taken seriously. Each case revealed gaps in our systems, our laws, and our awareness that cyber criminals were quick to exploit. The good news is that each case also led to real improvements, including new legislation, stronger security protocols, better international cooperation, and greater public awareness of digital threats. These famous cases remind us that cyber crime is not a problem that only exists in theory or in the news. It has real, concrete consequences for real people and institutions. By learning from these moments in history, we can make smarter choices, build stronger defenses, and work together to create a safer digital world for everyone.
-        </p>
-    </article>
-</div>
-<footer>
-    <div class="footer-contact">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text">Digital Compass</span>
-        <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
         </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="title">When the Internet Made History: 3 Famous Cyber Crime Cases</h1>
+        <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
+
+        <p class="nav-bio">
+            <a href="#intro">Introduction</a> &bull;
+            <a href="#body-one">Case 1: ILOVEYOU Virus</a> &bull;
+            <a href="#body-two">Case 2: WannaCry Attack</a> &bull;
+            <a href="#body-three">Case 3: Bangladesh Bank Heist</a> &bull;
+            <a href="#body-four">Lessons Learned</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+
+        <hr width="100%" size="5" color="#0F0F32">
+
+        <article>
+            <p id="intro" class="paragraph">
+                History is full of cyber crimes that shocked the world, exposed major weaknesses in our digital systems, and changed the way governments, businesses, and individuals think about online security. Studying these famous cases helps us understand just how serious and far-reaching cyber crime can be and what the consequences look like when security fails on a massive scale. From a virus that started in the Philippines and spread around the world in just a few days, to a ransomware attack that crippled hospitals in multiple countries, these three cyber crime cases stand out as defining moments in the history of digital threats. Each one carries important lessons that are still useful today.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/famous-cybercrime-cases-img1.jpg" alt="The ILOVEYOU Virus" class="photos">
+                </a>
+                <figcaption>Photo from: Avast Blog</figcaption>
+            </figure>
+
+
+            <h2 id="body-one">Case 1: The ILOVEYOU Virus (2000)</h2>
+            <p class="paragraph">
+                In May 2000, internet users around the world started receiving an email with the subject line "ILOVEYOU" and an attachment labeled "LOVE-LETTER-FOR-YOU.TXT.vbs." People who opened the attachment unknowingly activated a harmful program that overwrote their files, stole their passwords, and immediately sent itself to everyone in their email contact list. This caused the virus to spread at an unbelievably fast rate. Within just ten days of its release, the ILOVEYOU virus had infected over 50 million computers worldwide and caused an estimated 10 billion US dollars in damages, making it one of the most destructive computer viruses ever recorded. The virus was traced back to Reonel Ramones and Onel de Guzman, two Filipino computer science students from Manila. However, at the time, the Philippines had no specific laws against creating malware, so both suspects were released without charges. This case was a major wake-up call for the Philippine government, which later worked to create cybercrime legislation. It also showed the global community how urgently they needed international cooperation and legal frameworks to deal with cyber crime across borders.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/famous-cybercrime-cases-img2.jpg" alt="WannaCry Ransomware Attack 2017" class="photos">
+                </a>
+                <figcaption>Photo from: Rand</figcaption>
+            </figure>
+
+            <h2 id="body-two">Case 2: The WannaCry Ransomware Attack (2017)</h2>
+            <p class="paragraph">
+                In May 2017, the world witnessed one of the most widespread and damaging ransomware attacks in history, known as WannaCry. The harmful software exploited a weakness in Microsoft Windows operating systems that had been discovered and kept secret by the United States National Security Agency (NSA) before being leaked by a hacking group. Once released, WannaCry spread quickly across the internet without requiring users to click on anything. It simply found computers with the weakness and infected them automatically. Within just a few days, over 200,000 computers in more than 150 countries had been hit. This included hospitals in the United Kingdom that were forced to turn away patients, telecommunications companies in Spain, and government agencies in Russia and China. Victims were shown a message demanding payment in Bitcoin to unlock their encrypted files. The total estimated damage ran into hundreds of millions of dollars. WannaCry showed the world the devastating real-life consequences of cyber attacks on critical infrastructure and the serious risks of governments keeping software weaknesses secret instead of reporting them to developers to be fixed.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/famous-cybercrime-cases-img3.jpg" alt="Bangladesh Bank Heist 2016" class="photos">
+                </a>
+                <figcaption>Photo from: LinkedIn</figcaption>
+            </figure>
+
+            <h2 id="body-three">Case 3: The Bangladesh Bank Heist (2016)</h2>
+            <p class="paragraph">
+                In February 2016, hackers carried out what many consider one of the most daring bank robberies in history, and they never went near a physical bank. Cyber criminals gained unauthorized access to Bangladesh Bank's systems and used the SWIFT international banking network, which is the system banks use to transfer money to each other globally, to send fake transfer requests totaling nearly one billion US dollars to accounts in the Philippines and Sri Lanka. While most of the transfers were blocked or reversed, approximately 81 million dollars successfully reached accounts at a casino in Manila before it disappeared, making recovery nearly impossible. Investigators later connected the attack to the Lazarus Group, a sophisticated criminal organization believed to be linked to North Korea. The case exposed critical weaknesses in the global financial system and showed that even well-established banking networks could be attacked by determined criminals. It also highlighted the Philippines as a weak point in international financial crime prevention, leading to significant changes in the country's anti-money laundering laws.
+            </p>
+
+            <h2 id="body-four">Lessons We Can Learn From These Cases</h2>
+            <p class="paragraph">
+                Each of these famous cyber crime cases carries important lessons that are still relevant today. The ILOVEYOU virus showed that the consequences of cyber crime are global and that the absence of adequate laws creates dangerous gaps that criminals can exploit. WannaCry showed us that outdated software and unpatched weaknesses can have catastrophic consequences, and that even non-technical victims, like hospital patients who depended on computer systems for their care, can suffer serious harm from cyber attacks. The Bangladesh Bank Heist revealed that no financial system is too big or too established to be targeted, and that stolen money can quickly disappear into complex international networks that make recovery extremely difficult. Together, these cases reinforce the importance of strong cybercrime laws, regular software updates, international cooperation, and a general culture of alertness in the face of ever-changing digital threats.
+            </p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                The stories of the ILOVEYOU virus, the WannaCry attack, and the Bangladesh Bank Heist are more than just dramatic tales of digital crime. They are lessons in how fragile our connected world can be when security is not taken seriously. Each case revealed gaps in our systems, our laws, and our awareness that cyber criminals were quick to exploit. The good news is that each case also led to real improvements, including new legislation, stronger security protocols, better international cooperation, and greater public awareness of digital threats. These famous cases remind us that cyber crime is not a problem that only exists in theory or in the news. It has real, concrete consequences for real people and institutions. By learning from these moments in history, we can make smarter choices, build stronger defenses, and work together to create a safer digital world for everyone.
+            </p>
+        </article>
     </div>
-    <div class="footer-columns">
-        <div class="column"><h4>Cybercrime</h4><a href="../cc.html">Concepts</a><a href="../cc.html">Types of Cybercrime</a></div>
-        <div class="column"><h4>Cybersecurity</h4><a href="../cs.html">Concepts</a><a href="../cs.html">Account Security</a><a href="../cs.html">Internet Safety</a><a href="../cs.html">Safe Online Habits</a></div>
-        <div class="column"><h4>Digital Privacy</h4><a href="../dp.html">Concepts</a><a href="../dp.html">Online Privacy</a><a href="../dp.html">Data Protection</a></div>
-        <div class="column"><h4>Emerging Threats</h4><a href="../et.html">New Technology</a><a href="../et.html">Cyberattack Methods</a></div>
-        <div class="column"><h4>Prevention</h4><a href="../pa.html">Cybercrime Prevention</a><a href="../pa.html">Online Safety Tips</a><a href="../pa.html">Digital Wellness</a></div>
-        <div class="column"><h4>Resources</h4><a href="../rs.html">FAQs</a><a href="../rs.html">References</a></div>
-        <div class="column"><h4>Quick Navs</h4><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contacts.html">Contacts</a></div>
-    </div>
-    <hr>
-</footer>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
 </body>
 </html>
