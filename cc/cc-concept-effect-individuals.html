@@ -8,118 +8,258 @@
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
-    <style>
-        body { background-color: #FFFFFF; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        .main { background-color: #FFFFFF; padding: 30px 0; width: 90%; max-width: 1000px; margin: 0 auto; }
-        .title { color: #212866; font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 10px; }
-        h2 { color: #212866; font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; line-height: 1.3; text-align: left; border-left: 5px solid #0F0F32; padding-left: 20px; margin-top: 40px; margin-bottom: 25px; width: 100%; box-sizing: border-box; }
-        .author { color: #212866; font-family: 'Inter', sans-serif; font-size: 18px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-top: 0; }
-        .nav-bio { color: #212866; font-family: 'Inter', sans-serif; font-size: 16px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
-        .nav-bio a { color: #212866; text-decoration: none; font-weight: 600; }
-        .nav-bio a:hover { text-decoration: underline; }
-        .paragraph { color: #212866; margin: 0 0 50px 0; font-family: 'Inter', sans-serif; font-size: 19px; font-weight: 500; line-height: 1.8; text-align: justify; text-indent: 50px; width: 100%; }
-        .top-btn { position: fixed; bottom: 50px; right: 50px; background-color: #0F0F32; color: #FFFFFF; text-decoration: none; padding: 15px 50px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        nav { background-color: #0F0F32; padding: 20px 60px; overflow: hidden; }
-        .logo-container { float: left; }
-        .logo-container img { height: 40px; vertical-align: middle; margin-right: 10px; }
-        .logo-text { font-size: 20px; font-family: 'Playfair Display', serif; color: #FFFFFF; font-weight: 700; vertical-align: middle; display: inline-block; }
-        .nav-links { list-style: none; padding: 0; margin: 0; float: right; background-color: #FFFFFF; border-radius: 8px; }
-        .nav-links li { display: inline-block; }
-        .nav-links li a { text-decoration: none; color: #0F0F32; font-size: 13px; font-weight: 700; padding: 12px 15px; display: block; }
-        .nav-links li a:hover { text-decoration: underline; }
-        footer { background-color: #0F0F32; color: #DDE7F2; padding: 60px 60px 40px 60px; overflow: hidden; }
-        .footer-contact { float: left; width: 25%; text-align: left; }
-        .footer-contact img { height: 45px; display: inline-block; vertical-align: middle; margin-right: 10px; }
-        .footer-contact p { font-size: 11px; line-height: 1.5; margin: 15px 0 5px 0; color: #DDE7F2; }
-        .social-icons a { color: #FFFFFF; font-size: 24px; margin-right: 15px; text-decoration: none; }
-        .footer-columns { float: right; width: 68%; text-align: left; }
-        .column { display: inline-block; vertical-align: top; width: 13%; margin-bottom: 20px; }
-        .column h4 { font-size: 14px; text-decoration: underline; margin: 0 0 15px 0; color: #FFFFFF; font-weight: 600; }
-        .column a { display: block; color: #DDE7F2; text-decoration: none; font-size: 12px; margin-bottom: 8px; line-height: 1.4; }
-        .column a:hover { text-decoration: underline; }
-        hr { clear: both; border: 0; border-top: 1px solid #DDE7F2; margin-top: 30px; }
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-bio a:hover {
+            text-decoration: underline;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 10px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-<a href="#top" class="top-btn">Back to Top &uarr;</a>
-<nav>
-    <div class="logo-container">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text" id="top">Digital Compass</span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../cc.html">Cybercrime</a></li>
-        <li><a href="../cs.html">Cybersecurity</a></li>
-        <li><a href="../dp.html">Digital Privacy</a></li>
-        <li><a href="../et.html">Emerging Threats</a></li>
-        <li><a href="../pa.html">Prevention &amp; Awareness</a></li>
-        <li><a href="../rs.html">Resources</a></li>
-    </ul>
-</nav>
-<div class="main">
-    <h1 class="title">How Cyber Crime Hurts Real People: Effects on Individuals</h1>
-    <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
-    <p class="nav-bio">
-        <a href="#intro">Introduction</a> &bull;
-        <a href="#body-one">Financial Harm</a> &bull;
-        <a href="#body-two">Emotional Impact</a> &bull;
-        <a href="#body-three">Loss of Privacy</a> &bull;
-        <a href="#body-four">Reputation Damage</a> &bull;
-        <a href="#body-five">Effects on Students</a> &bull;
-        <a href="#conclusion">Conclusion</a>
-    </p>
-    <hr width="100%" size="5" color="#212866">
-    <article>
-        <p id="intro" class="paragraph">
-            When we talk about cyber crime, it is easy to focus on the technical side, such as hacking tools, stolen data, or harmful software. But behind every cyber crime is a real person whose life has been affected. The effects of cyber crime on individuals can be very personal. They affect not just a person's money but also their feelings, their sense of safety, and their daily life. Whether it is losing money to an online scam, having private photos shared without permission, or being harassed on social media, the impact is real and often long-lasting. This article looks at the different ways cyber crime affects individuals and why it should be taken seriously by everyone.
-        </p>
-        <h2 id="body-one">Financial Losses That Are Hard to Recover From</h2>
-        <p class="paragraph">
-            One of the most immediate and painful effects of cyber crime is financial loss. Online scams, identity theft, and phishing attacks can drain a person's savings very quickly. Victims of credit card fraud may find charges on their accounts that they did not make, while those who fall for investment scams may lose money they worked years to save. In the Philippines, e-commerce scams and online banking fraud have caused millions of pesos in losses for ordinary Filipinos. What makes this especially painful is that getting stolen money back is often impossible. Banks may not always be able to reverse fraudulent transactions, and finding the criminal is rarely easy. The financial damage can force victims to cut back on basic needs, delay important life plans, or even fall into debt. For families who do not have much money to begin with, even one successful scam can cause severe financial hardship.
-        </p>
-        <h2 id="body-two">The Emotional and Mental Toll</h2>
-        <p class="paragraph">
-            Beyond money, cyber crime causes serious emotional and mental harm to its victims. Many victims feel ashamed and embarrassed, asking themselves how they could have been tricked. Victims of cyberbullying or online harassment often experience anxiety, depression, and a loss of self-confidence. Those whose private information or photos have been shared without their permission may feel violated, humiliated, and helpless. In serious cases, the mental effects of cyber crime can be as painful as those of physical crimes. Victims may develop post-traumatic stress disorder (PTSD), have difficulty trusting others, or struggle to return to their normal daily activities. These mental health effects are often ignored or dismissed, but they are very real and deserve attention and care. It is important for victims to know that being targeted by a cyber criminal is not their fault, and that help is available.
-        </p>
-        <h2 id="body-three">Invasion of Privacy and Loss of Personal Data</h2>
-        <p class="paragraph">
-            Privacy is something most people take for granted until it is taken away. When cyber criminals steal personal data such as home addresses, phone numbers, ID numbers, or financial details, victims lose control over their own information. This invasion of privacy can have wide effects, from receiving unwanted messages and harassment to having personal details used to commit further crimes. Identity theft is especially harmful because criminals can use stolen information to open bank accounts, apply for loans, or commit fraud under the victim's name. This leaves the victim to deal with the legal and financial problems that follow. Even when stolen data is not used right away, knowing that personal information is in the hands of criminals can cause ongoing worry and distrust. In the digital age, personal data is extremely valuable, and losing control of it can feel like losing a part of yourself.
-        </p>
-        <h2 id="body-four">Damage to a Person's Reputation</h2>
-        <p class="paragraph">
-            Cyber crime can cause serious damage to a person's reputation, and this kind of damage can be very hard to undo. Fake social media accounts created using someone's identity can spread false information or offensive content that others may believe is real. Victims of doxxing, where personal information is posted online for others to see, may face harassment from strangers based on wrong information. Private messages or photos obtained through hacking can be shared publicly without consent, causing deep personal pain and social consequences. In some cases, reputational damage from cyber crime can affect a person's job, relationships, and standing in their community for many years. Young people are especially vulnerable because content posted or shared online during their school years can follow them into adulthood. Clearing one's name after a cyber crime attack is a long and tiring process that adds to the burden already faced by victims.
-        </p>
-        <h2 id="body-five">The Impact on Students and Young People</h2>
-        <p class="paragraph">
-            Students and young people are among the most affected by cyber crime, since so much of their social and school life happens online. Cyberbullying is especially common among teenagers, with many victims suffering in silence because they fear that reporting it will make things worse. Online scams targeting students often come in the form of fake scholarship offers, work-from-home job ads, or fake school-related websites. Young people are also more likely to share personal information on social media without fully understanding the risks, making them easy targets for identity theft. For students who rely on the internet for their studies, having their accounts hacked or devices infected with harmful software can badly disrupt their education. The effects of cyber crime on young people can also shape how they feel about technology in the long run. Some may become too afraid to use the internet, while others may not realize that their own risky online behavior could harm other people.
-        </p>
-        <h2 id="conclusion">Conclusion</h2>
-        <p class="paragraph">
-            The effects of cyber crime on individuals are wide-ranging and deeply personal, from financial ruin and emotional trauma to damaged reputations and lost privacy. No one is completely safe from the threat, and the consequences can follow victims for months or even years. It is important for people of all ages to take cyber crime seriously and to take steps to protect themselves online. If you or someone you know has been a victim of cyber crime, it is important to report it to the proper authorities, seek emotional support, and take steps to secure your accounts and personal information. Remember that being victimized is not a sign of weakness. Cyber criminals are skilled at tricking people, and even the most careful individuals can be caught off guard. Staying informed and alert is the best protection against becoming a victim.
-        </p>
-    </article>
-</div>
-<footer>
-    <div class="footer-contact">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text">Digital Compass</span>
-        <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
         </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="title">How Cyber Crime Hurts Real People: Effects on Individuals</h1>
+        <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
+
+        <p class="nav-bio">
+            <a href="#intro">Introduction</a> &bull;
+            <a href="#body-one">Financial Harm</a> &bull;
+            <a href="#body-two">Emotional Impact</a> &bull;
+            <a href="#body-three">Loss of Privacy</a> &bull;
+            <a href="#body-four">Reputation Damage</a> &bull;
+            <a href="#body-five">Effects on Students</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+
+        <hr width="100%" size="5" color="#0F0F32">
+
+        <article>
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/effect-on-individuals-cover.jpg" alt="Effects of Cybercrime on Individuals" class="photos">
+                </a>
+                <figcaption>Photo from: Wallarm</figcaption>
+            </figure>
+
+            <p id="intro" class="paragraph">
+                When we talk about cyber crime, it is easy to focus on the technical side, such as hacking tools, stolen data, or harmful software. But behind every cyber crime is a real person whose life has been affected. The effects of cyber crime on individuals can be very personal. They affect not just a person's money but also their feelings, their sense of safety, and their daily life. Whether it is losing money to an online scam, having private photos shared without permission, or being harassed on social media, the impact is real and often long-lasting. This article looks at the different ways cyber crime affects individuals and why it should be taken seriously by everyone.
+            </p>
+
+            <h2 id="body-one">Financial Losses That Are Hard to Recover From</h2>
+            <p class="paragraph">
+                One of the most immediate and painful effects of cyber crime is financial loss. Online scams, identity theft, and phishing attacks can drain a person's savings very quickly. Victims of credit card fraud may find charges on their accounts that they did not make, while those who fall for investment scams may lose money they worked years to save. In the Philippines, e-commerce scams and online banking fraud have caused millions of pesos in losses for ordinary Filipinos. What makes this especially painful is that getting stolen money back is often impossible. Banks may not always be able to reverse fraudulent transactions, and finding the criminal is rarely easy. The financial damage can force victims to cut back on basic needs, delay important life plans, or even fall into debt. For families who do not have much money to begin with, even one successful scam can cause severe financial hardship.
+            </p>
+
+            <h2 id="body-two">The Emotional and Mental Toll</h2>
+            <p class="paragraph">
+                Beyond money, cyber crime causes serious emotional and mental harm to its victims. Many victims feel ashamed and embarrassed, asking themselves how they could have been tricked. Victims of cyberbullying or online harassment often experience anxiety, depression, and a loss of self-confidence. Those whose private information or photos have been shared without their permission may feel violated, humiliated, and helpless. In serious cases, the mental effects of cyber crime can be as painful as those of physical crimes. Victims may develop post-traumatic stress disorder (PTSD), have difficulty trusting others, or struggle to return to their normal daily activities. These mental health effects are often ignored or dismissed, but they are very real and deserve attention and care. It is important for victims to know that being targeted by a cyber criminal is not their fault, and that help is available.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/effect-on-individuals-img2.jpeg" alt="Emotional and Mental Effects of Cybercrime" class="photos">
+                </a>
+                <figcaption>Photo from: SRM Solutions </figcaption>
+            </figure>
+
+            <h2 id="body-three">Invasion of Privacy and Loss of Personal Data</h2>
+            <p class="paragraph">
+                Privacy is something most people take for granted until it is taken away. When cyber criminals steal personal data such as home addresses, phone numbers, ID numbers, or financial details, victims lose control over their own information. This invasion of privacy can have wide effects, from receiving unwanted messages and harassment to having personal details used to commit further crimes. Identity theft is especially harmful because criminals can use stolen information to open bank accounts, apply for loans, or commit fraud under the victim's name. This leaves the victim to deal with the legal and financial problems that follow. Even when stolen data is not used right away, knowing that personal information is in the hands of criminals can cause ongoing worry and distrust. In the digital age, personal data is extremely valuable, and losing control of it can feel like losing a part of yourself.
+            </p>
+
+            <h2 id="body-four">Damage to a Person's Reputation</h2>
+            <p class="paragraph">
+                Cyber crime can cause serious damage to a person's reputation, and this kind of damage can be very hard to undo. Fake social media accounts created using someone's identity can spread false information or offensive content that others may believe is real. Victims of doxxing, where personal information is posted online for others to see, may face harassment from strangers based on wrong information. Private messages or photos obtained through hacking can be shared publicly without consent, causing deep personal pain and social consequences. In some cases, reputational damage from cyber crime can affect a person's job, relationships, and standing in their community for many years. Young people are especially vulnerable because content posted or shared online during their school years can follow them into adulthood. Clearing one's name after a cyber crime attack is a long and tiring process that adds to the burden already faced by victims.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/effect-on-individuals-img3.jpg" alt="Cybercrime Effects on Students and Young People" class="photos">
+                </a>
+                <figcaption>Photo from: </figcaption>
+            </figure>
+
+            <h2 id="body-five">The Impact on Students and Young People</h2>
+            <p class="paragraph">
+                Students and young people are among the most affected by cyber crime, since so much of their social and school life happens online. Cyberbullying is especially common among teenagers, with many victims suffering in silence because they fear that reporting it will make things worse. Online scams targeting students often come in the form of fake scholarship offers, work-from-home job ads, or fake school-related websites. Young people are also more likely to share personal information on social media without fully understanding the risks, making them easy targets for identity theft. For students who rely on the internet for their studies, having their accounts hacked or devices infected with harmful software can badly disrupt their education. The effects of cyber crime on young people can also shape how they feel about technology in the long run. Some may become too afraid to use the internet, while others may not realize that their own risky online behavior could harm other people.
+            </p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                The effects of cyber crime on individuals are wide-ranging and deeply personal, from financial ruin and emotional trauma to damaged reputations and lost privacy. No one is completely safe from the threat, and the consequences can follow victims for months or even years. It is important for people of all ages to take cyber crime seriously and to take steps to protect themselves online. If you or someone you know has been a victim of cyber crime, it is important to report it to the proper authorities, seek emotional support, and take steps to secure your accounts and personal information. Remember that being victimized is not a sign of weakness. Cyber criminals are skilled at tricking people, and even the most careful individuals can be caught off guard. Staying informed and alert is the best protection against becoming a victim.
+            </p>
+        </article>
     </div>
-    <div class="footer-columns">
-        <div class="column"><h4>Cybercrime</h4><a href="../cc.html">Concepts</a><a href="../cc.html">Types of Cybercrime</a></div>
-        <div class="column"><h4>Cybersecurity</h4><a href="../cs.html">Concepts</a><a href="../cs.html">Account Security</a><a href="../cs.html">Internet Safety</a><a href="../cs.html">Safe Online Habits</a></div>
-        <div class="column"><h4>Digital Privacy</h4><a href="../dp.html">Concepts</a><a href="../dp.html">Online Privacy</a><a href="../dp.html">Data Protection</a></div>
-        <div class="column"><h4>Emerging Threats</h4><a href="../et.html">New Technology</a><a href="../et.html">Cyberattack Methods</a></div>
-        <div class="column"><h4>Prevention</h4><a href="../pa.html">Cybercrime Prevention</a><a href="../pa.html">Online Safety Tips</a><a href="../pa.html">Digital Wellness</a></div>
-        <div class="column"><h4>Resources</h4><a href="../rs.html">FAQs</a><a href="../rs.html">References</a></div>
-        <div class="column"><h4>Quick Navs</h4><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contacts.html">Contacts</a></div>
-    </div>
-    <hr>
-</footer>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
 </body>
 </html>
