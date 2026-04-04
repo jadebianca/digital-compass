@@ -8,118 +8,258 @@
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
-    <style>
-        body { background-color: #FFFFFF; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        .main { background-color: #FFFFFF; padding: 30px 0; width: 90%; max-width: 1000px; margin: 0 auto; }
-        .title { color: #212866; font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 10px; }
-        h2 { color: #212866; font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; line-height: 1.3; text-align: left; border-left: 5px solid #0F0F32; padding-left: 20px; margin-top: 40px; margin-bottom: 25px; width: 100%; box-sizing: border-box; }
-        .author { color: #212866; font-family: 'Inter', sans-serif; font-size: 18px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-top: 0; }
-        .nav-bio { color: #212866; font-family: 'Inter', sans-serif; font-size: 16px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
-        .nav-bio a { color: #212866; text-decoration: none; font-weight: 600; }
-        .nav-bio a:hover { text-decoration: underline; }
-        .paragraph { color: #212866; margin: 0 0 50px 0; font-family: 'Inter', sans-serif; font-size: 19px; font-weight: 500; line-height: 1.8; text-align: justify; text-indent: 50px; width: 100%; }
-        .top-btn { position: fixed; bottom: 50px; right: 50px; background-color: #0F0F32; color: #FFFFFF; text-decoration: none; padding: 15px 50px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        nav { background-color: #0F0F32; padding: 20px 60px; overflow: hidden; }
-        .logo-container { float: left; }
-        .logo-container img { height: 40px; vertical-align: middle; margin-right: 10px; }
-        .logo-text { font-size: 20px; font-family: 'Playfair Display', serif; color: #FFFFFF; font-weight: 700; vertical-align: middle; display: inline-block; }
-        .nav-links { list-style: none; padding: 0; margin: 0; float: right; background-color: #FFFFFF; border-radius: 8px; }
-        .nav-links li { display: inline-block; }
-        .nav-links li a { text-decoration: none; color: #0F0F32; font-size: 13px; font-weight: 700; padding: 12px 15px; display: block; }
-        .nav-links li a:hover { text-decoration: underline; }
-        footer { background-color: #0F0F32; color: #DDE7F2; padding: 60px 60px 40px 60px; overflow: hidden; }
-        .footer-contact { float: left; width: 25%; text-align: left; }
-        .footer-contact img { height: 45px; display: inline-block; vertical-align: middle; margin-right: 10px; }
-        .footer-contact p { font-size: 11px; line-height: 1.5; margin: 15px 0 5px 0; color: #DDE7F2; }
-        .social-icons a { color: #FFFFFF; font-size: 24px; margin-right: 15px; text-decoration: none; }
-        .footer-columns { float: right; width: 68%; text-align: left; }
-        .column { display: inline-block; vertical-align: top; width: 13%; margin-bottom: 20px; }
-        .column h4 { font-size: 14px; text-decoration: underline; margin: 0 0 15px 0; color: #FFFFFF; font-weight: 600; }
-        .column a { display: block; color: #DDE7F2; text-decoration: none; font-size: 12px; margin-bottom: 8px; line-height: 1.4; }
-        .column a:hover { text-decoration: underline; }
-        hr { clear: both; border: 0; border-top: 1px solid #DDE7F2; margin-top: 30px; }
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-bio a:hover {
+            text-decoration: underline;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 10px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-<a href="#top" class="top-btn">Back to Top &uarr;</a>
-<nav>
-    <div class="logo-container">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text" id="top">Digital Compass</span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../cc.html">Cybercrime</a></li>
-        <li><a href="../cs.html">Cybersecurity</a></li>
-        <li><a href="../dp.html">Digital Privacy</a></li>
-        <li><a href="../et.html">Emerging Threats</a></li>
-        <li><a href="../pa.html">Prevention &amp; Awareness</a></li>
-        <li><a href="../rs.html">Resources</a></li>
-    </ul>
-</nav>
-<div class="main">
-    <h1 class="title">More Than Money: The Social and Psychological Effects of Cyber Crime</h1>
-    <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
-    <p class="nav-bio">
-        <a href="#intro">Introduction</a> &bull;
-        <a href="#body-one">Anxiety and Fear</a> &bull;
-        <a href="#body-two">Social Withdrawal</a> &bull;
-        <a href="#body-three">Damaged Trust</a> &bull;
-        <a href="#body-four">Effects of Cyberbullying</a> &bull;
-        <a href="#body-five">Impact on Society</a> &bull;
-        <a href="#conclusion">Conclusion</a>
-    </p>
-    <hr width="100%" size="5" color="#212866">
-    <article>
-        <p id="intro" class="paragraph">
-            When most people think about the effects of cyber crime, they think about money, such as stolen bank accounts, fake transactions, and financial losses. But the damage caused by cyber crime goes much deeper than money. The social and psychological effects of being a victim of cyber crime can be just as painful, and in some cases, even harder to recover from than the financial losses. Fear, shame, loneliness, and a broken sense of trust are just some of the emotional effects that victims may experience. Understanding these non-financial effects is important for seeing the full picture of why cyber crime is such a serious problem in society.
-        </p>
-        <h2 id="body-one">Anxiety, Fear, and Feeling Unsafe</h2>
-        <p class="paragraph">
-            One of the most common psychological responses to becoming a victim of cyber crime is a lasting feeling of anxiety and fear. Victims often describe feeling violated, as if their personal space has been invaded even though the crime happened in the digital world. After an incident like identity theft or account hacking, many victims become overly cautious. They constantly worry about whether their accounts are safe, whether they are being watched, or whether they will be targeted again. This ongoing state of worry can disrupt daily life, making it hard to work, study, or relax. A fear of using the internet may develop in some victims, especially elderly people or those who were already less confident with technology. In more serious cases, victims may develop symptoms of anxiety disorder or even post-traumatic stress disorder (PTSD), which requires professional mental health support to recover from. The psychological impact of losing one's sense of digital safety should never be dismissed.
-        </p>
-        <h2 id="body-two">Social Withdrawal and Loneliness</h2>
-        <p class="paragraph">
-            Cyber crime, especially cyberbullying and online harassment, can cause victims to pull away from social activities both online and offline. When someone is harassed or humiliated publicly on social media, the natural response is often to retreat. They may delete accounts, stop going online, and avoid social interactions to escape further pain. This social withdrawal can be especially harmful for young people, for whom online connection is a big part of their social lives. Pulling away from social media may cut them off from friendships, school groups, and support networks at a time when they need help the most. Even victims of financial cyber crimes may pull away out of shame. They may avoid talking to friends or family about what happened because they feel embarrassed about being deceived. Over time, this isolation can make the psychological harm worse, leading to loneliness, depression, and a lower quality of life.
-        </p>
-        <h2 id="body-three">Damaged Trust and Changed Online Behavior</h2>
-        <p class="paragraph">
-            Trust is one of the first things to be lost when someone becomes a victim of cyber crime. After being tricked by a phishing scam, a fake online seller, or a fraudulent social media account, victims often develop a deep distrust of online interactions. They may become suspicious of real emails, unwilling to make any online purchases, or reluctant to share even basic information on trusted platforms. While some caution is healthy, too much distrust can stop victims from fully participating in the digital economy and accessing online services they actually need. This change in online behavior can have practical effects, such as avoiding online banking, refusing to use government e-services, or pulling away from digital communication tools that are increasingly essential in modern life. The loss of trust goes beyond the individual too, affecting people's general confidence in digital platforms, online businesses, and the institutions that are supposed to protect them.
-        </p>
-        <h2 id="body-four">The Deep Wounds of Cyberbullying</h2>
-        <p class="paragraph">
-            Cyberbullying is one of the most socially and psychologically harmful forms of cyber crime, especially for children and teenagers. Unlike traditional bullying, cyberbullying can happen anytime and anywhere. The victim cannot escape it by going home or avoiding school because the harassment follows them through their phone or computer. Cyberbullying can take many forms, including sending threatening messages, spreading false rumors, sharing embarrassing photos without permission, or publicly humiliating someone in online spaces. The psychological effects on victims can include severe depression, loss of self-confidence, poor school performance, and in the most serious cases, thoughts of self-harm. Research consistently shows that victims of cyberbullying are much more likely to experience mental health problems than those who are not bullied online. In the Philippines, where social media use is among the highest in the world, cyberbullying has become a serious and growing concern that affects students, teachers, and community members.
-        </p>
-        <h2 id="body-five">Broader Impact on Society</h2>
-        <p class="paragraph">
-            The social and psychological effects of cyber crime do not stay with individual victims. They spread outward and affect whole communities and society as a whole. When cyber crime is widespread, it creates a general feeling of distrust and fear around digital technology that can slow the adoption of helpful online services. Communities where online scams are common may develop a culture of skepticism that makes it harder for honest businesses and government services to build relationships with citizens online. The spread of fake news and misinformation, which is itself a form of cyber crime, can damage social unity, cause conflict, and undermine people's ability to make informed decisions. In workplaces and schools, a culture of fear around cyber threats can reduce productivity and creativity if employees and students become too afraid to use digital tools. Addressing these social and psychological effects requires not just support for individual victims but community-level education, open conversations, and a shared commitment to building safer digital spaces for everyone.
-        </p>
-        <h2 id="conclusion">Conclusion</h2>
-        <p class="paragraph">
-            The social and psychological effects of cyber crime are deep, long-lasting, and wide-reaching. From individual anxiety and social withdrawal to widespread loss of trust and community harm, the human cost of cyber crime goes well beyond financial losses. Victims deserve recognition, support, and access to resources that can help them recover both emotionally and practically. Schools, families, and communities play an important role in creating environments where victims feel safe to speak up and where discussions about online safety are normal and open. As a society, we must work together to reduce the shame around being a victim of cyber crime, provide mental health resources for those affected, and build a digital culture based on respect, safety, and responsibility. Because in the end, the true measure of cyber crime's harm is not in numbers on a balance sheet. It is in the lives and well-being of the people affected.
-        </p>
-    </article>
-</div>
-<footer>
-    <div class="footer-contact">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text">Digital Compass</span>
-        <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
         </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="title">More Than Money: The Social and Psychological Effects of Cyber Crime</h1>
+        <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
+
+        <p class="nav-bio">
+            <a href="#intro">Introduction</a> &bull;
+            <a href="#body-one">Anxiety and Fear</a> &bull;
+            <a href="#body-two">Social Withdrawal</a> &bull;
+            <a href="#body-three">Damaged Trust</a> &bull;
+            <a href="#body-four">Effects of Cyberbullying</a> &bull;
+            <a href="#body-five">Impact on Society</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+
+        <hr width="100%" size="5" color="#0F0F32">
+
+        <article>
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/social-psychological-effects-cover.jpg" alt="Social and Psychological Effects of Cybercrime" class="photos">
+                </a>
+                <figcaption>Photo from: Cyber B. A. A. P.</figcaption>
+            </figure>
+
+            <p id="intro" class="paragraph">
+                When most people think about the effects of cyber crime, they think about money, such as stolen bank accounts, fake transactions, and financial losses. But the damage caused by cyber crime goes much deeper than money. The social and psychological effects of being a victim of cyber crime can be just as painful, and in some cases, even harder to recover from than the financial losses. Fear, shame, loneliness, and a broken sense of trust are just some of the emotional effects that victims may experience. Understanding these non-financial effects is important for seeing the full picture of why cyber crime is such a serious problem in society.
+            </p>
+
+            <h2 id="body-one">Anxiety, Fear, and Feeling Unsafe</h2>
+            <p class="paragraph">
+                One of the most common psychological responses to becoming a victim of cyber crime is a lasting feeling of anxiety and fear. Victims often describe feeling violated, as if their personal space has been invaded even though the crime happened in the digital world. After an incident like identity theft or account hacking, many victims become overly cautious. They constantly worry about whether their accounts are safe, whether they are being watched, or whether they will be targeted again. This ongoing state of worry can disrupt daily life, making it hard to work, study, or relax. A fear of using the internet may develop in some victims, especially elderly people or those who were already less confident with technology. In more serious cases, victims may develop symptoms of anxiety disorder or even post-traumatic stress disorder (PTSD), which requires professional mental health support to recover from. The psychological impact of losing one's sense of digital safety should never be dismissed.
+            </p>
+
+            <h2 id="body-two">Social Withdrawal and Loneliness</h2>
+            <p class="paragraph">
+                Cyber crime, especially cyberbullying and online harassment, can cause victims to pull away from social activities both online and offline. When someone is harassed or humiliated publicly on social media, the natural response is often to retreat. They may delete accounts, stop going online, and avoid social interactions to escape further pain. This social withdrawal can be especially harmful for young people, for whom online connection is a big part of their social lives. Pulling away from social media may cut them off from friendships, school groups, and support networks at a time when they need help the most. Even victims of financial cyber crimes may pull away out of shame. They may avoid talking to friends or family about what happened because they feel embarrassed about being deceived. Over time, this isolation can make the psychological harm worse, leading to loneliness, depression, and a lower quality of life.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/social-psychological-effects-img2.jpg" alt="Damaged Trust and Changed Online Behavior" class="photos">
+                </a>
+                <figcaption>Photo from: China Business Knowledge</figcaption>
+            </figure>
+
+            <h2 id="body-three">Damaged Trust and Changed Online Behavior</h2>
+            <p class="paragraph">
+                Trust is one of the first things to be lost when someone becomes a victim of cyber crime. After being tricked by a phishing scam, a fake online seller, or a fraudulent social media account, victims often develop a deep distrust of online interactions. They may become suspicious of real emails, unwilling to make any online purchases, or reluctant to share even basic information on trusted platforms. While some caution is healthy, too much distrust can stop victims from fully participating in the digital economy and accessing online services they actually need. This change in online behavior can have practical effects, such as avoiding online banking, refusing to use government e-services, or pulling away from digital communication tools that are increasingly essential in modern life. The loss of trust goes beyond the individual too, affecting people's general confidence in digital platforms, online businesses, and the institutions that are supposed to protect them.
+            </p>
+
+            <h2 id="body-four">The Deep Wounds of Cyberbullying</h2>
+            <p class="paragraph">
+                Cyberbullying is one of the most socially and psychologically harmful forms of cyber crime, especially for children and teenagers. Unlike traditional bullying, cyberbullying can happen anytime and anywhere. The victim cannot escape it by going home or avoiding school because the harassment follows them through their phone or computer. Cyberbullying can take many forms, including sending threatening messages, spreading false rumors, sharing embarrassing photos without permission, or publicly humiliating someone in online spaces. The psychological effects on victims can include severe depression, loss of self-confidence, poor school performance, and in the most serious cases, thoughts of self-harm. Research consistently shows that victims of cyberbullying are much more likely to experience mental health problems than those who are not bullied online. In the Philippines, where social media use is among the highest in the world, cyberbullying has become a serious and growing concern that affects students, teachers, and community members.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/social-psychological-effects-img3.webp" alt="Broader Social Impact of Cybercrime" class="photos">
+                </a>
+                <figcaption>Photo from: University of Oxford</figcaption>
+            </figure>
+
+            <h2 id="body-five">Broader Impact on Society</h2>
+            <p class="paragraph">
+                The social and psychological effects of cyber crime do not stay with individual victims. They spread outward and affect whole communities and society as a whole. When cyber crime is widespread, it creates a general feeling of distrust and fear around digital technology that can slow the adoption of helpful online services. Communities where online scams are common may develop a culture of skepticism that makes it harder for honest businesses and government services to build relationships with citizens online. The spread of fake news and misinformation, which is itself a form of cyber crime, can damage social unity, cause conflict, and undermine people's ability to make informed decisions. In workplaces and schools, a culture of fear around cyber threats can reduce productivity and creativity if employees and students become too afraid to use digital tools. Addressing these social and psychological effects requires not just support for individual victims but community-level education, open conversations, and a shared commitment to building safer digital spaces for everyone.
+            </p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                The social and psychological effects of cyber crime are deep, long-lasting, and wide-reaching. From individual anxiety and social withdrawal to widespread loss of trust and community harm, the human cost of cyber crime goes well beyond financial losses. Victims deserve recognition, support, and access to resources that can help them recover both emotionally and practically. Schools, families, and communities play an important role in creating environments where victims feel safe to speak up and where discussions about online safety are normal and open. As a society, we must work together to reduce the shame around being a victim of cyber crime, provide mental health resources for those affected, and build a digital culture based on respect, safety, and responsibility. Because in the end, the true measure of cyber crime's harm is not in numbers on a balance sheet. It is in the lives and well-being of the people affected.
+            </p>
+        </article>
     </div>
-    <div class="footer-columns">
-        <div class="column"><h4>Cybercrime</h4><a href="../cc.html">Concepts</a><a href="../cc.html">Types of Cybercrime</a></div>
-        <div class="column"><h4>Cybersecurity</h4><a href="../cs.html">Concepts</a><a href="../cs.html">Account Security</a><a href="../cs.html">Internet Safety</a><a href="../cs.html">Safe Online Habits</a></div>
-        <div class="column"><h4>Digital Privacy</h4><a href="../dp.html">Concepts</a><a href="../dp.html">Online Privacy</a><a href="../dp.html">Data Protection</a></div>
-        <div class="column"><h4>Emerging Threats</h4><a href="../et.html">New Technology</a><a href="../et.html">Cyberattack Methods</a></div>
-        <div class="column"><h4>Prevention</h4><a href="../pa.html">Cybercrime Prevention</a><a href="../pa.html">Online Safety Tips</a><a href="../pa.html">Digital Wellness</a></div>
-        <div class="column"><h4>Resources</h4><a href="../rs.html">FAQs</a><a href="../rs.html">References</a></div>
-        <div class="column"><h4>Quick Navs</h4><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contacts.html">Contacts</a></div>
-    </div>
-    <hr>
-</footer>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
 </body>
 </html>
