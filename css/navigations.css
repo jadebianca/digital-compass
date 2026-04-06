@@ -6,8 +6,9 @@ nav {
 }
 
 .logo-container {
-    display: block;
-    margin-bottom:15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
 }
 
 .logo-container img {
@@ -28,11 +29,11 @@ nav {
 .nav-links {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 0 0 15px;
     display: inline-block;
     background-color: #FFFFFF;
     border-radius: 8px;
-    float: none;
+    vertical-align: middle;
 }
 
 .nav-links li {
@@ -42,11 +43,12 @@ nav {
 .nav-links li a {
     text-decoration: none;
     color: #0F0F32;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
-    padding: 12px 15px;
+    padding: 10px 12px;
     display: block;
 }
+
 
 footer {
     background-color: #0F0F32;
