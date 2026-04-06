@@ -1,6 +1,6 @@
 nav {
     background-color: #0F0F32;
-    padding: 20px 40px;
+    padding: 20px 50px;
     text-align: left;
     overflow: hidden;
 }
@@ -42,7 +42,7 @@ nav {
 .nav-links li a {
     text-decoration: none;
     color: #0F0F32;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     padding: 12px 15px;
     display: block;
