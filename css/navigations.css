@@ -166,7 +166,7 @@ hr {
 
 @media (min-width: 768px) {
     nav {
-        padding: 20px auto;
+        padding: 20px 60px;
         text-align: left;
     }
 
