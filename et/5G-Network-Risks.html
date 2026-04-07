@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5G Network Risks in Modern Connectivity – Digital Compass</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <style>
+        :root {
+            --heading-color: #211F76;
+            --paragraph-color: #212866;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--paragraph-color);
+        }
+
+        /* Main Article Layout */
+        .main {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2, h3 { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--heading-color); 
+        }
+
+        .article-title {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .author-tag {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+
+        .nav-links2 {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+
+        .nav-links2 a {
+            text-decoration: none;
+            color: var(--heading-color);
+            margin: 0 10px;
+        }
+
+        h2 { 
+            border-left: 6px solid #0F0F32; 
+            padding-left: 15px; 
+            margin-top: 50px; 
+            font-size: 28px;
+        }
+
+        p { 
+            line-height: 1.8; 
+            text-align: justify;
+        }
+
+        .intro-text {
+            text-indent: 50px;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .body-paragraph {
+            text-indent: 50px;
+            margin-bottom: 25px;
+        }
+
+        /* Image Handling */
+        .clickable-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+            margin: 30px 0 10px 0;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .clickable-img:hover {
+            transform: scale(1.01);
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        /* Back to Top Button */
+        .top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0F0F32;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="article-title">5G Network Risks in Modern Connectivity</h1>
+        <p class="author-tag">By: <b>Lusanta, John Eugene</b> • April 2026</p>
+
+        <div class="nav-links2">
+            <a href="et-iot.html">← IoT</a> |
+            <a href="et-cloud.html">Next →</a>
+        </div>
+
+        <section id="introduction">
+            <p class="intro-text">
+                The arrival of <b>5G technology</b> promises to revolutionize the way we connect, offering lightning-fast speeds and near-instant latency. This next-generation network allows for a massive increase in the number of devices that can connect simultaneously, supporting everything from smart cities to autonomous vehicles. While these advancements improve our communication and digital services, they also introduce a new set of complex security risks. The sheer volume of data being transmitted creates a larger landscape for cybercriminals to exploit. As 5G becomes the standard for modern connectivity, it is essential to recognize the vulnerabilities that come with such a powerful infrastructure. Understanding these risks is the first step toward building a more resilient digital future.
+            </p>
+        </section>
+
+        <figure>
+            <a href="https://www.kaspersky.com/resource-center/threats/5g-pros-and-cons" target="_blank">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop" 
+                     class="clickable-img" 
+                     alt="5G Network and Data Security">
+            </a>
+            <figcaption style="text-align:center; font-size: 14px; opacity: 0.7; margin-top: 5px;">
+                Source: Unsplash (Click image to view source)
+            </figcaption>
+        </figure>
+
+        <section id="body">
+            <h2>The Complexity of 5G Infrastructure</h2>
+            <p class="body-paragraph">
+                Unlike previous generations of mobile networks, 5G relies heavily on software-defined networking and cloud-based systems to deliver high-performance data. This shift from hardware-centric to software-centric architecture makes the network more flexible, but it also creates more potential entry points for attackers. The complexity of these virtualized networks makes it significantly harder for security teams to monitor every single connection in real-time. Since 5G requires many small cell towers located closer together, each tower acts as a possible physical and digital target for exploitation. Hackers can potentially use these software vulnerabilities to intercept traffic or disrupt critical infrastructure services. Managing this complexity requires a complete rethink of traditional cybersecurity strategies to keep up with the speed of 5G.
+            </p>
+
+            <h2>Expanded Attack Surface and Risks</h2>
+            <p class="body-paragraph">
+                With 5G enabling millions of new IoT devices to connect, the "attack surface"—or the total number of points where an attacker can enter—grows exponentially. Many of these connected devices lack the built-in security needed to defend against sophisticated cyber threats, making them easy targets for botnets. Cybercriminals can exploit these weak connections to launch large-scale Distributed Denial of Service (DDoS) attacks that could paralyze entire networks. There is also a heightened risk of data interception, as sensitive personal and corporate information moves through more localized access points. Furthermore, the high speed of 5G allows hackers to extract large amounts of stolen data much faster than they could on 4G networks. These risks highlight the importance of end-to-end encryption for all data moving across the network.
+            </p>
+
+            <h2>Impact on Businesses and Individuals</h2>
+            <p class="body-paragraph">
+                For individuals, the primary concern of 5G risks is the potential for massive data breaches that could lead to identity theft or financial loss. Businesses face even greater threats, as proprietary information and customer databases become more exposed to sophisticated espionage. Industries that rely on real-time data, such as healthcare or manufacturing, could face life-threatening consequences if their 5G-enabled systems are tampered with. A successful attack on a 5G network could disrupt essential services like power grids, emergency response systems, and transportation networks. The economic impact of such disruptions could be measured in billions of dollars, affecting global supply chains and consumer trust. These vulnerabilities show that 5G security is not just a technical issue, but a matter of national and economic safety.
+            </p>
+
+            <h2>Prevention and Network Safety</h2>
+            <p class="body-paragraph">
+                To stay safe in a 5G-connected world, users must prioritize the security of every device they connect to their network. Always ensure that your smartphones and smart devices are running the latest software updates to patch any discovered vulnerabilities. It is crucial to use strong, unique passwords and enable multi-factor authentication for all accounts linked to your 5G network. Businesses should implement "Zero Trust" architectures, where every connection is verified before being granted access to sensitive data. Avoid connecting to unknown or unverified 5G access points, especially when handling financial transactions or private information. Utilizing a reputable VPN can also add an extra layer of encryption to your traffic, protecting it from prying eyes. By being proactive, we can harness the power of 5G while minimizing its inherent dangers.
+            </p>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p style="text-align: justify; margin-bottom: 20px;">
+                5G technology is an incredible leap forward for modern connectivity, but it requires us to be more vigilant than ever about our digital safety. While the benefits of faster speeds and more connections are clear, the risks of data breaches and network disruptions are equally significant. We have discussed how the complex infrastructure of 5G expands the attack surface and the potential impacts on both individuals and businesses. Awareness and proactive security measures are the best tools we have to stay safe in this new era. As we continue to integrate 5G into every aspect of our lives, maintaining a strong focus on cybersecurity will be the key to our success. <b>Stay informed, stay secure, and navigate the future of 5G with confidence.</b>
+            </p>
+        </section>
+
+        <iframe src="https://www.youtube.com/embed/zH5m1q1n8oQ" frameborder="0" allowfullscreen></iframe>
+
+        <section id="references">
+            <h3>References</h3>
+            <p>
+                IBM Technology. (2024). <i>Understanding 5G Security Challenges</i>. [Online] Available at: https://www.ibm.com/topics/5g<br>
+                Cisco Systems. (2024). <i>The Evolution of 5G Connectivity</i>. [Online] Available at: https://www.cisco.com/c/en/us/solutions/service-provider/5g-security.html<br>
+                Kaspersky. (2023). <i>Is 5G Dangerous? Security Risks Explained</i>. [Online] Available at: https://www.kaspersky.com/resource-center/threats/5g-pros-and-cons
+            </p>
+        </section>
+    </div>
+
+    <footer style="background: #0F0F32; color: white; padding: 40px 20px; text-align: center;">
+        <div class="footer-contacts" style="margin-bottom: 30px;">
+            <img src="../media/images/logo.png" alt="Logo" style="height: 50px;">
+            <span class="logo-text" style="display: block; font-weight: bold; margin: 10px 0;">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons" style="margin-top: 15px;">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134" target="_blank" style="color: white; margin: 0 10px; font-size: 20px;"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com" style="color: white; margin: 0 10px; font-size: 20px;"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; border-top: 1px solid #333; padding-top: 30px;">
+            <div class="column">
+                <h4 style="color: white; margin-bottom: 10px;">Quick Links</h4>
+                <a href="../index.html" style="color: #cbd5e0; text-decoration: none; display: block;">Home</a>
+                <a href="../et.html" style="color: #cbd5e0; text-decoration: none; display: block;">Emerging Threats</a>
+            </div>
+            <div class="column">
+                <h4 style="color: white; margin-bottom: 10px;">Resources</h4>
+                <a href="../rs/faqs.html" style="color: #cbd5e0; text-decoration: none; display: block;">FAQs</a>
+                <a href="../rs/references.html" style="color: #cbd5e0; text-decoration: none; display: block;">References</a>
+            </div>
+        </div>
+
+        <p style="font-size: 12px; margin-top: 40px; opacity: 0.7;">
+            © 2026 Digital Compass | Developed by Lusanta, John Eugene
+        </p>
+    </footer>
+</body>
+</html>

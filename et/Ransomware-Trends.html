@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biometric Authentication Risks – Digital Compass</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <style>
+        :root {
+            --heading-color: #211F76;
+            --paragraph-color: #212866;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--paragraph-color);
+        }
+
+        /* Main Article Layout */
+        .main {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2, h3 { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--heading-color); 
+        }
+
+        .article-title {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .author-tag {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+
+        .nav-links2 {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+
+        .nav-links2 a {
+            text-decoration: none;
+            color: var(--heading-color);
+            margin: 0 10px;
+        }
+
+        h2 { 
+            border-left: 6px solid #0F0F32; 
+            padding-left: 15px; 
+            margin-top: 50px; 
+            font-size: 28px;
+        }
+
+        p { 
+            line-height: 1.8; 
+            text-align: justify;
+        }
+
+        .intro-text {
+            text-indent: 50px;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .body-paragraph {
+            text-indent: 50px;
+            margin-bottom: 25px;
+        }
+
+        /* Image Handling */
+        .clickable-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 20px;
+            margin: 30px 0 10px 0;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .clickable-img:hover {
+            transform: scale(1.01);
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 15px;
+            margin: 40px 0;
+            border: none;
+        }
+
+        /* Back to Top Button */
+        .top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0F0F32;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="article-title">The Risks of Biometric Authentication</h1>
+        <p class="author-tag">By: <b>Lusanta, John Eugene</b> • April 2026</p>
+
+        <div class="nav-links2">
+            <a href="et-cloud.html">← Cloud Risks</a> |
+            <a href="../et.html">Main Topics</a>
+        </div>
+
+        <section id="introduction">
+            <p class="intro-text">
+                <b>Biometric authentication</b> has become the gold standard for personal device security, replacing traditional passwords with fingerprints, facial recognition, and iris scans. By utilizing unique physical traits, it offers a level of convenience that passwords simply cannot match. We use it to unlock our smartphones, authorize bank transfers, and even clear airport security. However, unlike a password, your biometric data cannot be changed if it is compromised. This permanent nature of biological data introduces a unique set of high-stakes security risks. As we move toward a passwordless future, understanding the vulnerabilities of biometrics is crucial for protecting our digital identities. 
+            </p>
+        </section>
+
+        <figure>
+            <a href="https://sumsub.com/blog/biometric-authentication-benefits-risks/" target="_blank">
+                <img src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?q=80&w=2073&auto=format&fit=crop" 
+                     class="clickable-img" 
+                     alt="Facial Recognition and Biometric Security">
+            </a>
+            <figcaption style="text-align:center; font-size: 14px; opacity: 0.7; margin-top: 5px;">
+                Source: Unsplash (Click image to view source)
+            </figcaption>
+        </figure>
+
+        <section id="body">
+            <h2>The Irreducibility of Biological Data</h2>
+            <p class="body-paragraph">
+                The most significant risk with biometric systems is that biological traits are permanent. If a hacker steals your password, you can reset it in seconds; if they steal a digital map of your face or your fingerprint, you cannot "reset" your body. Once this data is leaked into the hands of cybercriminals, it could potentially be used to impersonate you for the rest of your life. This makes biometric databases high-value targets for massive data breaches. Organizations that store biometric templates must adhere to the strictest encryption standards, yet many still remain vulnerable to sophisticated attacks. The long-term implications of a biometric breach are far more severe than traditional credential theft.
+            </p>
+
+            <h2>Spoofing and Deepfakes</h2>
+            <p class="body-paragraph">
+                As biometric technology advances, so do the methods used to bypass it. "Spoofing" involves using high-resolution photos, 3D-printed masks, or synthetic fingerprints to trick sensors into granting access. Furthermore, the rise of AI-generated deepfakes poses a massive threat to voice and facial recognition systems. Attackers can now create realistic digital replicas of a person’s voice or image to bypass security checks in real-time. While modern sensors often include "liveness detection" to ensure the subject is a real human, these defenses are constantly being tested by evolving hacking techniques. These sophisticated methods demonstrate that even biological traits are not entirely immune to digital manipulation.
+            </p>
+
+            <h2>Privacy and Surveillance Concerns</h2>
+            <p class="body-paragraph">
+                Beyond individual security, the widespread use of biometrics raises significant ethical and privacy concerns. Public surveillance systems equipped with facial recognition can track a person’s movements without their consent or knowledge. This "silent tracking" can lead to a loss of anonymity in public spaces, creating a constant state of digital monitoring. There is also the risk of "function creep," where biometric data collected for one purpose (like unlocking a phone) is eventually used for another (like targeted advertising or government tracking). The centralization of such intimate data creates a surveillance infrastructure that could be misused if it falls into the wrong hands.
+            </p>
+
+            <h2>Safeguarding Your Biometric Profile</h2>
+            <p class="body-paragraph">
+                To minimize risks, always use biometrics as part of a multi-factor authentication (MFA) strategy rather than a standalone solution. Combining a fingerprint scan with a PIN or a physical security key adds an essential layer of protection. Be cautious about which apps and services you grant permission to access your biometric sensors. Regularly review the privacy policies of the companies you trust with your data to ensure they use end-to-end encryption and store templates locally on the device rather than on a central server. By being mindful of where and how your biometrics are used, you can enjoy the convenience of the technology without sacrificing your long-term security.
+            </p>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p style="text-align: justify; margin-bottom: 20px;">
+                Biometric authentication offers a powerful blend of security and ease of use, but it is not a perfect shield. The permanence of our biological data means that any breach can have life-long consequences. We have discussed the risks of data irreducibility, the threat of spoofing, and the growing privacy concerns surrounding surveillance. As we continue to integrate these technologies into our daily routines, maintaining a balance between convenience and caution is vital. **Your body is your password—treat it with the highest level of digital care.**
+            </p>
+        </section>
+
+        <div class="video-container">
+            <h2 style="border: none; padding-left: 0; text-align: center;">Related Video</h2>
+            <iframe src="https://www.youtube.com/embed/WpD9jP8S3XU" allowfullscreen></iframe>
+        </div>
+
+        <section id="references">
+            <h3>References</h3>
+            <p>
+                Norton. (2024). <i>Biometric Security: Pros, Cons, and Risks</i>. [Online] Available at: https://us.norton.com/blog/privacy/biometric-security<br>
+                TechTarget. (2024). <i>The Evolution of Biometric Authentication</i>. [Online] Available at: https://www.techtarget.com/searchsecurity/definition/biometric-authentication<br>
+                Interpol. (2023). <i>The Future of Biometrics in Law Enforcement</i>. [Online] Available at: https://www.interpol.int/en/How-we-work/Forensics/Biometrics
+            </p>
+        </section>
+    </div>
+
+    <footer style="background: #0F0F32; color: white; padding: 40px 20px; text-align: center; margin-top: 50px;">
+        <div class="footer-contacts" style="margin-bottom: 30px;">
+            <img src="../media/images/logo.png" alt="Logo" style="height: 50px;">
+            <span class="logo-text" style="display: block; font-weight: bold; margin: 10px 0;">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons" style="margin-top: 15px;">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134" target="_blank" style="color: white; margin: 0 10px; font-size: 20px;"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com" style="color: white; margin: 0 10px; font-size: 20px;"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; border-top: 1px solid #333; padding-top: 30px; margin-bottom: 20px;">
+            <div class="column">
+                <h4 style="color: white; margin-bottom: 10px;">Quick Links</h4>
+                <a href="../index.html" style="color: #cbd5e0; text-decoration: none; display: block;">Home</a>
+                <a href="../et.html" style="color: #cbd5e0; text-decoration: none; display: block;">Emerging Threats</a>
+            </div>
+            <div class="column">
+                <h4 style="color: white; margin-bottom: 10px;">Resources</h4>
+                <a href="../rs/faqs.html" style="color: #cbd5e0; text-decoration: none; display: block;">FAQs</a>
+                <a href="../rs/references.html" style="color: #cbd5e0; text-decoration: none; display: block;">References</a>
+            </div>
+        </div>
+
+        <p style="font-size: 12px; opacity: 0.7; margin: 0;">
+            © 2026 Digital Compass | Developed by Lusanta, John Eugene
+        </p>
+    </footer>
+</body>
+</html>

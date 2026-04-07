@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Security Risks in Smart Devices - Digital Compass</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <style>
+        :root {
+            --heading-color: #211F76;
+            --paragraph-color: #212866;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--paragraph-color);
+        }
+
+        /* Main Article Layout */
+        .main {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2, h3 { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--heading-color); 
+        }
+
+        .article-title {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .author-tag {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+
+        .nav-links2 {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+
+        .nav-links2 a {
+            text-decoration: none;
+            color: var(--heading-color);
+            margin: 0 10px;
+        }
+
+        h2 { 
+            border-left: 6px solid #0F0F32; 
+            padding-left: 15px; 
+            margin-top: 50px; 
+            font-size: 28px;
+        }
+
+        p { 
+            line-height: 1.8; 
+            text-align: justify;
+        }
+
+        .intro-text {
+            text-indent: 50px;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .body-paragraph {
+            text-indent: 50px;
+            margin-bottom: 25px;
+        }
+
+        /* Image Handling */
+        .clickable-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+            margin: 30px 0 10px 0;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background-color: #f4f4f4;
+        }
+
+        .clickable-img:hover {
+            transform: scale(1.01);
+        }
+
+        /* Video Container */
+        .video-container {
+            margin: 40px 0;
+        }
+
+        /* Back to Top Button */
+        .top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0F0F32;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="article-title">IoT Security Risks in Smart Devices</h1>
+        <p class="author-tag">By: <b>Lusanta, John Eugene</b> • April 2026</p>
+
+        <div class="nav-links2">
+            <a href="et-ai.html">← AI</a> |
+            <a href="et-5g.html">Next →</a>
+        </div>
+
+        <section id="introduction">
+            <p class="intro-text">
+                The Internet of Things (IoT) has completely transformed how we interact with technology in our homes and workplaces. <b>Smart devices</b>, ranging from thermostats and light bulbs to wearable fitness trackers, offer incredible convenience by staying constantly connected to the internet. However, this seamless connectivity often comes at a high cost to our personal security and data privacy. Many manufacturers prioritize ease of use over robust security protocols, leaving these devices vulnerable to cyberattacks. As the number of connected gadgets grows, understanding the inherent risks of the IoT ecosystem becomes vital for every user. 
+            </p>
+        </section>
+
+        <figure>
+            <a href="https://www.cigionline.org/articles/emerging-internet-things/" target="_blank">
+                <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop" 
+                     class="clickable-img" 
+                     alt="Internet of Things and Smart Devices Security">
+            </a>
+            <figcaption style="text-align:center; font-size: 14px; opacity: 0.7; margin-top: 5px;">
+                Source: Unsplash (Click image to view original source)
+            </figcaption>
+        </figure>
+
+        <section id="body">
+            <h2>The Mechanics of IoT Connectivity</h2>
+            <p class="body-paragraph">
+                IoT devices function by collecting data through sensors and sharing that information across a network to automate specific tasks. These gadgets usually communicate with a central hub or a mobile application using protocols like Wi-Fi, Bluetooth, or Zigbee. While this automation makes life more efficient, every connected device serves as a potential entry point for a hacker to access your local network. Because these devices are often small and have limited processing power, they frequently lack the advanced encryption found on computers or smartphones. Attackers can exploit these weak links to bypass traditional security measures and move laterally through your other accounts. Understanding this interconnected web is the first step in recognizing why one vulnerable smart plug can compromise your entire digital home.
+            </p>
+
+            <h2>Common Vulnerabilities and Risks</h2>
+            <p class="body-paragraph">
+                One of the most significant risks in the IoT world is the widespread use of default or weak passwords that users rarely change. Many smart devices are shipped with "hardcoded" credentials that are easily discoverable by cybercriminals through online databases. Furthermore, a large percentage of IoT gadgets do not support regular software updates, leaving them permanently vulnerable to known exploits. Unauthorized access to smart cameras or microphones can lead to severe invasions of privacy and physical safety concerns. Data leaks are also common, as these devices may transmit personal information to unsecure cloud servers without the user's explicit knowledge. These combined factors create a perfect storm for large-scale botnets that use hijacked smart devices to launch massive cyberattacks.
+            </p>
+
+            <h2>Real-Life Security Incidents</h2>
+            <p class="body-paragraph">
+                History has already shown us the devastating impact that poorly secured IoT devices can have on the global internet. The infamous Mirai botnet, for instance, took down major websites by hijacking thousands of insecure cameras and routers. In more personal cases, there have been numerous reports of hackers gaining control of home security systems to harass families or monitor their daily routines. Some attackers have even managed to gain control of smart medical devices, highlighting the life-threatening potential of these vulnerabilities. These incidents prove that IoT security is not just a theoretical concern but a real-world danger that affects millions of people. Learning from these past failures is essential for developing better security habits for the future of connected technology.
+            </p>
+
+            <h2>Prevention and Hardening Your Network</h2>
+            <p class="body-paragraph">
+                Protecting your smart devices starts with changing every default password to a complex, unique alternative immediately after purchase. It is also wise to create a separate "Guest" network on your router specifically for IoT devices to isolate them from your primary computers. Always check for firmware updates regularly to ensure your devices have the latest security patches provided by the manufacturer. If a device does not offer encryption or regular updates, consider whether the convenience it provides is truly worth the security risk. Disabling features like remote access or universal plug-and-play (UPnP) can also significantly reduce the "attack surface" of your home network. By taking these proactive steps, you can enjoy the benefits of smart technology without leaving your digital front door wide open.
+            </p>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p style="text-align: justify; margin-bottom: 20px;">
+                While the Internet of Things offers unmatched convenience, it requires a higher level of user responsibility to remain secure. We have explored how these devices operate, the risks they pose, and the practical steps you can take to harden your network. As smart technology continues to evolve, cyber threats will only become more sophisticated and harder to detect. By staying informed and practicing good security hygiene, you can significantly reduce the likelihood of your devices being compromised. It is up to the user to balance the benefits of a smart home with the necessity of a secure one. <b>Secure your gadgets, protect your network, and ensure your smart life stays private and safe.</b>
+            </p>
+        </section>
+
+        <div class="video-container">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/6z0V1r4yE6g" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <section id="references">
+            <h3>References</h3>
+            <p>
+                Cisco Systems. (2024). <i>Introduction to IoT Security</i>. [Online] Available at: https://www.cisco.com/c/en/us/products/security/iot-security.html<br>
+                IBM Tech. (2024). <i>The Risks of Connected Devices</i>. [Online] Available at: https://www.ibm.com/topics/iot-security<br>
+                Kaspersky Lab. (2023). <i>Smart Home Safety Guide</i>. [Online] Available at: https://www.kaspersky.com/resource-center/threats/iot-security-risks
+            </p>
+        </section>
+    </div>
+
+    <footer style="background: #0F0F32;">
+        <div class="footer-contacts" style="padding: 20px; text-align: center; color: white;">
+            <img src="../media/images/logo.png" alt="Logo" style="height: 50px;">
+            <span class="logo-text" style="display: block; font-weight: bold; margin: 10px 0;">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons" style="margin-top: 15px;">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134" target="_blank" style="color: white; margin: 0 10px; font-size: 20px;"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com" style="color: white; margin: 0 10px; font-size: 20px;"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px; background: #0F0F32;">
+            <div class="column">
+                <h4 style="color: white;">Cybercrime</h4>
+                <a href="../cc.html#concepts" style="color: #cbd5e0; display: block; text-decoration: none;">Concepts</a>
+                <a href="../cc.html#types" style="color: #cbd5e0; display: block; text-decoration: none;">Types</a>
+            </div>
+            <div class="column">
+                <h4 style="color: white;">Cybersecurity</h4>
+                <a href="../cs.html#concepts" style="color: #cbd5e0; display: block; text-decoration: none;">Concepts</a>
+                <a href="../cs.html#security" style="color: #cbd5e0; display: block; text-decoration: none;">Safety</a>
+            </div>
+            <div class="column">
+                <h4 style="color: white;">Digital Privacy</h4>
+                <a href="../dp.html#concepts" style="color: #cbd5e0; display: block; text-decoration: none;">Concepts</a>
+                <a href="../dp.html#data" style="color: #cbd5e0; display: block; text-decoration: none;">Protection</a>
+            </div>
+            <div class="column">
+                <h4 style="color: white;">Resources</h4>
+                <a href="../rs/faqs.html" style="color: #cbd5e0; display: block; text-decoration: none;">FAQs</a>
+                <a href="../rs/references.html" style="color: #cbd5e0; display: block; text-decoration: none;">References</a>
+            </div>
+        </div>
+
+        <hr style="border-top: 1px solid #333; margin: 0;">
+        <p style="text-align: center; color: white; font-size: 12px; padding: 20px 0; margin: 0; background: #0F0F32;">
+            © 2026 Digital Compass | Developed by Lusanta, John Eugene
+        </p>
+    </footer>
+</body>
+</html>
