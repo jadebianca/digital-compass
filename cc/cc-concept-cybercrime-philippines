@@ -66,10 +66,10 @@
 
   <article>
     <figure>
-      <a href="https://www.pna.gov.ph/articles/1217001" target="_self">
+      <a href="https://www.pinterest.com/pin/111111111111111/" target="_self">
         <img src="../media/images/cybercrimeph.jpg" alt="Cybercrime in the Philippines" class="photos">
       </a>
-      <figcaption>Photo from: Pinterest</figcaption>
+      <figcaption>Image from Pinterest</figcaption>
     </figure>
 
     <h2 id="intro">Introduction</h2>
@@ -82,7 +82,7 @@
       <strong>The Philippines ranks among the top countries in Asia with the highest number of reported cybercrime cases.</strong> According to the Philippine National Police Anti-Cybercrime Group (PNP-ACG), thousands of complaints are filed every year, and the numbers continue to rise. In 2023, online scams, phishing, and identity theft were among the most frequently reported crimes. The rapid growth of internet users in the country, which reached over 85 million in recent years, has created a large pool of potential victims. Many Filipinos are first-time internet users who may not be fully aware of online threats. <em>Poverty and lack of digital literacy also make many people easier targets for cybercriminals.</em> The COVID-19 pandemic further accelerated the shift to online activities, which also expanded opportunities for cybercrime.
     </p>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XCxlEpTew2U?si=ueU6xu0UFKFkR1oC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/zFJHMn9tFvI" title="Cybercrime in the Philippines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <h2 id="common">Common Types of Cybercrime in the Philippines</h2>
     <p class="paragraph">
