@@ -22,8 +22,9 @@
     .paragraph { color: #212866; margin: 0 0 50px 0; font-family: 'Inter', sans-serif; font-size: 19px; font-weight: 500; line-height: 1.8; text-align: justify; text-indent: 50px; width: 100%; }
     .top-btn { position: fixed; bottom: 50px; right: 60px; background-color: #FFFFFF; border: 2px solid #0F0F32; color: #0F0F32; text-decoration: none; padding: 15px 50px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.3s; }
     .top-btn:hover { background: #0F0F32; color: transparent; }
-    iframe { display: block; width: 1000px; height: 600px; margin: auto; border-radius: 20px; }
+    iframe { display: block; width: 100%; max-width: 1000px; height: 600px; margin: auto; border-radius: 20px; }
     table { width: 100%; border-collapse: collapse; margin: 30px 0 50px 0; font-family: 'Inter', sans-serif; font-size: 17px; }
+    caption { caption-side: top; text-align: left; font-weight: 600; font-size: 18px; margin-bottom: 10px; color: #211F76; }
     th { background-color: #211F76; color: #FFFFFF; padding: 12px 16px; text-align: left; }
     td { padding: 12px 16px; border-bottom: 1px solid #ddd; color: #212866; }
     tr:nth-child(even) { background-color: #f4f4f8; }
@@ -71,7 +72,7 @@
       <a href="https://www.doj.gov.ph/cybercrime.html" target="_self">
         <img src="../media/images/cybercrimelaws.jpg" alt="Cybercrime Laws Philippines" class="photos">
       </a>
-      <figcaption>Photo from: Pinterest</figcaption>
+      <figcaption>Photo from: Department of Justice (DOJ) Philippines</figcaption>
     </figure>
 
     <h2 id="intro">Introduction</h2>
@@ -84,13 +85,13 @@
       <strong>Republic Act 10175, or the Cybercrime Prevention Act of 2012, is the main law that governs cybercrime in the Philippines.</strong> It was signed by President Benigno Aquino III on September 12, 2012. This law defines different types of cybercrimes and sets penalties for those who commit them. It also gives government agencies the authority to investigate and prosecute cybercriminals. The law applies to all acts committed using computers, networks, or any other digital technology. It covers crimes done within the Philippines and those that affect Filipino citizens even if done abroad. RA 10175 was created to protect individuals, businesses, and the government from digital harm.
     </p>
 
-    <iframe width="1000" height="600" 
-            src="https://www.youtube.com/embed/6Q5P3zRJEFo" 
-            title="Cybercrime Prevention Act Philippines" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
+    <iframe 
+        src="https://www.youtube.com/embed/6Q5P3zRJEFo" 
+        title="Cybercrime Prevention Act Philippines" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
     </iframe>
 
     <h2 id="offenses">Punishable Offenses Under the Law</h2>
@@ -104,6 +105,7 @@
     </p>
 
     <table>
+      <caption>Penalties under RA 10175</caption>
       <tr>
         <th>Offense</th>
         <th>Penalty</th>
