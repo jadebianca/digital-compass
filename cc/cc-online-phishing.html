@@ -1,380 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="1800">
-
-    <!--HAMOY, KURT TOBEY L.-->
-    <!--CIP-1101 ITAD | GROUP 2-->
-
-    <title>Cybercrime in the Philippines - Digital Compass</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/navigations.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-
-    <style>
-        body {
-            background-color: #FFFFFF;
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .main {
-            background-color: #FFFFFF;
-            padding: 30px 0;
-            width: 90%;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .title {
-            color: #211F76;
-            font-family: 'Playfair Display', serif;
-            font-size: 40px;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        .author {
-            color: #212866;
-            font-size: 18px;
-            text-align: center;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 0;
-        }
-        h2 {
-            color: #211F76;
-            font-family: 'Playfair Display', serif;
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 1.3;
-            border-left: 5px solid #0F0F32;
-            padding-left: 20px;
-            margin-top: 40px;
-            margin-bottom: 25px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        .nav-bio {
-            color: #212866;
-            font-size: 16px;
-            text-align: center;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-        .nav-bio a {
-            color: #212866;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-        .nav-bio a:hover {
-            text-decoration: 2px solid underline;
-        }
-        .photos {
-            width: 100%;
-            max-width: 1000px;
-            height: auto;
-            border-radius: 20px;
-            margin: 40px 0;
-            display: block;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        figcaption {
-            color: #212866;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            margin-top: 10px;
-        }
-        .paragraph {
-            color: #212866;
-            margin: 0 0 50px 0;
-            font-size: 19px;
-            font-weight: 500;
-            line-height: 1.8;
-            text-align: justify;
-            text-indent: 50px;
-            width: 100%;
-        }
-        .top-btn {
-            position: fixed;
-            bottom: 50px;
-            right: 60px;
-            background-color: #FFFFFF;
-            border: 2px solid #0F0F32;
-            color: #0F0F32;
-            text-decoration: none;
-            padding: 15px 50px;
-            border-radius: 50px;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: 0.3s;
-        }
-        .top-btn:hover {
-            background: #0F0F32;
-            color: transparent;
-        }
-        iframe {
-            display: block;
-            width: 1000px;
-            height: 600px;
-            margin: auto;
-            border-radius: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 0 0 50px 0;
-            font-size: 17px;
-            color: #212866;
-        }
-        table th {
-            background-color: #211F76;
-            color: #FFFFFF;
-            padding: 14px 18px;
-            text-align: left;
-            font-family: 'Inter', sans-serif;
-        }
-        table td {
-            padding: 12px 18px;
-            border-bottom: 1px solid #ddd;
-            vertical-align: top;
-        }
-        table tr:nth-child(even) {
-            background-color: #f5f5fc;
-        }
-        ul.crime-list {
-            color: #212866;
-            font-size: 19px;
-            font-weight: 500;
-            line-height: 1.8;
-            margin: 0 0 50px 0;
-            padding-left: 40px;
-        }
-        ul.crime-list li {
-            margin-bottom: 10px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="1800">
+  <title>Phishing - Digital Compass</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/navigations.css">
+  <style type="text/css">
+    body { background-color: #FFFFFF; font-family: 'Inter', sans-serif; margin: 0px; padding: 0px; }
+    .main { background-color: #FFFFFF; padding: 30px 0; width: 90%; max-width: 1000px; margin: 0 auto; }
+    .title { color: #211F76; font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 10px; }
+    h2 { color: #211F76; font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; line-height: 1.3; text-align: left; border-left: 5px solid #0F0F32; padding-left: 20px; margin-top: 40px; margin-bottom: 25px; width: 100%; box-sizing: border-box; }
+    .author { color: #212866; font-family: 'Inter', sans-serif; font-size: 18px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-top: 0; }
+    .nav-bio { color: #212866; font-family: 'Inter', sans-serif; font-size: 16px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
+    .nav-bio a { color: #212866; text-decoration: none; font-weight: 600; transition: 0.3s; }
+    .nav-bio a:hover { text-decoration: 2px solid underline; }
+    .photos { width: 100%; max-width: 1000px; height: auto; border-radius: 20px; margin: 40px 0 40px 0; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    figcaption { color: #212866; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 500; text-align: center; margin-top: 10px; }
+    .paragraph { color: #212866; margin: 0 0 50px 0; font-family: 'Inter', sans-serif; font-size: 19px; font-weight: 500; line-height: 1.8; text-align: justify; text-indent: 50px; width: 100%; }
+    .top-btn { position: fixed; bottom: 50px; right: 60px; background-color: #FFFFFF; border: 2px solid #0F0F32; color: #0F0F32; text-decoration: none; padding: 15px 50px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.3s; }
+    .top-btn:hover { background: #0F0F32; color: transparent; }
+    iframe { display: block; width: 1000px; height: 600px; margin: auto; border-radius: 20px; }
+    ul.tips { color: #212866; font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 500; line-height: 2; margin: 0 0 40px 0; padding-left: 30px; }
+  </style>
 </head>
-
 <body>
+<!--SURNAME, FIRSTNAME MI.-->
+<!--CIP-1101 ITAD | GROUP 2-->
 
 <script src="../js/bootstrap.bundle.js"></script>
-
 <a href="#top" class="top-btn">Back to Top &uarr;</a>
 
 <nav>
-    <div class="logo-container">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text" id="top">Digital Compass</span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../cc.html">Cybercrime</a></li>
-        <li><a href="../cs.html">Cybersecurity</a></li>
-        <li><a href="../dp.html">Digital Privacy</a></li>
-        <li><a href="../et.html">Emerging Threats</a></li>
-        <li><a href="../pa.html">Prevention & Awareness</a></li>
-        <li><a href="../rs.html">Resources</a></li>
-    </ul>
+  <div class="logo-container">
+    <img src="../media/images/logo.png" alt="Logo">
+    <span class="logo-text" id="top">Digital Compass</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../cc.html">Cybercrime</a></li>
+    <li><a href="../cs.html">Cybersecurity</a></li>
+    <li><a href="../dp.html">Digital Privacy</a></li>
+    <li><a href="../et.html">Emerging Threats</a></li>
+    <li><a href="../pa.html">Prevention & Awareness</a></li>
+    <li><a href="../rs.html">Resources</a></li>
+  </ul>
 </nav>
 
-
 <div class="main">
+  <h1 class="title">Phishing</h1>
+  <p class="author"><b>By: Hamoy, Kurt Tobey &bull; April 2026</b></p>
 
-    <h1 class="title">Cybercrime in the Philippines</h1>
+  <p class="nav-bio">
+    <a href="#intro">Intro</a> &bull;
+    <a href="#definition">What is Phishing</a> &bull;
+    <a href="#types">Types of Phishing</a> &bull;
+    <a href="#howworks">How It Works</a> &bull;
+    <a href="#redflags">Red Flags</a> &bull;
+    <a href="#prevention">How to Stay Safe</a> &bull;
+    <a href="#conclusion">Conclusion</a>
+  </p>
 
-    <p class="author">
-        <b>By: Hamoy, Kurt Tobey L. &bull; April 6, 2026</b>
+  <hr width="100%" size="5" color="#212866">
+
+  <article>
+    <figure>
+      <a href="https://www.kaspersky.com/resource-center/definitions/phishing" target="_self">
+        <img src="../media/images/phishing.jpg" alt="Phishing Attack Illustration" class="photos">
+      </a>
+      <figcaption>Image from Pinterest</figcaption>
+    </figure>
+
+    <h2 id="intro">Introduction</h2>
+    <p class="paragraph">
+      Imagine receiving an email from your bank saying your account has been compromised and you need to click a link immediately. Before you act, stop — this could be a phishing attempt. <strong>Phishing is a type of cybercrime where criminals pretend to be trustworthy sources to trick people into giving away sensitive information.</strong> It is one of the most widespread and dangerous forms of online fraud in the world today. Learning how to recognize and avoid phishing is an essential skill for every internet user.
     </p>
 
-    <p class="nav-bio">
-        <a href="#intro">Introduction</a> &bull;
-        <a href="#landscape">Current Landscape</a> &bull;
-        <a href="#common-crimes">Most Common Crimes</a> &bull;
-        <a href="#why-targeted">Why Filipinos Are Targeted</a> &bull;
-        <a href="#impact">Impact on Victims</a> &bull;
-        <a href="#response">Government Response</a> &bull;
-        <a href="#conclusion">Conclusion</a>
+    <h2 id="definition">What is Phishing?</h2>
+    <p class="paragraph">
+      <strong>Phishing is a form of social engineering where attackers use deceptive messages — usually emails, text messages, or social media posts — to trick victims into revealing personal information.</strong> The word "phishing" comes from the idea of "fishing" for victims using bait. The information targeted typically includes passwords, credit card numbers, bank account details, and social security numbers. Phishing attacks are designed to look authentic and often mimic well-known companies like banks, government agencies, or popular websites. The goal of the attacker is either to steal money directly or to use the stolen information for further fraud. <em>Phishing has evolved significantly over the years and is now carried out through multiple digital channels.</em> It remains the most common entry point for large-scale data breaches worldwide.
     </p>
 
-    <hr width="100%" size="5" color="#0F0F32">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7zNlEMDmI4?si=ZuSoDzJVuzP8Im6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <article>
+    <h2 id="types">Types of Phishing Attacks</h2>
+    <p class="paragraph">
+      <strong>Phishing comes in several forms, each targeting victims in different ways.</strong> <em>Email phishing</em> is the most common type, where fraudulent emails are sent to large numbers of people. <em>Spear phishing</em> is a more targeted version that uses personal information to make the attack more convincing. <em>Smishing</em> is phishing done through SMS text messages, often with fake delivery notifications or prize alerts. <em>Vishing</em> involves voice calls where attackers pose as bank representatives or government officials. <em>Clone phishing</em> copies a legitimate email and replaces links with malicious ones. <em>Whaling</em> targets high-profile individuals such as executives and government officials. Each type is designed to exploit trust and create a sense of urgency that pushes victims to act quickly without thinking.
+    </p>
 
-        <figure>
-            <a href="https://unsplash.com">
-                <img src="../media/images/cc-philippines.jpg"
-                     alt="Cybercrime in the Philippines"
-                     class="photos">
-            </a>
-            <figcaption>Photo from: Unsplash</figcaption>
-        </figure>
+    <h2 id="howworks">How a Phishing Attack Works</h2>
+    <p class="paragraph">
+      <strong>A phishing attack typically follows a predictable sequence of steps that begins with crafting a believable message.</strong> First, the attacker chooses a target, which can be a single person or thousands of people. Next, they create a message that appears to come from a trusted source, like a bank or social media platform. The message usually contains a link that leads to a fake website designed to look identical to the real one. When the victim enters their login details or personal information on the fake site, the attacker captures that data. <em>The attacker then uses this information to access accounts, steal money, or sell the data to other criminals.</em> Some phishing emails also contain malicious attachments that install malware when opened. The entire process can happen in minutes, leaving victims unaware until the damage is already done.
+    </p>
 
+    <h2 id="redflags">Red Flags to Watch Out For</h2>
+    <p class="paragraph">
+      <strong>There are several warning signs that can help you identify a phishing attempt before it is too late.</strong> Be suspicious of emails or messages that create urgency, such as "Your account will be closed in 24 hours." Check the sender's email address carefully — phishing emails often use addresses that look similar to official ones but have slight differences, such as extra letters or different domains. Look for grammar mistakes and poor spelling, which are common in phishing messages. <em>Legitimate organizations will never ask for your password or credit card number through email or text.</em> Be cautious of unexpected links — hover over them to check if the URL matches the official website. Unexpected attachments should never be opened unless you are sure of the sender. When in doubt, go directly to the official website by typing the address in your browser instead of clicking any link.
+    </p>
 
-        <!-- INTRODUCTION -->
-        <p id="intro" class="paragraph">
-            The Philippines is one of the <b>most connected countries in Southeast Asia</b>, with millions of Filipinos spending hours each day on <i>social media, online banking, and digital commerce</i>. This deep digital engagement, while beneficial for communication and economic growth, has also made the country a <b>prime target for cybercriminals</b> who exploit the online presence of everyday users. <b>Cybercrime in the Philippines has grown rapidly over the past decade</b>, affecting individuals, businesses, and government institutions across the nation. As technology becomes more embedded in daily life, understanding these digital threats becomes not just useful but <i>necessary for everyone</i>. This article explores the current state of cybercrime in the Philippines, its most common forms, why Filipinos are frequently targeted, and what is being done to fight back.
-        </p>
+    <h2 id="prevention">How to Protect Yourself from Phishing</h2>
+    <p class="paragraph">
+      <strong>Protecting yourself from phishing requires a combination of awareness, caution, and the right security tools.</strong> Always verify the sender before clicking any link or opening any attachment in an email. Enable multi-factor authentication (MFA) on all your accounts so that even if your password is stolen, attackers cannot access your account without the second verification step. Use updated anti-virus and anti-phishing software on your devices. Report suspicious messages to your email provider or the organization being impersonated. Keep your software and browser updated to ensure you have the latest security patches. <em>Educate family members, especially elderly relatives, about phishing so they can also protect themselves.</em> Remember that no legitimate organization will ever pressure you to share sensitive information through an urgent email or message.
+    </p>
 
+    <p style="margin: 0 0 10px 0; color: #212866; font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700;">Quick Protection Checklist:</p>
+    <ul class="tips">
+      <li>✔ Verify the sender's email address</li>
+      <li>✔ Never click suspicious links</li>
+      <li>✔ Enable two-factor authentication (2FA)</li>
+      <li>✔ Use a password manager</li>
+      <li>✔ Report phishing attempts immediately</li>
+      <li>✔ Keep your browser and apps updated</li>
+    </ul>
 
-        <!-- BODY 1 -->
-        <h2 id="landscape">The Growing Cybercrime Landscape in the Philippines</h2>
-        <p class="paragraph">
-            Cybercrime has become one of the <b>most serious digital security concerns in the Philippines</b> in recent years. Reports from the <i>PNP Anti-Cybercrime Group (ACG)</i> show a consistent year-on-year rise in the number of complaints and cases filed. The <b>National Bureau of Investigation (NBI) Cybercrime Division</b> has similarly recorded an increasing caseload, reflecting how widespread these offenses have become. The COVID-19 pandemic played a significant role in accelerating this trend, as more people shifted to online platforms for work, school, and commerce. Cybercriminals quickly took advantage of this shift, launching new schemes targeting remote workers, online shoppers, and digital banking users. Even after the pandemic, the number of Filipinos online has continued to grow, expanding the pool of potential victims. According to the Department of Information and Communications Technology (DICT), the Philippines ranks among the top countries in Asia for social media use. This high level of connectivity, combined with gaps in digital literacy, creates the perfect environment for cybercrime to thrive. Awareness of this growing landscape is the first and most important step in addressing the problem.
-        </p>
-
-
-        <!-- BODY 2 -->
-        <h2 id="common-crimes">Most Common Cybercrimes Affecting Filipinos</h2>
-        <p class="paragraph">
-            Several types of cybercrime are especially prevalent in the Philippines, and understanding them helps individuals recognize and avoid potential threats. <b>Online scams</b> are the most commonly reported, often involving fake sellers on social media marketplaces who collect payment and disappear without delivering goods. <b>Phishing attacks</b> trick users into revealing personal or financial information through fake websites or deceptive messages that appear to come from trusted sources like banks or government agencies. <b>Identity theft</b> occurs when criminals steal personal data to open fraudulent accounts, apply for loans, or impersonate victims. <b>Account hacking</b> on social media platforms is also rampant, with stolen accounts used to scam the victim's friends and family. <b>Online sexual exploitation and trafficking</b>, particularly of minors, is a deeply serious issue that Philippine authorities actively investigate and prosecute. <b>Ransomware attacks</b> have also targeted local businesses and hospitals, encrypting their data and demanding payment for its release. Below is a summary of the most frequently reported cybercrimes in the Philippines:
-        </p>
-
-        <table>
-            <tr>
-                <th>Type of Cybercrime</th>
-                <th>Description</th>
-                <th>Common Targets</th>
-            </tr>
-            <tr>
-                <td><b>Online Scams</b></td>
-                <td>Fake sellers, investment fraud, or love scams</td>
-                <td>General public, online shoppers</td>
-            </tr>
-            <tr>
-                <td><b>Phishing</b></td>
-                <td>Fake messages or sites that steal login credentials</td>
-                <td>Bank users, email account holders</td>
-            </tr>
-            <tr>
-                <td><b>Identity Theft</b></td>
-                <td>Stealing personal data to commit fraud</td>
-                <td>Individuals with online accounts</td>
-            </tr>
-            <tr>
-                <td><b>Account Hacking</b></td>
-                <td>Unauthorized access to social media or email accounts</td>
-                <td>Social media users</td>
-            </tr>
-            <tr>
-                <td><b>Ransomware</b></td>
-                <td>Malware that locks files and demands payment</td>
-                <td>Businesses, hospitals, government agencies</td>
-            </tr>
-            <tr>
-                <td><b>Online Sexual Exploitation</b></td>
-                <td>Trafficking or exploitation of victims using digital platforms</td>
-                <td>Minors, vulnerable individuals</td>
-            </tr>
-        </table>
-
-
-        <!-- BODY 3 -->
-        <h2 id="why-targeted">Why Filipinos Are Frequently Targeted</h2>
-        <p class="paragraph">
-            There are several key reasons why the Philippines is a frequent target of cybercriminals both locally and internationally. First, Filipinos are among the <b>heaviest social media users in the world</b>, spending an average of several hours online each day, which exposes them to a wide range of digital threats. Second, the rapid growth of <b>mobile banking and e-wallet services</b> such as GCash and Maya has created new opportunities for financial fraud, especially among users who are new to digital transactions. Third, many Filipinos, particularly in rural areas and older age groups, have <b>limited cybersecurity awareness</b> and may not recognize the signs of a scam or phishing attempt. Fourth, the widespread use of <i>public Wi-Fi networks</i> in cafes, malls, and schools makes it easier for hackers to intercept data. Fifth, many devices used in the Philippines run <b>outdated or unpatched software</b>, leaving known security vulnerabilities unaddressed. Sixth, the <i>language barrier</i> in understanding cybersecurity advisories written in English can prevent some users from acting on important warnings. Finally, the growing popularity of <b>online freelancing and remote work</b> among Filipinos has expanded their exposure to international scams and digital attacks. Taken together, these factors make Filipinos an attractive and accessible target for cybercriminals.
-        </p>
-
-        <!-- VIDEO -->
-        <iframe src="https://www.youtube.com/embed/Ow0C0GNBkno"
-                title="Cybercrime in the Philippines"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen></iframe>
-        <figcaption style="text-align:center; color:#212866; font-size:16px; font-weight:500; margin: 10px 0 50px 0;">
-            Video: Cybercrime in the Philippines
-        </figcaption>
-
-
-        <!-- BODY 4 -->
-        <h2 id="impact">Impact of Cybercrime on Victims and Society</h2>
-        <p class="paragraph">
-            The effects of cybercrime go far beyond financial loss and touch on the emotional, psychological, and social well-being of victims. <b>Financial damage</b> is often the most immediate consequence, with victims losing savings, investments, or earnings to scams and fraud that are difficult or impossible to recover. Beyond money, many victims experience <b>emotional distress</b>, including anxiety, shame, and depression, especially when they feel responsible for falling for a scam. <b>Reputational harm</b> can occur when stolen social media accounts are used to spread misinformation or solicit money from the victim's contacts, damaging personal and professional relationships. Victims of <i>identity theft</i> may face long and complicated legal processes to clear their name and restore their credit standing. In cases of <b>online sexual exploitation</b>, the trauma can be lifelong and deeply scarring, often requiring psychological intervention and legal support. At the societal level, widespread cybercrime erodes <i>public trust in online platforms</i>, digital banking, and e-government services, slowing down the country's transition to a digital economy. Businesses that fall victim to cyberattacks may suffer <b>data breaches, operational disruptions, and loss of customer confidence</b>. Small and medium enterprises (SMEs), which form the backbone of the Philippine economy, are particularly vulnerable as they often lack the resources to invest in robust cybersecurity systems. Addressing these impacts requires both institutional action and individual vigilance.
-        </p>
-
-
-        <!-- BODY 5 -->
-        <h2 id="response">Government Response and How to Stay Protected</h2>
-        <p class="paragraph">
-            The Philippine government has taken concrete steps to combat cybercrime through legislation, law enforcement, and public awareness campaigns. The landmark <b>Republic Act 10175, or the Cybercrime Prevention Act of 2012</b>, criminalizes offenses such as hacking, cybersex, online libel, and identity theft, and provides the legal basis for prosecuting cybercriminals. The <b>SIM Registration Act</b>, which took effect in 2023, requires all mobile phone users to register their SIM cards, making it harder for criminals to use anonymous numbers for scams and fraud. The <i>PNP Anti-Cybercrime Group (ACG)</i> and the <i>NBI Cybercrime Division</i> actively investigate cases, coordinate with international agencies, and run public information campaigns. The <b>Department of Information and Communications Technology (DICT)</b> has also been working to strengthen the country's national cybersecurity framework and develop incident response capabilities. On a personal level, Filipinos can protect themselves by practicing <b>strong password management</b> — using unique and complex passwords for each account. Enabling <b>two-factor authentication (2FA)</b> adds an extra layer of security that makes it significantly harder for hackers to access accounts even if they obtain a password. Being cautious of <i>suspicious links, unsolicited messages, and unknown callers</i> asking for personal information is equally important. Regularly updating apps and operating systems ensures known vulnerabilities are patched. Most importantly, <b>reporting suspicious activity</b> to the PNP ACG or NBI helps authorities track and respond to threats more effectively.
-        </p>
-
-
-        <!-- CONCLUSION -->
-        <h2 id="conclusion">Conclusion</h2>
-        <p class="paragraph">
-            Cybercrime in the Philippines is a serious and growing threat that affects people of all ages, backgrounds, and income levels. The country's high internet usage, rapid adoption of digital financial services, and gaps in cybersecurity awareness have made it a frequent target for both local and international cybercriminals. Common crimes such as online scams, phishing, identity theft, and ransomware cause not only financial harm but also lasting emotional and social damage to victims. Fortunately, the government has put in place meaningful legal frameworks and enforcement mechanisms to address these threats, and public awareness is slowly improving. However, legislation alone cannot solve the problem — every Filipino internet user has a personal responsibility to stay informed, practice safe online habits, and report suspicious activity. <i>Education and awareness remain the most powerful tools</i> in the fight against cybercrime. By working together — citizens, businesses, and government — the Philippines can build a <b>safer and more secure digital future</b> for everyone.
-        </p>
-
-    </article>
-
+    <h2 id="conclusion">Conclusion</h2>
+    <p class="paragraph">
+      Phishing is one of the most common and dangerous forms of cybercrime that anyone can encounter online. <strong>Attackers use deceptive messages to trick victims into revealing sensitive personal and financial information.</strong> There are many types of phishing attacks, including email phishing, smishing, vishing, and spear phishing, each designed to exploit human trust. Recognizing the warning signs of phishing is the most effective first line of defense. Using proper security tools and practicing safe online habits can greatly reduce the risk of becoming a victim. <em>Sharing this knowledge with others also helps protect the wider community from cybercriminals.</em> Stay alert, stay informed, and never let urgency push you into making hasty online decisions.
+    </p>
+  </article>
 </div>
 
-
 <footer>
-    <div class="footer-contacts">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text">Digital Compass</span>
-        <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61583037875134">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="/cdn-cgi/l/email-protection#cfaba6a8a6bbaea3aca0a2bfaebcbce1a6bbaeab8fa8a2aea6a3e1aca0a2">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-        </div>
+  <div class="footer-contacts">
+    <img src="../media/images/logo.png" alt="Logo">
+    <span class="logo-text">Digital Compass</span>
+    <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+      <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
     </div>
-
-    <div class="footer-columns">
-        <div class="column">
-            <h4>Cybercrime</h4>
-            <a href="../cc.html#concepts">Concepts</a>
-            <a href="../cc.html#types">Types of Cybercrime</a>
-        </div>
-        <div class="column">
-            <h4>Cybersecurity</h4>
-            <a href="../cs.html#concepts">Concepts</a>
-            <a href="../cs.html#security">Account Security</a>
-            <a href="../cs.html#internet">Internet Safety</a>
-            <a href="../cs.html#students">Online Habits For Students</a>
-        </div>
-        <div class="column">
-            <h4>Digital Privacy</h4>
-            <a href="../dp.html#concepts">Concepts</a>
-            <a href="../dp.html#socmed">Social Media Privacy</a>
-            <a href="../dp.html#data">Data Protection</a>
-        </div>
-        <div class="column">
-            <h4>Emerging Threats</h4>
-            <a href="../et.html#threats">Threats from New Technology</a>
-            <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
-        </div>
-        <div class="column">
-            <h4>Prevention</h4>
-            <a href="../pa.html#prevention">Cybercrime Prevention</a>
-            <a href="../pa.html#online">Online Safety Tips</a>
-            <a href="../pa.html#digital">Digital Wellness</a>
-        </div>
-        <div class="column">
-            <h4>Resources</h4>
-            <a href="../rs/faqs.html">FAQs</a>
-            <a href="../rs/references.html">References</a>
-        </div>
-        <div class="column">
-            <h4>Quick Navs</h4>
-            <a href="../index.html">Home</a>
-            <a href="../hm/about.html">About</a>
-            <a href="../hm/contacts.html">Contacts</a>
-        </
+  </div>
+  <div class="footer-columns">
+    <div class="column"><h4>Cybercrime</h4><a href="../cc.html#concepts">Concepts</a><a href="../cc.html#types">Types of Cybercrime</a></div>
+    <div class="column"><h4>Cybersecurity</h4><a href="../cs.html#concepts">Concepts</a><a href="../cs.html#security">Account Security</a><a href="../cs.html#internet">Internet Safety</a><a href="../cs.html#students">Online Habits For Students</a></div>
+    <div class="column"><h4>Digital Privacy</h4><a href="../dp.html#concepts">Concepts</a><a href="../dp.html#socmed">Social Media Privacy</a><a href="../dp.html#data">Data Protection</a></div>
+    <div class="column"><h4>Emerging Threats</h4><a href="../et.html#threats">Threats from New Technology</a><a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a></div>
+    <div class="column"><h4>Prevention</h4><a href="../pa.html#prevention">Cybercrime Prevention</a><a href="../pa.html#online">Online Safety Tips</a><a href="../pa.html#digital">Digital Wellness</a></div>
+    <div class="column"><h4>Resources</h4><a href="../rs/faqs.html">FAQs</a><a href="../rs/references.html">References</a></div>
+    <div class="column"><h4>Quick Navs</h4><a href="../index.html">Home</a><a href="../hm/about.html">About</a><a href="../hm/contacts.html">Contacts</a></div>
+  </div>
+  <hr>
+</footer>
+</body>
+</html>
