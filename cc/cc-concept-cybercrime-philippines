@@ -49,8 +49,8 @@
 </nav>
 
 <div class="main">
-  <h1 class="title">Cybercrime in the Philippines: A Growing Digital Threat</h1>
-  <p class="author"><b>By: [Author Name] &bull; April 2026</b></p>
+  <h1 class="title">Cybercrime in the Philippines</h1>
+  <p class="author"><b>By: Hamoy, Kurt Tobey &bull; April 2026</b></p>
 
   <p class="nav-bio">
     <a href="#intro">Intro</a> &bull;
@@ -67,9 +67,9 @@
   <article>
     <figure>
       <a href="https://www.pna.gov.ph/articles/1217001" target="_self">
-        <img src="../media/images/cc-cybercrimeph.jpg" alt="Cybercrime in the Philippines" class="photos">
+        <img src="../media/images/cybercrimeph.jpg" alt="Cybercrime in the Philippines" class="photos">
       </a>
-      <figcaption>Photo from: Philippine News Agency</figcaption>
+      <figcaption>Photo from: Pinterest</figcaption>
     </figure>
 
     <h2 id="intro">Introduction</h2>
