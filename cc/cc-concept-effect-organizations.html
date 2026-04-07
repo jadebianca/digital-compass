@@ -8,118 +8,258 @@
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
-    <style>
-        body { background-color: #FFFFFF; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        .main { background-color: #FFFFFF; padding: 30px 0; width: 90%; max-width: 1000px; margin: 0 auto; }
-        .title { color: #212866; font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 10px; }
-        h2 { color: #212866; font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; line-height: 1.3; text-align: left; border-left: 5px solid #0F0F32; padding-left: 20px; margin-top: 40px; margin-bottom: 25px; width: 100%; box-sizing: border-box; }
-        .author { color: #212866; font-family: 'Inter', sans-serif; font-size: 18px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-top: 0; }
-        .nav-bio { color: #212866; font-family: 'Inter', sans-serif; font-size: 16px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
-        .nav-bio a { color: #212866; text-decoration: none; font-weight: 600; }
-        .nav-bio a:hover { text-decoration: underline; }
-        .paragraph { color: #212866; margin: 0 0 50px 0; font-family: 'Inter', sans-serif; font-size: 19px; font-weight: 500; line-height: 1.8; text-align: justify; text-indent: 50px; width: 100%; }
-        .top-btn { position: fixed; bottom: 50px; right: 50px; background-color: #0F0F32; color: #FFFFFF; text-decoration: none; padding: 15px 50px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        nav { background-color: #0F0F32; padding: 20px 60px; overflow: hidden; }
-        .logo-container { float: left; }
-        .logo-container img { height: 40px; vertical-align: middle; margin-right: 10px; }
-        .logo-text { font-size: 20px; font-family: 'Playfair Display', serif; color: #FFFFFF; font-weight: 700; vertical-align: middle; display: inline-block; }
-        .nav-links { list-style: none; padding: 0; margin: 0; float: right; background-color: #FFFFFF; border-radius: 8px; }
-        .nav-links li { display: inline-block; }
-        .nav-links li a { text-decoration: none; color: #0F0F32; font-size: 13px; font-weight: 700; padding: 12px 15px; display: block; }
-        .nav-links li a:hover { text-decoration: underline; }
-        footer { background-color: #0F0F32; color: #DDE7F2; padding: 60px 60px 40px 60px; overflow: hidden; }
-        .footer-contact { float: left; width: 25%; text-align: left; }
-        .footer-contact img { height: 45px; display: inline-block; vertical-align: middle; margin-right: 10px; }
-        .footer-contact p { font-size: 11px; line-height: 1.5; margin: 15px 0 5px 0; color: #DDE7F2; }
-        .social-icons a { color: #FFFFFF; font-size: 24px; margin-right: 15px; text-decoration: none; }
-        .footer-columns { float: right; width: 68%; text-align: left; }
-        .column { display: inline-block; vertical-align: top; width: 13%; margin-bottom: 20px; }
-        .column h4 { font-size: 14px; text-decoration: underline; margin: 0 0 15px 0; color: #FFFFFF; font-weight: 600; }
-        .column a { display: block; color: #DDE7F2; text-decoration: none; font-size: 12px; margin-bottom: 8px; line-height: 1.4; }
-        .column a:hover { text-decoration: underline; }
-        hr { clear: both; border: 0; border-top: 1px solid #DDE7F2; margin-top: 30px; }
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-bio a:hover {
+            text-decoration: underline;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 10px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-<a href="#top" class="top-btn">Back to Top &uarr;</a>
-<nav>
-    <div class="logo-container">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text" id="top">Digital Compass</span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../cc.html">Cybercrime</a></li>
-        <li><a href="../cs.html">Cybersecurity</a></li>
-        <li><a href="../dp.html">Digital Privacy</a></li>
-        <li><a href="../et.html">Emerging Threats</a></li>
-        <li><a href="../pa.html">Prevention &amp; Awareness</a></li>
-        <li><a href="../rs.html">Resources</a></li>
-    </ul>
-</nav>
-<div class="main">
-    <h1 class="title">When Organizations Are Targeted: The Impact of Cyber Crime on Businesses</h1>
-    <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
-    <p class="nav-bio">
-        <a href="#intro">Introduction</a> &bull;
-        <a href="#body-one">Financial Damage</a> &bull;
-        <a href="#body-two">Data Breaches</a> &bull;
-        <a href="#body-three">Reputation Loss</a> &bull;
-        <a href="#body-four">Disruption to Operations</a> &bull;
-        <a href="#body-five">Legal Consequences</a> &bull;
-        <a href="#conclusion">Conclusion</a>
-    </p>
-    <hr width="100%" size="5" color="#212866">
-    <article>
-        <p id="intro" class="paragraph">
-            While cyber crime affects individuals deeply, its impact on organizations such as businesses, schools, hospitals, and government agencies can be just as serious. Organizations often store large amounts of sensitive data, making them attractive targets for criminals who want money or information. A single successful cyber attack can bring an entire organization to a stop, causing financial losses, exposing customer data, and damaging the trust that took years to build. Understanding how cyber crime affects organizations helps explain why investing in cybersecurity is not just a technical issue, but a critical responsibility for everyone in the organization.
-        </p>
-        <h2 id="body-one">Massive Financial Damage</h2>
-        <p class="paragraph">
-            The financial cost of a cyber attack on an organization can be very large. Direct losses include stolen funds, ransom payments to get encrypted data back, and the cost of fixing damaged systems. Indirect costs can be even higher. These include lost business during downtime, the expense of hiring cybersecurity experts to investigate the breach, and possible legal fees. For small and medium-sized businesses, a major cyber attack can be enough to force them to permanently close. Large companies are not safe either. Big retail chains and banks have lost hundreds of millions of dollars due to data breaches and cyber attacks. In the Philippines, small businesses that operate online have increasingly become targets, often because they do not have the resources to invest in strong security. The financial impact of cyber crime on organizations also affects employees, customers, and the broader economy.
-        </p>
-        <h2 id="body-two">Data Breaches and Exposed Sensitive Information</h2>
-        <p class="paragraph">
-            One of the most serious consequences of a cyber attack on an organization is a data breach, which is when unauthorized people gain access to sensitive information stored in the organization's systems. This can include customer names, addresses, financial details, health records, and confidential business information. Once stolen, this data can be sold on secret online markets, used to commit identity theft, or used for further attacks. The exposure of customer data is not just damaging to the people affected. It also creates serious legal and financial problems for the organization responsible for protecting that data. In countries with data protection laws, organizations can face heavy fines for failing to prevent breaches. Schools and universities are also frequent targets because they store personal information about thousands of students and staff, yet often have weaker security systems than large corporations.
-        </p>
-        <h2 id="body-three">Reputation Damage and Loss of Trust</h2>
-        <p class="paragraph">
-            Trust is one of the most valuable things any organization has, and a cyber attack can destroy it very quickly. When customers learn that their personal information has been exposed because of a company's security failure, many will lose confidence in that organization and take their business elsewhere. A high-profile data breach can generate negative news coverage that lasts for months or years, leaving a lasting mark on the organization's public image. Rebuilding trust after a cyber attack requires a lot of investment in both technical improvements and public communication efforts, and there is no guarantee that affected customers will return. For government agencies, a cyber attack can damage the public's confidence in the institution's ability to protect citizens' information. The reputational effects of cyber crime show why cybersecurity is not just a technical issue, but a matter of public trust and responsibility.
-        </p>
-        <h2 id="body-four">Disruption to Daily Operations</h2>
-        <p class="paragraph">
-            Cyber attacks can completely stop an organization's operations, with potentially life-threatening results in certain sectors. Ransomware attacks on hospitals, for example, have forced medical staff to use paper-based processes, slowing down critical patient care. Government agencies that have been hacked may be unable to process applications, issue documents, or deliver important public services for days or even weeks. For businesses that rely on e-commerce or digital systems, even a few hours of downtime can mean big revenue losses and frustrated customers. The disruption also affects employees, who may not be able to do their jobs, leading to lost productivity and workplace stress. Supply chains can also be disrupted when one organization in a network is attacked, creating a chain reaction that impacts multiple businesses and their customers.
-        </p>
-        <h2 id="body-five">Legal and Regulatory Consequences</h2>
-        <p class="paragraph">
-            Organizations that fail to properly protect their systems and data can face serious legal consequences after a cyber attack. In the Philippines, the Data Privacy Act of 2012 requires organizations to put in place reasonable security measures to protect personal data, and violations can result in significant fines and even imprisonment for responsible officers. Internationally, regulations like the General Data Protection Regulation (GDPR) in Europe impose strict penalties on organizations that fail to protect the personal data of European citizens. Beyond government penalties, organizations may also face lawsuits from customers, employees, or business partners whose data or operations were affected by a breach. The legal fallout from a cyber attack can drag on for years and use up a lot of resources. These legal and financial risks make it clear that investing in cybersecurity is a legal obligation for organizations that handle sensitive information.
-        </p>
-        <h2 id="conclusion">Conclusion</h2>
-        <p class="paragraph">
-            The effects of cyber crime on organizations are wide-ranging and very serious, affecting finances, data security, reputation, daily operations, and legal standing all at the same time. No organization, regardless of its size or type, is completely safe from cyber threats. The most effective defense is a proactive approach that combines strong technical security with regular staff training, clear response plans, and a culture of cybersecurity awareness. For businesses in the Philippines, following the Data Privacy Act and staying updated on cyber threats is an essential part of running a responsible organization. When organizations take cybersecurity seriously, they protect not just themselves, but also the customers, employees, and communities that depend on them. In the digital age, cybersecurity is not optional. It is a fundamental responsibility.
-        </p>
-    </article>
-</div>
-<footer>
-    <div class="footer-contact">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text">Digital Compass</span>
-        <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
         </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="title">When Organizations Are Targeted: The Impact of Cyber Crime on Businesses</h1>
+        <p class="author"><b>By: Gonzales, Ace M. &bull; April 4, 2026</b></p>
+
+        <p class="nav-bio">
+            <a href="#intro">Introduction</a> &bull;
+            <a href="#body-one">Financial Damage</a> &bull;
+            <a href="#body-two">Data Breaches</a> &bull;
+            <a href="#body-three">Reputation Loss</a> &bull;
+            <a href="#body-four">Disruption to Operations</a> &bull;
+            <a href="#body-five">Legal Consequences</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+
+        <hr width="100%" size="5" color="#0F0F32">
+
+        <article>
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/effect-on-organizations-cover.jpg" alt="Impact of Cybercrime on Organizations" class="photos">
+                </a>
+                <figcaption>Photo from: Bytescare</figcaption>
+            </figure>
+
+            <p id="intro" class="paragraph">
+                While cyber crime affects individuals deeply, its impact on organizations such as businesses, schools, hospitals, and government agencies can be just as serious. Organizations often store large amounts of sensitive data, making them attractive targets for criminals who want money or information. A single successful cyber attack can bring an entire organization to a stop, causing financial losses, exposing customer data, and damaging the trust that took years to build. Understanding how cyber crime affects organizations helps explain why investing in cybersecurity is not just a technical issue, but a critical responsibility for everyone in the organization.
+            </p>
+
+            <h2 id="body-one">Massive Financial Damage</h2>
+            <p class="paragraph">
+                The financial cost of a cyber attack on an organization can be very large. Direct losses include stolen funds, ransom payments to get encrypted data back, and the cost of fixing damaged systems. Indirect costs can be even higher. These include lost business during downtime, the expense of hiring cybersecurity experts to investigate the breach, and possible legal fees. For small and medium-sized businesses, a major cyber attack can be enough to force them to permanently close. Large companies are not safe either. Big retail chains and banks have lost hundreds of millions of dollars due to data breaches and cyber attacks. In the Philippines, small businesses that operate online have increasingly become targets, often because they do not have the resources to invest in strong security. The financial impact of cyber crime on organizations also affects employees, customers, and the broader economy.
+            </p>
+
+            <h2 id="body-two">Data Breaches and Exposed Sensitive Information</h2>
+            <p class="paragraph">
+                One of the most serious consequences of a cyber attack on an organization is a data breach, which is when unauthorized people gain access to sensitive information stored in the organization's systems. This can include customer names, addresses, financial details, health records, and confidential business information. Once stolen, this data can be sold on secret online markets, used to commit identity theft, or used for further attacks. The exposure of customer data is not just damaging to the people affected. It also creates serious legal and financial problems for the organization responsible for protecting that data. In countries with data protection laws, organizations can face heavy fines for failing to prevent breaches. Schools and universities are also frequent targets because they store personal information about thousands of students and staff, yet often have weaker security systems than large corporations.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/effect-on-organizations-img2.png" alt="Data Breaches and Reputation Loss" class="photos">
+                </a>
+                <figcaption>Photo from: Data Privacy Manager</figcaption>
+            </figure>
+
+            <h2 id="body-three">Reputation Damage and Loss of Trust</h2>
+            <p class="paragraph">
+                Trust is one of the most valuable things any organization has, and a cyber attack can destroy it very quickly. When customers learn that their personal information has been exposed because of a company's security failure, many will lose confidence in that organization and take their business elsewhere. A high-profile data breach can generate negative news coverage that lasts for months or years, leaving a lasting mark on the organization's public image. Rebuilding trust after a cyber attack requires a lot of investment in both technical improvements and public communication efforts, and there is no guarantee that affected customers will return. For government agencies, a cyber attack can damage the public's confidence in the institution's ability to protect citizens' information. The reputational effects of cyber crime show why cybersecurity is not just a technical issue, but a matter of public trust and responsibility.
+            </p>
+
+            <h2 id="body-four">Disruption to Daily Operations</h2>
+            <p class="paragraph">
+                Cyber attacks can completely stop an organization's operations, with potentially life-threatening results in certain sectors. Ransomware attacks on hospitals, for example, have forced medical staff to use paper-based processes, slowing down critical patient care. Government agencies that have been hacked may be unable to process applications, issue documents, or deliver important public services for days or even weeks. For businesses that rely on e-commerce or digital systems, even a few hours of downtime can mean big revenue losses and frustrated customers. The disruption also affects employees, who may not be able to do their jobs, leading to lost productivity and workplace stress. Supply chains can also be disrupted when one organization in a network is attacked, creating a chain reaction that impacts multiple businesses and their customers.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/effect-on-organizations-img3.jpg" alt="Legal Consequences of Cybercrime on Organizations" class="photos">
+                </a>
+                <figcaption>Photo from: Facebook</figcaption>
+            </figure>
+
+            <h2 id="body-five">Legal and Regulatory Consequences</h2>
+            <p class="paragraph">
+                Organizations that fail to properly protect their systems and data can face serious legal consequences after a cyber attack. In the Philippines, the Data Privacy Act of 2012 requires organizations to put in place reasonable security measures to protect personal data, and violations can result in significant fines and even imprisonment for responsible officers. Internationally, regulations like the General Data Protection Regulation (GDPR) in Europe impose strict penalties on organizations that fail to protect the personal data of European citizens. Beyond government penalties, organizations may also face lawsuits from customers, employees, or business partners whose data or operations were affected by a breach. The legal fallout from a cyber attack can drag on for years and use up a lot of resources. These legal and financial risks make it clear that investing in cybersecurity is a legal obligation for organizations that handle sensitive information.
+            </p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                The effects of cyber crime on organizations are wide-ranging and very serious, affecting finances, data security, reputation, daily operations, and legal standing all at the same time. No organization, regardless of its size or type, is completely safe from cyber threats. The most effective defense is a proactive approach that combines strong technical security with regular staff training, clear response plans, and a culture of cybersecurity awareness. For businesses in the Philippines, following the Data Privacy Act and staying updated on cyber threats is an essential part of running a responsible organization. When organizations take cybersecurity seriously, they protect not just themselves, but also the customers, employees, and communities that depend on them. In the digital age, cybersecurity is not optional. It is a fundamental responsibility.
+            </p>
+        </article>
     </div>
-    <div class="footer-columns">
-        <div class="column"><h4>Cybercrime</h4><a href="../cc.html">Concepts</a><a href="../cc.html">Types of Cybercrime</a></div>
-        <div class="column"><h4>Cybersecurity</h4><a href="../cs.html">Concepts</a><a href="../cs.html">Account Security</a><a href="../cs.html">Internet Safety</a><a href="../cs.html">Safe Online Habits</a></div>
-        <div class="column"><h4>Digital Privacy</h4><a href="../dp.html">Concepts</a><a href="../dp.html">Online Privacy</a><a href="../dp.html">Data Protection</a></div>
-        <div class="column"><h4>Emerging Threats</h4><a href="../et.html">New Technology</a><a href="../et.html">Cyberattack Methods</a></div>
-        <div class="column"><h4>Prevention</h4><a href="../pa.html">Cybercrime Prevention</a><a href="../pa.html">Online Safety Tips</a><a href="../pa.html">Digital Wellness</a></div>
-        <div class="column"><h4>Resources</h4><a href="../rs.html">FAQs</a><a href="../rs.html">References</a></div>
-        <div class="column"><h4>Quick Navs</h4><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contacts.html">Contacts</a></div>
-    </div>
-    <hr>
-</footer>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
 </body>
 </html>

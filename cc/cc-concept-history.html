@@ -8,118 +8,258 @@
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
-    <style>
-        body { background-color: #FFFFFF; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        .main { background-color: #FFFFFF; padding: 30px 0; width: 90%; max-width: 1000px; margin: 0 auto; }
-        .title { color: #212866; font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 10px; }
-        h2 { color: #212866; font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; line-height: 1.3; text-align: left; border-left: 5px solid #0F0F32; padding-left: 20px; margin-top: 40px; margin-bottom: 25px; width: 100%; box-sizing: border-box; }
-        .author { color: #212866; font-family: 'Inter', sans-serif; font-size: 18px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-top: 0; }
-        .nav-bio { color: #212866; font-family: 'Inter', sans-serif; font-size: 16px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
-        .nav-bio a { color: #212866; text-decoration: none; font-weight: 600; }
-        .nav-bio a:hover { text-decoration: underline; }
-        .paragraph { color: #212866; margin: 0 0 50px 0; font-family: 'Inter', sans-serif; font-size: 19px; font-weight: 500; line-height: 1.8; text-align: justify; text-indent: 50px; width: 100%; }
-        .top-btn { position: fixed; bottom: 50px; right: 50px; background-color: #0F0F32; color: #FFFFFF; text-decoration: none; padding: 15px 50px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        nav { background-color: #0F0F32; padding: 20px 60px; overflow: hidden; }
-        .logo-container { float: left; }
-        .logo-container img { height: 40px; vertical-align: middle; margin-right: 10px; }
-        .logo-text { font-size: 20px; font-family: 'Playfair Display', serif; color: #FFFFFF; font-weight: 700; vertical-align: middle; display: inline-block; }
-        .nav-links { list-style: none; padding: 0; margin: 0; float: right; background-color: #FFFFFF; border-radius: 8px; }
-        .nav-links li { display: inline-block; }
-        .nav-links li a { text-decoration: none; color: #0F0F32; font-size: 13px; font-weight: 700; padding: 12px 15px; display: block; }
-        .nav-links li a:hover { text-decoration: underline; }
-        footer { background-color: #0F0F32; color: #DDE7F2; padding: 60px 60px 40px 60px; overflow: hidden; }
-        .footer-contact { float: left; width: 25%; text-align: left; }
-        .footer-contact img { height: 45px; display: inline-block; vertical-align: middle; margin-right: 10px; }
-        .footer-contact p { font-size: 11px; line-height: 1.5; margin: 15px 0 5px 0; color: #DDE7F2; }
-        .social-icons a { color: #FFFFFF; font-size: 24px; margin-right: 15px; text-decoration: none; }
-        .footer-columns { float: right; width: 68%; text-align: left; }
-        .column { display: inline-block; vertical-align: top; width: 13%; margin-bottom: 20px; }
-        .column h4 { font-size: 14px; text-decoration: underline; margin: 0 0 15px 0; color: #FFFFFF; font-weight: 600; }
-        .column a { display: block; color: #DDE7F2; text-decoration: none; font-size: 12px; margin-bottom: 8px; line-height: 1.4; }
-        .column a:hover { text-decoration: underline; }
-        hr { clear: both; border: 0; border-top: 1px solid #DDE7F2; margin-top: 30px; }
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-bio a:hover {
+            text-decoration: underline;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 10px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-<a href="#top" class="top-btn">Back to Top &uarr;</a>
-<nav>
-    <div class="logo-container">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text" id="top">Digital Compass</span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../cc.html">Cybercrime</a></li>
-        <li><a href="../cs.html">Cybersecurity</a></li>
-        <li><a href="../dp.html">Digital Privacy</a></li>
-        <li><a href="../et.html">Emerging Threats</a></li>
-        <li><a href="../pa.html">Prevention &amp; Awareness</a></li>
-        <li><a href="../rs.html">Resources</a></li>
-    </ul>
-</nav>
-<div class="main">
-    <h1 class="title">From Phone Tricks to Ransomware: A History of Cyber Crime</h1>
-    <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
-    <p class="nav-bio">
-        <a href="#intro">Introduction</a> &bull;
-        <a href="#body-one">The Early Days</a> &bull;
-        <a href="#body-two">The 1980s and 1990s</a> &bull;
-        <a href="#body-three">The 2000s</a> &bull;
-        <a href="#body-four">The Modern Era</a> &bull;
-        <a href="#body-five">Philippines Timeline</a> &bull;
-        <a href="#conclusion">Conclusion</a>
-    </p>
-    <hr width="100%" size="5" color="#212866">
-    <article>
-        <p id="intro" class="paragraph">
-            Cyber crime did not suddenly appear with the invention of smartphones or social media. It has a long history that goes all the way back to the early days of computers and telephone networks. As technology grew over the decades, the methods used by criminals to abuse it also grew. Understanding the history of cyber crime helps us see how we got to where we are today and why the threats we face now are more dangerous than ever. From simple phone tricks in the 1960s to massive global attacks in recent years, the story of cyber crime is also the story of how the digital world developed and how criminals developed along with it.
-        </p>
-        <h2 id="body-one">The Very Beginning: Phone Tricks in the 1960s and 1970s</h2>
-        <p class="paragraph">
-            The earliest form of cyber crime did not even involve computers. It involved telephones. In the 1960s and 1970s, a group of people known as "phone phreakers" found ways to manipulate telephone networks to make free long-distance calls. One of the most famous among them was a man named John Draper, also known as "Captain Crunch." He discovered that a toy whistle from a cereal box could produce a tone that tricked telephone systems into giving free access. This was one of the first known cases of exploiting a technology system for personal gain. While this may seem small compared to today's crimes, it laid the foundation for hacking culture. It showed that curious and skilled individuals could find weaknesses in complex systems. Many early computer hackers were reportedly influenced by phone phreaking in their early years.
-        </p>
-        <h2 id="body-two">Computer Hacking Rises in the 1980s and 1990s</h2>
-        <p class="paragraph">
-            As personal computers became more common in the 1980s, a new wave of cyber crime began. Hackers started breaking into computer systems not just for fun, but also to steal information or cause damage. One of the earliest famous cases was the Morris Worm in 1988, created by a student named Robert Morris. It was one of the first self-replicating programs to spread across the internet and caused major slowdowns and damage to thousands of computers. The 1990s saw the internet grow rapidly, which opened more opportunities for criminals. Computer viruses spread through floppy disks and email attachments, and online fraud started appearing as people began shopping and banking on the internet. Governments around the world began passing laws specifically aimed at punishing computer-related crimes, marking the beginning of formal cybercrime legislation.
-        </p>
-        <h2 id="body-three">The 2000s: Cyber Crime Becomes a Bigger Problem</h2>
-        <p class="paragraph">
-            The 2000s were a turning point in the history of cyber crime. The internet became widely available, and millions of people were now online, which meant more potential victims for criminals. The ILOVEYOU virus of the year 2000, which started in the Philippines, is one of the most famous examples from this time. It spread through email and caused billions of dollars in damage worldwide, infecting millions of computers in just a few days. Online banking fraud, phishing attacks, and identity theft became more and more common as people started managing their money online. Criminal groups began using the internet as a business, selling stolen credit card information and harmful software on underground online markets. The early 2000s also saw the rise of social media, which introduced new ways for criminals to bully, scam, and harass people.
-        </p>
-        <h2 id="body-four">The Modern Era: Bigger and More Organized Attacks</h2>
-        <p class="paragraph">
-            From the 2010s to today, cyber crime has become more organized, more global, and more damaging than ever before. Ransomware became one of the most harmful types of cyber crime. It is a kind of harmful software that locks victims out of their files and demands payment to restore access. The WannaCry ransomware attack of 2017, for example, affected over 200,000 computers across 150 countries, hitting hospitals, banks, and government agencies. Attacks by government-backed hackers also became a major concern worldwide. Data breaches involving millions of user records from big companies made headlines around the world. Artificial intelligence and automation have also started being used by criminals to launch attacks faster and on a larger scale than before.
-        </p>
-        <h2 id="body-five">Cyber Crime History in the Philippines</h2>
-        <p class="paragraph">
-            The Philippines has its own important history with cyber crime. The country gained global attention in 2000 when the ILOVEYOU virus was traced back to a Filipino programmer, showing that cyber crimes can start from anywhere in the world. In the years after, online scams, text message fraud, and social media crimes became more common in the country. The Philippine government responded by passing the Cybercrime Prevention Act of 2012, also known as Republic Act 10175, which made hacking, online fraud, cyberbullying, and other digital offenses illegal. Even with this law, cyber crime in the Philippines has continued to grow, especially with the rise of e-commerce scams, investment fraud, and fake news on social media. The NBI Cybercrime Division and the PNP Anti-Cybercrime Group were created to investigate these crimes and show that the government takes this growing problem seriously.
-        </p>
-        <h2 id="conclusion">Conclusion</h2>
-        <p class="paragraph">
-            The history of cyber crime shows how technology and criminal behavior have developed side by side over the decades. What started as curious teenagers tricking telephone systems has grown into a massive global criminal industry worth trillions of dollars. Every new technology, from personal computers to the internet and social media, has brought new chances for criminals to cause harm. The Philippines itself has been part of this history, both as a place where famous cyber attacks began and as a nation actively working to fight back. Learning this history reminds us that cyber crime is not a new problem, and that staying ahead of criminals requires constant awareness and effort. As technology keeps changing, so must our knowledge and our defenses.
-        </p>
-    </article>
-</div>
-<footer>
-    <div class="footer-contact">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text">Digital Compass</span>
-        <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
         </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="title">From Phone Tricks to Ransomware: A History of Cyber Crime</h1>
+        <p class="author"><b>By: Gonzales, Ace M. &bull; April 4, 2026</b></p>
+
+        <p class="nav-bio">
+            <a href="#intro">Introduction</a> &bull;
+            <a href="#body-one">The Early Days</a> &bull;
+            <a href="#body-two">The 1980s and 1990s</a> &bull;
+            <a href="#body-three">The 2000s</a> &bull;
+            <a href="#body-four">The Modern Era</a> &bull;
+            <a href="#body-five">Philippines Timeline</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+
+        <hr width="100%" size="5" color="#0F0F32">
+
+        <article>
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/history-cybercrime-cover.jpg" alt="History of Cyber Crime" class="photos">
+                </a>
+                <figcaption>Photo from: Cybercrime Magazine</figcaption>
+            </figure>
+
+            <p id="intro" class="paragraph">
+                Cyber crime did not suddenly appear with the invention of smartphones or social media. It has a long history that goes all the way back to the early days of computers and telephone networks. As technology grew over the decades, the methods used by criminals to abuse it also grew. Understanding the history of cyber crime helps us see how we got to where we are today and why the threats we face now are more dangerous than ever. From simple phone tricks in the 1960s to massive global attacks in recent years, the story of cyber crime is also the story of how the digital world developed and how criminals developed along with it.
+            </p>
+
+            <h2 id="body-one">The Very Beginning: Phone Tricks in the 1960s and 1970s</h2>
+            <p class="paragraph">
+                The earliest form of cyber crime did not even involve computers. It involved telephones. In the 1960s and 1970s, a group of people known as "phone phreakers" found ways to manipulate telephone networks to make free long-distance calls. One of the most famous among them was a man named John Draper, also known as "Captain Crunch." He discovered that a toy whistle from a cereal box could produce a tone that tricked telephone systems into giving free access. This was one of the first known cases of exploiting a technology system for personal gain. While this may seem small compared to today's crimes, it laid the foundation for hacking culture. It showed that curious and skilled individuals could find weaknesses in complex systems. Many early computer hackers were reportedly influenced by phone phreaking in their early years.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/history-cybercrime-img2.jpg" alt="Computer Hacking in the 1980s and 1990s" class="photos">
+                </a>
+                <figcaption>Photo from: New Atlas</figcaption>
+            </figure>
+
+            <h2 id="body-two">Computer Hacking Rises in the 1980s and 1990s</h2>
+            <p class="paragraph">
+                As personal computers became more common in the 1980s, a new wave of cyber crime began. Hackers started breaking into computer systems not just for fun, but also to steal information or cause damage. One of the earliest famous cases was the Morris Worm in 1988, created by a student named Robert Morris. It was one of the first self-replicating programs to spread across the internet and caused major slowdowns and damage to thousands of computers. The 1990s saw the internet grow rapidly, which opened more opportunities for criminals. Computer viruses spread through floppy disks and email attachments, and online fraud started appearing as people began shopping and banking on the internet. Governments around the world began passing laws specifically aimed at punishing computer-related crimes, marking the beginning of formal cybercrime legislation.
+            </p>
+
+            <h2 id="body-three">The 2000s: Cyber Crime Becomes a Bigger Problem</h2>
+            <p class="paragraph">
+                The 2000s were a turning point in the history of cyber crime. The internet became widely available, and millions of people were now online, which meant more potential victims for criminals. The ILOVEYOU virus of the year 2000, which started in the Philippines, is one of the most famous examples from this time. It spread through email and caused billions of dollars in damage worldwide, infecting millions of computers in just a few days. Online banking fraud, phishing attacks, and identity theft became more and more common as people started managing their money online. Criminal groups began using the internet as a business, selling stolen credit card information and harmful software on underground online markets. The early 2000s also saw the rise of social media, which introduced new ways for criminals to bully, scam, and harass people.
+            </p>
+
+            <figure>
+                <a href=" ">
+                    <img src="../media/images/history-cybercrime-img3.jpg" alt="Modern Cybercrime and Ransomware" class="photos">
+                </a>
+                <figcaption>Photo from: RUSI</figcaption>
+            </figure>
+
+            <h2 id="body-four">The Modern Era: Bigger and More Organized Attacks</h2>
+            <p class="paragraph">
+                From the 2010s to today, cyber crime has become more organized, more global, and more damaging than ever before. Ransomware became one of the most harmful types of cyber crime. It is a kind of harmful software that locks victims out of their files and demands payment to restore access. The WannaCry ransomware attack of 2017, for example, affected over 200,000 computers across 150 countries, hitting hospitals, banks, and government agencies. Attacks by government-backed hackers also became a major concern worldwide. Data breaches involving millions of user records from big companies made headlines around the world. Artificial intelligence and automation have also started being used by criminals to launch attacks faster and on a larger scale than before.
+            </p>
+
+            <h2 id="body-five">Cyber Crime History in the Philippines</h2>
+            <p class="paragraph">
+                The Philippines has its own important history with cyber crime. The country gained global attention in 2000 when the ILOVEYOU virus was traced back to a Filipino programmer, showing that cyber crimes can start from anywhere in the world. In the years after, online scams, text message fraud, and social media crimes became more common in the country. The Philippine government responded by passing the Cybercrime Prevention Act of 2012, also known as Republic Act 10175, which made hacking, online fraud, cyberbullying, and other digital offenses illegal. Even with this law, cyber crime in the Philippines has continued to grow, especially with the rise of e-commerce scams, investment fraud, and fake news on social media. The NBI Cybercrime Division and the PNP Anti-Cybercrime Group were created to investigate these crimes and show that the government takes this growing problem seriously.
+            </p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                The history of cyber crime shows how technology and criminal behavior have developed side by side over the decades. What started as curious teenagers tricking telephone systems has grown into a massive global criminal industry worth trillions of dollars. Every new technology, from personal computers to the internet and social media, has brought new chances for criminals to cause harm. The Philippines itself has been part of this history, both as a place where famous cyber attacks began and as a nation actively working to fight back. Learning this history reminds us that cyber crime is not a new problem, and that staying ahead of criminals requires constant awareness and effort. As technology keeps changing, so must our knowledge and our defenses.
+            </p>
+        </article>
     </div>
-    <div class="footer-columns">
-        <div class="column"><h4>Cybercrime</h4><a href="../cc.html">Concepts</a><a href="../cc.html">Types of Cybercrime</a></div>
-        <div class="column"><h4>Cybersecurity</h4><a href="../cs.html">Concepts</a><a href="../cs.html">Account Security</a><a href="../cs.html">Internet Safety</a><a href="../cs.html">Safe Online Habits</a></div>
-        <div class="column"><h4>Digital Privacy</h4><a href="../dp.html">Concepts</a><a href="../dp.html">Online Privacy</a><a href="../dp.html">Data Protection</a></div>
-        <div class="column"><h4>Emerging Threats</h4><a href="../et.html">New Technology</a><a href="../et.html">Cyberattack Methods</a></div>
-        <div class="column"><h4>Prevention</h4><a href="../pa.html">Cybercrime Prevention</a><a href="../pa.html">Online Safety Tips</a><a href="../pa.html">Digital Wellness</a></div>
-        <div class="column"><h4>Resources</h4><a href="../rs.html">FAQs</a><a href="../rs.html">References</a></div>
-        <div class="column"><h4>Quick Navs</h4><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contacts.html">Contacts</a></div>
-    </div>
-    <hr>
-</footer>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
 </body>
 </html>

@@ -1,15 +1,17 @@
 nav {
     background-color: #0F0F32;
-    padding: 20px 60px;
+    padding: 20px 50px;
+    text-align: left;
     overflow: hidden;
 }
 
 .logo-container {
-    float: left;
+    display: block;
+    margin-bottom:15px;
 }
 
 .logo-container img {
-    height: 40px;
+    height: 38px;
     vertical-align: middle;
     margin-right: 10px;
 }
@@ -26,10 +28,11 @@ nav {
 .nav-links {
     list-style: none;
     padding: 0;
-    margin: 0;
-    float: right;
+    margin: 0 auto;
+    display: inline-block;
     background-color: #FFFFFF;
     border-radius: 8px;
+    float: none;
 }
 
 .nav-links li {
@@ -39,14 +42,10 @@ nav {
 .nav-links li a {
     text-decoration: none;
     color: #0F0F32;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
-    padding: 12px 15px;
+    padding: 12px 16px;
     display: block;
-}
-
-.nav-links li a:hover {
-    text-decoration: underline;
 }
 
 footer {
@@ -130,8 +129,8 @@ hr {
     position: fixed;
     bottom: 50px;
     right: 60px;
-    background: #0F0F32 !important;
-    border: 2px solid #0F0F32 !important;
+    background: #211F76 !important;
+    border: 2px solid #211F76 !important;
     color: #FFFFFF !important;
     text-decoration: none;
     padding: 15px 50px;
@@ -145,8 +144,9 @@ hr {
 
 .top-btn:hover {
     background: #FFFFFF !important;
-    color: #0F0F32 !important;
+    color: #211F76 !important;
 }
+
 
 @media(max-width:1200px){
     .column {
@@ -164,55 +164,26 @@ hr {
     }
 }
 
-@media(max-width:1080px){
+@media (min-width: 768px) {
     nav {
-        background-color: #0F0F32;
-        padding: 20px 35px;
-        overflow: hidden;
+        padding: 20px auto;
+        text-align: left;
     }
 
     .logo-container {
         float: left;
-    }
-
-    .logo-container img {
-        height: 38px;
-        vertical-align: middle;
-        margin-right: 3px;
-    }
-
-    .logo-text {
-        font-size: 18px;
-        font-family: 'Playfair Display', serif;
-        color: #FFFFFF;
-        font-weight: 700;
-        vertical-align: middle;
-        display: inline-block;
+        margin-bottom:12px;
     }
 
     .nav-links {
-        list-style: none;
-        padding: 0;
-        margin: 0;
         float: right;
-        background-color: #FFFFFF;
-        border-radius: 8px;
     }
 
-    .nav-links li {
-        display: inline-block;
+    .logo-text {
+        font-size: 20px;
     }
 
     .nav-links li a {
-        text-decoration: none;
-        color: #0F0F32;
-        font-size: 12px;
-        font-weight: 700;
-        padding: 12px 7px;
-        display: block;
-    }
-
-    .nav-links li a:hover {
-        text-decoration: underline;
+        font-size: 13px;
     }
 }

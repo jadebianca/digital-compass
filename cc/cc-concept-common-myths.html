@@ -8,116 +8,257 @@
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
-    <style>
-        body { background-color: #FFFFFF; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        .main { background-color: #FFFFFF; padding: 30px 0; width: 90%; max-width: 1000px; margin: 0 auto; }
-        .title { color: #212866; font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; text-align: center; margin-bottom: 10px; }
-        h2 { color: #212866; font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; line-height: 1.3; text-align: left; border-left: 5px solid #0F0F32; padding-left: 20px; margin-top: 40px; margin-bottom: 25px; width: 100%; box-sizing: border-box; }
-        .author { color: #212866; font-family: 'Inter', sans-serif; font-size: 18px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-top: 0; }
-        .nav-bio { color: #212866; font-family: 'Inter', sans-serif; font-size: 16px; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
-        .nav-bio a { color: #212866; text-decoration: none; font-weight: 600; }
-        .nav-bio a:hover { text-decoration: underline; }
-        .paragraph { color: #212866; margin: 0 0 50px 0; font-family: 'Inter', sans-serif; font-size: 19px; font-weight: 500; line-height: 1.8; text-align: justify; text-indent: 50px; width: 100%; }
-        .logo-container { float: left; }
-        .logo-container img { height: 40px; vertical-align: middle; margin-right: 10px; }
-        .logo-text { font-size: 20px; font-family: 'Playfair Display', serif; color: #FFFFFF; font-weight: 700; vertical-align: middle; display: inline-block; }
-        .nav-links { list-style: none; padding: 0; margin: 0; float: right; background-color: #FFFFFF; border-radius: 8px; }
-        .nav-links li { display: inline-block; }
-        .nav-links li a { text-decoration: none; color: #0F0F32; font-size: 13px; font-weight: 700; padding: 12px 15px; display: block; }
-        .nav-links li a:hover { text-decoration: underline; }
-        footer { background-color: #0F0F32; color: #DDE7F2; padding: 60px 60px 40px 60px; overflow: hidden; }
-        .footer-contact { float: left; width: 25%; text-align: left; }
-        .footer-contact img { height: 45px; display: inline-block; vertical-align: middle; margin-right: 10px; }
-        .footer-contact p { font-size: 11px; line-height: 1.5; margin: 15px 0 5px 0; color: #DDE7F2; }
-        .social-icons a { color: #FFFFFF; font-size: 24px; margin-right: 15px; text-decoration: none; }
-        .footer-columns { float: right; width: 68%; text-align: left; }
-        .column { display: inline-block; vertical-align: top; width: 13%; margin-bottom: 20px; }
-        .column h4 { font-size: 14px; text-decoration: underline; margin: 0 0 15px 0; color: #FFFFFF; font-weight: 600; }
-        .column a { display: block; color: #DDE7F2; text-decoration: none; font-size: 12px; margin-bottom: 8px; line-height: 1.4; }
-        .column a:hover { text-decoration: underline; }
-        hr { clear: both; border: 0; border-top: 1px solid #DDE7F2; margin-top: 30px; }
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .main > p {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-bio a:hover {
+            text-decoration: underline;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 20px;
+            margin: 40px 0 10px 0;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-<a href="#top" class="top-btn">Back to Top &uarr;</a>
-<nav>
-    <div class="logo-container">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text" id="top">Digital Compass</span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../cc.html">Cybercrime</a></li>
-        <li><a href="../cs.html">Cybersecurity</a></li>
-        <li><a href="../dp.html">Digital Privacy</a></li>
-        <li><a href="../et.html">Emerging Threats</a></li>
-        <li><a href="../pa.html">Prevention &amp; Awareness</a></li>
-        <li><a href="../rs.html">Resources</a></li>
-    </ul>
-</nav>
-<div class="main">
-    <h1 class="title">Busting the Myths: Common Misconceptions About Cyber Crime</h1>
-    <p class="author"><b>By: Gonzales, Ace M. &bull; March 21, 2026</b></p>
-    <p class="nav-bio">
-        <a href="#intro">Introduction</a> &bull;
-        <a href="#body-one">Myth 1</a> &bull;
-        <a href="#body-two">Myth 2</a> &bull;
-        <a href="#body-three">Myth 3</a> &bull;
-        <a href="#body-four">Myth 4</a> &bull;
-        <a href="#body-five">Myth 5</a> &bull;
-        <a href="#conclusion">Conclusion</a>
-    </p>
-    <hr width="100%" size="5" color="#212866">
-    <article>
-        <p id="intro" class="paragraph">
-            Despite how common cyber crime has become, many people still hold on to false beliefs about it. These beliefs can give people a false sense of security, cause them to underestimate the risks, or stop them from taking the right steps to protect themselves. Misconceptions about cyber crime are dangerous because they can lead to poor decisions and risky behavior online. In this article, we will look at some of the most common myths about cyber crime and explain the truth behind each one, so that you can be better informed and better protected.
-        </p>
-        <h2 id="body-one">Myth 1: "I Am Not Important Enough to Be a Target"</h2>
-        <p class="paragraph">
-            One of the most dangerous and common myths is the belief that cyber criminals only go after famous people, wealthy individuals, or large companies. Many ordinary people think to themselves, "Why would anyone bother hacking me? I have nothing worth stealing." The truth is that cyber criminals are not always selective. They often use automated tools that attack thousands of targets at once, looking for the easiest ones to exploit. Your email account, social media profiles, and online banking details all have value to a criminal, whether they use them directly or sell them to others. In fact, everyday people are often easier targets than large organizations, simply because they have fewer security measures in place. Believing that you are too small or unimportant to be targeted is exactly the kind of thinking that makes you vulnerable. Every person with an internet connection is a potential target, and taking basic security steps is important for everyone.
-        </p>
-        <h2 id="body-two">Myth 2: "Antivirus Software Alone Will Keep Me Safe"</h2>
-        <p class="paragraph">
-            Many people believe that as long as they have antivirus software installed on their devices, they are fully protected from cyber threats. While antivirus software is an important layer of defense, it is far from a complete solution on its own. Cyber criminals constantly develop new methods and tools that can bypass antivirus detection, especially with the rise of new attack techniques and social engineering. No software can protect you if you choose to give away your password to a phishing website that looks exactly like your bank's login page. Cybersecurity requires a layered approach that includes strong passwords, two-factor authentication, regular software updates, careful online behavior, and healthy skepticism toward messages you did not expect. Relying only on antivirus software creates a false sense of security that can be just as dangerous as having no protection at all.
-        </p>
-        <h2 id="body-three">Myth 3: "Cyber Crime Only Happens to People Who Do Not Know Technology"</h2>
-        <p class="paragraph">
-            There is a common assumption that only people who do not understand technology fall for cyber scams or get hacked, and that being tech-savvy automatically makes you safe. This is simply not true. Some of the most advanced cyber attacks have successfully targeted IT professionals, cybersecurity experts, and even government agencies with dedicated security teams. Social engineering attacks, for example, exploit human psychology rather than technical weaknesses. Even highly intelligent and tech-literate individuals can be manipulated when they are tired, distracted, or under pressure. The reality is that cyber criminals are creative and always developing new tricks designed to fool even the most careful users. Being knowledgeable about technology helps, but it does not make anyone completely immune to cyber crime. Staying humble, continuously learning, and keeping a healthy level of skepticism are more valuable than technical skill alone when it comes to staying safe online.
-        </p>
-        <h2 id="body-four">Myth 4: "A Strong Password Is Enough to Protect My Accounts"</h2>
-        <p class="paragraph">
-            Many people believe that having a strong, complex password is all they need to keep their accounts secure. While strong passwords are absolutely important, they are not enough on their own. Passwords can be compromised in many ways that have nothing to do with how strong they are. They can be stolen through phishing attacks, exposed in data breaches at websites you use, guessed through social engineering, or taken by harmful software on your device. This is why using two-factor authentication (2FA) is so important. Even if a criminal gets your password, they still cannot access your account without the second verification step. Using the same password across multiple platforms is also extremely risky, because a breach on one site can compromise all your accounts. A strong password is a good start, but a complete approach to account security requires combining it with 2FA, unique passwords for each account, and regular password updates.
-        </p>
-        <h2 id="body-five">Myth 5: "Cyber Crime Is Not a Real Crime Because It Only Happens Online"</h2>
-        <p class="paragraph">
-            Some people downplay cyber crime by thinking of it as something that only exists in the digital world and therefore does not have real-world consequences. This dangerous belief prevents many victims from reporting crimes and causes some potential criminals to underestimate the legal risks they face. Cyber crime is very much a real crime with real legal consequences. In the Philippines, the Cybercrime Prevention Act of 2012 provides for imprisonment and heavy fines for a wide range of online offenses. The harm caused by cyber crime, including financial losses, emotional trauma, damaged reputations, and compromised personal safety, is just as real and serious as harm caused by traditional crimes. Many cyber crimes, such as online sexual exploitation, stalking, and fraud, have direct physical-world consequences for victims. Law enforcement agencies including the NBI Cybercrime Division and the PNP Anti-Cybercrime Group actively investigate and prosecute cyber crimes in the Philippines. Anyone who believes that what happens online has no real consequences is very dangerously mistaken.
-        </p>
-        <h2 id="conclusion">Conclusion</h2>
-        <p class="paragraph">
-            Myths and wrong beliefs about cyber crime are not harmless misunderstandings. They are genuinely dangerous because they can lead people to take insufficient steps to protect themselves and leave them exposed to real harm. The truth is that anyone can be a target, technology alone cannot protect you, smart people can be fooled, strong passwords are just the beginning, and cyber crime carries serious real-world consequences. Replacing these myths with accurate knowledge is one of the most powerful things you can do to protect yourself and the people around you online. Cybersecurity awareness starts with honest and informed thinking about the nature of the threat. By understanding the reality of cyber crime rather than holding on to comfortable myths, we can all make smarter decisions and build safer digital habits that stand up against the real threats we face every day online.
-        </p>
-    </article>
-</div>
-<footer>
-    <div class="footer-contact">
-        <img src="../media/images/logo.png" alt="Logo">
-        <span class="logo-text">Digital Compass</span>
-        <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <!--GONZALES, ACE M.-->
+    <!--CIP-1101 ITAD | GROUP 2-->
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
         </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="text-center mb-4">Busting the Myths: Common Misconceptions About Cyber Crime</h1>
+        <p class="text-center text-uppercase fw-bold mb-3">By: Gonzales, Ace M. &bull; April 4, 2026</p>
+        <p class="nav-bio">
+            <a href="#intro">Introduction</a> &bull;
+            <a href="#body-one">Myth 1</a> &bull;
+            <a href="#body-two">Myth 2</a> &bull;
+            <a href="#body-three">Myth 3</a> &bull;
+            <a href="#body-four">Myth 4</a> &bull;
+            <a href="#body-five">Myth 5</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+
+        <hr width="100%" size="5" color="#0F0F32">
+
+        <article>
+
+
+            <figure>
+                <a href="">
+                    <img src="../media/images/myths-cybercrime-cover.webp" alt="Busting Cybercrime Myths" class="photos">
+                </a>
+                <figcaption>Photo from: Avast</figcaption>
+            </figure>
+
+            <p id="intro" class="paragraph">
+                Despite how common cyber crime has become, many people still hold on to false beliefs about it. These beliefs can give people a false sense of security, cause them to underestimate the risks, or stop them from taking the right steps to protect themselves. Misconceptions about cyber crime are dangerous because they can lead to poor decisions and risky behavior online. In this article, we will look at some of the most common myths about cyber crime and explain the truth behind each one, so that you can be better informed and better protected.
+            </p>
+
+            <h2 id="body-one" class="text-left mb-4">Myth 1: "I Am Not Important Enough to Be a Target"</h2>
+            <p class="paragraph">
+                One of the most dangerous and common myths is the belief that cyber criminals only go after famous people, wealthy individuals, or large companies. Many ordinary people think to themselves, "Why would anyone bother hacking me? I have nothing worth stealing." The truth is that cyber criminals are not always selective. They often use automated tools that attack thousands of targets at once, looking for the easiest ones to exploit. Your email account, social media profiles, and online banking details all have value to a criminal, whether they use them directly or sell them to others. In fact, everyday people are often easier targets than large organizations, simply because they have fewer security measures in place. Believing that you are too small or unimportant to be targeted is exactly the kind of thinking that makes you vulnerable. Every person with an internet connection is a potential target, and taking basic security steps is important for everyone.
+            </p>
+
+            <h2 id="body-two" class="text-left mb-4">Myth 2: "Antivirus Software Alone Will Keep Me Safe"</h2>
+            <p class="paragraph">
+                Many people believe that as long as they have antivirus software installed on their devices, they are fully protected from cyber threats. While antivirus software is an important layer of defense, it is far from a complete solution on its own. Cyber criminals constantly develop new methods and tools that can bypass antivirus detection, especially with the rise of new attack techniques and social engineering. No software can protect you if you choose to give away your password to a phishing website that looks exactly like your bank's login page. Cybersecurity requires a layered approach that includes strong passwords, two-factor authentication, regular software updates, careful online behavior, and healthy skepticism toward messages you did not expect. Relying only on antivirus software creates a false sense of security that can be just as dangerous as having no protection at all.
+            </p>
+
+
+            <figure>
+                <a href="">
+                    <img src="../media/images/myths-cybercrime-img2.png" alt="Cybersecurity Layers Beyond Antivirus" class="photos">
+                </a>
+                <figcaption>Photo from: Diamont It</figcaption>
+            </figure>
+
+            <h2 id="body-three" class="text-left mb-4">Myth 3: "Cyber Crime Only Happens to People Who Do Not Know Technology"</h2>
+            <p class="paragraph">
+                There is a common assumption that only people who do not understand technology fall for cyber scams or get hacked, and that being tech-savvy automatically makes you safe. This is simply not true. Some of the most advanced cyber attacks have successfully targeted IT professionals, cybersecurity experts, and even government agencies with dedicated security teams. Social engineering attacks, for example, exploit human psychology rather than technical weaknesses. Even highly intelligent and tech-literate individuals can be manipulated when they are tired, distracted, or under pressure. The reality is that cyber criminals are creative and always developing new tricks designed to fool even the most careful users. Being knowledgeable about technology helps, but it does not make anyone completely immune to cyber crime. Staying humble, continuously learning, and keeping a healthy level of skepticism are more valuable than technical skill alone when it comes to staying safe online.
+            </p>
+
+            <h2 id="body-four" class="text-left mb-4">Myth 4: "A Strong Password Is Enough to Protect My Accounts"</h2>
+            <p class="paragraph">
+                Many people believe that having a strong, complex password is all they need to keep their accounts secure. While strong passwords are absolutely important, they are not enough on their own. Passwords can be compromised in many ways that have nothing to do with how strong they are. They can be stolen through phishing attacks, exposed in data breaches at websites you use, guessed through social engineering, or taken by harmful software on your device. This is why using two-factor authentication (2FA) is so important. Even if a criminal gets your password, they still cannot access your account without the second verification step. Using the same password across multiple platforms is also extremely risky, because a breach on one site can compromise all your accounts. A strong password is a good start, but a complete approach to account security requires combining it with 2FA, unique passwords for each account, and regular password updates.
+            </p>
+
+
+            <figure>
+                <a href="">
+                    <img src="../media/images/myths-cybercrime-img3.png" alt="Password Security and Two-Factor Authentication" class="photos">
+                </a>
+                <figcaption>Photo from: INSERT SOURCE NAME HERE</figcaption>
+            </figure>
+
+            <h2 id="body-five" class="text-left mb-4">Myth 5: "Cyber Crime Is Not a Real Crime Because It Only Happens Online"</h2>
+            <p class="paragraph">
+                Some people downplay cyber crime by thinking of it as something that only exists in the digital world and therefore does not have real-world consequences. This dangerous belief prevents many victims from reporting crimes and causes some potential criminals to underestimate the legal risks they face. Cyber crime is very much a real crime with real legal consequences. In the Philippines, the Cybercrime Prevention Act of 2012 provides for imprisonment and heavy fines for a wide range of online offenses. The harm caused by cyber crime, including financial losses, emotional trauma, damaged reputations, and compromised personal safety, is just as real and serious as harm caused by traditional crimes. Many cyber crimes, such as online sexual exploitation, stalking, and fraud, have direct physical-world consequences for victims. Law enforcement agencies including the NBI Cybercrime Division and the PNP Anti-Cybercrime Group actively investigate and prosecute cyber crimes in the Philippines. Anyone who believes that what happens online has no real consequences is very dangerously mistaken.
+            </p>
+
+            <h2 id="conclusion" class="text-left mb-4">Conclusion</h2>
+            <p class="paragraph">
+                Myths and wrong beliefs about cyber crime are not harmless misunderstandings. They are genuinely dangerous because they can lead people to take insufficient steps to protect themselves and leave them exposed to real harm. The truth is that anyone can be a target, technology alone cannot protect you, smart people can be fooled, strong passwords are just the beginning, and cyber crime carries serious real-world consequences. Replacing these myths with accurate knowledge is one of the most powerful things you can do to protect yourself and the people around you online. Cybersecurity awareness starts with honest and informed thinking about the nature of the threat. By understanding the reality of cyber crime rather than holding on to comfortable myths, we can all make smarter decisions and build safer digital habits that stand up against the real threats we face every day online.
+            </p>
+
+        </article>
     </div>
-    <div class="footer-columns">
-        <div class="column"><h4>Cybercrime</h4><a href="../cc.html">Concepts</a><a href="../cc.html">Types of Cybercrime</a></div>
-        <div class="column"><h4>Cybersecurity</h4><a href="../cs.html">Concepts</a><a href="../cs.html">Account Security</a><a href="../cs.html">Internet Safety</a><a href="../cs.html">Safe Online Habits</a></div>
-        <div class="column"><h4>Digital Privacy</h4><a href="../dp.html">Concepts</a><a href="../dp.html">Online Privacy</a><a href="../dp.html">Data Protection</a></div>
-        <div class="column"><h4>Emerging Threats</h4><a href="../et.html">New Technology</a><a href="../et.html">Cyberattack Methods</a></div>
-        <div class="column"><h4>Prevention</h4><a href="../pa.html">Cybercrime Prevention</a><a href="../pa.html">Online Safety Tips</a><a href="../pa.html">Digital Wellness</a></div>
-        <div class="column"><h4>Resources</h4><a href="../rs.html">FAQs</a><a href="../rs.html">References</a></div>
-        <div class="column"><h4>Quick Navs</h4><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contacts.html">Contacts</a></div>
-    </div>
-    <hr>
-</footer>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
 </body>
 </html>
