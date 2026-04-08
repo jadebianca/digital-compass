@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="1800">
-    <title>Digital Compass</title>
+    <title>Secure Cloud Storage</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
+     <link rel="stylesheet" href="..css/bootstrap.min.css">
+
     <style type="text/css">
         body {
             background-color: #FFFFFF;
@@ -16,7 +17,6 @@
             margin: 0px;
             padding: 0px;
         }
-        /* Content Styles */
         .main {
             background-color: #FFFFFF;
             padding: 30px 0;
@@ -24,7 +24,6 @@
             max-width: 1000px;
             margin: 0 auto;
         }
-
         .title {
             color: #211F76;
             font-family: 'Playfair Display', serif;
@@ -33,7 +32,6 @@
             text-align: center;
             margin-bottom: 10px;
         }
-
         h2 {
             color: #211F76;
             font-family: 'Playfair Display', serif;
@@ -48,7 +46,6 @@
             width: 100%;
             box-sizing: border-box;
         }
-
         .author {
             color: #212866;
             font-family: 'Inter', sans-serif;
@@ -58,7 +55,6 @@
             text-transform: uppercase;
             margin-top: 0;
         }
-
         .nav-bio {
             color: #212866;
             font-family: 'Inter', sans-serif;
@@ -68,13 +64,15 @@
             text-transform: uppercase;
             margin-bottom: 20px;
         }
-
         .nav-bio a {
             color: #212866;
             text-decoration: none;
             font-weight: 600;
+            transition: 0.3s;
         }
-
+        .nav-bio a:hover {
+            text-decoration: 2px solid underline;
+        }
         .photos {
             width: 100%;
             max-width: 1000px; 
@@ -92,7 +90,6 @@
             text-align: center;
             margin-top: 10px;
         }
-        
         .paragraph {
             color: #212866;
             margin: 0 0 50px 0;
@@ -104,164 +101,144 @@
             text-indent: 50px;
             width: 100%;
         }
-
-        .top-btn {
-            position: fixed;
-            bottom: 50px;
-            right: 60px;
-            background-color: #FFFFFF;
-            border: 2px solid #0F0F32;
-            color: #0F0F32;
-            text-decoration: none;
-            padding: 15px 50px;
-            border-radius: 50px;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: 0.3s;
-        }
-
-        .top-btn:hover {
-            background: #0F0F32;
-            color: transparent;
+        iframe {
+            display: block;
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            border-radius: 20px;
         }
     </style>
 </head>
 <body>
-
+    
+    <script src="js/bootstrap.bundle.js"></script>
     <a href="#top" class="top-btn">Back to Top &uarr;</a>
-
     <nav>
         <div class="logo-container">
-            <img src="media/images/logo.png" alt="Logo">
+            <img src="../media/images/logo.png" alt="Logo">
             <span class="logo-text" id="top">Digital Compass</span>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Cybercrime</a></li>
-            <li><a href="#">Cybersecurity</a></li>
-            <li><a href="#">Digital Privacy</a></li>
-            <li><a href="#">Emerging Threats</a></li>
-            <li><a href="#">Prevention & Awareness</a></li>
-            <li><a href="#">Resources</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
         </ul>
     </nav>
 
     <div class="main">
-        <h1 class="title">Understanding Your Digital Footprint</h1>
-        <p class="author"><b>By: Mallari, Vince Xyron A. &bull; March 2026</b></p>
+        <h1 class="title">Secure Cloud Storage</h1>
+        <p class="author"><b>By: Mallari, Vince Xyron A. &bull; April 9, 2026</b></p>
         
         <p class="nav-bio">
-            <!-- Insert Subheading Title Below -->
             <a href="#intro">Intro</a> &bull;
-            <a href="#body-one">What is Digital Footprint?</a> &bull;
-            <a href="#body-two">Importance</a> &bull;
-            <a href="#body-three">Risks</a> &bull;
-            <a href="#body-four">How to Manage?</a> &bull;
-            <a href="#body-five">Impact</a> &bull;
+            <a href="#what">How to Manage</a> &bull;
+            <a href="#how">Importance</a> &bull;
+            <a href="#types">Risks</a> &bull;
+            <a href="#risks">Impact</a> &bull;
             <a href="#conclusion">Conclusion</a>
         </p>
         
         <hr width="100%" size="5" color="#212866">
 
-        <article>     
+        <article>
             <figure>
-                <a href="">
-                    <img src="../MEDIAS/sample.jpg" alt="Digital Footprint" class="photos">
+                <a href="https://gosharpener.com/blogs/390065/Digital-footprints-matters?lang=en_us">
+                    <img src="../media/images/digital.webp" alt="Digital Footprint" class="photos">
                 </a>
-                <figcaption>Photo from: </figcaption>
+                <figcaption>Photo from: Sharpener</figcaption>
             </figure>
-    
-            <p id="intro" class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus dolor adipisci necessitatibus laborum a laudantium, ipsa optio deleniti porro iste est et earum obcaecati? Error aliquid dolore eveniet laudantium eum.
-            </p>
-
-            <h2 id="body-one">What is Digital Footprint?</h2>
+            
+            <h2 id="intro">Introduction</h2>
             <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum quidem ullam culpa in ex? Recusandae animi, consequatur, non voluptates blanditiis ratione, magni neque est tempore aliquam tenetur deleniti quod?
             </p>
 
-            <h2 id="body-two">Importance</h2>
+            <h2 id="what">How to Manage</h2>
             <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde ut corporis, nihil laudantium magni sapiente sequi, molestiae asperiores obcaecati minus dolore aperiam, odit voluptas fugiat dicta a vitae perferendis.
             </p>
 
-            <h2 id="body-three">How to Manage?</h2>
+            <h2 id="how">Importance</h2>
             <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, blanditiis dolore non porro natus repellat quidem eius! Cumque perferendis commodi, iure, dicta quia enim nobis nulla tenetur magni totam quisquam!
             </p>
 
-            <h2 id="body-four">Impact</h2>
+            <h2 id="types">Risks</h2>
             <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis vitae sed temporibus quibusdam sequi eius molestiae corporis, ipsum provident corrupti esse omnis ducimus, natus, animi assumenda enim saepe odit veniam.
             </p>
 
-            <h2 id="body-five">Conclusion</h2>
+            <h2 id="risks">Impact</h2>
             <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit numquam, natus, reprehenderit possimus beatae praesentium vel, laborum iste earum quia fugiat consequatur vitae dolor consequuntur distinctio blanditiis nemo! Debitis, delectus.
             </p>
 
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid laboriosam aut architecto, explicabo ab repellendus deserunt obcaecati voluptatibus id ullam libero officia quaerat nulla? Dolores vitae velit tempora a magni.
+            </p>
         </article>
     </div>
 
     <footer>
-        <div class="footer-contact">
-            <img src="media/images/logo.png" alt="Logo">
-            <span class="logo-text" id="top">Digital Compass</span>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
             <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="mailto@digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
 
         <div class="footer-columns">
             <div class="column">
                 <h4>Cybercrime</h4>
-                <a href="cc.html#concepts">Concepts</a>
-                <a href="cc.html#types">Types of Cybercrime</a>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
             </div>
             <div class="column">
                 <h4>Cybersecurity</h4>
-                <a href="cs.html#concepts">Concepts</a>
-                <a href="cc.html#security">Account Security</a>
-                <a href="cc.html#internet">Internet Safety</a>
-                <a href="cc.html#students">Online Habits For Students</a>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
             </div>
             <div class="column">
                 <h4>Digital Privacy</h4>
-                <a href="dp.html#concepts">Concepts</a>
-                <a href="dp.html#socmed">Social Media Privacy</a>
-                <a href="dp.html#data">Data Protection</a>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
             </div>
             <div class="column">
                 <h4>Emerging Threats</h4>
-                <a href="et.html#threats">Threats from New Technology</a>
-                <a href="et.html#cyberattack">Cyberattack Methods & Evolution</a>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
             </div>
             <div class="column">
                 <h4>Prevention</h4>
-                <a href="pa.html#prevention">Cybercrime Prevention</a>
-                <a href="pa.html#online">Online Safety Tips</a>
-                <a href="pa.html#digital">Digital Wellness</a>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
             </div>
             <div class="column">
                 <h4>Resources</h4>
-                <a href="rs/faqs.html">FAQs</a>
-                <a href="rs/references.html">References</a>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
             </div>
             <div class="column">
                 <h4>Quick Navs</h4>
-                <a href="index.html">Home</a>
-                <a href="hm/about.html">About</a>
-                <a href="hm/contacts.html">Contacts</a>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
             </div>
         </div>
-
         <hr>
     </footer>
 </body>
 </html>
-
