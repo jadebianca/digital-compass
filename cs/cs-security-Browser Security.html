@@ -3,119 +3,130 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="1800">
-    <title>[Page Title] | Digital Compass</title>
+    <title>Digital Compass - Browser Security</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <style type="text/css">
         body {
-            background-color: #F8FAFC;
-            font-family: Inter, sans-serif;
-            font-weight: 500;
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
             margin: 0px;
             padding: 0px;
         }
-
-        .logo-link {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .hero-mini {
-            background-color: #0F0F32;
-            background-image: url('../media/images/hero.png');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 20px;
-            text-align: center;
-            color: #FFFFFF;
-        }
-        
-        .hero-mini h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 50px;
-            margin: 0;
-        }
-        
-        .article-wrapper {
+        /* Content Styles */
+        .main {
             background-color: #FFFFFF;
-            max-width: 850px;
-            margin: -40px auto 80px auto;
-            padding: 60px;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .main > p {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 650px;
+            height: auto;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-            position: relative;
+            margin: 40px auto;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
         }
         
-        .back-btn {
-            display: inline-block;
-            text-decoration: none;
+        .paragraph {
             color: #212866;
-            font-size: 14px;
-            font-weight: 600;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
+        .top-btn {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            background-color: #0F0F32;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 15px 50px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 30px;
-            transition: color 0.3s ease;
-        }
-        
-        .back-btn i { margin-right: 8px; }
-        
-        .back-btn:hover { color: #211F76; }
-        
-        .article-content h2 {
-            font-family: 'Playfair Display', serif;
-            color: #211F76;
-            font-size: 28px;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #F8FAFC;
-            padding-bottom: 10px;
-        }
-        
-        .article-content p {
-            font-size: 17px;
-            color: #334155;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-        
-        .article-content ul {
-            font-size: 17px;
-            color: #334155;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            padding-left: 20px;
-        }
-        
-        .article-content li { margin-bottom: 12px; }
-        
-        .fact-box {
-            background-color: #F1F5F9;
-            border-left: 5px solid #211F76;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 0 10px 10px 0;
-            font-style: italic;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
     </style>
 </head>
 <body>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
 
     <nav>
         <div class="logo-container">
-            <a href="../index.html" class="logo-link">
-                <img src="../media/images/logo.png" alt="Logo">
-                <span class="logo-text" id="top">Digital Compass</span>
-            </a>
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
         </div>
         <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../cc.html">Cybercrime</a></li>
-            <li><a href="../cs.html" style="font-weight: bold; border-bottom: 2px solid #0F0F32;">Cybersecurity</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
             <li><a href="../dp.html">Digital Privacy</a></li>
             <li><a href="../et.html">Emerging Threats</a></li>
             <li><a href="../pa.html">Prevention & Awareness</a></li>
@@ -123,30 +134,69 @@
         </ul>
     </nav>
 
-    <div class="hero-mini">
-        <h1>[Page Title]</h1>
-    </div>
-
-    <div class="article-wrapper">
-        <a href="../cs.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Cybersecurity</a>
+    <div class="main">
+        <h1 class="text-center mb-4">Browser Security</h1>
+        <p class="text-center text-uppercase fw-bold mb-3 ">By: Luis Michael L. Suing  &bull; April 8, 2026</p>
+        <p class="nav-bio">
+            <a href="#intro">Intro</a> &bull;
+            <a href="#https">Look for HTTPS</a> &bull;
+            <a href="#extensions">Browser Extensions</a> &bull;
+            <a href="#passwords">Password Managers</a> &bull;
+            <a href="#cookies">Cookies & Cache</a> &bull;
+            <a href="#phishing">Spotting Phishing</a> &bull;
+            <a href="#incognito">Incognito Mode Limits</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
         
-        <div class="article-content">
-            <p>[Insert Article Paragraph Here]</p>
+        <hr width="100%" size="5" color="#0F0F32">
+
+        <article>     
+            <figure>
+                <a href="#">
+                    <img src="../media/images/BrowserSecurity.jpg" alt="A laptop screen displaying secure browser windows and a padlock icon" class="photos">
+                </a>
+                <figcaption>Photo From: Central Information Technology Office</figcaption>
+            </figure>
+    
+            <p id="intro" class="paragraph">
+                Your web browser—whether it is Chrome, Edge, Safari, or Firefox—is your primary vehicle for navigating the internet. Because it handles everything from your casual web searches to your online banking, it is a prime target for cyberattacks. A compromised browser can silently leak your passwords, track your physical location, and redirect you to malicious websites. Securing your browser is one of the most vital steps in maintaining your digital privacy.
+            </p>
+
+            <h2 id="https" class="text-left mb-4">Always Look for HTTPS</h2>
+            <p class="paragraph">
+                When visiting a website, always check the URL bar for a small padlock icon and ensure the web address begins with <strong>HTTPS</strong> rather than just HTTP. The "S" stands for Secure. It means that the communication between your browser and the website is encrypted. If you enter a password or credit card number on a site without HTTPS, that information is sent in plain text, meaning anyone intercepting your network traffic can easily read it.
+            </p>
+
+            <h2 id="extensions" class="text-left mb-4">Manage Extensions Carefully</h2>
+            <p class="paragraph">
+                Browser extensions and add-ons can provide great features, like ad blockers or grammar checkers. However, they also pose significant security risks. Extensions require extensive permissions to read and alter the web pages you visit. <strong>Malicious or poorly coded extensions can track your browsing history, inject spam ads, or steal login credentials.</strong> Only install extensions from highly reputable developers, and regularly delete ones you no longer use.
+            </p>
+
+            <h2 id="passwords" class="text-left mb-4">Rethink Built-In Password Managers</h2>
+            <p class="paragraph">
+                Most modern browsers offer to save your passwords for convenience. While this is better than reusing the same password everywhere, relying solely on your browser's built-in manager has drawbacks. If someone gains physical access to your unlocked computer, or if your device is infected with certain types of malware, those saved passwords can be easily extracted. Transitioning to a dedicated, encrypted third-party password manager (like Bitwarden or 1Password) is a much safer alternative.
+            </p>
+
+            <h2 id="cookies" class="text-left mb-4">Control Cookies and Site Data</h2>
+            <p class="paragraph">
+                Cookies are small files websites save on your browser to remember your preferences and keep you logged in. However, "third-party cookies" are often used by advertising networks to track your behavior across different, unrelated websites to build a profile on you. To enhance your privacy, dive into your browser settings and choose to <strong>block third-party cookies</strong>. Regularly clearing your browser cache and cookies can also resolve performance issues and sever old tracking connections.
+            </p>
+
+            <h2 id="phishing" class="text-left mb-4">Beware of Phishing and Malicious Links</h2>
+            <p class="paragraph">
+                No amount of browser security can protect you if you willingly hand over your data to a scammer. Phishing attacks use deceptive emails or messages to trick you into clicking a link that leads to a fake login page designed to look exactly like a trusted site (e.g., PayPal or Netflix). <strong>Always verify the actual URL in the address bar</strong> before typing your password. If a website looks slightly "off" or has a strange web address, close the tab immediately.
+            </p>
+
+            <h2 id="incognito" class="text-left mb-4">The Limits of Incognito Mode</h2>
+            <p class="paragraph">
+                There is a common misconception that "Incognito" or "Private Browsing" mode makes you invisible online. It does not. <strong>Private browsing only hides your activity from other people who use the same physical computer.</strong> It does not hide your web traffic from your internet service provider, your employer, your school, or the websites you visit. If you truly want to mask your IP address and encrypt your traffic from outside observers, you need a Virtual Private Network (VPN), not just a private tab.
+            </p>
             
-            <div class="fact-box">
-                <strong>Industry Fact:</strong> [Insert Fact Here]
-            </div>
-
-            <h2>[Insert Subheading Here]</h2>
-            <p>[Insert Paragraph Here]</p>
-
-            <h2>[Insert List Heading Here]</h2>
-            <ul>
-                <li><strong>[List Item Title]:</strong> [List Item Description]</li>
-                <li><strong>[List Item Title]:</strong> [List Item Description]</li>
-                <li><strong>[List Item Title]:</strong> [List Item Description]</li>
-            </ul>
-        </div>
+            <h2 id="conclusion" class="text-left mb-4">Conclusion</h2>
+            <p class="paragraph">
+                Your browser is the gateway to your digital world, and keeping that gateway secure requires active participation. By keeping the software updated, scrutinizing extensions, utilizing HTTPS, and understanding the limitations of privacy tools, you drastically reduce your digital footprint. A secure browser is your first line of defense against data theft and online tracking.
+            </p>
+        </article>
     </div>
 
     <footer>
@@ -155,8 +205,8 @@
             <span class="logo-text">Digital Compass</span>
             <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="mailto@digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
 
@@ -169,9 +219,9 @@
             <div class="column">
                 <h4>Cybersecurity</h4>
                 <a href="../cs.html#concepts">Concepts</a>
-                <a href="../cc.html#security">Account Security</a>
-                <a href="../cc.html#internet">Internet Safety</a>
-                <a href="../cc.html#students">Online Habits For Students</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
             </div>
             <div class="column">
                 <h4>Digital Privacy</h4>
