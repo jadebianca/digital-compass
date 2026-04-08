@@ -48,6 +48,10 @@ nav {
     display: block;
 }
 
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #0F0F32;
     color: #DDE7F2;

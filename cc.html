@@ -22,8 +22,8 @@
             background-image: url('media/images/cc.png');
             background-size: cover;
             background-position: center;
-            padding: 100px 100px;
-            color: #ffffff;
+            padding: 100px 80px;
+            color: #FFFFFF;
         }
 
         .hero h3 {
@@ -43,7 +43,6 @@
         .hero p {
             font-size: 18px;
             font-weight: 500;
-            max-width: 600px;
             margin: 0 auto;
             line-height: 1.6;
         }
@@ -66,119 +65,171 @@
             text-decoration: none;
             font-weight: 400;
         }
-
-        .about {
-            padding: 80px 150px;
+        
+        
+        .cc {
+            padding: 0;
             text-align: center;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 1300px;
+            margin: 0 auto;
         }
 
-        .mission, .vision, .team {
-            padding: 80px 350px;
+        .topics{
+            padding: 80px 0;
+        }
+
+        .cc h3 {
+            color: #212866;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 550;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .cc h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            color: #211F76;
+            margin: 0 0 20px 0;
+        }
+
+        .cc-description {
+            font-size: 18px;
+            color: #212866;
+            margin-bottom: 40px;
+        }
+
+        .nav-type {
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 15px;
             text-align: center;
-            background-color: #FFFFFF;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            
         }
 
-        .team {
-            padding: 80px 250px;
-            text-align: center;
-            background-color: #FFFFFF;
+        .nav-type a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 550;
+            margin-bottom: 50px;
         }
 
-        .about-img {
-            display: inline-block;
-            width: 30%;
-            vertical-align: middle;
-            margin-right: 50px;
+        .type-head {
+            border-left: #212866 solid 5px;
+            margin-top: 50px;
         }
 
-        .about-img img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        .about-text {
-            display: inline-block;
-            width: 45%;
-            vertical-align: middle;
+        .type-head h3{
+            color: #212866;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 550;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            margin-left: 10px;
             text-align: left;
         }
 
-        .mission h3, .vision h3, .team h3 {
-            color: #212866;
-            font-size: 18px;
-            text-transform: uppercase;
-            font-weight: 550;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-
-        .mission h1, .vision h1, .team h1 {
+        .type-head h1{
             font-family: 'Playfair Display', serif;
-            font-size: 45px;
+            font-size: 40px;
             color: #211F76;
             margin: 0 0 20px 0;
+            margin-left: 10px;
+            text-align: left;
         }
 
-        .mission p, .vision p, .team p {
-            font-size: 18px;
+        #type-description {
+            font-size: 17px;
             color: #212866;
+            margin-bottom: 40px;
             text-align: justify;
-            line-height: 1.8;
-            margin-bottom: 30px;
         }
 
-        .about h3 {
+        .link {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .box {
+            background: #FFFFFF;
+            width: 380px;
+            border-radius: 15px;
+            text-align: left;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        .box:hover{
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .box img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover;
+        }
+
+        .content { 
+            padding: 25px 25px 10px; 
+        }
+
+        .category {
+            font-size: 13px;
+            font-weight: 600;
             color: #211F76;
-            font-size: 18px;
             text-transform: uppercase;
-            font-weight: 550;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
-        .about h1 {
+        .content h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 45px;
+            font-size: 25px;
             color: #211F76;
-            margin: 0 0 20px 0;
+            margin: 0 0 15px 0;
+            vertical-align: middle;
         }
 
-        .about p {
-            font-size: 18px;
+        .description {
+            font-size: 15px;
             color: #212866;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-weight: 500;
             text-align: justify;
-            line-height: 1.8;
-            margin-bottom: 30px;
+            word-spacing: 3px;
+        }
+
+        .read-more {
+            color: #211F76;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin: 0;
         }
 
         .line {
             width: 80%;
-            border: 0;
             max-width: 50%;
             height: 1px;
             background-color: #0F0F32;
             margin: 0 auto;
         }
 
-        .photos {
+        .type-line {
             width: 100%;
-            max-width: 1000px; 
-            height: auto;
-            border-radius: 20px;
-            margin: 40px 0 40px 0;
-            display: block;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        figcaption {
-            color: #212866;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            margin-top: 10px;
+            border: 0;
+            height: 2px;
+            max-width: 70%;
+            background-color: transparent;
+            margin: 30px auto;
         }
     </style>
 </head>
@@ -207,11 +258,287 @@
         <h3 class="text-light text-center">Explore Cyber Threats</h3>
         <h1 class="text-light text-center mb-3">Cybercrime</h1>
         <p class="nav-hero">
-            <a href="#about">Concepts of Cybercrimes</a> &bull;
-            <a href="#mission">Types of Cybercrimes</a> 
+            <a href="#concepts">Concepts of Cybercrimes</a> &bull;
+            <a href="#types">Types of Cybercrimes</a> 
         </p>
     </div>
 
+    <div class="cc" id="cc">
+        <div id="concepts" class="topics">
+            <h3>Cybercrime</h3>
+            <h1>Concepts</h1>
+            <p class="cc-description">Cybercrime affects individuals, organizations, and society in multiple ways, often causing financial and emotional harm. Learning the history, causes, and types of cybercrime helps users recognize threats and understand the risks they face online</p>
+
+            <a href="cc/cc-concept-what-is-cybercrime.html" class="link">
+                <div class="box">
+                    <img src="media/images/what-is-cybercrime-cover.png" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>What Is Cyber Crime? Understanding the Digital Threat</h2>
+                        <p class="description">Today, almost everything we do involves the internet. We use it to talk to friends, do schoolwork, and buy things online. But as...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-concept-history.html" class="link">
+                <div class="box">
+                    <img src="media/images/history-cybercrime-cover.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>From Phone Tricks to Ransomware: A History of Cyber Crime</h2>
+                        <p class="description">Cyber crime did not suddenly appear with the invention of smartphones or social media. It has a long history that goes all...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-concept-why-it-happens.html" class="link">
+                <div class="box">
+                    <img src="media/images/why-cybercrime-happens-cover.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>Why Does Cyber Crime Happen? The Causes Behind Digital Crime</h2>
+                        <p class="description">Cyber crime does not happen by accident. There are real reasons why people choose to commit crimes online. Just like regular...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-concept-effect-individuals.html" class="link">
+                <div class="box">
+                    <img src="media/images/effect-on-individuals-cover.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>How Cyber Crime Hurts Real People: Effects on Individuals</h2>
+                        <p class="description"> When we talk about cyber crime, it is easy to focus on the technical side, such as hacking tools, stolen data, or harmful soft...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-concept-effect-organizations.html" class="link">
+                <div class="box">
+                    <img src="media/images/effect-on-organizations-cover.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>When Organizations Are Targeted: The Impact of Cyber Crime on Businesses</h2>
+                        <p class="description"> While cyber crime affects individuals deeply, its impact on organizations such as businesses, schools, hospitals, and gover...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-concept-economic-effects.html" class="link">
+                <div class="box">
+                    <img src="media/images/economic-effects-cybercrime-cover.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>The Price of Crime Online: Economic Effects of Cybercrime</h2>
+                        <p class="description"> Cyber crime is not just a threat to individuals and organizations. It has enormous effects on entire economies aro...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-concept-social-psychological.html" class="link">
+                <div class="box">
+                    <img src="media/images/social-psychological-effects-cover.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>More Than Money: The Social and Psychological Effects of Cyber Crime</h2>
+                        <p class="description"> When most people think about the effects of cyber crime, they think about money, such as stolen bank accounts, fake trans...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-concept-common-myths.html" class="link">
+                <div class="box">
+                    <img src="media/images/myths-cybercrime-cover.png" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>Busting the Myths: Common Misconceptions About Cyber Crime</h2>
+                        <p class="description">Despite how common cyber crime has become, many people still hold on to false beliefs about it. These beliefs can give p...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-concept-famous-cases.html" class="link">
+                <div class="box">
+                    <img src="media/images/famous-cybercrime-cases-img1.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>When the Internet Made History: 3 Famous Cyber Crime Cases</h2>
+                        <p class="description">History is full of cyber crimes that shocked the world, exposed major weaknesses in our digital systems, and changed the way...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-concept-cybercrime-laws-philippines.html" class="link">
+                <div class="box">
+                    <img src="media/images/cybercrimelaws.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>Cybercrime Laws in the Philippines: Protecting People Online</h2>
+                        <p class="description">The internet has changed how Filipinos communicate, work, and do business. But along with these benefits come serious th...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-concept-cybercrime-philippines.html" class="link">
+                <div class="box">
+                    <img src="media/images/cybercrimeph.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Concepts of Cybercrime</p>
+                        <h2>The Growing Problem of Cybercrime in the Philippines</h2>
+                        <p class="description">As more Filipinos go online, cybercrime has become one of the most serious problems in the country. Cybercrime refers to any...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <hr class="line">
+
+        <div id="types" class="topics">
+            <h3>Cybercrimes</h3>
+            <h1>Types</h1>
+            <p class="nav-type">
+            <a href="#online-fraud">Online Fraud Theft</a> &bull;
+            <a href="#malware">Malware & Hacking</a> &bull;
+            <a href="#types">Personal & Social Cybercrimes</a>
+            </p>
+
+            <div class="type-head" id="online-fraud">
+                <h3>Types of Cybercimes</h3>
+                <h1>Online Fraud Theft</h1>
+            </div>
+            <p id="type-description">Cybercriminals use deception to steal money, personal information, or assets from unsuspecting people. Learning to recognize scams and unsafe online practices helps protect us from financial loss and identity theft.</p>
+            <a href="cc/cc-online-phishing.html" class="link">
+                <div class="box">
+                    <img src="media/images/phishing.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Types of Cybercrime</p>
+                        <h2>Phishing</h2>
+                        <p class="description">Imagine receiving an email from your bank saying your account has been compromised and you need to click a link...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-online-identitytheft.html" class="link">
+                <div class="box">
+                    <img src="media/images/identitytheft.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Fraud Theft</p>
+                        <h2>Identity Theft</h2>
+                        <p class="description">Your name, your face, your bank account — these are things that define who you are. But what if someone could steal all o...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-online-creditcardfraud.html" class="link">
+                <div class="box">
+                    <img src="media/images/creditcardfraud.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Fraud Theft</p>
+                        <h2>Credit Card Fraud</h2>
+                        <p class="description"> Credit cards make buying things convenient, but they also come with a risk — credit card fraud. Credit card fraud is...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-online-onlinebankingscams.html" class="link">
+                <div class="box">
+                    <img src="media/images/onlinebankingscams.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Fraud Theft</p>
+                        <h2>Online Banking Scams</h2>
+                        <p class="description"> Credit cards make buying things convenient, but they also come with a risk — credit card fraud. Credit card fraud is...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-online-cryptoscams.html" class="link">
+                <div class="box">
+                    <img src="media/images/cryptoscams.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Fraud Theft</p>
+                        <h2>Cryptocurrency Scams</h2>
+                        <p class="description">Cryptocurrency has become one of the most talked-about financial topics in recent years, and unfortunately, it has also beco...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-online-ecommercescams.html" class="link">
+                <div class="box">
+                    <img src="media/images/ecommercescams.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Fraud Theft</p>
+                        <h2>E-commerce Scams</h2>
+                        <p class="description">Online shopping has transformed the way Filipinos buy and sell goods, but it has also created new opportunities for fraud. E-co...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-online-fakelotteryscams.html" class="link">
+                <div class="box">
+                    <img src="media/images/fakelotteryscams.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Fraud Theft</p>
+                        <h2>Fake Lottery & Prize Scams</h2>
+                        <p class="description">"Congratulations! You have won ₱1,000,000! Click here to claim your prize." If you have ever received a message like this, you m...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-online-jobscams.html" class="link">
+                <div class="box">
+                    <img src="media/images/jobscams.jpg" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Fraud Theft</p>
+                        <h2>Job Scams</h2>
+                        <p class="description">Finding a job is one of the most important goals for students and young professionals alike. But in today's digital world, not ever...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-online-socialmediascams.html" class="link">
+                <div class="box">
+                    <img src="media/images" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Fraud Theft</p>
+                        <h2>Job Scams</h2>
+                        <p class="description">Finding a job is one of the most important goals for students and young professionals alike. But in today's digital world, not ever...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cc/cc-online-charityscams.html" class="link">
+                <div class="box">
+                    <img src="media/images" alt="Cybercrime">
+                    <div class="content">
+                        <p class="category">Online Fraud Theft</p>
+                        <h2>Charity Scams</h2>
+                        <p class="description">Finding a job is one of the most important goals for students and young professionals alike. But in today's digital world, not ever...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
     <footer>
         <div class="footer-contacts">
             <img src="media/images/logo.png" alt="Logo">
