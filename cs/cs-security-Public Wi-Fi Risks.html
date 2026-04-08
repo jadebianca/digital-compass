@@ -3,119 +3,116 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="1800">
-    <title>[Page Title] | Digital Compass</title>
+    <title>Digital Compass | Public Wi-Fi Risks</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/navigations.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <style type="text/css">
         body {
-            background-color: #F8FAFC;
-            font-family: Inter, sans-serif;
-            font-weight: 500;
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
             margin: 0px;
             padding: 0px;
         }
-
-        .logo-link {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .hero-mini {
-            background-color: #0F0F32;
-            background-image: url('../media/images/hero.png');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 20px;
-            text-align: center;
-            color: #FFFFFF;
-        }
-        
-        .hero-mini h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 50px;
-            margin: 0;
-        }
-        
-        .article-wrapper {
+        /* Content Styles */
+        .main {
             background-color: #FFFFFF;
-            max-width: 850px;
-            margin: -40px auto 80px auto;
-            padding: 60px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-            position: relative;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        
-        .back-btn {
-            display: inline-block;
-            text-decoration: none;
-            color: #212866;
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 30px;
-            transition: color 0.3s ease;
-        }
-        
-        .back-btn i { margin-right: 8px; }
-        
-        .back-btn:hover { color: #211F76; }
-        
-        .article-content h2 {
-            font-family: 'Playfair Display', serif;
+
+        h1 {
             color: #211F76;
-            font-size: 28px;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #F8FAFC;
-            padding-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
         }
-        
-        .article-content p {
-            font-size: 17px;
-            color: #334155;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-        
-        .article-content ul {
-            font-size: 17px;
-            color: #334155;
-            line-height: 1.8;
-            margin-bottom: 20px;
+
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            border-left: 5px solid #0F0F32;
             padding-left: 20px;
+            margin-top: 40px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .main > p {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .photos {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 20px;
+            margin: 40px auto;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
         }
         
-        .article-content li { margin-bottom: 12px; }
-        
-        .fact-box {
-            background-color: #F1F5F9;
-            border-left: 5px solid #211F76;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 0 10px 10px 0;
-            font-style: italic;
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
 
     <nav>
         <div class="logo-container">
-            <a href="../index.html" class="logo-link">
-                <img src="../media/images/logo.png" alt="Logo">
-                <span class="logo-text" id="top">Digital Compass</span>
-            </a>
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
         </div>
         <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../cc.html">Cybercrime</a></li>
-            <li><a href="../cs.html" style="font-weight: bold; border-bottom: 2px solid #0F0F32;">Cybersecurity</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
             <li><a href="../dp.html">Digital Privacy</a></li>
             <li><a href="../et.html">Emerging Threats</a></li>
             <li><a href="../pa.html">Prevention & Awareness</a></li>
@@ -123,30 +120,75 @@
         </ul>
     </nav>
 
-    <div class="hero-mini">
-        <h1>[Page Title]</h1>
-    </div>
-
-    <div class="article-wrapper">
-        <a href="../cs.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Cybersecurity</a>
+    <div class="main">
+        <h1 class="text-center mb-4">Public Wi-Fi Risks</h1>
+        <p class="text-center text-uppercase fw-bold mb-3 ">By: LUIS MICHAEL L. SUING &bull; April 8, 2026</p>
+        <p class="nav-bio">
+            <a href="#intro">Intro</a> &bull;
+            <a href="#body-one">MitM Attacks</a> &bull;
+            <a href="#body-two">Malware</a> &bull;
+            <a href="#body-three">Unencrypted Data</a> &bull;
+            <a href="#body-four">Evil Twins</a> &bull;
+            <a href="#body-five">Snooping</a> &bull;
+            <a href="#body-six">Session Hijacking</a> &bull;
+            <a href="#body-seven">Protection Tips</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
         
-        <div class="article-content">
-            <p>[Insert Article Paragraph Here]</p>
+        <hr width="100%" size="5" color="#0F0F32">
+
+        <article>    
+            <figure>
+                <a href="#">
+                    <img src="../media/images/Public Wi-Fi Risks.jpg" alt="Person using a laptop in a cafe" class="photos">
+                </a>
+                <figcaption>Photo From: Le VPN</figcaption>
+            </figure>
+    
+            <p id="intro" class="paragraph">
+                Free public Wi-Fi in coffee shops, airports, and hotels is incredibly convenient, but this convenience often comes at a steep price. Because these networks are open to anyone, they lack the security measures found in private, password-protected home networks. Cybercriminals frequently exploit public Wi-Fi to intercept sensitive data, making an innocent internet browsing session a potential cybersecurity nightmare.
+            </p>
+
+            <h2 id="body-one" class="text-left mb-4">Man-in-the-Middle (MitM) Attacks</h2>
+            <p class="paragraph">
+                One of the most common threats on public networks is the Man-in-the-Middle (MitM) attack. In this scenario, a hacker positions themselves between your device and the website you are trying to visit. Instead of your data going directly to the server, it passes through the hacker's system first. This allows them to read, alter, or steal your private information, such as login credentials and credit card numbers, without you ever knowing.
+            </p>
+
+            <h2 id="body-two" class="text-left mb-4">Malware Distribution</h2>
+            <p class="paragraph">
+                Cybercriminals can use unsecured public Wi-Fi connections to distribute malware. If file-sharing is left on over a network, a hacker can easily plant infected software directly onto your computer. Additionally, attackers can use a technique to inject malicious code into the websites you visit, prompting fake pop-ups that trick you into downloading viruses or ransomware onto your device.
+            </p>
+
+            <h2 id="body-three" class="text-left mb-4">Unencrypted Connections</h2>
+            <p class="paragraph">
+                Encryption is the process of scrambling data so that it cannot be read by unauthorized parties. Many public Wi-Fi routers are older or improperly configured, meaning they do not encrypt the data sent over the network. If you access a website that doesn't use SSL/TLS (HTTPS) while on an unencrypted network, everything you type—including passwords and personal messages—is sent in plain text, making it incredibly easy for nearby hackers to capture.
+            </p>
+
+            <h2 id="body-four" class="text-left mb-4">Malicious Hotspots (Evil Twins)</h2>
+            <p class="paragraph">
+                An "Evil Twin" is a rogue Wi-Fi access point set up by a hacker to mimic a legitimate network. For example, if you are at a cafe called "Starbeans," a hacker might set up a network called "Starbeans_Free_WiFi." Unsuspecting users will connect to the hacker's network thinking it is the official one. Once connected, the attacker has full visibility into all of the victim's internet traffic.
+            </p>
+
+            <h2 id="body-five" class="text-left mb-4">Wi-Fi Snooping and Sniffing</h2>
+            <p class="paragraph">
+                Cybercriminals can purchase relatively cheap hardware and software kits that allow them to eavesdrop on Wi-Fi signals. This technique, known as snooping or sniffing, lets attackers monitor all the activity happening on a public network. They can view the exact web pages you are visiting, read the emails you are sending, and harvest any personal details you submit through unsecure forms.
+            </p>
+
+            <h2 id="body-six" class="text-left mb-4">Session Hijacking</h2>
+            <p class="paragraph">
+                Even if your initial login to a website is secure, a hacker can still compromise your account through session hijacking. Once you log in to an account, the server sends a "session cookie" to your browser so you don't have to keep logging in. If an attacker intercepts this cookie over a public network, they can clone your session and access your account as if they were you, bypassing passwords entirely.
+            </p>
+
+            <h2 id="body-seven" class="text-left mb-4">How to Protect Yourself</h2>
+            <p class="paragraph">
+                To stay safe on public Wi-Fi, the most effective defense is using a Virtual Private Network (VPN), which encrypts all your internet traffic and hides it from eavesdroppers. Additionally, you should always verify that websites use "HTTPS," turn off automatic connectivity and file sharing on your device, and avoid logging into sensitive accounts like banking or email while connected to an untrusted network.
+            </p>
             
-            <div class="fact-box">
-                <strong>Industry Fact:</strong> [Insert Fact Here]
-            </div>
-
-            <h2>[Insert Subheading Here]</h2>
-            <p>[Insert Paragraph Here]</p>
-
-            <h2>[Insert List Heading Here]</h2>
-            <ul>
-                <li><strong>[List Item Title]:</strong> [List Item Description]</li>
-                <li><strong>[List Item Title]:</strong> [List Item Description]</li>
-                <li><strong>[List Item Title]:</strong> [List Item Description]</li>
-            </ul>
-        </div>
+            <h2 id="conclusion" class="text-left mb-4">Conclusion</h2>
+            <p class="paragraph">
+                While public Wi-Fi keeps us connected on the go, it is inherently insecure. By understanding the risks—from MitM attacks to rogue hotspots—you can take proactive steps to protect your digital privacy. Treating every public network as potentially compromised and utilizing security tools like VPNs ensures that your personal data remains safely out of the hands of cybercriminals.
+            </p>
+        </article>
     </div>
 
     <footer>
@@ -155,8 +197,8 @@
             <span class="logo-text">Digital Compass</span>
             <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="mailto@digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
 
@@ -169,9 +211,9 @@
             <div class="column">
                 <h4>Cybersecurity</h4>
                 <a href="../cs.html#concepts">Concepts</a>
-                <a href="../cc.html#security">Account Security</a>
-                <a href="../cc.html#internet">Internet Safety</a>
-                <a href="../cc.html#students">Online Habits For Students</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
             </div>
             <div class="column">
                 <h4>Digital Privacy</h4>
