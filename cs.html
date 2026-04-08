@@ -1,4 +1,3 @@
-<!--Hello part ko toh, pls check the gdocs kung saang part ka naka-assign - Jade Bianca-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +5,16 @@
     <meta http-equiv="refresh" content="1800">
     <title>Cybersecurity - Digital Compass</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="media/images/icon.png" type="image/x-icon">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/navigations.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style type="text/css">
+        /* ADDED: Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: #FFFFFF;
             font-family: Inter, sans-serif;
@@ -21,7 +25,7 @@
 
         .hero {
             position: relative;
-            background-image: url('media/images/cs.png');
+            background-image: linear-gradient(rgba(15, 15, 50, 0.75), rgba(15, 15, 50, 0.75)), url('media/images/cs.png');
             background-size: cover;
             background-position: center;
             padding: 100px 80px;
@@ -64,7 +68,7 @@
             font-weight: 400;
         }
 
-        .cs {
+        .pa {
             padding: 0;
             text-align: center;
             background-color: #ffffff;
@@ -75,9 +79,11 @@
 
         .topics {
             padding: 80px 0;
+            /* ADDED: Prevents section titles from hiding under the fixed navbar */
+            scroll-margin-top: 100px; 
         }
 
-        .cs h3 {
+        .pa h3 {
             color: #212866;
             font-size: 18px;
             text-transform: uppercase;
@@ -86,14 +92,14 @@
             margin-bottom: 10px;
         }
 
-        .cs h1 {
+        .pa h1 {
             font-family: 'Playfair Display', serif;
             font-size: 45px;
             color: #211F76;
             margin: 0 0 20px 0;
         }
 
-        .cs-description {
+        .pa-description {
             font-size: 18px;
             color: #212866;
             margin-bottom: 40px;
@@ -206,21 +212,20 @@
         </p>
     </div>
 
-    <div class="cs" id="cs">
+    <div class="pa" id="cs">
         
         <div id="concepts" class="topics">
             <h3>Cybersecurity</h3>
             <h1>Concepts</h1>
-            <p class="cs-description">Understanding the basic concepts of cybersecurity serves the foundation for staying safe online. Learning about its importance, principles, and evolution helps users to recognize threats and take preventive actions.
-        </p>
+            <p class="pa-description">Understanding the foundational elements, history, and principles of cybersecurity to better defend digital environments.</p>
 
             <a href="cs/cs-concepts-what-is-cybersecurity.html" class="link">
                 <div class="box">
-                    <img src="media/images/what is cybersecurity.png" alt="What is Cybersecurity">
+                    <img src="media/images/cybersecurity-concepts (1).jpg" alt="What is Cybersecurity">
                     <div class="content">
-                        <p class="category">Concepts of Cybersecurity</p>
-                        <h2>Cybersecurity: Your Shield Against Digital Danger</h2>
-                        <p class="description">Cybersecurity refers to the protection of your electronic gadgets, information, and online activities from cyber hackers and viruses. C...</p>
+                        <p class="category">Concepts</p>
+                        <h2>What is Cybersecurity</h2>
+                        <p class="description">Discover the fundamentals of protecting critical systems, networks, and sensitive information from digital attacks.</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -228,11 +233,11 @@
 
             <a href="cs/cs-concepts-importance-of-cybersecurity.html" class="link">
                 <div class="box">
-                    <img src="media/images/importance of cybersecurity.jpg" alt="Importance of Cybersecurity">
+                    <img src="media/images/cybersecurity-concepts (2).jpg" alt="Importance of Cybersecurity">
                     <div class="content">
-                        <p class="category">Concepts of Cybersecurity</p>
-                        <h2>Cybersecurity Matters: Guard Your Digital World</h2>
-                        <p class="description">Cybersecurity helps you protect from hackers online. Tools and prevention habits protect your phones, accounts, and personal info...</p>
+                        <p class="category">Concepts</p>
+                        <h2>Importance of Cybersecurity</h2>
+                        <p class="description">Learn why safeguarding digital assets is increasingly crucial in today's interconnected and data-driven world.</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -240,21 +245,21 @@
 
             <a href="cs/cs-concepts-cia-triad.html" class="link">
                 <div class="box">
-                    <img src="media/images/cia triad.webp" alt="CIA Triad">
+                    <img src="media/images/cybersecurity-concepts (3).png" alt="CIA Triad">
                     <div class="content">
-                        <p class="category">Concepts of Cybersecurity</p>
-                        <h2>CIA Triad: Cybersecurity's Three Key Pillars</h2>
-                        <p class="description">The CIA Triad is the basis of cybersecurity worldwide. CIA stands for Confidentiality, Integrity, and Availability. These three conce...</p>
+                        <p class="category">Concepts</p>
+                        <h2>CIA Triad</h2>
+                        <p class="description">Explore Confidentiality, Integrity, and Availability—the three core principles guiding information security policies.</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
             </a>
 
-            <a href="cs/cs-concept-careers.html" class="link">
+            <a href="cs/careers.html" class="link">
                 <div class="box">
                     <img src="media/images/cybersecurity-concepts (4).jpeg" alt="Cybersecurity Careers">
                     <div class="content">
-                        <p class="category">Concepts of Cybersecurity</p>
+                        <p class="category">Concepts</p>
                         <h2>Cybersecurity Careers</h2>
                         <p class="description">Explore the various roles, responsibilities, and vast opportunities available in the fast-growing field of cybersecurity.</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
@@ -262,11 +267,11 @@
                 </div>
             </a>
 
-            <a href="cs/cs-concepts-ethicalhacking.html" class="link">
+            <a href="cs/ethical-hacking.html" class="link">
                 <div class="box">
                     <img src="media/images/cybersecurity-concepts (5).png" alt="Ethical Hacking">
                     <div class="content">
-                        <p class="category">Concepts of Cybersecurity</p>
+                        <p class="category">Concepts</p>
                         <h2>Ethical Hacking</h2>
                         <p class="description">Understand how white-hat hackers help organizations identify and fix vulnerabilities before malicious actors exploit them.</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
@@ -292,7 +297,7 @@
         <div id="accountdevice" class="topics">
             <h3>Cybersecurity</h3>
             <h1>Account Security</h1>
-            <p class="cs-description">Keeping devices up-to-date and protected is essential to prevent cyberattacks and unauthorized access. Learning the best practices for software updates, app installations, strong authentication methods and browser security strengthens your overall digital safety.</p>
+            <p class="pa-description">Practical strategies to safeguard your personal accounts, devices, and sensitive data from unauthorized access.</p>
 
             <a href="cs/cs-security-Device-Updates.html" class="link">
                 <div class="box">
