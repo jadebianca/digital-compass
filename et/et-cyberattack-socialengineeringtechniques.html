@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="1800">
-    <title>Encryption Tools – Digital Compass</title>
+    <title>Social Engineering – Digital Compass</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="../media/images/icon.png">
@@ -98,6 +98,21 @@
             text-indent: 50px;
             width: 100%;
         }
+        table{
+            margin: 0 auto;
+        }
+        th { 
+            background-color: #211F76; 
+            color: #FFFFFF; 
+            padding: 12px 16px; 
+            text-align: left; }
+        td { 
+            padding: 12px 16px; 
+            border-bottom: 1px solid #ddd; 
+            color: #212866; }
+        tr:nth-child(even) { 
+            background-color: #f4f4f8; 
+        }
     </style>
 </head>
 
@@ -108,7 +123,7 @@
 
     <nav>
         <div class="logo-container">
-            <img src="../media/images/logo.png" alt="Logo">
+            <img src="../media/images/logo.png" alt="Digital Compass Logo">
             <span class="logo-text" id="top">Digital Compass</span>
         </div>
         <ul class="nav-links">
@@ -124,15 +139,14 @@
 
     <div class="main">
 
-        <h1 class="text-center mb-3">Using Encryption Tools to Secure Your Private Data</h1>
+        <h1 class="text-center mb-3">Social Engineering: The Human Element of Hacking</h1>
         <p class="text-center text-uppercase fw-bold mb-3">By: Lusanta, John Eugene • April 2026</p>
 
         <p class="nav-bio">
             <a href="#intro">Intro</a> •
-            <a href="#mechanics">Mechanics</a> •
-            <a href="#tools">Tools</a> •
+            <a href="#types">Attack Types</a> •
             <a href="#risks">Risks</a> •
-            <a href="#safety">Safety Tips</a> •
+            <a href="#prevention">Prevention</a> •
             <a href="#conclusion">Conclusion</a>
         </p>
 
@@ -141,77 +155,74 @@
         <article>
 
             <figure>
-                <a href="https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html" target="_blank">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1000" class="photos" alt="Digital Encryption Security">
+                <a href="https://www.cisco.com/c/en/us/products/security/what-is-social-engineering.html" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f" 
+                         class="photos" 
+                         alt="Representation of a social engineering attack via digital manipulation">
                 </a>
-                <figcaption style="text-align:center; font-size: 14px; opacity: 0.8;">Source: Unsplash (Click for Cisco Security Insights)</figcaption>
+                <figcaption style="text-align:center; font-size: 14px; opacity: 0.8;">Source: Unsplash (Click to view Cisco Research Article)</figcaption>
             </figure>
 
             <p id="intro" class="paragraph">
-                In our modern digital world, protecting your information is more important than ever. <b>Encryption</b> converts readable information into a secret code that only authorized people can see. This technology acts as a digital lock for messages, banking details, and personal photos. Understanding these tools helps you secure your <i>digital privacy</i> in an era of frequent data leaks. <b><i>Encryption is the strongest shield we have</i></b> against cyber threats.
+                <b>Social engineering</b> is a cyberattack method that focuses on manipulating <i>human behavior</i> instead of hacking technical systems. Attackers trick users into giving sensitive information such as <b>passwords, bank details, or personal data</b>. These attacks rely on human emotions like <i>fear, urgency, and trust</i>. Because of this, even careful users can become victims. <b><i>Understanding the psychology of social engineering is the first step in building a strong digital defense.</i></b>
             </p>
 
-            <h2 id="mechanics">The Core Mechanics of Data Protection</h2>
+            <h2 id="types">Common Types of Social Engineering</h2>
             <p class="paragraph">
-                Encryption uses complex algorithms to scramble data into what is known as <b>"ciphertext."</b> Only those possessing the correct secret key can revert it back to a readable format. <i>Symmetric encryption</i> uses a single key for both locking and unlocking, while <i>asymmetric encryption</i> uses a public and private key pair. <b>Modern software automates this process</b>, making high-level security accessible to everyone.
-            </p>
-
-            <h2 id="tools">Essential Encryption Tools</h2>
-            <p class="paragraph">
-                For students and professionals alike, choosing the right tools is vital. Below are some of the most trusted applications for protecting different types of data:
+                Social engineering relies on <b>psychological manipulation</b>. Attackers often pretend to be trusted individuals like bank employees or technical support. They use several common methods to achieve their goals:
             </p>
 
             <table class="info-table">
                 <thead>
                     <tr>
-                        <th>Tool Type</th>
-                        <th>Recommended Tool</th>
-                        <th>Key Security Benefit</th>
+                        <th>Attack Type</th>
+                        <th>Method Used</th>
+                        <th>Objective</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><b>Messaging</b></td>
-                        <td>Signal</td>
-                        <td>End-to-end message privacy</td>
+                        <td><b>Phishing</b></td>
+                        <td>Fake emails or websites</td>
+                        <td>Stealing credentials</td>
                     </tr>
                     <tr>
-                        <td><b>File Protection</b></td>
-                        <td>VeraCrypt</td>
-                        <td>Encrypted local storage vaults</td>
+                        <td><b>Vishing</b></td>
+                        <td>Voice/Phone call scams</td>
+                        <td>Financial fraud</td>
                     </tr>
                     <tr>
-                        <td><b>Web Traffic</b></td>
-                        <td>NordVPN / ExpressVPN</td>
-                        <td>Shields data on public Wi-Fi</td>
+                        <td><b>Smishing</b></td>
+                        <td>SMS/Text message scams</td>
+                        <td>Malware distribution</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h2 id="risks">Identifying Risks of Unencrypted Data</h2>
+            <h2 id="risks">Risks and Consequences</h2>
             <p class="paragraph">
-                Sending data unencrypted is like sending a postcard—anyone who handles it can read the content. <b>Public Wi-Fi</b> is especially risky due to "Man-in-the-Middle" attacks. Furthermore, unencrypted hardware can expose all your personal files if stolen. Risks include <b>identity theft</b> and unauthorized tracking. <b><i>Without encryption, your digital life is an open book</i></b>.
+                Social engineering attacks can lead to <b>catastrophic problems</b>. Victims may lose significant amounts of money through <i>unauthorized transactions</i> or scams. Personal information can be stolen and used for <b>identity theft</b>, damaging your credit and reputation. Businesses may suffer data breaches that expose client files and lead to massive <i>legal consequences</i>. <b><i>The emotional stress and loss of privacy can haunt victims for years after the initial incident.</i></b>
             </p>
 
-            <h2 id="safety">Simple Best Practices for Safety</h2>
+            <h2 id="prevention">Prevention and Safety Tips</h2>
             <p class="paragraph">
-                To stay safe, always ensure you are browsing <b>HTTPS</b> websites. Never share your encryption keys or recovery phrases. It is also vital to use a <b>password manager</b> to generate complex keys and to enable <b>Two-Factor Authentication (2FA)</b> on all important accounts. <b><i>Being proactive is the best way to stay protected</i></b>.
+                To minimize risks, always verify the <b>identity of the sender</b> before sharing any sensitive information. Avoid clicking suspicious links or downloading unknown files from <i>urgent-sounding</i> emails. Use <b>strong, unique passwords</b> and always enable <b>Two-Factor Authentication (2FA)</b>. Be cautious of messages that create a sense of fear or pressure. <b><i>Educating yourself and your peers about these tactics is the most effective way to prevent successful social engineering.</i></b>
             </p>
 
             <h2 id="conclusion">Conclusion</h2>
             <p class="paragraph">
-                Encryption protects our digital lives. By using encrypted apps and following simple habits, you can effectively safeguard yourself from identity theft and privacy violations. Start small and stay consistent. <b><i>Stay safe, stay encrypted, and take charge of your digital future today.</i></b>
+                Social engineering is a powerful method that targets <b>human behavior</b> rather than software flaws. It can lead to financial loss, identity theft, and massive data breaches. We must stay alert and think carefully before responding to <i>unexpected digital requests</i>. Practicing safe online habits and maintaining a <b>"Zero Trust"</b> mindset reduces risks. <b><i>Awareness and continuous education remain our best defense against these human-centric threats.</i></b>
             </p>
 
             <div class="text-center mt-5">
                 <h2 style="border:none; text-align:center;">Related Video</h2>
-                <iframe width="100%" height="450" style="border-radius:15px; margin-top:20px;" src="https://www.youtube.com/embed/pgbDYgeq4DU?si=UKk-ErnAurBm9KaM"allowfullscreen></iframe>
+                <iframe width="100%" height="450" style="border-radius:15px; margin-top:20px;" src="https://www.youtube.com/embed/uMkOphesrqI?si=egfQ5JEROnAGOLO2" allowfullscreen></iframe>
             </div>
 
         </article>
     </div>
 
-    <footer>
+   <footer>
         <div class="footer-contacts">
             <img src="../media/images/logo.png" alt="Logo">
             <span class="logo-text">Digital Compass</span>
