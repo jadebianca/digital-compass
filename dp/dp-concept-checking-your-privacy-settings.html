@@ -3,11 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="1800">
-    <title>Digital Compass</title>
+    <title>Checking Your Privacy Settings</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/navigations.css">
     <style type="text/css">
         body {
@@ -16,7 +14,6 @@
             margin: 0px;
             padding: 0px;
         }
-        /* Content Styles */
         .main {
             background-color: #FFFFFF;
             padding: 30px 0;
@@ -24,7 +21,6 @@
             max-width: 1000px;
             margin: 0 auto;
         }
-
         .title {
             color: #211F76;
             font-family: 'Playfair Display', serif;
@@ -33,7 +29,6 @@
             text-align: center;
             margin-bottom: 10px;
         }
-
         h2 {
             color: #211F76;
             font-family: 'Playfair Display', serif;
@@ -48,7 +43,6 @@
             width: 100%;
             box-sizing: border-box;
         }
-
         .author {
             color: #212866;
             font-family: 'Inter', sans-serif;
@@ -58,7 +52,6 @@
             text-transform: uppercase;
             margin-top: 0;
         }
-
         .nav-bio {
             color: #212866;
             font-family: 'Inter', sans-serif;
@@ -68,13 +61,15 @@
             text-transform: uppercase;
             margin-bottom: 20px;
         }
-
         .nav-bio a {
             color: #212866;
             text-decoration: none;
             font-weight: 600;
+            transition: 0.3s;
         }
-
+        .nav-bio a:hover {
+            text-decoration: 2px solid underline;
+        }
         .photos {
             width: 100%;
             max-width: 1000px; 
@@ -92,7 +87,6 @@
             text-align: center;
             margin-top: 10px;
         }
-        
         .paragraph {
             color: #212866;
             margin: 0 0 50px 0;
@@ -104,164 +98,158 @@
             text-indent: 50px;
             width: 100%;
         }
-
-        .top-btn {
-            position: fixed;
-            bottom: 50px;
-            right: 60px;
-            background-color: #FFFFFF;
-            border: 2px solid #0F0F32;
-            color: #0F0F32;
-            text-decoration: none;
-            padding: 15px 50px;
-            border-radius: 50px;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: 0.3s;
-        }
-
-        .top-btn:hover {
-            background: #0F0F32;
-            color: transparent;
+        iframe {
+            display: block;
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            border-radius: 20px;
         }
     </style>
 </head>
 <body>
-
+    
+    <script src="js/bootstrap.bundle.js"></script>
     <a href="#top" class="top-btn">Back to Top &uarr;</a>
-
     <nav>
         <div class="logo-container">
-            <img src="media/images/logo.png" alt="Logo">
+            <img src="../media/images/logo.png" alt="Logo">
             <span class="logo-text" id="top">Digital Compass</span>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Cybercrime</a></li>
-            <li><a href="#">Cybersecurity</a></li>
-            <li><a href="#">Digital Privacy</a></li>
-            <li><a href="#">Emerging Threats</a></li>
-            <li><a href="#">Prevention & Awareness</a></li>
-            <li><a href="#">Resources</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
         </ul>
     </nav>
 
     <div class="main">
-        <h1 class="title">Understanding Your Digital Footprint</h1>
-        <p class="author"><b>By: Mallari, Vince Xyron A. &bull; March 2026</b></p>
+        <h1 class="title">Checking Your Privacy Settings</h1>
+        <p class="author"><b>By: Mallari, Vince Xyron A. &bull; April 2026</b></p>
         
         <p class="nav-bio">
-            <!-- Insert Subheading Title Below -->
             <a href="#intro">Intro</a> &bull;
-            <a href="#body-one">What is Digital Footprint?</a> &bull;
-            <a href="#body-two">Importance</a> &bull;
-            <a href="#body-three">Risks</a> &bull;
-            <a href="#body-four">How to Manage?</a> &bull;
-            <a href="#body-five">Impact</a> &bull;
-            <a href="#conclusion">Conclusion</a>
+            <a href="#what"></a> &bull;
+            <a href="#how"></a> &bull;
+            <a href="#types"></a> &bull;
+            <a href="#risks"></a> &bull;
+            <a href="#prevention"></a> &bull;
+            <a href="#detection"></a> &bull;
+            <a href="#conclusion"></a>
         </p>
         
         <hr width="100%" size="5" color="#212866">
 
-        <article>     
+        <article>
             <figure>
-                <a href="">
-                    <img src="../MEDIAS/sample.jpg" alt="Digital Footprint" class="photos">
+                <a href="https://crispng.com/12-online-privacy-settings-everyone-should-enable/">
+                    <img src="../media/images/checking-privacy.jpg" alt="Checking Privacy" class="photos">
                 </a>
-                <figcaption>Photo from: </figcaption>
+                <figcaption>Photo from: Crisp Nigeria</figcaption>
             </figure>
-    
-            <p id="intro" class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus dolor adipisci necessitatibus laborum a laudantium, ipsa optio deleniti porro iste est et earum obcaecati? Error aliquid dolore eveniet laudantium eum.
-            </p>
-
-            <h2 id="body-one">What is Digital Footprint?</h2>
+            
+            <h2 id="intro">Introduction</h2>
             <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
+                <strong>Keyloggers are basically silent spying tools on your keyboard that tracks every single key you press on your phone or laptop.</strong> They track things like passwords, emails, and private messages without the user's notice. It is often used by <strong>Cybercriminals to steal bank account or Credit card details.</strong> Understanding about Keyloggers helps you stay safe online. So let's explore how they work and how to fight back.
             </p>
 
-            <h2 id="body-two">Importance</h2>
+            <h2 id="what">What Is a Keylogger?</h2>
             <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
+                <strong>A keylogger is a term short for keystroke logger, meaning it’s a software or hardware that tracks every time you press the key on a computer or phone.</strong> It saves the tracked data to steal user’s personal information such as passwords, card card details, and phone numbers. Cybercriminals often use keyloggers to steal victim’s personal information. These tools are used secretly during attacks. Some keyloggers have features like screenshots. Others are capable of recording the clipboard data. <strong>They turn your keyboard into a spy device for secretly monitoring activity.</strong>
             </p>
 
-            <h2 id="body-three">How to Manage?</h2>
+            <iframe width="1335" height="751" src="https://www.youtube.com/embed/sR_V0ioXu9c" title="What is keylogger? Keylogger / keystroke logger spyware explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h2 id="how">How Keyloggers Work</h2>
             <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
+                <strong>Keyloggers can track everything or every time you press on a key before applications can detect them</strong>, it uses methods like API hooking on usually on operating systems such as Windows. Software-based keyloggers install files that attach themselves to devices and track input like what users type on their keys. These recorded keystrokes are stored either locally on the device or sent over the internet to attackers through email or remote servers. On the other hand, hardware keyloggers are being operated differently, they connect the keyboard and the computer to capture input directly. The collected data can later be retrieved by the attacker physically accessing the device. <strong>Since keyloggers are a silent spying tool, they are often difficult for users to notice.</strong> Their ability to remain hidden from basic antivirus tools is one of their most dangerous features.
             </p>
 
-            <h2 id="body-four">Impact</h2>
+            <h2 id="types">Types of Keyloggers</h2>
             <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
+                <strong>There are types of Keyloggers.</strong> Software keyloggers have deep system access, and user-level types that are easier to install. On Hardware keyloggers, there are physical devices like USB adapters or flash drives. Browser-based keyloggers use codes from websites that are malicious to steal information when users enter their information. Wireless sniffers send signals sent from devices like wireless keyboards. Each type has different methods to target victims and steal personal information without their permission. <strong>It is important to understand the types of keylogger and identify each problem to stay safe online.</strong>
             </p>
 
-            <h2 id="body-five">Conclusion</h2>
+            <h2 id="risks">Risks and Real Dangers</h2>
             <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
+                <strong>Keyloggers can steal your private messages, passwords, and credit card details</strong>, it can be used for identity fraud, identity theft or blackmail. Tons of users have experienced identity theft and financial losses from stealing their bank accounts from keyloggers. Businesses are also no exception when it comes to keyloggers, they expose important confidential information which can damage the company. In some cases, attackers use scripts to inject on websites to target user’s bank accounts. Sensitive health information shared through emails can also be exposed. <strong>Every year there are an increasing number of risks and impact of keyloggers online.</strong>
             </p>
 
+            <h2 id="prevention">Prevention Tips</h2>
+            <p class="paragraph">
+                <strong>Have the latest version of the operating system as well as the programs you use.</strong> Ensure that you use anti-virus or anti-keylogger programs so that you do not fall victim to keyloggers. Make sure that the firewall is always on so that you do not allow any unauthorized data to be sent to the public servers. Always be on the lookout to ensure that you do not have any unknown program running on the task manager of the computer. <strong>Ensure that you have the two-factor protection against keyloggers.</strong>
+            </p>
+
+            <h2 id="detection">Detection Methods</h2>
+            <p class="paragraph">
+                <strong>Antivirus scans threats and blocks hidden keyloggers.</strong> Check the task manager if there are unknown programs that are stealing your resources. Monitor network traffic and check if there are suspicious uploads from unknown servers. For computers, use anti-spyware tools that specialize in hooks and drivers. Overall, keyloggers from software hooks to hardware traps, stealing keystrokes being able to be used for theft or fraud. <strong>Keyloggers do things silently, but it does risks like identity theft, loss, and fraud.</strong> That is why prevention like updates, scans, and safe habits are important. Never let keyloggers steal your personal important information. And always be aware online.
+            </p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                <strong>Keyloggers are a major threat to cybersecurity, because keyloggers is capable to steal critical information without users consent.</strong> Knowing how they work will help users stay protected from keyloggers. If not detected early, they may cause harm to users financially and otherwise. It is crucial to practice good online behavior. The use of other protective tools will provide an extra layer of protection against them. <strong>Being aware of them will help prevent them from attacking users.</strong>
+            </p>
         </article>
     </div>
 
     <footer>
-        <div class="footer-contact">
-            <img src="media/images/logo.png" alt="Logo">
-            <span class="logo-text" id="top">Digital Compass</span>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
             <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="mailto@digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
 
         <div class="footer-columns">
             <div class="column">
                 <h4>Cybercrime</h4>
-                <a href="cc.html#concepts">Concepts</a>
-                <a href="cc.html#types">Types of Cybercrime</a>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
             </div>
             <div class="column">
                 <h4>Cybersecurity</h4>
-                <a href="cs.html#concepts">Concepts</a>
-                <a href="cc.html#security">Account Security</a>
-                <a href="cc.html#internet">Internet Safety</a>
-                <a href="cc.html#students">Online Habits For Students</a>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
             </div>
             <div class="column">
                 <h4>Digital Privacy</h4>
-                <a href="dp.html#concepts">Concepts</a>
-                <a href="dp.html#socmed">Social Media Privacy</a>
-                <a href="dp.html#data">Data Protection</a>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
             </div>
             <div class="column">
                 <h4>Emerging Threats</h4>
-                <a href="et.html#threats">Threats from New Technology</a>
-                <a href="et.html#cyberattack">Cyberattack Methods & Evolution</a>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
             </div>
             <div class="column">
                 <h4>Prevention</h4>
-                <a href="pa.html#prevention">Cybercrime Prevention</a>
-                <a href="pa.html#online">Online Safety Tips</a>
-                <a href="pa.html#digital">Digital Wellness</a>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
             </div>
             <div class="column">
                 <h4>Resources</h4>
-                <a href="rs/faqs.html">FAQs</a>
-                <a href="rs/references.html">References</a>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
             </div>
             <div class="column">
                 <h4>Quick Navs</h4>
-                <a href="index.html">Home</a>
-                <a href="hm/about.html">About</a>
-                <a href="hm/contacts.html">Contacts</a>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
             </div>
         </div>
-
         <hr>
     </footer>
 </body>
 </html>
-
