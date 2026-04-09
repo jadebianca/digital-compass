@@ -1,3 +1,4 @@
+
 nav {
     background-color: #0F0F32;
     padding: 20px 50px;
@@ -7,7 +8,7 @@ nav {
 
 .logo-container {
     display: block;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 .logo-container img {
@@ -42,10 +43,10 @@ nav {
 .nav-links li a {
     text-decoration: none;
     color: #0F0F32;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     padding: 12px 16px;
-    display: block;
+    display: inline-block;
 }
 
 .nav-links li a:hover {
@@ -173,7 +174,7 @@ hr {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 981px) {
     nav {
         padding: 20px auto;
         text-align: left;
@@ -182,17 +183,24 @@ hr {
     .logo-container {
         float: left;
         margin-bottom:12px;
+        margin-right: 5px;
     }
 
+    .logo-container img {
+        height: 35px;
+        vertical-align: middle;
+        margin-right: 3px;
+    }   
     .nav-links {
         float: right;
     }
 
     .logo-text {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .nav-links li a {
-        font-size: 13px;
+        font-size: 12px;
+        padding: 12px 6px;
     }
 }
