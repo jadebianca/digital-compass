@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/navigations.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <style type="text/css">
         body {
             background-color: #FFFFFF;
@@ -21,13 +22,11 @@
             max-width: 1000px;
             margin: 0 auto;
         }
-        .title {
+        h1 {
             color: #211F76;
             font-family: 'Playfair Display', serif;
             font-size: 40px;
             font-weight: 700;
-            text-align: center;
-            margin-bottom: 10px;
         }
         h2 {
             color: #211F76;
@@ -39,18 +38,14 @@
             border-left: 5px solid #0F0F32;
             padding-left: 20px;
             margin-top: 40px;
-            margin-bottom: 25px;
             width: 100%;
             box-sizing: border-box;
         }
-        .author {
+        .main > p {
             color: #212866;
             font-family: 'Inter', sans-serif;
             font-size: 18px;
-            text-align: center;
             letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 0;
         }
         .nav-bio {
             color: #212866;
@@ -150,8 +145,8 @@
     </nav>
     
     <div class="main">
-        <h1 class="title text-center mb-4">CIA Triad: Cybersecurity's Three Key Pillars</h1>
-        <p class="author text-center text-uppercase fw-bold mb-3"><b>By: Maneclang, Vince Wilram T. &bull; March 22, 2026</b></p>
+        <h1 class="text-center mb-4">CIA Triad: Cybersecurity's Three Key Pillars</h1>
+        <p class="text-center text-uppercase fw-bold mb-3"><b>By: Maneclang, Vince Wilram T. &bull; March 22, 2026</b></p>
         
         <p class="nav-bio">
             <a href="#intro">Intro</a> &bull;
@@ -173,39 +168,39 @@
                 <figcaption>Photo from: IDStrong</figcaption>
             </figure>
             
-            <h2 id="intro" class="text-start mb-4">Introduction</h2>
+            <h2 id="intro" class="text-left mb-4">Introduction</h2>
             <p class="paragraph">
                 <strong>The CIA Triad is the basis of cybersecurity worldwide.</strong> CIA stands for Confidentiality, Integrity, and Availability. These three concepts function together as one. Students using homework documents or social media sites rely on these concepts for the security of their data from being hacked. <strong>Ignoring any one of them can lead to total failure.</strong> This article explains all three parts of the CIA Triad and why they work best when combined.
             </p>
 
             <iframe width="1406" height="791" src="https://www.youtube.com/embed/kPPFNrlN3zo" title="What is the CIA Triad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <h2 id="confidentiality" class="text-start mb-4">Confidentiality Keeps Secrets Safe</h2>
+            <h2 id="confidentiality" class="text-left mb-4">Confidentiality Keeps Secrets Safe</h2>
             <p class="paragraph">
                 <strong>Confidentiality ensures only authorized people access sensitive data like passwords or grades.</strong> Hackers can't peek at your private messages or bank info without breaking through encryption walls. Tools like passwords and two-factor codes block outsiders cold. Schools use login portals to hide student records from strangers. Leaks happen when public Wi-Fi or weak locks fail. <strong>This pillar stops identity theft before it starts.</strong> Protect it first, or everything crumbles.
             </p>
 
-            <h2 id="integrity" class="text-start mb-4">Integrity Guards Data Truth</h2>
+            <h2 id="integrity" class="text-left mb-4">Integrity Guards Data Truth</h2>
             <p class="paragraph">
                 <strong>Integrity means information stays accurate and unchanged by bad actors or errors.</strong> No one alters your test scores or swaps photo details secretly. Checksums and version controls verify files match originals exactly. Malware tries to tweak bank balances or exam answers undetected. Digital signatures prove who last touched the data. Backups catch changes fast for rollback. <strong>Trustworthy info powers decisions without doubt.</strong>
             </p>
 
-            <h2 id="availability" class="text-start mb-4">Availability Ensures Constant Access</h2>
+            <h2 id="availability" class="text-left mb-4">Availability Ensures Constant Access</h2>
             <p class="paragraph">
                 <strong>Availability keeps systems running so users reach data anytime needed.</strong> DDoS floods or crashes can't block your homework login or game servers. Redundant servers and strong bandwidth hold up under attack. Power backups save laptops during outages too. Ransomware locks files to deny access for cash. Fast recovery plans minimize downtime shocks. <strong>Reliable access fuels schoolwork and fun without frustration.</strong>
             </p>
 
-            <h2 id="threats" class="text-start mb-4">Threats Targeting Each Pillar</h2>
+            <h2 id="threats" class="text-left mb-4">Threats Targeting Each Pillar</h2>
             <p class="paragraph">
                 <strong>Phishing steals login info to breach confidentiality instantly.</strong> Viruses corrupt files, smashing integrity goals hard. Flood attacks halt websites, killing availability dead. Ransomware hits all three by encrypting, altering, and blocking data. Social engineering cons trust to bypass controls slyly. Real breaches like Equifax exposed millions by ignoring the triad. <strong>Balance all pillars or face chain reactions.</strong>
             </p>
 
-            <h2 id="daily" class="text-start mb-4">Building CIA in Daily Life</h2>
+            <h2 id="daily" class="text-left mb-4">Building CIA in Daily Life</h2>
             <p class="paragraph">
                 <strong>Use strong unique passwords for confidentiality everywhere.</strong> Enable file hashing apps to check integrity on downloads. Pick services with uptime guarantees for availability. Run antivirus covering all three bases daily. Train friends on triad basics for group safety. Test backups monthly to prove they work. <strong>Simple habits lock in the full triad power.</strong>
             </p>
 
-            <h2 id="conclusion" class="text-start mb-4">Conclusion</h2>
+            <h2 id="conclusion" class="text-left mb-4">Conclusion</h2>
             <p class="paragraph">
                 <strong>Confidentiality, Integrity, and Availability form the CIA Triad, which is the basis of any good security plan.</strong> Without any of these, data can be compromised or changed, or systems can crash. Good daily habits and tools can help ensure all three are met. Use good passwords, verify files, and ensure systems are always available. Educating kids about the CIA Triad can create a secure future. <strong>Secure systems begin with you.</strong>
             </p>
