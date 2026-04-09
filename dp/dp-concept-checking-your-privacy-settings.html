@@ -5,11 +5,11 @@
     <meta http-equiv="refresh" content="1800">
     <title>Checking Your Privacy Settings - Digital Compass</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="icon" href="../MEDIAS/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/navigations.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    
     <style type="text/css">
         body {
             background-color: #FFFFFF;
@@ -17,6 +17,7 @@
             margin: 0px;
             padding: 0px;
         }
+        /* Content Styles */
         .main {
             background-color: #FFFFFF;
             padding: 30px 0;
@@ -24,37 +25,34 @@
             max-width: 1000px;
             margin: 0 auto;
         }
-        .title {
+
+        h1 {
             color: #211F76;
             font-family: 'Playfair Display', serif;
             font-size: 40px;
             font-weight: 700;
-            text-align: center;
-            margin-bottom: 10px;
         }
+
         h2 {
             color: #211F76;
             font-family: 'Playfair Display', serif;
             font-size: 32px;
             font-weight: 500;
             line-height: 1.3;
-            text-align: left;
             border-left: 5px solid #0F0F32;
             padding-left: 20px;
             margin-top: 40px;
-            margin-bottom: 25px;
             width: 100%;
             box-sizing: border-box;
         }
-        .author {
+
+        .main > p {
             color: #212866;
             font-family: 'Inter', sans-serif;
             font-size: 18px;
-            text-align: center;
             letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 0;
         }
+
         .nav-bio {
             color: #212866;
             font-family: 'Inter', sans-serif;
@@ -64,15 +62,13 @@
             text-transform: uppercase;
             margin-bottom: 20px;
         }
+
         .nav-bio a {
             color: #212866;
             text-decoration: none;
             font-weight: 600;
-            transition: 0.3s;
         }
-        .nav-bio a:hover {
-            text-decoration: 2px solid underline;
-        }
+
         .photos {
             width: 100%;
             max-width: 1000px; 
@@ -90,6 +86,7 @@
             text-align: center;
             margin-top: 10px;
         }
+        
         .paragraph {
             color: #212866;
             margin: 0 0 50px 0;
@@ -101,19 +98,14 @@
             text-indent: 50px;
             width: 100%;
         }
-        iframe {
-            display: block;
-            width: 1000px;
-            height: 600px;
-            margin: auto;
-            border-radius: 20px;
-        }
     </style>
 </head>
 <body>
-    
-    <script src="js/bootstrap.bundle.js"></script>
+    <!--MALLARI, VINCE XYRON A.-->
+    <!--CIP-1101 ITAD | GROUP 2-->
+    <script src="../js/bootstrap.bundle.js"></script>
     <a href="#top" class="top-btn">Back to Top &uarr;</a>
+
     <nav>
         <div class="logo-container">
             <img src="../media/images/logo.png" alt="Logo">
@@ -131,59 +123,58 @@
     </nav>
 
     <div class="main">
-        <h1 class="title">Checking Your Privacy Settings</h1>
-        <p class="author"><b>By: Mallari, Vince Xyron A. &bull; April 9, 2026</b></p>
-        
-        <p class="nav-bio">
-            <a href="#intro">Intro</a> &bull;
-            <a href="#what">App Permissions and Access</a> &bull;
-            <a href="#how">Security Settings and Authentication</a> &bull;
-            <a href="#types">Account Visibility</a> &bull;
-            <a href="#risks">Managing Personal Information</a> &bull;
-            <a href="#conclusion">Conclusion</a>
-        </p>
-        
-        <hr width="100%" size="5" color="#212866">
+    <h1 class="text-center mb-4">Checking Your Privacy Settings</h1>
+    <p class="text-center text-uppercase fw-bold mb-3 ">By: Mallari, Vince Xyron A. &bull; April 9, 2026</p>
+    <p class="nav-bio">
+        <a href="#intro">Intro</a> &bull;
+        <a href="#body-one"> App Permissions and Access</a> &bull;
+        <a href="#body-two">Security Settings and Authentication</a> &bull;
+        <a href="#body-three">Account Visibility</a> &bull;
+        <a href="#body-four">Managing Personal Information</a> &bull;
+        <a href="#conclusion">Conclusion</a>
+    </p>
+    
+    <hr style="border: none; border-top: 3px solid #212866; opacity: 1; width: 100%;">
 
-        <article>
-            <figure>
-                <a href="https://crispng.com/12-online-privacy-settings-everyone-should-enable/">
-                    <img src="../media/images/checking-privacy.jpg" alt="Checking Privacy" class="photos">
-                </a>
-                <figcaption>Photo from: Crisp Nigeria</figcaption>
-            </figure>
-            
-            <h2 id="intro">Introduction</h2>
-            <p class="paragraph">
-            Today, almost everything we do online involves the <b><i>collection of personal data</i></b>. Whether you are using social media, shopping online, or simply browsing the internet, companies gather information to <b>improve services</b>, <b>personalize experiences</b>, and <b>provide recommendations</b>. However, this data can sometimes be <b><i>shared or sold to third parties</i></b>, which may lead to <b>privacy risks</b> if not properly managed. Understanding and regularly <b><i>checking your privacy settings</i></b> is an important step in <b>protecting your personal information</b> and maintaining control over how your data is used online.
+    <article>     
+        <figure>
+            <a href="https://crispng.com/12-online-privacy-settings-everyone-should-enable/">
+                <img src="../media/images/checking-privacy.jpg" alt="Checking Privacy" class="photos">
+            </a>
+            <figcaption>Photo from: Crisp Nigeria</figcaption>
+        </figure>
+
+            <p id="intro" class="paragraph">
+                Today, almost everything we do online involves the <b><i>collection of personal data</i></b>. Whether you are using social media, shopping online, or simply browsing the internet, companies gather information to <b>improve services</b>, <b>personalize experiences</b>, and <b>provide recommendations</b>. However, this data can sometimes be <b><i>shared or sold to third parties</i></b>, which may lead to <b>privacy risks</b> if not properly managed. Understanding and regularly <b><i>checking your privacy settings</i></b> is an important step in <b>protecting your personal information</b> and maintaining control over how your data is used online.
             </p>
 
-            <h2 id="what">App Permissions and Access</h2>
+            <h2 id="body-one" class="text-left mb-4">App Permissions and Access</h2>
             <p class="paragraph">
                 Many applications request access to features such as your <b>location</b>, <b>contacts</b>, <b>camera</b>, and <b>microphone</b>. While some permissions are <b>necessary for functionality</b>, others may not be essential. Reviewing <b><i>app permissions</i></b> allows you to control what data is being collected. For example, social media platforms like <b>Instagram</b>, <b>TikTok</b>, <b>Twitter</b>, and <b>Facebook</b> provide settings that let you decide who can <b>see your posts</b>, <b>interact with your content</b>, and <b>access your personal information</b>. It is important to <b><i>regularly check these permissions</i></b> and disable any access that is not needed to reduce <b>unnecessary data sharing</b>.
             </p>
 
-            <h2 id="how">Security Settings and Authentication</h2>
+            <h2 id="body-two" class="text-left mb-4">Security Settings and Authentication</h2>
             <p class="paragraph">
                 Strengthening your <b><i>account security</i></b> is essential in protecting your personal data. One effective way to do this is by enabling <b><i>two-factor authentication (2FA)</i></b>, which adds an <b>extra layer of protection</b> by requiring a second verification step, such as a code sent to your device. Additionally, using <b>strong and unique passwords</b> for each account helps prevent <b>unauthorized access</b>. <b>Password managers</b> can assist in securely storing and generating complex passwords, making it easier to maintain <b>strong security</b> across multiple accounts.
             </p>
 
-            <h2 id="types">Account Visibility</h2>
+            <h2 id="body-three" class="text-left mb-4">Account Visibility</h2>
             <p class="paragraph">
                 <b><i>Account visibility settings</i></b> determine who can see your profile, posts, and personal information online. Many platforms allow you to switch between <b>public and private accounts</b>, giving you control over your audience. By limiting visibility to <b>trusted individuals</b>, you can reduce the risk of <b>exposing sensitive information</b>. It is also important to review settings related to <b>comments</b>, <b>tags</b>, and <b>shared content</b> to ensure that only appropriate people can interact with your account.
             </p>
 
-            <h2 id="risks">Managing Personal Information</h2>
+            <h2 id="body-four" class="text-left mb-4">Managing Personal Information</h2>
             <p class="paragraph">
-            Managing your <b><i>personal information</i></b> involves being mindful of what you share online and how it is used. Avoid providing <b>unnecessary details</b> such as your exact location, contact information, or <b>sensitive data</b> unless required. You should also consider <b><i>turning off personalized ads</i></b>, as these often rely on <b>tracking your online behavior</b> and preferences. Regularly <b>updating your device software and applications</b> helps protect against <b>security vulnerabilities</b>, ensuring that your information remains secure from potential threats.
+                Managing your <b><i>personal information</i></b> involves being mindful of what you share online and how it is used. Avoid providing <b>unnecessary details</b> such as your exact location, contact information, or <b>sensitive data</b> unless required. You should also consider <b><i>turning off personalized ads</i></b>, as these often rely on <b>tracking your online behavior</b> and preferences. Regularly <b>updating your device software and applications</b> helps protect against <b>security vulnerabilities</b>, ensuring that your information remains secure from potential threats.
             </p>
 
-            <h2 id="conclusion">Conclusion</h2>
+            <h2 id="conclusion" class="text-left mb-4">Conclusion</h2>
             <p class="paragraph">
                 In a digital world where <b><i>personal data is constantly being collected</i></b>, taking control of your privacy settings is more important than ever. By <b>reviewing app permissions</b>, <b>strengthening security measures</b>, <b>limiting account visibility</b>, and <b>managing the information you share</b>, you can significantly reduce <b>privacy risks</b>. Staying <b><i>informed and proactive</i></b> ensures that your personal data remains protected. Ultimately, being proactive about privacy empowers you to <b>enjoy online services</b> while maintaining control over your <b><i>digital identity</i></b>.
             </p>
         </article>
     </div>
+    </nav>
 
     <footer>
         <div class="footer-contacts">
