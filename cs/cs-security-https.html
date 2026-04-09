@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <title>Understanding Website Security (HTTPS) - Digital Compass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <style type="text/css">
+        body { 
+            background-color: #FFFFFF; 
+            font-family: 'Inter', sans-serif; 
+            margin: 0px; 
+            padding: 0px; 
+        }
+        .main { 
+            background-color: #FFFFFF; 
+            padding: 30px 0; 
+            width: 90%; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+        .title { 
+            color: #211F76; 
+            font-family: 'Playfair Display', serif; 
+            font-size: 40px; 
+            font-weight: 700; 
+            text-align: center; 
+            margin-bottom: 10px; 
+        }
+        h2 { 
+            color: #211F76; 
+            font-family: 'Playfair Display', serif; 
+            font-size: 32px; 
+            font-weight: 500; 
+            line-height: 1.3; 
+            text-align: left; 
+            border-left: 5px solid #0F0F32; 
+            padding-left: 20px; 
+            margin-top: 40px; 
+            margin-bottom: 25px; 
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+        .author { 
+            color: #212866; 
+            font-family: 'Inter', sans-serif; 
+            font-size: 18px; 
+            text-align: center; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            margin-top: 0; 
+        }
+        .nav-bio { 
+            color: #212866; 
+            font-family: 'Inter', sans-serif; 
+            font-size: 16px; 
+            text-align: center; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            margin-bottom: 20px; 
+        }
+        .nav-bio a { 
+            color: #212866; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: 0.3s; 
+        }
+        .nav-bio a:hover { 
+            text-decoration: 2px solid underline; 
+        }
+        .photos { 
+            width: 100%; 
+            max-width: 1000px; 
+            height: auto; 
+            border-radius: 20px; 
+            margin: 40px 0 40px 0; 
+            display: block; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        }
+        figcaption { 
+            color: #212866; 
+            font-family: 'Inter', sans-serif; 
+            font-size: 16px; 
+            font-weight: 500; 
+            text-align: center; 
+            margin-top: 10px; 
+        }
+        .paragraph { 
+            color: #212866; 
+            margin: 0 0 50px 0; 
+            font-family: 'Inter', sans-serif; 
+            font-size: 19px; 
+            font-weight: 500; 
+            line-height: 1.8; 
+            text-align: justify; 
+            text-indent: 50px; 
+            width: 100%; 
+        }
+        .top-btn { 
+            position: fixed; 
+            bottom: 50px; 
+            right: 60px; 
+            background-color: #FFFFFF; 
+            border: 2px solid #0F0F32; 
+            color: #0F0F32; 
+            text-decoration: none; 
+            padding: 15px 50px; 
+            border-radius: 50px; 
+            font-size: 12px; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+            transition: 0.3s; 
+        }
+        .top-btn:hover { 
+            background: #0F0F32; 
+            color: transparent; 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 30px 0 50px 0; 
+            font-family: 'Inter', sans-serif; 
+            font-size: 17px; 
+        }
+        caption { 
+            caption-side: top; 
+            text-align: left; 
+            font-weight: 600; 
+            font-size: 18px; 
+            margin-bottom: 10px; 
+            color: #211F76; 
+        }
+        th { 
+            background-color: #211F76; 
+            color: #FFFFFF; 
+            padding: 12px 16px; 
+            text-align: left; 
+        }
+        td { 
+            padding: 12px 16px; 
+            border-bottom: 1px solid #ddd; 
+            color: #212866; 
+        }
+        tr:nth-child(even) { 
+            background-color: #f4f4f8; 
+        }
+    </style>
+</head>
+<body>
+     <!--PELITO, ZOE KYLLE R.-->
+    <!--CIP-1101 ITAD-->
+
+<script src="../js/bootstrap.bundle.js"></script>
+<a href="#top" class="top-btn">Back to Top &uarr;</a>
+
+<nav>
+    <div class="logo-container">
+        <img src="../media/images/logo.png" alt="Logo">
+        <span class="logo-text" id="top">Digital Compass</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cc.html">Cybercrime</a></li>
+        <li><a href="../cs.html">Cybersecurity</a></li>
+        <li><a href="../dp.html">Digital Privacy</a></li>
+        <li><a href="../et.html">Emerging Threats</a></li>
+        <li><a href="../pa.html">Prevention & Awareness</a></li>
+        <li><a href="../rs.html">Resources</a></li>
+    </ul>
+</nav>
+
+<div class="main">
+    <h1 class="title">Understanding Website Security (HTTPS)</h1>
+    <p class="author"><b>By: Pelito, Zoe Kylle R. &bull; April 2026</b></p>
+
+    <p class="nav-bio">
+        <a href="#intro">Intro</a> &bull;
+        <a href="#s1">HTTP vs. HTTPS</a> &bull;
+        <a href="#s2">How Encryption Works</a> &bull;
+        <a href="#s3">Protecting Data</a> &bull;
+        <a href="#s4">Spotting Fake HTTPS</a> &bull;
+        <a href="#s5">Browser Warnings</a> &bull;
+        <a href="#conclusion">Conclusion</a>
+    </p>
+
+    <hr width="100%" size="5" color="#212866">
+
+    <article>
+        <figure>
+            <a href="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" target="_self">
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1000&q=80" alt="Understanding HTTPS Security" class="photos">
+            </a>
+            <figcaption>Image from Unsplash</figcaption>
+        </figure>
+
+        <h2 id="intro">Introduction</h2>
+        <p class="paragraph">
+            When browsing the web, you have likely noticed a small <strong>padlock icon</strong> next to the website address in your browser. This padlock represents HTTPS, a crucial technology that keeps your internet connection <strong>secure and private</strong>. Without it, any information you send across the internet can be easily intercepted and read by malicious third parties. Understanding how website security protocols work is essential for protecting your passwords, assignments, and personal data. Let us break down what HTTPS actually means and why you should <em>always look for it</em>.
+        </p>
+
+        <h2 id="s1">The Difference Between HTTP and HTTPS</h2>
+        <p class="paragraph">
+            To understand website security, you must first understand the difference between the older HTTP and the modern HTTPS protocols. HTTP stands for Hypertext Transfer Protocol, which is the basic system used to transmit data between your browser and a website. The major flaw with basic HTTP is that all data is sent in <strong>plain text format without any protective scrambling</strong>. This means that if a hacker intercepts the connection on a public Wi-Fi network, they can easily read everything you type. HTTPS simply adds a letter "S," which stands for "Secure," to the end of the acronym. This indicates that the website is using a specialized encryption protocol called <em>SSL/TLS to protect the data in transit</em>. Modern web browsers are heavily pushing for HTTPS to become the universal standard across the entire internet. You should <strong>never submit any personal information</strong> on a website that still relies on outdated, unsecured HTTP connections.
+        </p>
+
+        <h2 id="s2">How Data Encryption Works</h2>
+        <p class="paragraph">
+            Encryption is the core technology that makes HTTPS so effective at protecting your digital privacy. When you connect to a secure website, your browser and the web server perform a <strong>digital handshake to establish a secret code</strong>. Once this code is established, any data you send—like your university login password—is scrambled into an <em>unreadable string of random characters</em>. Even if a cybercriminal successfully intercepts the data packets as they travel across the network, they will only see gibberish. The data <strong>remains locked and completely useless</strong> until it reaches the intended server, which holds the unique key to decrypt it. This invisible process happens in milliseconds every time you load a secure page or submit a web form. Encryption not only protects your passwords but also <em>prevents internet service providers from monitoring</em> your specific activities on a page. It is a fundamental shield that guarantees your digital communications remain strictly between you and the website.
+        </p>
+
+        <h2 id="s3">Protecting Personal and Academic Data</h2>
+        <p class="paragraph">
+            As a student, you constantly transmit sensitive data across various educational and personal platforms throughout the day. You log into student portals to check grades, submit personal essays, and occasionally enter payment details for tuition or textbooks. If these websites did not utilize HTTPS, your entire academic identity would be <strong>constantly vulnerable to theft and manipulation</strong>. Hackers could potentially intercept your session cookies and hijack your logged-in accounts without ever needing your actual password. A secure connection <em>guarantees data integrity</em>, ensuring that the information you receive has <strong>not been altered by an attacker mid-transmission</strong>. This means you can trust that the assignment guidelines you are reading have not been maliciously modified by a third party. Always verify that a website handles your data securely before trusting it with your academic records or personal communications. Your digital identity is highly valuable, and HTTPS serves as the lock that keeps it protected from unauthorized access.
+        </p>
+
+        <table>
+            <caption>HTTP vs. HTTPS Comparison</caption>
+            <tr>
+                <th>Feature</th>
+                <th>HTTP</th>
+                <th>HTTPS</th>
+            </tr>
+            <tr><td>Data Transmission</td><td>Plain Text (Unsecured)</td><td>Encrypted (Secured)</td></tr>
+            <tr><td>Browser Indicator</td><td>"Not Secure" Warning</td><td>Padlock Icon</td></tr>
+            <tr><td>Best Used For</td><td>Nothing (Outdated)</td><td>All modern web browsing</td></tr>
+        </table>
+
+        <h2 id="s4">Spotting Fake HTTPS Sites</h2>
+        <p class="paragraph">
+            While seeing the padlock icon is a good sign, it is critically important to understand that it <strong>does not guarantee a website is legitimate</strong>. Cybercriminals are well aware that users look for the padlock to feel safe when entering their credentials online. Therefore, hackers frequently <em>obtain valid SSL certificates for their fake phishing websites</em> to deceive unsuspecting victims. If you click a link in a phishing email, you might land on a secure HTTPS page that is entirely controlled by scammers. The encryption only means your connection to the scammer is private; it does not verify the honesty of the site owner. You must still <strong>verify the actual domain name</strong> in the address bar to ensure you are on the correct, official website. Look closely for slight misspellings or unusual domain extensions that attempt to mimic popular platforms. Always combine the technical check for HTTPS with a <em>critical evaluation of the website's overall authenticity</em>.
+        </p>
+
+        <h2 id="s5">Paying Attention to Browser Warnings</h2>
+        <p class="paragraph">
+            Modern web browsers act as your primary security guards, actively warning you when a website's security is compromised or outdated. If you attempt to visit a page that uses regular HTTP, your browser will prominently display a <strong>"Not Secure" label</strong> next to the URL. You should treat this label as a <em>major red flag</em>, especially if the site asks for a login or password. In some cases, a website might have an expired or incorrectly configured SSL certificate, prompting a large, full-screen warning blocking your access. It is highly tempting to click the "Advanced" button and bypass the warning to get to your desired content quickly. However, ignoring these browser warnings puts your device and personal data at <strong>extreme, unnecessary risk</strong>. The browser is explicitly telling you that the connection cannot be trusted and that your data may be intercepted. <em>Trust these automated warnings</em> and find an alternative, secure source for the information you need.
+        </p>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p class="paragraph">
+            Understanding HTTPS is a foundational skill for maintaining your privacy and security in the modern digital landscape. The encryption provided by secure protocols ensures that your passwords and personal messages <strong>cannot be eavesdropped on by malicious actors</strong>. While the padlock icon is a necessary indicator of a secure connection, it must be <em>paired with your own critical judgment</em> of the website. <strong>Never submit sensitive information to pages displaying a "Not Secure" warning</strong> from your browser. By paying attention to web addresses and understanding how data is transmitted, you take active control of your digital safety. Make it a habit to check for secure connections every single time you log in or share personal details online.
+        </p>
+    </article>
+</div>
+
+<footer>
+    <div class="footer-contacts">
+        <img src="../media/images/logo.png" alt="Logo">
+        <span class="logo-text">Digital Compass</span>
+        <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </div>
+    <div class="footer-columns">
+        <div class="column">
+            <h4>Cybercrime</h4>
+            <a href="../cc.html#concepts">Concepts</a>
+            <a href="../cc.html#types">Types of Cybercrime</a>
+        </div>
+        <div class="column">
+            <h4>Cybersecurity</h4>
+            <a href="../cs.html#concepts">Concepts</a>
+            <a href="../cs.html#security">Account Security</a>
+            <a href="../cs.html#internet">Internet Safety</a>
+            <a href="../cs.html#students">Online Habits For Students</a>
+        </div>
+        <div class="column">
+            <h4>Digital Privacy</h4>
+            <a href="../dp.html#concepts">Concepts</a>
+            <a href="../dp.html#socmed">Social Media Privacy</a>
+            <a href="../dp.html#data">Data Protection</a>
+        </div>
+        <div class="column">
+            <h4>Emerging Threats</h4>
+            <a href="../et.html#threats">Threats from New Technology</a>
+            <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+        </div>
+        <div class="column">
+            <h4>Prevention</h4>
+            <a href="../pa.html#prevention">Cybercrime Prevention</a>
+            <a href="../pa.html#online">Online Safety Tips</a>
+            <a href="../pa.html#digital">Digital Wellness</a>
+        </div>
+        <div class="column">
+            <h4>Resources</h4>
+            <a href="../rs/faqs.html">FAQs</a>
+            <a href="../rs/references.html">References</a>
+        </div>
+        <div class="column">
+            <h4>Quick Navs</h4>
+            <a href="../index.html">Home</a>
+            <a href="../hm/about.html">About</a>
+            <a href="../hm/contacts.html">Contacts</a>
+        </div>
+    </div>
+    <hr>
+</footer>
+</body>
+</html>
