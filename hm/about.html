@@ -14,16 +14,17 @@
             background-color: #FFFFFF;
             font-family: Inter, sans-serif;
             font-weight: 500;
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
         }
 
         .hero {
             background-image: url('../media/images/hero.png');
             background-size: cover;
             background-position: center;
-            padding: 100px 100px;
+            padding: 100px 20px;
             color: #FFFFFF;
+            text-align: center;
         }
 
         .hero h3 {
@@ -40,25 +41,12 @@
             margin: 10px 0;
         }
 
-        .hero p {
-            font-size: 18px;
-            font-weight: 500;
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .hero-btn {
-            margin-top: 5px;
-        }
-
         .nav-hero {
             font-family: Poppins, Arial, sans-serif;
             font-size: 1em;
-            text-align: center;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 20px;
+            margin-top: 20px;
         }
 
         .nav-hero a {
@@ -68,51 +56,43 @@
         }
 
         .about {
-            padding: 80px 150px;
+            padding: 80px 20px;
             text-align: center;
             background-color: #FFFFFF;
         }
 
         .about-img {
             display: inline-block;
-            width: 30%;
-            vertical-align: middle;
-            margin-right: 50px;
-        }
-
-        .about-img img {
             width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 400px;
+            vertical-align: middle;
+            margin-bottom: 30px;
+    
         }
 
         .about-text {
             display: inline-block;
-            width: 45%;
+            width: 100%;
+            max-width: 600px;
             vertical-align: middle;
-            text-align: left;
+            padding: 0 35px;
         }
 
         #mission-vision {
-            text-align: center;
-            padding: 80px 50px;
-            background-color: #FFFFFF;
+            padding: 60px 20px;
         }
 
         .mission, .vision {
             display: inline-block;
-            width: 40%;
+            width: 100%;
+            max-width: 500px;
             vertical-align: top;
-            padding: 50px;
-            text-align: center;
+            padding: 40px 20px;
             box-sizing: border-box;
         }
 
         .team {
-            padding: 80px 350px;
-            text-align: center;
-            background-color: #FFFFFF;
+            padding: 80px 20px;
         }
 
         .mission h3, .vision h3, .team h3, .about h3 {
@@ -161,25 +141,13 @@
         figure {
             margin: 0 auto;
             text-align: center;
-            display: block;
         }
-
-        figcaption {
-            color: #212866;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            margin-top: 10px;
-        }
-
     </style>
 </head>
 <body>
-    <!--PORTILLO, JADE BIANCA I.-->
-    <!--CIP-1101 ITAD | GROUP 2-->
     <script src="../js/bootstrap.bundle.js"></script>
     <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    
     <nav>
         <div class="logo-container">
             <img src="../media/images/logo.png" alt="Logo">
@@ -197,8 +165,8 @@
     </nav>
 
     <div class="hero">
-        <h3 class="text-light text-center">Learn More About</h3>
-        <h1 class="text-light text-center mb-3">Digital Compass</h1>
+        <h3>Learn More About</h3>
+        <h1>Digital Compass</h1>
         <p class="nav-hero">
             <a href="#about">About</a> &bull;
             <a href="#mission-vision">Mission & Vision</a> &bull;
@@ -207,47 +175,46 @@
     </div>
 
     <div class="about" id="about">
-        <div class="about-img">
-            <img src="../media/images/digital compass.png" alt="Digital Compass Logo">
-        </div>
-        <div class="about-text">
-            <h3>What is</h3>
-            <h1>Digital Compass?</h1>
-            <p>Digital Compass is an educational website dedicated to helping students and internet users understand cybercrimes and stay safe in the digital world.
-            It provides well-researched articles, practical guides, and useful resources that explain different online threats such as phishing, hacking, identity theft, scams, and cyberbullying.
-            </p>
+        <div class="container">
+            <div class="about-img">
+                <img src="../media/images/digital compass.png" alt="Digital Compass Logo" class="img-fluid photos">
+            </div>
+            <div class="about-text">
+                <h3 class="text-start text-uppercase fw-semibold">What is</h3>
+                <h1 class="text-start text-capitalize fw-semibold">Digital Compass?</h1>
+                <p class="mx-auto">Digital Compass is an educational website dedicated to helping students and internet users understand cybercrimes and stay safe in the digital world. It provides well-researched articles, practical guides, and useful resources that explain different online threats such as phishing, hacking, identity theft, scams, and cyberbullying.</p>
+            </div>
         </div>
     </div>
 
     <hr class="line">
 
-    <div id="mission-vision" >
+    <div id="mission-vision" class="text-center">
         <div class="mission" id="mission">
             <h3>Our</h3>
             <h1>Mission</h1>
-            <p>Digital Compass aims to educate and empower students and internet users by providing reliable information, practical guides, and awareness about cybercrimes and online safety.
-            </p>
+            <p>Digital Compass aims to educate and empower students and internet users by providing reliable information, practical guides, and awareness about cybercrimes and online safety.</p>
         </div>
         <div class="vision" id="vision">
             <h3>Our</h3>
             <h1>Vision</h1>
-            <p>Digital Compass envisions becoming a trusted educational platform that promotes cybersecurity awareness and digital responsibility for everyone.
-            </p>
+            <p>Digital Compass envisions becoming a trusted educational platform that promotes cybersecurity awareness and digital responsibility for everyone.</p>
         </div>
     </div>
 
     <hr class="line">
 
-    <div class="team" id="team">
-        <h3>People Behind Digital Compass</h3>
-        <h1>Meet the Team</h1>
-        <figure>
-            <a href="../media/images/team.png" target="_blank">
-                <img src="../media/images/team.png" alt="Digital Compass Team Members" class="photos" title="Digital Compass Team Members">
-            </a>
-        </figure>
-        <p>With the goal of creating a reliable and educational platform on cybercrime and online safety, Digital Compass is composed of <em>10 BSIT students</em> from the <strong>University of the East-Manila</strong>. They work together to develop a user-friendly platform that helps students and the wider community stay safe online.
-        </p>
+    <div class="text-center team" id="team">
+        <div class="container">
+            <h3>People Behind Digital Compass</h3>
+            <h1>Meet the Team</h1>
+            <figure>
+                <a href="../media/images/team.png" target="_blank">
+                    <img src="../media/images/team.png" alt="Digital Compass Team Members" class="photos img-fluid" title="Digital Compass Team Members">
+                </a>
+            </figure>
+            <p>With the goal of creating a reliable and educational platform on cybercrime and online safety, Digital Compass is composed of <em>10 BSIT students</em> from the <strong>University of the East-Manila</strong>. They work together to develop a user-friendly platform that helps students and the wider community stay safe online.</p>
+        </div>
     </div>
     
     <footer>
