@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="1800">
-    <title>Digital Privacy - Digital Compass</title>
+    <title>Cybercrime - Digital Compass</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="icon" href="media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/navigations.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,10 +20,10 @@
         }
 
         .hero {
-            background-image: url('media/images/dp.png');
+            background-image: url('media/images/cc.png');
             background-size: cover;
             background-position: center;
-            padding: 100px 100px;
+            padding: 100px 80px;
             color: #FFFFFF;
         }
 
@@ -43,7 +44,6 @@
         .hero p {
             font-size: 18px;
             font-weight: 500;
-            max-width: 600px;
             margin: 0 auto;
             line-height: 1.6;
         }
@@ -66,119 +66,173 @@
             text-decoration: none;
             font-weight: 400;
         }
-
-        .about {
-            padding: 80px 150px;
+        
+        
+        .cc {
+            padding: 0;
             text-align: center;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 1300px;
+            margin: 0 auto;
         }
 
-        .mission, .vision, .team {
-            padding: 80px 350px;
+        .topics{
+            padding: 80px 0;
+        }
+
+        .cc h3 {
+            color: #212866;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 550;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .cc h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            color: #211F76;
+            margin: 0 0 20px 0;
+        }
+
+        .cc-description {
+            font-size: 18px;
+            color: #212866;
+            margin-bottom: 40px;
+        }
+
+        .nav-type {
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 15px;
             text-align: center;
-            background-color: #FFFFFF;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            
         }
 
-        .team {
-            padding: 80px 250px;
-            text-align: center;
-            background-color: #FFFFFF;
+        .nav-type a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 550;
+            margin-bottom: 50px;
         }
 
-        .about-img {
-            display: inline-block;
-            width: 30%;
-            vertical-align: middle;
-            margin-right: 50px;
+        .type-head {
+            border-left: #212866 solid 5px;
+            margin-top: 75px;
         }
 
-        .about-img img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        .about-text {
-            display: inline-block;
-            width: 45%;
-            vertical-align: middle;
+        .type-head h3{
+            color: #212866;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 550;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            margin-left: 10px;
             text-align: left;
         }
 
-        .mission h3, .vision h3, .team h3 {
-            color: #212866;
-            font-size: 18px;
-            text-transform: uppercase;
-            font-weight: 550;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-
-        .mission h1, .vision h1, .team h1 {
+        .type-head h1{
             font-family: 'Playfair Display', serif;
-            font-size: 45px;
+            font-size: 40px;
             color: #211F76;
             margin: 0 0 20px 0;
+            margin-left: 10px;
+            text-align: left;
         }
 
-        .mission p, .vision p, .team p {
-            font-size: 18px;
+        #type-description {
+            font-size: 17px;
             color: #212866;
+            margin-bottom: 40px;
             text-align: justify;
-            line-height: 1.8;
-            margin-bottom: 30px;
         }
 
-        .about h3 {
+        .link {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .box {
+            background: #FFFFFF;
+            width: 380px;
+            border-radius: 15px;
+            text-align: left;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        .box:hover{
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .box img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover;
+        }
+
+        .content { 
+            padding: 25px 25px 10px; 
+        }
+
+        .category {
+            font-size: 13px;
+            font-weight: 600;
             color: #211F76;
-            font-size: 18px;
             text-transform: uppercase;
-            font-weight: 550;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
-        .about h1 {
+        .content h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 45px;
+            font-size: 25px;
             color: #211F76;
-            margin: 0 0 20px 0;
+            margin: 0 0 15px 0;
+            vertical-align: middle;
         }
 
-        .about p {
-            font-size: 18px;
+        .description {
+            font-size: 15px;
             color: #212866;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-weight: 500;
             text-align: justify;
-            line-height: 1.8;
-            margin-bottom: 30px;
+            word-spacing: 3px;
+        }
+
+        .read-more {
+            color: #211F76;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin: 0;
         }
 
         .line {
             width: 80%;
-            border: 0;
             max-width: 50%;
             height: 1px;
             background-color: #0F0F32;
+            opacity: 1;
             margin: 0 auto;
         }
 
-        .photos {
+        .type-line {
             width: 100%;
-            max-width: 1000px; 
-            height: auto;
-            border-radius: 20px;
-            margin: 40px 0 40px 0;
-            display: block;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        figcaption {
-            color: #212866;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            margin-top: 10px;
+            height: 10px;
+            max-width: 100%;
+            color: #0F0F32;
+            opacity: 1;
+            margin: 40px auto;
+            
         }
     </style>
 </head>
@@ -204,31 +258,13 @@
     </nav>
 
     <div class="hero">
-        <h3 class="text-light text-center">Guard Your Digital Life</h3>
-        <h1 class="text-light text-center mb-3">Digital Privacy</h1>
+        <h3 class="text-light text-center">Explore Cyber Threats</h3>
+        <h1 class="text-light text-center mb-3">Cybercrime</h1>
         <p class="nav-hero">
-            <a href="#about">Concepts</a> &bull;
-            <a href="#mission">Social Media Privacy</a>&bull; 
-            <a href="#about">Data Protection</a> 
+            <a href="#concepts">Concepts of Cybercrimes</a> &bull;
+            <a href="#types">Types of Cybercrimes</a> 
         </p>
     </div>
-      <div class="dp" id="dp">
-        <div id="about" class="topics">
-            <h3>Digital Privacy</h3>
-            <h1>Concepts</h1>
-            <p class="cc-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, odio, quo excepturi aspernatur, explicabo quia voluptatem debitis eveniet tenetur libero consectetur. Totam, distinctio. Suscipit blanditiis, dolores odit sunt iure tempora!</p>
-
-            <a href="dp/dp-concept-digital-footprint.html" class="link">
-                <div class="box">
-                    <img src="media/images/digital.webp" alt="Digital Footprint">
-                    <div class="content">
-                        <p class="category">Concepts</p>
-                        <h2>WUnderstanding Digital Footprint</h2>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod vitae. Aliquid laudantium sequi eaque dignissimos ex. Deleniti, facere tempora atque provident, repellat voluptatibus pariatur quis asperiores temporibus voluptate eum?</p>
-                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
-                    </div>
-                </div>
-            </a>
 
     <div class="cc" id="cc">
         <div id="concepts" class="topics">
@@ -768,4 +804,3 @@
     </footer>
 </body>
 </html>
-
