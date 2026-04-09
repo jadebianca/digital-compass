@@ -5,11 +5,15 @@
     <meta http-equiv="refresh" content="1800">
     <title>Cybersecurity - Digital Compass</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="media/images/icon.png" type="image/x-icon">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/navigations.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: #FFFFFF;
             font-family: Inter, sans-serif;
@@ -20,7 +24,7 @@
 
         .hero {
             position: relative;
-            background-image: url('media/images/cs.png');
+            background-image: linear-gradient(rgba(15, 15, 50, 0.75), rgba(15, 15, 50, 0.75)), url('media/images/cs.png');
             background-size: cover;
             background-position: center;
             padding: 100px 80px;
@@ -74,6 +78,8 @@
 
         .topics {
             padding: 80px 0;
+            /* ADDED: Prevents section titles from hiding under the fixed navbar */
+            scroll-margin-top: 100px; 
         }
 
         .cs h3 {
@@ -210,8 +216,7 @@
         <div id="concepts" class="topics">
             <h3>Cybersecurity</h3>
             <h1>Concepts</h1>
-            <p class="cs-description">Understanding the basic concepts of cybersecurity serves the foundation for staying safe online. Learning about its importance, principles, and evolution helps users to recognize threats and take preventive actions.
-        </p>
+            <p class="cs-description">Understanding the basic concepts of cybersecurity serves the foundation for staying safe online. Learning about its importance, principles, and evolution helps users to recognize threats and take preventive actions.</p>
 
             <a href="cs/cs-concepts-what-is-cybersecurity.html" class="link">
                 <div class="box">
@@ -251,7 +256,7 @@
 
             <a href="cs/cs-concept-cybersecurity-careers.html" class="link">
                 <div class="box">
-                    <img src="media/images/cybersecurity-concepts%20(4).jpeg" alt="Cybersecurity Careers">
+                    <img src="media/images/cybersecurity-concepts (4).jpeg" alt="Cybersecurity Careers">
                     <div class="content">
                         <p class="category">Concepts of Cybersecurity</p>
                         <h2>Cybersecurity Careers</h2>
@@ -263,7 +268,7 @@
 
             <a href="cs/cs-concepts-Ethical-Hacking-and-Its-Role-in-Cybersecurity.html" class="link">
                 <div class="box">
-                    <img src="media/images/cybersecurity-concepts%20(5).png" alt="Ethical Hacking">
+                    <img src="media/images/cybersecurity-concepts (5).png" alt="Ethical Hacking">
                     <div class="content">
                         <p class="category">Concepts of Cybersecurity</p>
                         <h2>Ethical Hacking</h2>
@@ -275,7 +280,7 @@
 
             <a href="cs/cs-concepts-History-and-Evolution-of-Cybersecurity.html" class="link">
                 <div class="box">
-                    <img src="media/images/cybersecurity-concepts%20(6).jpg" alt="History & Evolution">
+                    <img src="media/images/cybersecurity-concepts (6).jpg" alt="History & Evolution">
                     <div class="content">
                         <p class="category">Concepts</p>
                         <h2>History & Evolution</h2>
@@ -353,7 +358,7 @@
                 </div>
             </a>
 
-            <a href="cs/cs-security-Account-Recovery%20Options.html" class="link">
+            <a href="cs/cs-security-Account-Recovery-Options.html" class="link">
                 <div class="box">
                     <img src="media/images/account%26security-account%20recovery%20options.jpg" alt="Account Recovery Options">
                     <div class="content">
@@ -376,8 +381,132 @@
                     </div>
                 </div>
             </a>
+
+            <a href="cs/cs-security-Email-Security.html" class="link">
+                <div class="box">
+                    <img src="emailsec.jpg" alt="Email Security Tips">
+                    <div class="content">
+                        <p class="category">Account Security</p>
+                        <h2>Email Security Tips</h2>
+                        <p class="description">Protect your personal inbox from dangerous phishing attacks, spam, and hidden malicious attachments.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cs/cs-security-Online-Chat-Safety.html" class="link">
+                <div class="box">
+                    <img src="onlinechat.jpg" alt="Online Chat Safety">
+                    <div class="content">
+                        <p class="category">Account Security</p>
+                        <h2>Online Chat Safety</h2>
+                        <p class="description">Maintain your privacy and security while communicating with peers on various messaging platforms.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cs/cs-security-Online-Collaboration-Safety.html" class="link">
+                <div class="box">
+                    <img src="onlinecollab.jpg" alt="Online Collaboration Safety">
+                    <div class="content">
+                        <p class="category">Account Security</p>
+                        <h2>Collaboration Safety</h2>
+                        <p class="description">Secure your group projects, virtual meetings, and shared documents from unauthorized access.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
         </div>
         
+        <hr class="line">
+
+        <div id="internetsafety" class="topics">
+            <h3>Cybersecurity</h3>
+            <h1>Internet Safety</h1>
+            <p class="cs-description">Essential practices for navigating the web securely, evaluating information, and avoiding online traps.</p>
+
+            <a href="cs/cs-security-Safe-Browsing.html" class="link">
+                <div class="box">
+                    <img src="safeB.jpg" alt="Safe Browsing">
+                    <div class="content">
+                        <p class="category">Internet Safety</p>
+                        <h2>Safe Browsing</h2>
+                        <p class="description">Learn the essential practices for navigating the web securely and avoiding hidden online traps and malware.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cs/cs-security-Using-Public-Computers-Safely.html" class="link">
+                <div class="box">
+                    <img src="pubcom.jpg" alt="Public Computers Safely">
+                    <div class="content">
+                        <p class="category">Internet Safety</p>
+                        <h2>Public Computers Safely</h2>
+                        <p class="description">Crucial tips for protecting your personal accounts and data when using shared or library computers.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cs/cs-security-HTTPS.html" class="link">
+                <div class="box">
+                    <img src="https.jpg" alt="Understanding Website Security (HTTPS)">
+                    <div class="content">
+                        <p class="category">Internet Safety</p>
+                        <h2>Understanding HTTPS</h2>
+                        <p class="description">Discover how encryption works, why checking for the padlock icon matters, and how it protects your data.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cs/cs-security-Evaluating-Sources-Online.html" class="link">
+                <div class="box">
+                    <img src="eval.jpg" alt="Evaluating Sources Online">
+                    <div class="content">
+                        <p class="category">Internet Safety</p>
+                        <h2>Evaluating Sources Online</h2>
+                        <p class="description">Learn how to easily spot misinformation, verify facts, and find credible information online for your studies.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <hr class="line">
+
+        <div id="onlinehabits" class="topics">
+            <h3>Cybersecurity</h3>
+            <h1>Online Habits For Students</h1>
+            <p class="cs-description">Develop healthy routines for managing screen time, interacting responsibly, and protecting your digital identity.</p>
+
+            <a href="cs/cs-security-Online-Time-Management.html" class="link">
+                <div class="box">
+                    <img src="olt.jpg" alt="Online Time Management">
+                    <div class="content">
+                        <p class="category">Online Habits</p>
+                        <h2>Online Time Management</h2>
+                        <p class="description">Proven strategies for students to balance screen time, avoid distractions, and maximize daily productivity.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cs/cs-security-Responsible-Social-Media-Use.html" class="link">
+                <div class="box">
+                    <img src="rsmp.jpg" alt="Responsible Social Media Use">
+                    <div class="content">
+                        <p class="category">Online Habits</p>
+                        <h2>Responsible Social Media</h2>
+                        <p class="description">Build a positive digital footprint, interact safely, and manage your online reputation effectively.</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
     </div>
 
     <footer>
