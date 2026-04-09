@@ -2,6 +2,7 @@
 nav {
     background-color: #0F0F32;
     padding: 20px 50px;
+    margin: 0 auto;
     text-align: left;
     overflow: hidden;
 }
@@ -174,7 +175,7 @@ hr {
     }
 }
 
-@media (min-width: 999px) {
+@media (min-width: 981px) {
     nav {
         padding: 20px auto;
         text-align: left;
@@ -183,7 +184,7 @@ hr {
     .logo-container {
         float: left;
         margin-bottom:12px;
-        margin-right: 5px;
+        margin-right: 2px;
     }
 
     .logo-container img {
@@ -196,11 +197,43 @@ hr {
     }
 
     .logo-text {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .nav-links li a {
-        font-size: 12px;
-        padding: 12px 6px;
+        font-size: 11px;
+        padding: 12px 7px;
     }
 }
+
+@media (min-width: 1210px) {
+    nav {
+        padding: 20px auto;
+        text-align: left;
+    }
+
+    .logo-container {
+        float: left;
+        margin-bottom:12px;
+        margin-right: 3px;
+    }
+
+    .logo-container img {
+        height: 45px;
+        vertical-align: middle;
+        margin-right: 3px;
+    }   
+    .nav-links {
+        float: right;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .nav-links li a {
+        font-size: 13px;
+        padding: 12px 9px;
+    }
+}
+
