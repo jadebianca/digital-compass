@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1800">
+    <title>Digital Compass - Using 2 Factor Authentication</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navigations.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .main {
+            background-color: #FFFFFF;
+            padding: 30px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .title {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #211F76;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+            border-left: 5px solid #0F0F32;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .author {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+        .nav-bio {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .nav-bio a {
+            color: #212866;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .photos {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 20px;
+            margin: auto;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .paragraph {
+            color: #212866;
+            margin: 0 0 50px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 50px;
+            width: 100%;
+        }
+        /* Custom highlight matching the white-hat hacker design */
+        mark {
+            background-color: transparent;
+            color: #211F76;
+            font-weight: 700;
+            padding: 0;
+        }
+        .top-btn {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            background-color: #0F0F32;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 15px 50px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!--SUING, LUIS MICHAEL-->
+    <!--CIP-1101 ITAD-->
+    <script src="../js/bootstrap.bundle.js"></script>
+    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text" id="top">Digital Compass</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cc.html">Cybercrime</a></li>
+            <li><a href="../cs.html">Cybersecurity</a></li>
+            <li><a href="../dp.html">Digital Privacy</a></li>
+            <li><a href="../et.html">Emerging Threats</a></li>
+            <li><a href="../pa.html">Prevention & Awareness</a></li>
+            <li><a href="../rs.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1 class="title">Using 2 Factor Authentication</h1>
+        <p class="author"><b>By: LUIS MICHAEL L. SUING &bull; April 8, 2026</b></p>
+        <p class="nav-bio">
+            <a href="#intro">Introduction</a> &bull;
+            <a href="#what-is-2fa">What is 2FA?</a> &bull;
+            <a href="#how-it-works">How It Works</a> &bull;
+            <a href="#sms-email">SMS & Email</a> &bull;
+            <a href="#authenticator-apps">Apps</a> &bull;
+            <a href="#hardware-keys">Hardware Keys</a> &bull;
+            <a href="#why-passwords-fail">Password Failures</a> &bull;
+            <a href="#where-to-use">Where to Use</a> &bull;
+            <a href="#conclusion">Conclusion</a>
+        </p>
+        
+        <hr width="100%" size="5" color="#212866">
+
+        <article>     
+            <figure>
+                <a href="#">
+                    <img src="../media/images/Using 2FA.jpg" alt="Digital Lock and Shield" class="photos">
+                </a>
+                <figcaption>Photo From: Malwarebytes</figcaption>
+            </figure>
+    
+            <p id="intro" class="paragraph">
+                For decades, the standard method for protecting online accounts has been a username and a password. Unfortunately, in today's threat landscape, <b>passwords alone are no longer enough</b> to keep hackers out. With the rise of massive data breaches and "brute-force" automated guessing, a password is like a simple wooden door—easily kicked down by a determined intruder. This is where <b>Two-Factor Authentication (2FA)</b> steps in, acting as an essential <b>secondary deadbolt</b>. It ensures that even if a criminal knows your password, they are still missing the critical second half of the key needed to enter your digital life.
+            </p>
+
+            <h2 id="what-is-2fa">What is Two-Factor Authentication?</h2>
+            <p class="paragraph">
+                Two-Factor Authentication (2FA)—also known as Multi-Factor Authentication (MFA)—is a security system that requires two distinct forms of identification. Security experts categorize these into three types: <b>Knowledge</b> (Something you know, like a password), <b>Possession</b> (Something you have, like a smartphone or a hardware key), and <b>Inherence</b> (Something you are, such as biometrics like fingerprints). By combining at least two of these, you create a <b>layered defense</b>. This means a hacker halfway across the world cannot access your account just with a stolen password; they would also need physical possession of your phone or your unique biometric signature.
+            </p>
+
+            <h2 id="how-it-works">How 2FA Works in Practice</h2>
+            <p class="paragraph">
+                When 2FA is enabled, the login process adds a small but powerful step. After entering your password, the system pauses and asks for a <b>"verification token."</b> This token is usually a time-sensitive code or a push notification sent to a trusted device. <b>Only after providing this second piece of evidence will the system grant you access.</b> This process effectively stops <b>99.9% of automated account takeover attacks</b>, as it is nearly impossible for a remote hacker to replicate the physical or biometric factor required for the second step.
+            </p>
+
+            <h2 id="sms-email">SMS Text and Email 2FA</h2>
+            <p class="paragraph">
+                The most common form of 2FA sends a one-time passcode (OTP) to your phone via SMS. While this is extremely convenient and far better than having no 2FA at all, it is considered the <b>least secure form</b>. Skilled hackers can use <b>"SIM Swapping"</b>—a technique where they trick your mobile provider into switching your number to their device—to intercept these texts. If you have the option, it is always recommended to move away from SMS-based codes and toward more robust methods that don't rely on the vulnerabilities of telecommunication networks.
+            </p>
+
+            <h2 id="authenticator-apps">The Upgrade: Authenticator Apps</h2>
+            <p class="paragraph">
+                A more secure and reliable method involves <b>Authenticator Apps</b> like Google Authenticator or Microsoft Authenticator. These apps use a protocol called <b>TOTP (Time-based One-Time Password)</b>. They generate a new six-digit code every 30 seconds entirely within the app. Because these codes are not "sent" over a network, they <b>cannot be intercepted</b> by hackers or diverted through SIM swapping. Furthermore, these apps work offline, meaning you can still log in to your accounts even if you have no cellular signal or internet connection on your phone.
+            </p>
+
+            <h2 id="hardware-keys">The Gold Standard: Hardware Security Keys</h2>
+            <p class="paragraph">
+                For high-value accounts, physical <b>hardware keys</b> (like YubiKeys) are the ultimate defense. These are small USB or NFC devices that you must physically tap against your computer or phone to authenticate. <b>They are virtually immune to phishing.</b> Unlike a code that you can accidentally type into a fake website, a hardware key uses an encrypted handshake that only works with the <b>legitimate site</b>. If a hacker sends you to a "look-alike" banking site, the hardware key will detect the fraud and refuse to authenticate, providing a physical fail-safe for your data.
+            </p>
+
+            <h2 id="why-passwords-fail">Why Passwords Continue to Fail</h2>
+            <p class="paragraph">
+                The failure of passwords is rooted in human psychology. Most people use "weak" passwords that are easy to remember, or they reuse the same password across ten different websites. If one small website is hacked, your password is leaked, and hackers will immediately try that same password on your Gmail, Facebook, and Bank accounts. 2FA <b>breaks this cycle of vulnerability</b>. It acknowledges that passwords will eventually be stolen and provides a secondary barrier that renders those stolen credentials completely useless to an attacker.
+            </p>
+
+            <h2 id="where-to-use">Where You Must Enable 2FA</h2>
+            <p class="paragraph">
+                While you should use 2FA everywhere, you must prioritize your <b>"Anchor Accounts."</b> <b>Your primary email is your most vulnerable point</b>; if a hacker gets into your email, they can reset the passwords for almost every other account you own. Following email, you should secure your <b>financial apps</b> (GCash, PayPal, Banking), your <b>primary social media profiles</b> (to prevent identity theft), and any <b>cloud storage accounts</b> (where your private photos and documents are stored). Enabling 2FA on these core services creates a <b>"Safety Net"</b> for your entire digital identity.
+            </p>
+            
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="paragraph">
+                Setting up Two-Factor Authentication might add a few extra seconds to your login, but that minor inconvenience is a small price to pay for <b>near-total security</b>. It is the single most effective action any person can take to prevent being hacked. In an era where data breaches are an everyday occurrence, <b>2FA provides the peace of mind</b> that you alone hold the keys to your digital life. Don't wait for a security scare to take action—turn on 2FA today and ensure that your private information remains exactly that: private.
+            </p>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-contacts">
+            <img src="../media/images/logo.png" alt="Logo">
+            <span class="logo-text">Digital Compass</span>
+            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="column">
+                <h4>Cybercrime</h4>
+                <a href="../cc.html#concepts">Concepts</a>
+                <a href="../cc.html#types">Types of Cybercrime</a>
+            </div>
+            <div class="column">
+                <h4>Cybersecurity</h4>
+                <a href="../cs.html#concepts">Concepts</a>
+                <a href="../cs.html#security">Account Security</a>
+                <a href="../cs.html#internet">Internet Safety</a>
+                <a href="../cs.html#students">Online Habits For Students</a>
+            </div>
+            <div class="column">
+                <h4>Digital Privacy</h4>
+                <a href="../dp.html#concepts">Concepts</a>
+                <a href="../dp.html#socmed">Social Media Privacy</a>
+                <a href="../dp.html#data">Data Protection</a>
+            </div>
+            <div class="column">
+                <h4>Emerging Threats</h4>
+                <a href="../et.html#threats">Threats from New Technology</a>
+                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+            </div>
+            <div class="column">
+                <h4>Prevention</h4>
+                <a href="../pa.html#prevention">Cybercrime Prevention</a>
+                <a href="../pa.html#online">Online Safety Tips</a>
+                <a href="../pa.html#digital">Digital Wellness</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="../rs/faqs.html">FAQs</a>
+                <a href="../rs/references.html">References</a>
+            </div>
+            <div class="column">
+                <h4>Quick Navs</h4>
+                <a href="../index.html">Home</a>
+                <a href="../hm/about.html">About</a>
+                <a href="../hm/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
+</body>
+</html>
