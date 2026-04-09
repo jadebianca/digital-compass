@@ -187,7 +187,7 @@ hr {
     }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1200px) {
     nav {
         background-color: #0F0F32;
         padding: 20px 50px; 
@@ -230,7 +230,7 @@ hr {
 
     .nav-links li {
         display: inline-block;
-        float: left; 
+        clear: right; 
     }
 
     .nav-links li a {
