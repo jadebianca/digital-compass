@@ -79,8 +79,6 @@
         .cs h3 {
             color: #212866;
             font-size: 18px;
-            text-transform: uppercase;
-            font-weight: 550;
             letter-spacing: 2px;
             margin-bottom: 10px;
         }
@@ -103,7 +101,6 @@
             color: inherit;
             display: inline-block;
             margin: 15px;
-            vertical-align: top;
         }
 
         .box {
@@ -114,10 +111,9 @@
             border: 1px solid #f0f0f0;
             overflow: hidden;
             padding-bottom: 20px;
-            transition: box-shadow 0.3s ease;
         }
 
-        .box:hover {
+        .box:hover{
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
@@ -128,14 +124,12 @@
         }
 
         .content { 
-            padding: 20px 25px; 
+            padding: 25px 25px 10px; 
         }
 
         .category {
             font-size: 13px;
-            font-weight: 600;
             color: #211F76;
-            text-transform: uppercase;
             margin-bottom: 8px;
         }
 
@@ -143,8 +137,10 @@
             font-family: 'Playfair Display', serif;
             font-size: 25px;
             color: #211F76;
-            margin: 0 0 10px 0;
+            margin: 0 0 15px 0;
             vertical-align: middle;
+            font-weight: 600;
+            text-transform: capitalize;
         }
 
         .description {
@@ -154,13 +150,13 @@
             margin-bottom: 15px;
             font-weight: 500;
             text-align: justify;
+            word-spacing: 3px;
+            text-transform: none;
         }
 
         .read-more {
             color: #211F76;
-            font-weight: 700;
             font-size: 13px;
-            text-transform: uppercase;
             margin: 0;
         }
 
@@ -196,29 +192,29 @@
 
     <div class="hero">
         <h3 class="text-light text-center">Learn How To Stay Safe</h3>
-        <h1 class="text-light text-center mb-3">Cybersecurity</h1>
+        <h1 class="text-light text-center mb-3 mx-auto">Cybersecurity</h1>
         <p class="nav-hero">
             <a href="#concepts">Concepts</a> &bull;
-            <a href="#accountdevice">Account Security</a> &bull;
-            <a href="#internetsafety">Internet Safety</a> &bull;
-            <a href="#onlinehabits">Online Habits For Students</a>
+            <a href="#security">Account Security</a> &bull;
+            <a href="#internet">Internet Safety</a> &bull;
+            <a href="#students">Online Habits For Students</a>
         </p>
     </div>
 
     <div class="cs" id="cs">
         
         <div id="concepts" class="topics">
-            <h3>Cybersecurity</h3>
-            <h1>Concepts</h1>
-            <p class="cs-description">Understanding the basic concepts of cybersecurity serves the foundation for staying safe online. Learning about its importance, principles, and evolution helps users to recognize threats and take preventive actions.</p>
+            <h3 class="text-center text-uppercase fw-semibold">Cybersecurity</h3>
+            <h1 class="text-center text-capitalize fw-bold">Concepts</h1>
+            <p class="text-center mx-auto cs-description">Understanding the basic concepts of cybersecurity serves the foundation for staying safe online. Learning about its importance, principles, and evolution helps users to recognize threats and take preventive actions.</p>
 
             <a href="cs/cs-concepts-what-is-cybersecurity.html" class="link">
                 <div class="box">
                     <img src="media/images/what%20is%20cybersecurity.png" alt="What is Cybersecurity">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Concepts of Cybersecurity</p>
                         <h2>Cybersecurity: Your Shield Against Digital Danger</h2>
-                        <p class="description">Cybersecurity refers to the protection of your electronic gadgets, information, and online activities from cyber hackers and viruses. C...</p>
+                        <p class="description">Cybersecurity refers to the protection of your electronic gadgets, information, and online activities from cyber hackers and v...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -227,10 +223,10 @@
             <a href="cs/cs-concepts-importance-of-cybersecurity.html" class="link">
                 <div class="box">
                     <img src="media/images/importance%20of%20cybersecurity.jpg" alt="Importance of Cybersecurity">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Concepts of Cybersecurity</p>
                         <h2>Cybersecurity Matters: Guard Your Digital World</h2>
-                        <p class="description">Cybersecurity helps you protect from hackers online. Tools and prevention habits protect your phones, accounts, and personal info...</p>
+                        <p class="description">Cybersecurity helps you protect from hackers online. Tools and prevention habits protect your phones, accounts, and perso...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -239,10 +235,10 @@
             <a href="cs/cs-concepts-cia-triad.html" class="link">
                 <div class="box">
                     <img src="media/images/cia%20triad.webp" alt="CIA Triad">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Concepts of Cybersecurity</p>
                         <h2>CIA Triad: Cybersecurity's Three Key Pillars</h2>
-                        <p class="description">The CIA Triad is the basis of cybersecurity worldwide. CIA stands for Confidentiality, Integrity, and Availability. These three conce...</p>
+                        <p class="description">The CIA Triad is the basis of cybersecurity worldwide. CIA stands for Confidentiality, Integrity, and Availability. These three co...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -251,10 +247,10 @@
             <a href="cs/cs-concept-cybersecurity-careers.html" class="link">
                 <div class="box">
                     <img src="media/images/cybersecurity-concepts%20(4).jpeg" alt="Cybersecurity Careers">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Concepts of Cybersecurity</p>
-                        <h2>Cybersecurity Careers</h2>
-                        <p class="description">Explore the various roles, responsibilities, and vast opportunities available in the fast-growing field of cybersecurity.</p>
+                        <h2>Cybersecurity Careers <br>Paths</h2>
+                        <p class="description">The digital landscape is a complex battlefield, protected by a diverse group of specialists who function as the "guardians...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -263,10 +259,10 @@
             <a href="cs/cs-concepts-ethical-hacking-and-its-role-in-cybersecurity.html" class="link">
                 <div class="box">
                     <img src="media/images/cybersecurity-concepts%20(5).png" alt="Ethical Hacking">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Concepts of Cybersecurity</p>
-                        <h2>Ethical Hacking</h2>
-                        <p class="description">Understand how white-hat hackers help organizations identify and fix vulnerabilities before malicious actors exploit them.</p>
+                        <h2>Ethical Hacking and Its Role in Cybersecurity</h2>
+                        <p class="description">The term "hacker" often conjures negative images of cybercriminals stealing sensitive data, but the cybersecurity industry relies...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -275,10 +271,10 @@
             <a href="cs/cs-concepts-history-and-evolution-of-cybersecurity.html" class="link">
                 <div class="box">
                     <img src="media/images/cybersecurity-concepts%20(6).jpg" alt="History & Evolution">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Concepts</p>
-                        <h2>History & Evolution</h2>
-                        <p class="description">Trace the journey of digital security from early computer viruses to modern, highly sophisticated AI-driven threats.</p>
+                        <h2>History and Evolution of Cybersecurity</h2>
+                        <p class="description">Cybersecurity has evolved from academic experiments in closed networks to a global multi-billion-dollar industry. In the early d...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -287,18 +283,18 @@
 
         <hr class="line">
 
-        <div id="accountdevice" class="topics">
-            <h3>Cybersecurity</h3>
-            <h1>Account Security</h1>
-            <p class="cs-description">Keeping devices up-to-date and protected is essential to prevent cyberattacks and unauthorized access. Learning the best practices for software updates, app installations, strong authentication methods and browser security strengthens your overall digital safety.</p>
+        <div id="security" class="topics">
+            <h3 class="text-center text-uppercase fw-semibold">Cybersecurity</h3>
+            <h1 class="text-center text-capitalize fw-bold">Account Security</h1>
+            <p class="text-center mx-auto cs-description">Keeping devices up-to-date and protected is essential to prevent cyberattacks and unauthorized access. Learning the best practices for software updates, app installations, strong authentication methods and browser security strengthens your overall digital safety.</p>
 
             <a href="cs/cs-security-device-updates.html" class="link">
                 <div class="box">
                     <img src="media/images/account%26security-device%20update.jpg" alt="Device Updates">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Account Security</p>
                         <h2>Device Updates</h2>
-                        <p class="description">Keep your operating systems and software up to date to patch vulnerabilities and protect against newly discovered exploits.</p>
+                        <p class="description">In the fast-paced digital world, those constant pop-ups reminding you to update your smartphone, laptop, or applications...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -307,10 +303,10 @@
             <a href="cs/cs-security-using-2-factor-authentication.html" class="link">
                 <div class="box">
                     <img src="media/images/account%26security-using%202F%20authentication.jpg" alt="Using 2 Factor Authentication">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Account Security</p>
-                        <h2>Using 2 Factor Authentication</h2>
-                        <p class="description">Add an extra layer of security to your online accounts by requiring a second form of verification alongside your password.</p>
+                        <h2>Using 2FA</h2>
+                        <p class="description">For decades, the standard method for protecting online accounts has been a username and a password. Unfortunately...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -319,10 +315,10 @@
             <a href="cs/cs-security-safe-app-installation.html" class="link">
                 <div class="box">
                     <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80" alt="Safe App Installation">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Account Security</p>
                         <h2>Safe App Installation</h2>
-                        <p class="description">Learn how to verify app permissions and download software exclusively from trusted sources to avoid hidden malware.</p>
+                        <p class="description">Our smartphones have become central hubs for our most sensitive personal and financial data, carrying everything from b...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -331,10 +327,10 @@
             <a href="cs/cs-security-browser-security.html" class="link">
                 <div class="box">
                     <img src="media/images/account%26security-browser%20securtiy.jpg" alt="Browser Security">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Account Security</p>
                         <h2>Browser Security</h2>
-                        <p class="description">Configure your browser settings, manage extensions, and use secure protocols to protect your data while surfing the web.</p>
+                        <p class="description">Your web browser—whether it is Chrome, Edge, Safari, or Firefox—is your primary vehicle for navigating the modern internet...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -343,10 +339,10 @@
             <a href="cs/cs-security-public-wi-fi-risks.html" class="link">
                 <div class="box">
                     <img src="media/images/account%26security-public%20wifi%20risks.jpg" alt="Public Wi-Fi Risks">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Account Security</p>
                         <h2>Public Wi-Fi Risks</h2>
-                        <p class="description">Understand the dangers of unsecured networks and learn how to use VPNs to safely connect to public Wi-Fi hotspots.</p>
+                        <p class="description">Free public Wi-Fi in coffee shops, airports, and hotels is incredibly convenient, but this convenience often comes at a steep price...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -355,10 +351,10 @@
             <a href="cs/cs-security-account-recovery-options.html" class="link">
                 <div class="box">
                     <img src="media/images/account%26security-account%20recovery%20options.jpg" alt="Account Recovery Options">
-                    <div class="content">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Account Security</p>
                         <h2>Account Recovery Options</h2>
-                        <p class="description">Set up secure backup emails and phone numbers to ensure you can quickly regain access if your account is ever compromised.</p>
+                        <p class="description">Losing access to a critical online account—whether due to a forgotten password, a lost device, or a sophisticated cyberattack...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -366,103 +362,81 @@
 
             <a href="cs/cs-security-recognizing-suspicious-activity.html" class="link">
                 <div class="box">
-                    <img src="media/images/account%26security-recognizing%20suspicious%20activity.jpg" alt="Recognizing Suspicious Activity">
-                    <div class="content">
+                    <img src="media/images/account%26security-recognizing%20suspicious%20activity.jpg" alt="Suspicious Activities">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Account Security</p>
-                        <h2>Recognizing Suspicious Activity</h2>
-                        <p class="description">Monitor your accounts for unusual logins or unauthorized changes to catch and stop potential security breaches early.</p>
+                        <h2>Suspicious Activities</h2>
+                        <p class="description">Modern cyber threats have shifted from obvious virus pop-ups to highly calculated psychological manipulation. Today's attack...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
             </a>
 
-            <a href="cs/cs-security-email-security.html" class="link">
-                <div class="box">
-                    <img src="emailsec.jpg" alt="Email Security Tips">
-                    <div class="content">
-                        <p class="category">Account Security</p>
-                        <h2>Email Security Tips</h2>
-                        <p class="description">Protect your personal inbox from dangerous phishing attacks, spam, and hidden malicious attachments.</p>
-                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="cs/cs-security-online-chat-safety.html" class="link">
-                <div class="box">
-                    <img src="onlinechat.jpg" alt="Online Chat Safety">
-                    <div class="content">
-                        <p class="category">Account Security</p>
-                        <h2>Online Chat Safety</h2>
-                        <p class="description">Maintain your privacy and security while communicating with peers on various messaging platforms.</p>
-                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="cs/cs-security-online-collaboration-safety.html" class="link">
-                <div class="box">
-                    <img src="onlinecollab.jpg" alt="Online Collaboration Safety">
-                    <div class="content">
-                        <p class="category">Account Security</p>
-                        <h2>Collaboration Safety</h2>
-                        <p class="description">Secure your group projects, virtual meetings, and shared documents from unauthorized access.</p>
-                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
-                    </div>
-                </div>
-            </a>
         </div>
         
         <hr class="line">
 
-        <div id="internetsafety" class="topics">
-            <h3>Cybersecurity</h3>
-            <h1>Internet Safety</h1>
-            <p class="cs-description">Essential practices for navigating the web securely, evaluating information, and avoiding online traps.</p>
+        <div id="internet" class="topics">
+            <h3 class="text-center text-uppercase fw-semibold">Cybersecurity</h3>
+            <h1 class="text-center text-capitalize fw-bold">Internet Safety</h1>
+            <p class="text-center mx-auto cs-description">Navigating the internet safely requires awareness of potential threats and adopting habits that protect your personal information. Practicing safe online behaviors reduces the risk of cyberattacks and helps maintain privacy.
+            </p>
 
-            <a href="cs/cs-security-safe-browsing.html" class="link">
+            <a href="cs/cs-internet-safe-browsing.html" class="link">
                 <div class="box">
-                    <img src="safeB.jpg" alt="Safe Browsing">
-                    <div class="content">
+                    <img src="media/images/safeB.jpg" alt="Safe Browsing">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Internet Safety</p>
                         <h2>Safe Browsing</h2>
-                        <p class="description">Learn the essential practices for navigating the web securely and avoiding hidden online traps and malware.</p>
+                        <p class="description">Safe browsing is the practice of navigating the internet securely to protect personal information from various digital threats. A...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
             </a>
 
-            <a href="cs/cs-security-using-public-computers-Safely.html" class="link">
+             <a href="cs/cs-internet-email-security.html" class="link">
                 <div class="box">
-                    <img src="pubcom.jpg" alt="Public Computers Safely">
-                    <div class="content">
+                    <img src="media/images/emailsec.jpg" alt="Email Security Tips">
+                    <div class="text-start fw-semibold text-uppercase content">
+                        <p class="category">Internet Safety</p>
+                        <h2>Email Security Tips</h2>
+                        <p class="description">Email remains the central hub for student communication, connecting academic accounts, personal records, and financial...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cs/cs-internet-online-chat-safety.html" class="link">
+                <div class="box">
+                    <img src="media/images/onlinechat.jpg" alt="Online Chat Safety">
+                    <div class="text-start fw-semibold text-uppercase content">
+                        <p class="category">Internet Safety</p>
+                        <h2>Online Chat Safety</h2>
+                        <p class="description">Online chat platforms have fundamentally changed how students communicate and collaborate on projects daily. While these...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cs/cs-internet-using-public-computers-safely.html" class="link">
+                <div class="box">
+                    <img src="media/images/pubcom.jpg" alt="Public Computers Safely">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Internet Safety</p>
                         <h2>Public Computers Safely</h2>
-                        <p class="description">Crucial tips for protecting your personal accounts and data when using shared or library computers.</p>
+                        <p class="description">Public computers in libraries, internet cafes, and university labs provide essential access to the digital world for many students. H...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
             </a>
 
-            <a href="cs/cs-security-https.html" class="link">
+            <a href="cs/cs-internet-https.html" class="link">
                 <div class="box">
-                    <img src="https.jpg" alt="Understanding Website Security (HTTPS)">
-                    <div class="content">
+                    <img src="media/images/https.jpg" alt="Understanding Website Security (HTTPS)">
+                    <div class="text-start fw-semibold text-uppercase content">
                         <p class="category">Internet Safety</p>
                         <h2>Understanding HTTPS</h2>
-                        <p class="description">Discover how encryption works, why checking for the padlock icon matters, and how it protects your data.</p>
-                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="cs/cs-security-evaluating-sources-online.html" class="link">
-                <div class="box">
-                    <img src="eval.jpg" alt="Evaluating Sources Online">
-                    <div class="content">
-                        <p class="category">Internet Safety</p>
-                        <h2>Evaluating Sources Online</h2>
-                        <p class="description">Learn how to easily spot misinformation, verify facts, and find credible information online for your studies.</p>
+                        <p class="description">When browsing the web, you have likely noticed a small padlock icon next to the website address in your browser. This p...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -471,30 +445,54 @@
 
         <hr class="line">
 
-        <div id="onlinehabits" class="topics">
-            <h3>Cybersecurity</h3>
-            <h1>Online Habits For Students</h1>
-            <p class="cs-description">Develop healthy routines for managing screen time, interacting responsibly, and protecting your digital identity.</p>
+        <div id="students" class="topics">
+            <h3 class="text-center text-uppercase fw-semibold">Cybersecurity</h3>
+            <h1 class="text-center text-capitalize fw-bold">Online Habits For Students</h1>
+            <p class="text-center mx-auto cs-description">Developing good online habits helps students stay productive and protect themselves from digital risks. Learning how to manage time and interact responsibly online creates a safer and more effective digital learning experience.</p>
 
-            <a href="cs/cs-security-online-time-management.html" class="link">
+            <a href="cs/cs-students-online-time-management.html" class="link">
                 <div class="box">
-                    <img src="olt.jpg" alt="Online Time Management">
-                    <div class="content">
-                        <p class="category">Online Habits</p>
+                    <img src="media/images/olt.jpg" alt="Online Time Management">
+                    <div class="text-start fw-semibold text-uppercase content">
+                        <p class="category">Online Habits For Students</p>
                         <h2>Online Time Management</h2>
-                        <p class="description">Proven strategies for students to balance screen time, avoid distractions, and maximize daily productivity.</p>
+                        <p class="description">The internet is an incredibly powerful tool for education, providing students with instant access to endless research and re...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
             </a>
 
-            <a href="cs/cs-security-responsible-social-media-use.html" class="link">
+            <a href="cs/cs-students-responsible-social-media-use.html" class="link">
                 <div class="box">
-                    <img src="rsmp.jpg" alt="Responsible Social Media Use">
-                    <div class="content">
-                        <p class="category">Online Habits</p>
+                    <img src="media/images/rsmp.jpg" alt="Responsible Social Media Use">
+                    <div class="text-start fw-semibold text-uppercase content">
+                        <p class="category">Online Habits For Students</p>
                         <h2>Responsible Social Media</h2>
-                        <p class="description">Build a positive digital footprint, interact safely, and manage your online reputation effectively.</p>
+                        <p class="description">Social media platforms offer incredible opportunities for students to connect, share ideas, and build digital communities. How...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cs/cs-students-evaluating-sources-online.html" class="link">
+                <div class="box">
+                    <img src="media/images/eval.jpg" alt="Evaluating Sources Online">
+                    <div class="text-start fw-semibold text-uppercase content">
+                        <p class="category">Online Habits For Students</p>
+                        <h2>Evaluating Sources Online</h2>
+                        <p class="description">The internet provides instant access to an overwhelming amount of information, but not all of it is accurate or trustworthy. An...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cs/cs-students-online-collaboration-safety.html" class="link">
+                <div class="box">
+                    <img src="media/images/onlinecollab.jpg" alt="Online Collaboration Safety">
+                    <div class="text-start fw-semibold text-uppercase content">
+                        <p class="category">Online Habits For Students</p>
+                        <h2>Collaboration Safety</h2>
+                        <p class="description">Group projects and virtual study sessions are fundamental components of the modern academic experience. While online collab...</p>
                         <p class="read-more"><b>Read Full Article &rarr;</b></p>
                     </div>
                 </div>
@@ -522,9 +520,9 @@
             <div class="column">
                 <h4>Cybersecurity</h4>
                 <a href="cs.html#concepts">Concepts</a>
-                <a href="cs.html#accountdevice">Account Security</a>
-                <a href="cs.html#internetsafety">Internet Safety</a>
-                <a href="cs.html#onlinehabits">Online Habits For Students</a>
+                <a href="cs.html#security">Account Security</a>
+                <a href="cs.html#internet">Internet Safety</a>
+                <a href="cs.html#students">Online Habits For Students</a>
             </div>
             <div class="column">
                 <h4>Digital Privacy</h4>

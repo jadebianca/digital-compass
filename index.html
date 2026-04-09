@@ -71,30 +71,27 @@
         }
 
         .about {
-            padding: 80px 200px;
+            padding: 80px 20px;
             text-align: center;
             background-color: #FFFFFF;
         }
 
         .about-img {
             display: inline-block;
-            width: 30%;
-            vertical-align: middle;
-            margin-right: 50px;
-        }
-
-        .about-img img {
             width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 400px;
+            vertical-align: middle;
+            margin-bottom: 30px;
+           
         }
 
         .about-text {
             display: inline-block;
-            width: 45%;
+            width: 100%;
+            max-width: 600px;
             vertical-align: middle;
             text-align: left;
+            padding: 0 35px;
         }
 
         .about h3 {
@@ -149,8 +146,6 @@
         .topics h3 {
             color: #212866;
             font-size: 18px;
-            text-transform: uppercase;
-            font-weight: 550;
             letter-spacing: 2px;
             margin-bottom: 10px;
         }
@@ -196,24 +191,21 @@
         }
 
         .content { 
-            padding: 20px 25px; 
+            padding: 25px 25px 10px; 
         }
 
         .category {
             font-size: 13px;
-            font-weight: 600;
             color: #211F76;
-            text-transform: uppercase;
             margin-bottom: 8px;
         }
-        
+
         .content h2 {
             font-family: 'Playfair Display', serif;
             font-size: 25px;
             color: #211F76;
-            margin: 0 0 10px 0;
+            margin: 0 0 15px 0;
             vertical-align: middle;
-
         }
 
         .description {
@@ -223,27 +215,23 @@
             margin-bottom: 15px;
             font-weight: 500;
             text-align: justify;
+            word-spacing: 3px;
         }
 
         .read-more {
             color: #211F76;
-            font-weight: 700;
             font-size: 13px;
-            text-transform: uppercase;
             margin: 0;
         }
 
         .contacts {
             padding: 80px 0;
-            text-align: center;
             background-color: #FFFFFF;
         }
 
         .contacts h3 {
             color: #212866;
             font-size: 18px;
-            font-weight: 550;
-            text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 10px;
         }
@@ -291,6 +279,15 @@
             margin: 0 auto;
         }
 
+        .photos {
+            width: 100%;
+            max-width: 800px; 
+            height: auto;
+            border-radius: 20px;
+            display: block;
+            margin: 40px auto; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
     </style>
 </head>
 <body>
@@ -324,12 +321,12 @@
 
     <div class="about">
         <div class="about-img">
-            <img src="media/images/digital compass.png" alt="Digital Compass Logo">
+                <img src="media/images/digital compass.png" alt="Digital Compass Logo" class="img-fluid photos">
         </div>
-        <div class="about-text">
-            <h3>What is</h3>
-            <h1>Digital Compass?</h1>
-            <p>Digital Compass is an educational platform designed to help students and internet users understand cybercrimes and online risks. Through simple explanations, guides, and practical tips, Digital Compass aims to build awareness and promote safe and responsible internet use.</p>
+        <div class="text-center about-text">
+            <h3 class="text-start text-uppercase fw-semibold">What is</h3>
+            <h1 class="text-start text-capitalize fw-semibold">Digital Compass?</h1>
+            <p class="mx-auto">Digital Compass is an educational platform designed to help students and internet users understand cybercrimes and online risks. Through simple explanations, guides, and practical tips, Digital Compass aims to build awareness and promote safe and responsible internet use.</p>
             <a href="hm/about.html" class="about-btn">About Us</a>
         </div>
     </div>
@@ -337,18 +334,18 @@
     <hr class="line">
 
     <div class="topics" id="topics">
-        <h3>Knowledge is Protection</h3>
-        <h1>Explore Our Topics</h1>
-        <p class="explore-topics">Discover key areas that will help you understand digital risks and protect yourself online.</p>
+        <h3 class="text-center text-uppercase fw-semibold">Knowledge is Protection</h3>
+        <h1 class="text-center fw-semibold">Explore Our Topics</h1>
+        <p class="text-center mx-auto explore-topics">Discover key areas that will help you understand digital risks and protect yourself online.</p>
 
         <a href="cc.html" class="link">
             <div class="box">
                 <img src="media/images/cc.png" alt="Cybercrime">
                 <div class="content">
-                    <p class="category">EXPLORE</p>
+                    <p class="text-start text-uppercase fw-semibold category">EXPLORE</p>
                     <h2>Cybercrime</h2>
                     <p class="description">Learn about different types of cybercrimes, how they happen, and their impact on individuals.</p>
-                    <p class="read-more"><b>Explore Cyber Threats &rarr;</b></p>
+                    <p class="text-start text-uppercase fw-semibold read-more"><b>Explore Cyber Threats &rarr;</b></p>
                 </div>
             </div>
         </a>
@@ -357,10 +354,10 @@
             <div class="box">
                 <img src="media/images/cs.png" alt="Cybersecurity">
                 <div class="content">
-                    <p class="category">EXPLORE</p>
+                    <p class="text-start text-uppercase fw-semibold category">EXPLORE</p>
                     <h2>Cybersecurity</h2>
                     <p class="description">Understand how to protect your devices, accounts, and personal data from online threats.</p>
-                    <p class="read-more"><b>Learn How to Stay Safe &rarr;</b></p>
+                    <p class="text-start text-uppercase fw-semibold read-more"><b>Learn How to Stay Safe &rarr;</b></p>
                 </div>
             </div>
         </a>
@@ -369,10 +366,10 @@
             <div class="box">
                 <img src="media/images/dp.png" alt="Digital Privacy">
                 <div class="content">
-                    <p class="category">EXPLORE</p>
+                    <p class="text-start text-uppercase fw-semibold category">EXPLORE</p>
                     <h2>Digital Privacy</h2>
                     <p class="description">Discover how your data is collected and learn ways to keep your personal information safe and secured.</p>
-                    <p class="read-more"><b>Guard Your Digital Life &rarr;</b></p>
+                    <p class="text-start text-uppercase fw-semibold read-more"><b>Guard Your Digital Life &rarr;</b></p>
                 </div>
             </div>
         </a>
@@ -381,10 +378,10 @@
             <div class="box">
                 <img src="media/images/et.png" alt="Emerging Threats">
                 <div class="content">
-                    <p class="category">EXPLORE</p>
+                    <p class="text-start text-uppercase fw-semibold category">EXPLORE</p>
                     <h2>Emerging Threats</h2>
                     <p class="description">Stay aware and updated on the latest cyber threats, trends, and evolving risks in the digital world.</p>
-                    <p class="read-more"><b>Discover Latest Cyber Threats &rarr;</b></p>
+                    <p class="text-start text-uppercase fw-semibold read-more"><b>Discover Latest Cyber Threats &rarr;</b></p>
                 </div>
             </div>
         </a>
@@ -393,10 +390,10 @@
             <div class="box">
                 <img src="media/images/pa.png" alt="FAQs">
                 <div class="content">
-                    <p class="category">EXPLORE</p>
+                    <p class="text-start text-uppercase fw-semibold category">EXPLORE</p>
                     <h2>Prevention and Awareness</h2>
                     <p class="description">Learn practical tips about cybercrime prevention, online safety, and digital wellness to stay safe online.</p>
-                    <p class="read-more"><b>Practice Safer Digital Habits &rarr;</b></p>
+                    <p class="text-start text-uppercase fw-semibold read-more"><b>Practice Safer Digital Habits &rarr;</b></p>
                 </div>
             </div>
         </a>
@@ -405,10 +402,10 @@
             <div class="box">
                 <img src="media/images/rs.png" alt="References">
                 <div class="content">
-                    <p class="category">EXPLORE</p>
+                    <p class="text-start text-uppercase fw-semibold category">EXPLORE</p>
                     <h2>Resources</h2>
                     <p class="description">Access FAQs and reliable references for further research and deeper understanding of digital safety topics.</p>
-                    <p class="read-more"><b>Learn With Trusted References &rarr;</b></p>
+                    <p class="text-start text-uppercase fw-semibold read-more"><b>Learn With Trusted References &rarr;</b></p>
                 </div>
             </div>
         </a>
@@ -416,10 +413,10 @@
 
     <hr class="line">
 
-    <div class="contacts">
-        <h3>Have questions, suggestions, or need help?</h3>
-        <h1>We’re Here To Guide You</h1>
-        <p>Reach out to us and be part of building a safer digital community.</p>
+    <div class="text-center contacts">
+        <h3 class="text-uppercase fw-semibold">Have questions, suggestions, or need help?</h3>
+        <h1 class="text-capitalize fw-semibold">We’re Here To Guide You</h1>
+        <p class="mx-auto" >Reach out to us and be part of building a safer digital community.</p>
         <a href="hm/contacts.html" class="contacts-btn">Connect With Us</a>
     </div>
 
