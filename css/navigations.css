@@ -48,6 +48,10 @@ nav {
     display: block;
 }
 
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #0F0F32;
     color: #DDE7F2;
@@ -125,12 +129,17 @@ hr {
     margin-top: 30px;
 }
 
+.main > hr {
+    border-top: 3px solid #212866 !important;
+    opacity: 1 !important;
+}
+
 .top-btn {
     position: fixed;
     bottom: 50px;
     right: 60px;
-    background: #211F76 !important;
-    border: 2px solid #211F76 !important;
+    background: #212866 !important;
+    border: 2px solid #212866 !important;
     color: #FFFFFF !important;
     text-decoration: none;
     padding: 15px 50px;
@@ -144,7 +153,7 @@ hr {
 
 .top-btn:hover {
     background: #FFFFFF !important;
-    color: #211F76 !important;
+    color: #212866 !important;
 }
 
 

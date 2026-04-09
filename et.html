@@ -22,7 +22,7 @@
             background-image: url('media/images/et.png');
             background-size: cover;
             background-position: center;
-            padding: 100px 100px;
+            padding: 100px 80px;
             color: #FFFFFF;
         }
 
@@ -43,7 +43,6 @@
         .hero p {
             font-size: 18px;
             font-weight: 500;
-            max-width: 600px;
             margin: 0 auto;
             line-height: 1.6;
         }
@@ -67,118 +66,113 @@
             font-weight: 400;
         }
 
-        .about {
-            padding: 80px 150px;
+        .et {
+            padding: 0;
             text-align: center;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 1300px;
+            margin: 0 auto;
         }
 
-        .mission, .vision, .team {
-            padding: 80px 350px;
-            text-align: center;
-            background-color: #FFFFFF;
+        .topics{
+            padding: 80px 0;
         }
 
-        .team {
-            padding: 80px 250px;
-            text-align: center;
-            background-color: #FFFFFF;
+        .et h3 {
+            color: #212866;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 550;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
         }
 
-        .about-img {
+        .et h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            color: #211F76;
+            margin: 0 0 20px 0;
+        }
+
+        .et-description {
+            font-size: 18px;
+            color: #212866;
+            margin-bottom: 40px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: inherit;
             display: inline-block;
-            width: 30%;
-            vertical-align: middle;
-            margin-right: 50px;
+            margin: 15px;
         }
 
-        .about-img img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        .about-text {
-            display: inline-block;
-            width: 45%;
-            vertical-align: middle;
+        .box {
+            background: #FFFFFF;
+            width: 380px;
+            border-radius: 15px;
             text-align: left;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            padding-bottom: 20px;
         }
 
-        .mission h3, .vision h3, .team h3 {
-            color: #212866;
-            font-size: 18px;
+        .box:hover{
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .box img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover;
+        }
+
+        .content { 
+            padding: 25px 25px 10px; 
+        }
+
+        .category {
+            font-size: 13px;
+            font-weight: 600;
+            color: #211F76;
             text-transform: uppercase;
-            font-weight: 550;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
-        .mission h1, .vision h1, .team h1 {
+        .content h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 45px;
+            font-size: 25px;
             color: #211F76;
-            margin: 0 0 20px 0;
+            margin: 0 0 15px 0;
+            vertical-align: middle;
         }
 
-        .mission p, .vision p, .team p {
-            font-size: 18px;
+        .description {
+            font-size: 15px;
             color: #212866;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-weight: 500;
             text-align: justify;
-            line-height: 1.8;
-            margin-bottom: 30px;
+            word-spacing: 3px;
         }
 
-        .about h3 {
+        .read-more {
             color: #211F76;
-            font-size: 18px;
+            font-weight: 700;
+            font-size: 13px;
             text-transform: uppercase;
-            font-weight: 550;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-
-        .about h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 45px;
-            color: #211F76;
-            margin: 0 0 20px 0;
-        }
-
-        .about p {
-            font-size: 18px;
-            color: #212866;
-            text-align: justify;
-            line-height: 1.8;
-            margin-bottom: 30px;
+            margin: 0;
         }
 
         .line {
             width: 80%;
-            border: 0;
             max-width: 50%;
             height: 1px;
             background-color: #0F0F32;
+            opacity: 1;
             margin: 0 auto;
-        }
-
-        .photos {
-            width: 100%;
-            max-width: 1000px; 
-            height: auto;
-            border-radius: 20px;
-            margin: 40px 0 40px 0;
-            display: block;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        figcaption {
-            color: #212866;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            margin-top: 10px;
         }
     </style>
 </head>
@@ -207,10 +201,149 @@
         <h3 class="text-light text-center">Discover Latest Cyber Threats</h3>
         <h1 class="text-light text-center mb-3">Emerging Threats</h1>
         <p class="nav-hero">
-            <a href="#about">Threats From New Technology</a>&bull;
-            <a href="#mission">Cyberattack Methods & Evolution</a> 
+            <a href="#threats">Threats From New Technology</a> &bull;
+            <a href="#cyberattack">Cyberattack Methods & Evolution</a> 
         </p>
     </div>
+    
+    <div class="et" id="et">
+        <div id="threats" class="topics">
+            <h3>Emerging Threats</h3>
+            <h1>Threats From New Technology</h1>
+            <p class="et-description">As technology evolves rapidly, new digital tools can create vulnerabilities. Understanding these risks is crucial to staying ahead of cybercriminals and protecting personal and organizational data.
+            </p>
+
+            <a href="et/et-threats-aicyberthreats.html" class="link">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" alt="AI-Powered Cyber Threats">
+                    <div class="content">
+                        <p class="category">Threats From New Technology</p>
+                        <h2>The Double-Edged Sword: AI-Powered Cyber Threats</h2>
+                        <p class="description">Artificial Intelligence is changing the world, but it is also giving cybercriminals new ways to attack. AI Cyber Threats refer to...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="et/et-threats-iotsecurity.html" class="link">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f" alt="IoT Security Risks in Smart Devices">
+                    <div class="content">
+                        <p class="category">Threats From New Technology</p>
+                        <h2>IoT Security Risks in Smart Devices</h2>
+                        <p class="description">The Internet of Things (IoT) has completely changed how we interact with technology in our homes. Smart devices, light bulbs...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="et/et-threats-5gnetworkrisks.html" class="link">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3" alt="5G Network Risks in Modern Connectivity">
+                    <div class="content">
+                        <p class="category">Threats From New Technology</p>
+                        <h2>5G Network Risks in Modern Connectivity</h2>
+                        <p class="description">The rise of 5G technology brings faster speed and better connectivity for modern users. It allows many devices to connect...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="et/et-threats-cloudvulnerabilities.html" class="link">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="Cloud Vulnerabilities in Online Systems">
+                    <div class="content">
+                        <p class="category">Threats From New Technology</p>
+                        <h2>Cloud Vulnerabilities in Online Systems</h2>
+                        <p class="description">Cloud computing has changed how we store digital information in our personal lives. By moving data to remote servers,...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="et/et-threats-biometricsecurityrisks.html" class="link">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7" alt="Biometric Security Risks: What You Need to Know">
+                    <div class="content">
+                        <p class="category">Threats From New Technology</p>
+                        <h2>Biometric Security Risks: What You Need to Know</h2>
+                        <p class="description">Biometric security is now widely used in smartphones and online systems. It uses unique traits like fingerprints, facial recog...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <hr class="line">
+
+        <div id="cyberattack" class="topics">
+            <h3>Emerging Threats</h3>
+            <h1>Cyberattack Methods & Evolution</h1>
+            <p class="et-description">Explore the latest techniques and tactics that cybercriminals use to breach systems and exploit weaknesses. Understanding these strategies helps users and organizations anticipate threats and strengthen their defenses.
+            </p>
+
+            <a href="et/et-cyberattack-ransomwaretrends.html" class="link">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3" alt="Ransomware Trends">
+                    <div class="content">
+                        <p class="category">Threats From New Technology</p>
+                        <h2>Ransomware Trends: The Evolution of Extortion</h2>
+                        <p class="description">Ransomware has evolved from simple disruptive software into a highly sophisticated, multi-billion dollar criminal i...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="et/et-cyberattack-socialengineeringtechniques.html" class="link">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1584543515885-b8981dbf0b5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhpc2hpbmd8ZW58MHx8MHx8fDA%3D" alt="Social Engineering: The Human Element of Hacking">
+                    <div class="content">
+                        <p class="category">Threats From New Technology</p>
+                        <h2>Social Engineering: The Human Element of Hacking</h2>
+                        <p class="description">Social engineering is a cyberattack method that focuses on manipulating human behavior instead of hacking technical syst...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="et/et-cyberattack-malwareasaservice.html" class="link">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" alt="The Rise of Malware as a Service (MaaS)">
+                    <div class="content">
+                        <p class="category">Threats From New Technology</p>
+                        <h2>The Rise of Malware as a Service (MaaS)</h2>
+                        <p class="description">The cybercrime world has changed into a corporate-style industry with the rise of Malware as a Service (MaaS). Attackers n...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="et/et-cyberattack-deepfakerisk.html" class="link">
+                <div class="box">
+                    <img src="https://plus.unsplash.com/premium_photo-1709143101214-55c54faed60c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Deepfake Risks: The New Era of Digital Deception">
+                    <div class="content">
+                        <p class="category">Threats From New Technology</p>
+                        <h2>Deepfake Risks: The New Era of Digital Deception</h2>
+                        <p class="description">The rapid advancement of artificial intelligence has birthed one of the most challenging emerging threats: Deepfakes...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="et/et-cyberattack-supplychainattack.html" class="link">
+                <div class="box">
+                    <img src="media/images/supply.png" alt="Supply Chain Attacks">
+                    <div class="content">
+                        <p class="category">Threats From New Technology</p>
+                        <h2>Understanding Supply Chain Attacks</h2>
+                        <p class="description">In today's connected world, organizations rely on many third-party services, software, and vendors to operate efficiently. While t...</p>
+                        <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>    
+        
 
     <footer>
         <div class="footer-contacts">
@@ -269,4 +402,3 @@
     </footer>
 </body>
 </html>
-
