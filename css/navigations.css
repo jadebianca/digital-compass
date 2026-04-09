@@ -174,7 +174,7 @@ hr {
     }
 }
 
-@media (min-width: 981px) {
+@media (min-width: 999px) {
     nav {
         padding: 20px auto;
         text-align: left;
