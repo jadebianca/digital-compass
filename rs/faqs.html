@@ -91,7 +91,7 @@
             text-decoration: underline;   
         }
 
-        .content {
+        .con{
             width: 75%;
             float: left;
             padding-left: 40px;
@@ -109,12 +109,16 @@
             list-style-position: inside;
         }
 
-        #category  {
+        #category {
             font-family: 'Playfair Display', serif;
             font-size: 45px;
             color: #211F76;
         }
-
+        .related  {
+            font-family: 'Playfair Display', serif;
+            font-size: 35px;
+            color: #211F76;
+        }
         #about  {
             color: #211F76;
             font-size: 18px;
@@ -150,6 +154,85 @@
         em{
             font-weight: 550;
         }
+        .photos {
+            border-radius: 20px;
+            margin: 40px 0 20px 0;
+            width:100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        
+        figcaption {
+            color: #212866;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+            margin: 15px;
+        }
+
+        .box {
+            background: #FFFFFF;
+            width: 380px;
+            border-radius: 15px;
+            text-align: left;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        .box:hover{
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .box img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover;
+        }
+
+        .content { 
+            padding: 25px 25px 10px; 
+        }
+
+        .category {
+            font-size: 13px;
+            color: #211F76;
+            margin-bottom: 8px;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+            color: #211F76;
+            margin: 0 0 15px 0;
+            vertical-align: middle;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .description {
+            font-size: 15px;
+            color: #212866;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-weight: 500;
+            text-align: justify;
+            word-spacing: 3px;
+            text-transform: none;
+        }
+
+        .read-more {
+            color: #211F76;
+            font-size: 13px;
+            margin: 0;
+        }
+
 
     </style>
 </head>
@@ -192,7 +275,7 @@
             </ul>
         </div>
 
-        <div class="content">
+        <div class="con">
             <div class="item" id="category-1">
                 <h3 id="about" class="text-center text-uppercase fw-bold mb-3">Questions About</h3>
                 <h1 id="category" class="text-center fw-bolder mb-4">Digital Compass</h1>
@@ -203,18 +286,32 @@
                     <p id="answer" class="mb-4">
                         Digital Compass is an educational platform designed to help students and internet users <em>understand cybercrimes and online risks</em>. Through simple explanations, guides, and practical tips, it promotes awareness and responsible internet use. Its goal is to help users become safer and smarter online.
                     </p>
+                    <figure>
+                        <img src="../media/images/home.png" alt="Sample Photo" class="d-block mb-3 rounded-3 mx-auto img-fluid photos">
+                    <figcaption>Digital Compass Home Page </figcaption>
+                    </figure>
+
                     <li id="question" class="fw-bold mb-3 p-3">
                         Is the content on Digital Compass reliable?
                     </li>
                     <p id="answer" class="mb-4">
                         Yes, the content is carefully researched using trusted references and educational materials. Users can visit the <a class="links" href="../rs/references.html">References page</a> to check the sources used in the articles and guides. This helps ensure that the information is accurate, updated, and useful for learning.
                     </p>
+                    <figure>
+                        <img src="../media/images/referencesPage.png" alt="Sample Photo" class="d-block mb-3 rounded-3 mx-auto img-fluid photos">
+                    <figcaption>Digital Compass References Page </figcaption>
+                    </figure>
+
                     <li id="question" class="fw-bold mb-3 p-3">
                         How can I contact Digital Compass?
                     </li>
                     <p id="answer" class="mb-4">
                         You can contact the team through the <a class="links" href="../hm/contacts.html">Contacts Page</a> by filling out the form provided below the page. You may also reach out through their <a class="links" href="https://www.facebook.com/profile.php?id=61583037875134">Facebook page</a> or <a class="links" href="mailto:digitalcompass.itad@gmail.com">email</a> for questions, suggestions, or feedback. Digital Compass welcomes messages from users who want help or want to learn more.
                     </p>
+                    <figure>
+                        <img src="../media/images/contacts.png" alt="Sample Photo" class="d-block mb-3 rounded-3 mx-auto img-fluid photos">
+                    <figcaption>Digital Compass Contacts Page </figcaption>
+                    </figure>
                 </ol>
             </div>
             
@@ -228,18 +325,96 @@
                     <p id="answer" class="mb-4">
                         Cybercrime refers to <em>crimes committed using computers, devices, or the internet</em>. This includes phishing, hacking, identity theft, scams, malware, and cyberbullying. These attacks can harm both individuals and organizations.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../cc/cc-concept-what-is-cybercrime.html" class="d-inline-block link"">
+                        <div class="box">
+                            <img src="../media/images/what-is-cybercrime-cover.png" alt="Cybercrime">
+                            <div class="text-start fw-semibold text-uppercase content">
+                                <p class="category">Concepts of Cybercrime</p>
+                                <h2>What Is Cybercrime? Understanding the Digital Threat</h2>
+                                <p class="description">Today, almost everything we do involves the internet. We use it to talk to friends, do schoolwork, and buy things online. But as...</p>
+                                <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../cc/cc-concept-history.html" class="d-inline-block link"">
+                        <div class="box">
+                            <img src="../media/images/history-cybercrime-cover.jpg" alt="History of Cyber Crime">
+                            <div class="text-start fw-semibold text-uppercase content">
+                                <p class="category">Concepts of Cybercrime</p>
+                                <h2>From Phone Tricks to Ransomware: A History of Cybercrime</h2>
+                                <p class="description">Cyber crime did not suddenly appear with the invention of smartphones or social media. It has a long history that goes all...</p>
+                                <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    
                     <li id="question" class="fw-bold mb-3 p-3">
                         Why does cybercrime happen?
                     </li>
                     <p id="answer" class="mb-4">
                         Cybercrime happens because of <em>money, anonymity, weak security, personal motives, and social factors</em>. Many criminals are attracted by easy financial gain, while others act out of revenge, curiosity, or the desire for power. Weak passwords, outdated systems, and poor awareness also make attacks easier.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../cc/cc-concept-why-it-happens.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/why-cybercrime-happens-cover.jpg" alt="Why Does Cyber Crime Happen?">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Concepts of Cybercrime</p>
+                                    <h2>Why Does Cybercrime Happen? The Causes Behind Digital Crime</h2>
+                                    <p class="description">Cyber crime does not happen by accident. There are real reasons why people choose to commit crimes online. Just like regular...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../cc/cc-concept-common-myths.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/myths-cybercrime-cover.png" alt="Common Misconceptions About Cybercrime">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Concepts of Cybercrime</p>
+                                    <h2>Busting the Myths: Common Misconceptions About Cybercrime</h2>
+                                    <p class="description">Despite how common cyber crime has become, many people still hold on to false beliefs about it. These beliefs can give p...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                        
                     <li id="question" class="fw-bold mb-3 p-3">
                         Why cybercrime cases are still increasing today?
                     </li>
                     <p id="answer" class="mb-4">
                         Cybercrime continues to grow because more <em>people and businesses now depend on the internet</em>. Attackers keep finding new ways to exploit weak systems and uninformed users. The ability to hide identity online also makes digital crime more attractive.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../cc/cc-concept-effect-individuals.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/effect-on-individuals-cover.jpg" alt="Cybercrime Effects on Individuals">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Concepts of Cybercrime</p>
+                                    <h2>How Cybercrime Hurts Real People: Effects on Individuals</h2>
+                                    <p class="description"> When we talk about cyber crime, it is easy to focus on the technical side, such as hacking tools, stolen data, or harmful soft...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="../cc/cc-concept-effect-organizations.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/effect-on-organizations-cover.jpg" alt="Cybercrime Effects on Organizations">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Concepts of Cybercrime</p>
+                                    <h2>When Organizations Are Targeted: The Impact of Cybercrime on Businesses</h2>
+                                    <p class="description"> While cyber crime affects individuals deeply, its impact on organizations such as businesses, schools, hospitals, and gover...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </ol>
             </div>
 
@@ -253,18 +428,99 @@
                     <p id="answer" class="mb-4">
                         Cybersecurity <em>protects your accounts, devices, and personal data</em> from hackers and online threats. It helps prevent identity theft, financial loss, malware infections, and privacy breaches. Strong cybersecurity habits create a safer and more responsible digital environment.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../cs/cs-concepts-what-is-cybersecurity.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/what%20is%20cybersecurity.png" alt="What is Cybersecurity">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Concepts of Cybersecurity</p>
+                                    <h2>Cybersecurity: Your Shield Against Digital Danger</h2>
+                                    <p class="description">Cybersecurity refers to the protection of your electronic gadgets, information, and online activities from cyber hackers and v...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="../cs/cs-concepts-importance-of-cybersecurity.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/importance%20of%20cybersecurity.jpg" alt="Importance of Cybersecurity">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Concepts of Cybersecurity</p>
+                                    <h2>Cybersecurity Matters: Guard Your Digital World</h2>
+                                    <p class="description">Cybersecurity helps you protect from hackers online. Tools and prevention habits protect your phones, accounts, and perso...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                     <li id="question" class="fw-bold mb-3 p-3">
                         How can I keep my accounts safe?
                     </li>
                     <p id="answer" class="mb-4">
                         <em>Use strong and unique passwords for every account and enable two-factor authentication</em> whenever possible. Avoid sharing login details, and always log out from shared or public devices. Regularly checking account activity also helps detect suspicious logins early.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../cs/cs-security-using-2-factor-authentication.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/Using 2FA.jpg" alt="Using 2 Factor Authentication">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Account Security</p>
+                                    <h2 class="fs-4">Using 2 Factor Authentication</h2>
+                                    <p class="description">For decades, the standard method for protecting online accounts has been a username and a password. Unfortunately...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="../dp/dp-data-strong-password-creation.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/strong.jpg" alt="Strong Password Creation">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Data Protection</p>
+                                    <h2>Strong Password Creation</h2>
+                                    <p class="description">A strong password helps keep your online accounts safe. It protects your personal and work information from hackers. Using...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                     <li id="question" class="fw-bold mb-3 p-3">
                         Is public Wi-Fi safe to use?
                     </li>
                     <p id="answer" class="mb-4">
                         Public Wi-Fi can be risky because <em>hackers may monitor traffic on unsecured networks</em>. Avoid logging into banking apps, school portals, or sensitive accounts while using free public internet. It’s safest to use your own mobile data or a trusted network instead of relying on public Wi-Fi.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../cs/cs-security-public-wi-fi-risks.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/Public Wi-Fi Risks.jpg" alt="Public Wi-Fi Risks">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Account Security</p>
+                                    <h2>Public Wi-Fi Risks</h2>
+                                    <p class="description">Free public Wi-Fi in coffee shops, airports, and hotels is incredibly convenient, but this convenience often comes at a steep price...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="../cs/cs-security-browser-security.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/BrowserSecurity.jpg" alt="Browser Security">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Account Security</p>
+                                    <h2>Browser Security</h2>
+                                    <p class="description">Your web browser—whether it is Chrome, Edge, Safari, or Firefox—is your primary vehicle for navigating the modern internet...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </ol>
             </div>
 
@@ -278,18 +534,100 @@
                     <p id="answer" class="mb-4">
                         Digital privacy means <em>protecting your personal data, online identity, and activities from unauthorized access</em>. This includes your passwords, social media posts, photos, location, and browsing history. Good privacy habits help reduce risks like identity theft and misuse of personal information.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../dp/dp-concept-digital-privacy.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/digitalprivacy.jpg" alt="Digital Privacy">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Concepts</p>
+                                    <h2>What is Digital <br>Privacy</h2>
+                                    <p class="description">Digital privacy is the fundamental right to control how your personal information is collected, used, and shared online. In an...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="../dp/dp-concept-checking-your-privacy-settings.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/checking-privacy.jpg" alt="Checking Your Privacy">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Concepts</p>
+                                    <h2>Checking Your Privacy Settings</h2>
+                                    <p class="description">Reviewing and adjusting your privacy settings regularly ensures that your personalize experiences, and provide rec...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                     <li id="question" class="fw-bold mb-3 p-3">
                         What is a digital footprint?
                     </li>
                     <p id="answer" class="mb-4">
                         A digital footprint is the <em>record of everything you do online</em>, such as posts, comments, likes, searches, and uploads. Even deleted content may still remain saved or shared by others. Managing your digital footprint helps protect your reputation and privacy.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../dp/dp-concept-digital-footprint.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/digital.webp" alt="Digital Footprint">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Concepts</p>
+                                    <h2>Understanding Digital Footprint</h2>
+                                    <p class="description">A digital footprint typically refers to the data that you leave inside the internet. Every activity that you post on the intern...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="../pa/pa-online-protectingdigitalfootprint.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/digitalfootprint.jpg" alt="Protecting Digital Footprint">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Online Safety Tips</p>
+                                    <h2>Protecting Digital Footprint</h2>
+                                    <p class="description">Every time you go online — whether browsing a website, posting on social media, sending an email, or making an on...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
                     <li id="question" class="fw-bold mb-3 p-3">
                         What are the current cyber threats?
                     </li>
                     <p id="answer" class="mb-4">
                         The current cyber threats include <em>AI-generated scams, deepfakes, ransomware, IoT attacks, and cloud vulnerabilities</em>. These threats are becoming more advanced and harder to detect. Staying updated and learning safe online practices are the best ways to reduce risks.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../et/et-threats-aicyberthreats.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" alt="AI-Powered Cyber Threats">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Threats From New Technology</p>
+                                    <h2>The Double-Edged Sword: AI-Powered Cyber Threats</h2>
+                                    <p class="description">Artificial Intelligence is changing the world, but it is also giving cybercriminals new ways to attack. AI Cyber Threats refer to...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="../et/et-threats-iotsecurity.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f" alt="IoT Security Risks in Smart Devices">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Threats From New Technology</p>
+                                    <h2>IoT Security Risks in Smart Devices</h2>
+                                    <p class="description">The Internet of Things (IoT) has completely changed how we interact with technology in our homes. Smart devices, light bulbs...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </ol>
             </div>
 
@@ -303,18 +641,98 @@
                     <p id="answer" class="mb-4">
                         You can prevent cybercrime by <em>using strong passwords, updating devices, and avoiding suspicious downloads or link</em>s. Always be careful when sharing personal information on social media, emails, and chat apps. Awareness and smart online habits are the first step of digital protection.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../pa/pa-prevention-protectingdevices.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/protect.png" alt="Protecting Devices">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Cybercrime Prevention</p>
+                                    <h2>Protecting Devices</h2>
+                                    <p class="description">Our devices are among our most valuable possessions in the digital age. Smartphones, laptops, tablets, and compu...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href=../pa/pa-digital-reponsiblesharing.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/responsible.jpg" alt="Responsible Sharing">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Digital Wellness</p>
+                                    <h2>Responsible Sharing</h2>
+                                    <p class="description">Every post, comment, photo, and link we share online contributes to the digital environment that millions of people inhabi...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                     <li id="question" class="fw-bold mb-3 p-3">
                         Where can I report cybercrime in the Philippines?
                     </li>
                     <p id="answer" class="mb-4">
                         Cybercrime incidents in the Philippines can be reported to the <a class="links" href="https://acg.pnp.gov.ph/contact-us/">PNP Anti-Cybercrime Group (PNP-ACG)</a> or the <a class="links" href="https://cicc.gov.ph/report/?ref=cybersecurity.ph">Cybercrime Investigation and Coordinating Center (CICC)</a>. Reports can be filed online through their official portals or in person at their offices. It's important to have screenshots, chat logs, transaction receipts, and account details ready as evidence.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../cc/cc-concept-cybercrime-laws-philippines.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/cybercrimelaws.jpg" alt="Cybercrime Laws in the Philippines">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Concepts of Cybercrime</p>
+                                    <h2>Cybercrime Laws in the Philippines: Protecting People Online</h2>
+                                    <p class="description">The internet has changed how Filipinos communicate, work, and do business. But along with these benefits come serious th...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="../pa/pa-prevention-reportingcybercrime.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/report.jpg" alt="Reporting Cybercrime">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Cybercrime Prevention</p>
+                                    <h2>Reporting Cybercrime</h2>
+                                    <p class="description">Many victims of cybercrime choose not to report what happened to them — out of embarrassment, fear, or the mistaken beli...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                     <li id="question" class="fw-bold mb-3 p-3">
                          Why is awareness important in digital safety?
                     </li>
                     <p id="answer" class="mb-4">
                         Awareness helps users <em>recognize scams, fake accounts, suspicious links, and unsafe online behavior</em> before damage happens. It reduces the chances of becoming a victim of cybercrimes. Learning about cybercrimes  empowers users to stay safe and protect others as well.
                     </p>
+                    <h1 class="text-center fw-bolder mb-4 mx-auto related">Related Articles</h1>
+                    <div align ="center" class="mb-4">
+                        <a href="../pa/pa-prevention-recognizingscams.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="../media/images/recogscam.webp" alt="Recognizing Scam">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Cybercrime Prevention</p>
+                                    <h2>Recognizing Scams</h2>
+                                    <p class="description">In a world where almost everything is done online, scams have become more sophisticated and harder to detect</strong>. Cyber...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="pa/pa-online-spottingsuspiciouslinks.html" class="d-inline-block link"">
+                            <div class="box">
+                                <img src="media/images/links.jpg" alt="Spotting Suspicious Links">
+                                <div class="text-start fw-semibold text-uppercase content">
+                                    <p class="category">Online Safety Tips</p>
+                                    <h2>Spotting Suspicious Links</h2>
+                                    <p class="description">One of the most common ways cybercriminals gain access to personal information, install malware, or hijack acc...</p>
+                                    <p class="read-more"><b>Read Full Article &rarr;</b></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </ol>
             </div>
         </div>
