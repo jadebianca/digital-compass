@@ -1,247 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="1800">
-    <title>Digital Compass</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/navigations.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <style type="text/css">
-        body {
-            background-color: #FFFFFF;
-            font-family: 'Inter', sans-serif;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .main {
-            background-color: #FFFFFF;
-            padding: 30px 0;
-            width: 90%;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            color: #211F76;
-            font-family: 'Playfair Display', serif;
-            font-size: 40px;
-            font-weight: 700;
-        }
-
-        h2 {
-            color: #211F76;
-            font-family: 'Playfair Display', serif;
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 1.3;
-            border-left: 5px solid #0F0F32;
-            padding-left: 20px;
-            margin-top: 40px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .main > p {
-            color: #212866;
-            font-family: 'Inter', sans-serif;
-            font-size: 18px;
-            letter-spacing: 2px;
-        }
-
-        .nav-bio {
-            color: #212866;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            text-align: center;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-
-        .nav-bio a {
-            color: #212866;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .photos {
-            border-radius: 20px;
-            margin: 40px 0 20px 0;
-            width:100%;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        
-        figcaption {
-            color: #212866;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .paragraph {
-            color: #212866;
-            margin: 0 0 50px 0;
-            font-family: 'Inter', sans-serif;
-            font-size: 19px;
-            font-weight: 500;
-            line-height: 1.8;
-            text-align: justify;
-            text-indent: 50px;
-            width: 100%;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="1800">
+  <title>What is Digital Privacy - Digital Compass</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../media/images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/navigations.css">
+  <style type="text/css">
+    body { 
+      background-color: #FFFFFF; 
+      font-family: 'Inter', sans-serif; 
+      margin: 0px; 
+      padding: 0px; 
+    }
+    .main { 
+      background-color: #FFFFFF; 
+      padding: 30px 0; 
+      width: 90%; 
+      max-width: 1000px; 
+      margin: 0 auto; 
+    }
+    .title { 
+      color: #211F76; 
+      font-family: 'Playfair Display', serif; 
+      font-size: 40px; 
+      font-weight: 700; 
+      text-align: center; 
+      margin-bottom: 10px; 
+    }
+    h2 { 
+      color: #211F76; 
+      font-family: 'Playfair Display', serif; 
+      font-size: 32px; 
+      font-weight: 500; 
+      line-height: 1.3; 
+      text-align: left; 
+      border-left: 5px solid #0F0F32; 
+      padding-left: 20px; 
+      margin-top: 40px; 
+      margin-bottom: 25px; 
+      width: 100%; 
+      box-sizing: border-box; 
+    }
+    .author { 
+      color: #212866; 
+      font-family: 'Inter', sans-serif; 
+      font-size: 18px; 
+      text-align: center; 
+      letter-spacing: 2px; 
+      text-transform: uppercase; 
+      margin-top: 0; 
+    }
+    .nav-bio { 
+      color: #212866; 
+      font-family: 'Inter', sans-serif; 
+      font-size: 16px; 
+      text-align: center; 
+      letter-spacing: 2px; 
+      text-transform: uppercase; 
+      margin-bottom: 20px; 
+    }
+    .nav-bio a { 
+      color: #212866; 
+      text-decoration: none; 
+      font-weight: 600; 
+      transition: 0.3s; 
+    }
+    .nav-bio a:hover { 
+      text-decoration: 2px solid underline; 
+    }
+    .photos { 
+      width: 100%; 
+      max-width: 1000px; 
+      height: auto; 
+      border-radius: 20px; 
+      margin: 40px 0 40px 0; 
+      display: block; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+    }
+    figcaption { 
+      color: #212866; 
+      font-family: 'Inter', sans-serif; 
+      font-size: 16px; 
+      font-weight: 500; 
+      text-align: center; 
+      margin-top: 10px; 
+    }
+    .paragraph { 
+      color: #212866; 
+      margin: 0 0 50px 0; 
+      font-family: 'Inter', sans-serif; 
+      font-size: 19px; 
+      font-weight: 500; 
+      line-height: 1.8; 
+      text-align: justify; 
+      text-indent: 50px; 
+      width: 100%; 
+    }
+    .top-btn { 
+      position: fixed; 
+      bottom: 50px; 
+      right: 60px; 
+      background-color: #FFFFFF; 
+      border: 2px solid #0F0F32; 
+      color: #0F0F32; 
+      text-decoration: none; 
+      padding: 15px 50px; 
+      border-radius: 50px; 
+      font-size: 12px; 
+      font-weight: 700; 
+      text-transform: uppercase; 
+      letter-spacing: 1px; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+      transition: 0.3s; 
+    }
+    .top-btn:hover { 
+      background: #0F0F32; 
+      color: transparent; 
+    }
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin: 30px 0 50px 0; 
+      font-family: 'Inter', sans-serif; 
+      font-size: 17px; 
+    }
+    caption { 
+      caption-side: top; 
+      text-align: left; 
+      font-weight: 600; 
+      font-size: 18px; 
+      margin-bottom: 10px; 
+      color: #211F76; 
+    }
+    th { 
+      background-color: #211F76; 
+      color: #FFFFFF; 
+      padding: 12px 16px; 
+      text-align: left; 
+    }
+    td { 
+      padding: 12px 16px; 
+      border-bottom: 1px solid #ddd; 
+      color: #212866; 
+    }
+    tr:nth-child(even) { 
+      background-color: #f4f4f8; 
+    }
+  </style>
 </head>
 <body>
-    <script src="../js/bootstrap.bundle.js"></script>
-    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+  <script src="../js/bootstrap.bundle.js"></script>
+<a href="#top" class="top-btn">Back to Top &uarr;</a>
 
-    <nav>
-        <div class="logo-container">
-            <img src="../media/images/logo.png" alt="Logo">
-            <span class="logo-text" id="top">Digital Compass</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../cc.html">Cybercrime</a></li>
-            <li><a href="../cs.html">Cybersecurity</a></li>
-            <li><a href="../dp.html">Digital Privacy</a></li>
-            <li><a href="../et.html">Emerging Threats</a></li>
-            <li><a href="../pa.html">Prevention & Awareness</a></li>
-            <li><a href="../rs.html">Resources</a></li>
-        </ul>
-    </nav>
+<nav>
+  <div class="logo-container">
+    <img src="../media/images/logo.png" alt="Logo">
+    <span class="logo-text" id="top">Digital Compass</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../cc.html">Cybercrime</a></li>
+    <li><a href="../cs.html">Cybersecurity</a></li>
+    <li><a href="../dp.html">Digital Privacy</a></li>
+    <li><a href="../et.html">Emerging Threats</a></li>
+    <li><a href="../pa.html">Prevention & Awareness</a></li>
+    <li><a href="../rs.html">Resources</a></li>
+  </ul>
+</nav>
 
-    <div class="main">
-        <h1 class="text-center mb-4">Insert Title Here</h1>
-        <p class="text-center text-uppercase fw-bold mb-3 ">By: Insert Name Here &bull; Insert date here</p>
-        <p class="nav-bio">
-            <a href="#intro">Intro</a> &bull;
-            <a href="#body-one"> Body 1</a> &bull;
-            <a href="#body-two">Body 2</a> &bull;
-            <a href="#body-three">Body 3</a> &bull;
-            <a href="#body-four">Body 4</a> &bull;
-            <a href="#body-five">Body 5</a> &bull;
-            <a href="#body-six">Body 6</a> &bull;
-            <a href="#body-seven">Body 7</a> &bull;
-            <a href="#conclusion">Conclusion</a>
-        </p>
-        
-        <hr style="border: none; border-top: 3px solid #212866; opacity: 1; width: 100%;">
+<div class="main">
+  <h1 class="title">What is Digital Privacy?</h1>
+  <p class="author"><b>By: Pelito, Zoe Kylle R. &bull; April 2026</b></p>
 
-        <article>     
-            <figure>
-                <a href="#">
-                    <img src="../media/images/BrowserSecurity.jpg" alt="Sample Photo" class="d-block mb-3 rounded-3 mx-auto img-fluid photos">
-                </a>
-                <figcaption>Photo from: </figcaption>
-            </figure>
-    
-            <p id="intro" class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus dolor adipisci necessitatibus laborum a laudantium, ipsa optio deleniti porro iste est et earum obcaecati? Error aliquid dolore eveniet laudantium eum.
-            </p>
+  <p class="nav-bio">
+    <a href="#intro">Intro</a> &bull;
+    <a href="#s1">Defining the Concept</a> &bull;
+    <a href="#s2">Data Brokers</a> &bull;
+    <a href="#s3">Social Media Mining</a> &bull;
+    <a href="#s4">Privacy vs. Security</a> &bull;
+    <a href="#s5">Taking Control</a> &bull;
+    <a href="#conclusion">Conclusion</a>
+  </p>
 
-            <h2 id="body-one" class="text-start mb-4">Add Subheading Title Here</h2>
-            <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
-            </p>
+  <hr width="100%" size="5" color="#212866">
 
-            <h2 id="body-two" class="text-start mb-4">Add Subheading Title Here</h2>
-            <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
-            </p>
+  <article>
+    <figure>
+        <img src="../media/images/digitalprivacy.jpg" alt="What is Digital Privacy" class="photos">
+      <figcaption>Image from ShutterStock</figcaption>
+    </figure>
 
-            <h2 id="body-three" class="text-start mb-4">Add Subheading Title Here</h2>
-            <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
-            </p>
+    <h2 id="intro" class="text-left mb-4">Introduction</h2>
+    <p class="paragraph">
+      <strong>Digital privacy</strong> is the fundamental right to control how your personal information is collected, used, and shared online. In an era where every click, search, and purchase is tracked, protecting this right has never been more challenging. Your <em>digital identity</em> is highly valuable to advertisers, corporations, and cybercriminals alike. Understanding the full scope of digital privacy is the first critical step toward <strong>reclaiming ownership of your personal data</strong>. Let us dive into what digital privacy truly means and why it requires your active participation to protect.
+    </p>
 
-            <h2 id="body-four" class="text-start mb-4">Add Subheading Title Here</h2>
-            <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
-            </p>
+    <h2 id="body-one" class="text-start mb-4">Defining the Concept</h2>
+    <p class="paragraph">
+      At its core, digital privacy encompasses three main areas: <strong>information privacy, communication privacy, and individual privacy</strong>. Information privacy relates to your right to dictate how your personal data, like medical records or financial details, is handled. Communication privacy ensures that your emails, direct messages, and video calls <em>remain confidential and free from unauthorized interception</em>. Individual privacy is your right to exist online without being continuously monitored or profiled by unseen marketing algorithms. When you create an account on a free service, you are typically <strong>trading a portion of this privacy for convenience</strong>. The service collects your data, analyzes your behaviors, and uses that profile to generate targeted advertising revenue. True digital privacy means having <em>absolute transparency</em> about this exchange and the ability to opt out when desired.
+    </p>
 
-            <h2 id="body-five" class="text-start mb-4">Add Subheading Title Here</h2>
-            <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
-            </p>
+    <h2 id="body-two" class="text-start mb-4">The Role of Data Brokers</h2>
+    <p class="paragraph">
+      Behind the scenes of the internet, a massive industry of <strong>data brokers</strong> operates by collecting and selling your information. These companies scrape public records, purchase purchasing histories from retailers, and track your web browsing habits aggressively. They compile thousands of data points to create an <em>incredibly precise, deeply personal profile</em> of your entire life. This profile can include your income bracket, political affiliations, health concerns, and specific daily routines. You generally <strong>do not have a direct relationship with these brokers</strong>, making their invisible tracking highly intrusive and difficult to stop. They sell this compiled data to marketing agencies, insurance companies, and sometimes even government entities. Because this industry is <em>largely unregulated</em> in many regions, your data is traded as a simple, highly profitable commodity.
+    </p>
 
-            <h2 id="body-six" class="text-start mb-4">Add Subheading Title Here</h2>
-            <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
-            </p>
+    <table>
+      <caption>Core Pillars of Digital Privacy</caption>
+      <tr>
+        <th>Privacy Type</th>
+        <th>What it Protects</th>
+      </tr>
+      <tr><td>Information Privacy</td><td>Financial records, medical history, and ID numbers.</td></tr>
+      <tr><td>Communication Privacy</td><td>Emails, text messages, and private group chats.</td></tr>
+      <tr><td>Individual Privacy</td><td>Freedom from persistent behavioral tracking and profiling.</td></tr>
+    </table>
 
-            <h2 id="body-seven" class="text-start mb-4">Add Subheading Title Here</h2>
-            <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea nam dolor incidunt amet earum libero, enim placeat maiores veritatis deserunt! Nesciunt quos assumenda ut accusamus nihil non quod eos.
-            </p>
-            
-            <h2 id="conclusion" class="text-start mb-4">Add Subheading Title Here</h2>
-            <p class="paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus possimus est, minima harum dolor quidem dolorum cumque! Neque nihil distinctio ab aliquam. Laborum, tempore quas? Error voluptatum dignissimos illum quibusdam!
-            </p>
-        </article>
+    <h2 id="body-three" class="text-start mb-4">Social Media Data Mining</h2>
+    <p class="paragraph">
+      Social media platforms are the most visible battlegrounds for digital privacy today. We willingly upload massive amounts of personal data to these networks, often <strong>without reading the extensive terms of service</strong>. These platforms use advanced algorithms to track not just what you post, but <em>how long you look at specific images</em>. This behavioral tracking is designed to keep you engaged, but it also strips away your anonymity entirely. When you take a quiz or use a third-party app linked to your social account, you often <strong>expose your friends' data as well</strong>. History has shown exactly how this harvested social data can be weaponized to manipulate public opinion and target vulnerable groups. You must recognize that the <em>"free" nature of social media</em> is paid for entirely by your personal, private information.
+    </p>
+
+    <h2 id="body-four" class="text-start mb-4">Privacy vs. Cybersecurity</h2>
+    <p class="paragraph">
+      It is common to confuse digital privacy with cybersecurity, but they are <strong>distinct concepts that must work together</strong>. Cybersecurity refers to the technical measures, like passwords and encryption, used to protect data from unauthorized hackers. Digital privacy, on the other hand, deals with the <em>authorized, legal use of your data</em> by legitimate corporate organizations. For example, a social media company might have excellent cybersecurity that prevents hackers from stealing your profile. However, if that same company <strong>legally sells your behavioral data to advertisers</strong>, your digital privacy is still fundamentally compromised. You can have strong security without having any privacy, but you <em>cannot have true privacy without strong security</em>. As a user, you must fiercely advocate for both concepts to protect your digital life completely.
+    </p>
+
+    <h2 id="body-five" class="text-start mb-4">Taking Control of Your Data</h2>
+    <p class="paragraph">
+      While the digital landscape may seem overwhelming, you have the power to <strong>take control of your digital privacy immediately</strong>. Start by minimizing your data footprint; do not fill out optional fields on web forms or provide your real birthday unnecessarily. Utilize <em>privacy-focused alternatives</em> to mainstream tools, such as private search engines or encrypted messaging applications. Regularly clear your browser cookies and utilize <strong>strong ad-blockers</strong> to disrupt the invisible trackers following you across the web. Take advantage of modern privacy legislation by formally requesting companies to <em>delete your accumulated data</em> from their servers. Always review your smartphone permissions and revoke location or microphone access for apps that do not require it. Being proactive and intentional with your data is the most effective way to preserve your digital privacy today.
+    </p>
+
+    <h2 id="conclusion" class="text-start mb-4">Conclusion</h2>
+    <p class="paragraph">
+      Digital privacy is not about hiding malicious activity; it is about <strong>preserving your fundamental right to personal autonomy</strong>. By understanding how data brokers and social platforms monetize your information, you can make highly informed decisions. Recognizing the difference between <em>technical security and authorized privacy</em> allows you to defend your identity on multiple fronts. Taking proactive steps to <strong>minimize your data footprint</strong> significantly reduces your daily exposure to corporate surveillance. Your personal data is uniquely yours, and protecting it is an essential, ongoing responsibility in our interconnected digital society.
+    </p>
+  </article>
+</div>
+
+<footer>
+  <div class="footer-contacts">
+    <img src="../media/images/logo.png" alt="Logo">
+    <span class="logo-text">Digital Compass</span>
+    <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61583037875134"><i class="fa-brands fa-facebook"></i></a>
+      <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
     </div>
-
-    <footer>
-        <div class="footer-contacts">
-            <img src="../media/images/logo.png" alt="Logo">
-            <span class="logo-text">Digital Compass</span>
-            <p>2219 Claro M. Recto Avenue,<br>Sampaloc, Manila</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="mailto:digitalcompass.itad@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </div>
-
-        <div class="footer-columns">
-            <div class="column">
-                <h4>Cybercrime</h4>
-                <a href="../cc.html#concepts">Concepts</a>
-                <a href="../cc.html#types">Types of Cybercrime</a>
-            </div>
-            <div class="column">
-                <h4>Cybersecurity</h4>
-                <a href="../cs.html#concepts">Concepts</a>
-                <a href="../cs.html#security">Account Security</a>
-                <a href="../cs.html#internet">Internet Safety</a>
-                <a href="../cs.html#students">Online Habits For Students</a>
-            </div>
-            <div class="column">
-                <h4>Digital Privacy</h4>
-                <a href="../dp.html#concepts">Concepts</a>
-                <a href="../dp.html#socmed">Social Media Privacy</a>
-                <a href="../dp.html#data">Data Protection</a>
-            </div>
-            <div class="column">
-                <h4>Emerging Threats</h4>
-                <a href="../et.html#threats">Threats from New Technology</a>
-                <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
-            </div>
-            <div class="column">
-                <h4>Prevention</h4>
-                <a href="../pa.html#prevention">Cybercrime Prevention</a>
-                <a href="../pa.html#online">Online Safety Tips</a>
-                <a href="../pa.html#digital">Digital Wellness</a>
-            </div>
-            <div class="column">
-                <h4>Resources</h4>
-                <a href="../rs/faqs.html">FAQs</a>
-                <a href="../rs/references.html">References</a>
-            </div>
-            <div class="column">
-                <h4>Quick Navs</h4>
-                <a href="../index.html">Home</a>
-                <a href="../hm/about.html">About</a>
-                <a href="../hm/contacts.html">Contacts</a>
-            </div>
-        </div>
-        <hr>
-    </footer>
+  </div>
+  <div class="footer-columns">
+    <div class="column">
+      <h4>Cybercrime</h4>
+      <a href="../cc.html#concepts">Concepts</a>
+      <a href="../cc.html#types">Types of Cybercrime</a>
+    </div>
+    <div class="column">
+      <h4>Cybersecurity</h4>
+      <a href="../cs.html#concepts">Concepts</a>
+      <a href="../cs.html#security">Account Security</a>
+      <a href="../cs.html#internet">Internet Safety</a>
+      <a href="../cs.html#students">Online Habits For Students</a>
+    </div>
+    <div class="column">
+      <h4>Digital Privacy</h4>
+      <a href="../dp.html#concepts">Concepts</a>
+      <a href="../dp.html#socmed">Social Media Privacy</a>
+      <a href="../dp.html#data">Data Protection</a>
+    </div>
+    <div class="column">
+      <h4>Emerging Threats</h4>
+      <a href="../et.html#threats">Threats from New Technology</a>
+      <a href="../et.html#cyberattack">Cyberattack Methods & Evolution</a>
+    </div>
+    <div class="column">
+      <h4>Prevention</h4>
+      <a href="../pa.html#prevention">Cybercrime Prevention</a>
+      <a href="../pa.html#online">Online Safety Tips</a>
+      <a href="../pa.html#digital">Digital Wellness</a>
+    </div>
+    <div class="column">
+      <h4>Resources</h4>
+      <a href="../rs/faqs.html">FAQs</a>
+      <a href="../rs/references.html">References</a>
+    </div>
+    <div class="column">
+      <h4>Quick Navs</h4>
+      <a href="../index.html">Home</a>
+      <a href="../hm/about.html">About</a>
+      <a href="../hm/contacts.html">Contacts</a>
+    </div>
+  </div>
+  <hr>
+</footer>
 </body>
 </html>
