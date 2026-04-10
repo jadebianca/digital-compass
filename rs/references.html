@@ -17,12 +17,15 @@
             margin: 0px;
             padding: 0px;
         }
+
         .hero {
             background-image: url('../media/images/references.png');
             background-size: cover;
             background-position: center;
             padding: 100px 80px;
+            color: #FFFFFF;
         }
+
         .hero h3 {
             font-size: 20px;
             font-weight: 500;
@@ -30,18 +33,39 @@
             letter-spacing: 2px;
             margin-bottom: 10px;
         }
+
         .hero h1 {
             font-family: 'Playfair Display', serif;
             font-size: 60px;
             margin: 10px 0;
         }
+
         .hero p {
             font-size: 18px;
             font-weight: 500;
-            max-width: 600px;
             margin: 0 auto;
             line-height: 1.6;
         }
+
+        .hero-btn {
+            margin-top: 5px;
+        }
+
+        .nav-hero {
+            font-family: Inter, Arial, sans-serif;
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .nav-hero a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
         .references {
             padding: 80px 150px;
             text-align: center;
@@ -94,20 +118,6 @@
             
         }
 
-        .nav-hero {
-            font-family: Poppins, Arial, sans-serif;
-            font-size: 16px;
-            text-align: center;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-
-        .nav-hero a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 400;
-        }
     </style>
 </head>
 <body>
@@ -132,13 +142,13 @@
         </ul>
     </nav>
 
-    <div class="text-light hero">
+    <div class="hero">
         <h3 class="text-light text-center mb-3">Stay Smart &amp; Stay Safe Online</h3>
         <h1 class="text-light text-center mb-3">References</h1>
         <p class="nav-hero">
-            <a href="#cs">Case Studies</a> &bull;
-            <a href="#reports">Commentaries and Reports</a> &bull;
-            <a href="#articles">Articles and Guides</a>
+            <a href="#cs" class="fs-5 text-uppercase fw-medium">Case Studies</a> &bull;
+            <a href="#reports" class="fs-5 fw-medium">Commentaries and Reports</a> &bull;
+            <a href="#articles" class="fs-5 fw-medium">Articles and Guides</a>
         </p>
     </div>
 
