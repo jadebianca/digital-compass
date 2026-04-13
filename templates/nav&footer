@@ -23,7 +23,7 @@
 <body>
     <!--SURNAME, FIRSTNAME MI.-->
     <!--CIP-1101 ITAD | GROUP 2-->
-    <a href="#top" class="top-btn">Back to Top &uarr;</a>
+    <a href="#top" class="top-btn">&uarr;</a>
     <script src="../js/bootstrap.bundle.js"></script>
     <nav>
         <div class="logo-container">
