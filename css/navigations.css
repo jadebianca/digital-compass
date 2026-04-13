@@ -148,6 +148,11 @@ hr {
     opacity: 1 !important;
 }
 
+.nav-bio {
+    text-transform: capitalize !important;
+}
+
+
 .top-btn {
     position: fixed;
     bottom: 50px;
